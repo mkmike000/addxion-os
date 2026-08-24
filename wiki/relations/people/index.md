@@ -1,0 +1,35 @@
+# Personen
+
+Kontakte in Relations. Dateiname = Vor- und Nachname. Zwei gleiche Namen: Zahlensuffix, nicht mergen. Firma und Person verlinken einander. Keine Geburtstage.
+
+* [Alex Fauther](alex-fauther.md)
+* [Alper Cakici](alper-cakici.md)
+* [Ammar Mulaomerovic](ammar-mulaomerovic.md)
+* [André Meisner](andre-meisner.md)
+* [Andreas Lorenz](andreas-lorenz.md)
+* [David Benteler](david-benteler.md)
+* [Dino Hanning](dino-hanning.md)
+* [Dominic Hanning](dominic-hanning.md)
+* [Dr. Jochen Deppe](jochen-deppe.md)
+* [Emilia Polakowska](emilia-polakowska.md)
+* [Hakan Fragapane](hakan-fragapane.md)
+* [Ilham Mulaomerovic](ilham-mulaomerovic.md)
+* [Konstantin Richter](konstantin-richter.md)
+* [Levent Cakici](levent-cakici.md)
+* [Lukas Sunderkötter](lukas-sunderkoetter.md)
+* [Mario Funke](mario-funke.md)
+* [Marlon Pollmüller](marlon-pollmueller.md)
+* [Marvin Panhorst](marvin-panhorst.md)
+* [Mike Kaufmann](mike-kaufmann.md)
+* [Naramsin Simon](naramsin-simon.md)
+* [Ninos Simon](ninos-simon.md)
+* [Ogulcan Gündüz](ogulcan-guenduez.md)
+* [Onur Cemrek](onur-cemrek.md)
+* [Sabo Coban](sabo-coban.md)
+* [Simon Coban](simon-coban.md)
+* [Stanislaw Lewicki](stanislaw-lewicki.md)
+* [Thorsten Bäumer](thorsten-baeumer.md)
+* [Tolga Bozkurt](tolga-bozkurt.md)
+* [Wahib Yousef](wahib-yousef.md)
+
+Vorlage: [_template.md](_template.md).

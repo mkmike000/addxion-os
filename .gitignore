@@ -1,0 +1,39 @@
+# Secrets
+.env
+.env.*
+*.pem
+*.p12
+*.key
+credentials.json
+**/secrets/**
+
+# RAG-Index (generiert, keine SSOT)
+.rag/
+
+# Finanzen und Vertrauliches
+**/rechnungen/
+**/vertraulich/
+**/*vertrag*
+**/*rechnung*
+
+# Abhängigkeiten und Builds
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+coverage/
+*.sqlite
+
+# OS und Editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Schwere Design-Originale
+*.psd
+*.ai
+*.tif
+*.tiff
