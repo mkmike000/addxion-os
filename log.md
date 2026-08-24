@@ -2,6 +2,12 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung.
 
+## 2026-08-25
+
+- ingest: Ziel `addxion.ai → Prototyp entwickelt` nach `wiki/goals/addxion-ai-prototyp.md` (Notion-Seite + Prio B10/R8/A10/D 2026-05-01, Score 80,4).
+- decision: Ziele-SSOT in `wiki/goals/`. Prio-Formel wie Notion; Skala Ziele 1–10, ops-Tickets weiter 1–5. Datei: `wiki/decisions/ziele-prio.md`.
+- lint: Notion-DB »Ziele« nicht vollständig übernommen (Mischung aus Outcomes und Tickets).
+
 ## 2026-08-24
 
 - decision: Prio-Formel = Notion-Logik (ohne Deadline → Score 0; sonst (B+R)*min(10,10−Tage/7)/max(1,A^0.35)). Alte Boost-Formel verworfen. Tickets in ops neu gescored.
