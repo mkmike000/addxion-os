@@ -51,7 +51,7 @@ Ein File für die ganze SSOT. Neueste oben. Git bleibt Versionierung; das Log is
 - **Pattern** (`wiki/patterns/`) — wiederverwendbar, abstrakt (z. B. Mail-Automation als Leistungsmuster).
 - **Firma** (`wiki/relations/companies/firmenname.md`) — eine Datei. Dateiname = Name (Slug). `id` Pflicht, gleich dem Dateinamen. Kunde oder Lead (`tags: [lead]`). Abschnitt `# Personen` mit Links auf die Personen-Dateien. Bei zwei gleichen Namen: Zahlensuffix (`…-2`). Ändert sich der reale Name, Datei und `id` nachziehen.
 - **Person** (`wiki/relations/people/vorname-nachname.md`) — eine natürliche Person. Dateiname = Vor- und Nachname (Slug). `id` Pflicht, gleich dem Dateinamen. Firma steht unter `# Firma`, nicht im Dateinamen. Kein `p-firma-…`. Bei zwei Personen mit gleichem Vor- und Nachnamen: Zahlensuffix (`…-2`) und `disambiguation` (Firma oder Rolle), keine Privatdaten. Nie mergen. Ändert sich der reale Name, Datei und `id` nachziehen. Keine E-Mail, Telefon, Adresse, Geburtstag.
-- **Instance** — konkrete Umsetzung (n8n-Workflow, Repo, Webflow-Staging). Beispiel: Mail-Entlastung bei Grafik-Werkstatt = n8n-Mail-Automation-Instanz, nicht nur abstraktes Pattern. Nicht Process-Text in Kunden-Repos duplizieren.
+- **Instance** — konkrete Umsetzung (n8n, Repo, Webflow). Die Instanz ist die Quelle jener Sache. Hier Pointer, kein Abzug des Workflows oder der Kundendaten. Beispiel: Mail-Entlastung bei Grafik-Werkstatt = n8n-Mail-Automation-Instanz, nicht nur abstraktes Pattern.
 - **Opportunity** (`ops/opportunities.md`) — welche Leistung man wem anbieten könnte. Link auf Firma, optional Person-Datei. Zählt nicht zum Doing-WIP. Wird zum Inbox-Ticket, wenn man sie aktiv angehen will.
 
 ## Collective

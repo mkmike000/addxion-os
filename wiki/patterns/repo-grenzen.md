@@ -24,6 +24,8 @@ sources:
 | Cross-App-Protokoll | `@addxion/xi` |
 | LLM-Client | `@addxion/ai` |
 | Plattform-Wissen, Markenstrategie | **dieses Repo** |
+| n8n-Workflows, Laufzeit-Quellen | die jeweilige n8n-Instanz |
+| Gebaute Site (Staging/Live) | Webflow bzw. das Site-Repo |
 | Marketing-Copy | `addxion-com` (folgt [Branding](../branding.md)) |
 | Headless CMS | `addxion-com` (`/cms`) |
 | Fahrschul-Domäne | `süper` |

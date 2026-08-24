@@ -8,6 +8,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung.
 - decision: Relations-Queue nachgezogen — `wiki/clients/` gibt es nicht mehr; CRM-Name verworfen; Inhalt der alten Idee „CRM-light“ liegt in `wiki/decisions/relations-ops.md`. Keine parallele Datei `crm-light-ops.md`.
 - lint: Log-Historie erwähnte noch `wiki/clients/` und `crm-light-ops.md` als offene Migration — Status: erledigt (Relations).
 - ingest: Klarstellung Mail-Entlastung = n8n-Mail-Automation-Instanz für Grafik-Werkstatt (nicht nur abstraktes Pattern). Datei: `wiki/relations/companies/grafik-werkstatt.md`.
+- decision: Dieses Repo ist Knowledge-SSOT, nicht SSOT für Instanzen (n8n, Webflow, Kunden-Repos). README und `eine-ssot` an Realität.
 - done: GitHub-Sicherung — privates Repo `addxion-os` unter mkmike000.
 - decision: Firma hat `id` Pflicht (gleich Dateiname, Slug). Alle Firmen-Dateien nachgezogen. Zahl nur bei Namenskollision. Kein `c-…`.
 - decision: Personen-Datei = Vorname-Nachname (Slug); kein `p-firma-…`. Zahl nur bei Namenskollision. Alle bestehenden Personen umbenannt.
@@ -32,5 +33,3 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung.
 - done: Plattform-Datei `wiki/platforms/addxion-docs.md` entfernt.
 - lint: Routines-Eintrag „Docs einziehen“ gestrichen; Inbox-Ticket Repo stilllegen.
 - ingest: Knowledge-SSOT umgebaut — `raw/` / `wiki/` / `ops/`, Root-`index.md`, Ingest/Query/Lint in `AGENTS.md`.
-
-Branch: `chore/prio-formula-and-review-fixes`.
