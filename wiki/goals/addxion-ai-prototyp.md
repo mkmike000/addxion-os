@@ -4,7 +4,7 @@ id: addxion-ai-prototyp
 title: addxion.ai → Prototyp entwickelt
 aliases:
   - addxion.ai Prototyp
-description: Funktionsfähiger Prototyp der App addxion.ai (LLM, GUI, RAG, MCP, ACP).
+description: Funktionsfähiger Prototyp der App addxion.ai (LLM, GUI, RAG, MCP).
 status: active
 goal_status: in_arbeit
 owner: mike
@@ -14,6 +14,7 @@ B: 10
 R: 8
 A: 10
 deadline: 2026-05-01
+cycle: 2026-Q3
 sources:
   - id: notion-ziel-prototyp
     resource: https://app.notion.com/p/2f60b6c14c7c80c69101e204961628b0
@@ -25,19 +26,22 @@ sources:
 
 Plattform-Wahrheit: [addxion-ai](../platforms/addxion-ai.md). Code: Repo `addxion-ai`. Dieses File ist das Outcome, kein MASTERPLAN.
 
-Deadline 2026-05-01 ist überfällig (Stand 2026-08-25). Score bei B=10, R=8, A=10, D überfällig: **80,4** (Faktor gedeckelt auf 10).
+Deadline 2026-05-01 ist überfällig (Stand 2026-08-25). Score bei B=10, R=8, A=10, D überfällig: **80,4**.
 
-# Outcome
+# Outcome (O)
 
-Prototyp von addxion.ai steht — nutzbar, nicht nur Konzept. Kernflächen aus der Notion-Seite:
+Ein Fremder kann sich auf addxion.ai anmelden und einen echten Arbeitsdurchlauf sehen — nicht nur ein Konzept oder eine leere Shell.
 
-| Fläche | Stand (Notion, 2026-02-03) |
-| --- | --- |
-| LLM | leer |
-| GUI / Generative UI | leer |
-| RAG | leer |
-| MCP | Shopify, Webflow, Shadcn — alle offen |
-| ACP | leer |
+# Key Results
+
+Messbar. Offen, weil die Notion-Seite die Flächen nur benannt hat:
+
+- [ ] KR1 — LLM-Chat läuft live auf addxion.ai (ein authentifizierter Nutzer, eine Antwort).
+- [ ] KR2 — eine GUI-Fläche ist benutzbar (nicht nur Token-Demo).
+- [ ] KR3 — RAG beantwortet eine Frage aus diesem Wiki oder einer hochgeladenen Quelle.
+- [ ] KR4 — mindestens ein MCP-Connector tut etwas Reales (Shopify *oder* Webflow *oder* Shadcn — einer reicht für den Prototyp).
+
+ACP und `cmdx`/Patent sind nicht KR dieses Zyklus. Notiz unten.
 
 # Prio
 
@@ -45,26 +49,19 @@ Prototyp von addxion.ai steht — nutzbar, nicht nur Konzept. Kernflächen aus d
 | --- | --- | --- | --- | --- |
 | 10 | 8 | 10 | 2026-05-01 | 80,4 |
 
-Anmerkung in Notion leer. Status: In Arbeit. Erstellt 2026-01-28.
+Status: In Arbeit. Erstellt 2026-01-28.
 
-# Schritte
+# Initiativen
 
-Notion-Vorlage war ungefüllt (»Schritt 01 – X«, Deadline 21.03.25). Offene Haken aus der Seite:
+Shopify/Webflow/Shadcn-MCP sind Arbeitspakete → ops, sobald gezogen. Notion »Arbeiten« (21 Einträge) = Zeitmessung, Dauer-Rollup. Nicht kopieren.
 
-- [ ] Shopify MCP
-- [ ] Webflow MCP
-- [ ] Shadcn MCP
+# Notizen
 
-Verwandte Notion-»Arbeiten«: 21 Einträge, nicht hier kopiert. Queue bleibt ops, sobald Tickets gezogen werden.
-
-# Notizen aus Notion
-
-- `cmdx` → `@/(x)` / `@x`
-- als eigene App, damit die Funktion mit Tastatur-Symbol als Erweiterung geht
-- Patent prüfen, nicht vergessen
+- `cmdx` → `@/(x)` / `@x`; ggf. eigene App / Tastatur-Erweiterung
+- Patent prüfen — eigenes Decision/Ticket, kein KR hier
 
 # Grenzen
 
-- Keine Secrets, keine Login-Liste.
+- Keine Secrets.
 - Kein Abzug des App-Repos.
-- Kundenschritte und persönliche Ziele aus der Notion-DB »Ziele« gehören nicht in diese Datei.
+- Kundenschritte und persönliche Ziele nicht in dieser Datei.
