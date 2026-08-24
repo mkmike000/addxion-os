@@ -2,7 +2,7 @@
 
 Mögliche Leistung an eine Firma und optional eine Person. Kein zweites Wiki. Zählt **nicht** zum Doing-WIP (max 3).
 
-Formel wie die Queue: `Score = (B * 2) + (R * 2) + DeadlineBoost - A`
+Formel wie die Queue (Notion): ohne Deadline → 0; sonst `(B + R) * min(10, 10 - TageBisD/7) / max(1, A^0.35)`. Wird Inbox-Ticket, wenn aktiv angegangen.
 
 ```markdown
 - [ ] Kurz-Titel
@@ -14,7 +14,7 @@ Formel wie die Queue: `Score = (B * 2) + (R * 2) + DeadlineBoost - A`
   Hinweis: optional
 ```
 
-Person nur mit bestehender Datei.
+Person nur mit bestehender Datei. Leistungen ggf. aus addxion-com ableiten (z. B. Mail-Entlastung als Automation), hier nur benennen, nicht die ganze Site kopieren.
 
 # Offen
 
@@ -23,13 +23,13 @@ Person nur mit bestehender Datei.
   Person: [Wahib Yousef](../wiki/relations/people/wahib-yousef.md)
   Leistungen: Website, Bilder, Videos (so in Twenty genannt; Umfang ungeprüft)
   B: 2  R: 2  D: 2026-09-01  A: 3
-  Score: 5
-  Hinweis: Start nach Rückkehr aus dem Urlaub am 2026-09-01. Wartet: [ops/waiting.md](waiting.md).
+  Score: 24.3
+  Hinweis: Start nach Rückkehr aus dem Urlaub am 2026-09-01. Wartet: [ops/waiting.md](waiting.md). Score-Referenz 2026-08-24.
 
 - [ ] Partnerschaft mit Onur
   Company: [Zalin Products GmbH](../wiki/relations/companies/zalin-products-gmbh.md)
   Person: [Onur Cemrek](../wiki/relations/people/onur-cemrek.md)
   Leistungen: Partnerschaft (so genannt; nicht beschlossen)
   B: 3  R: 2  D: —  A: 3
-  Score: 7
-  Hinweis: Kollab kennt Onur sehr gut. Denkbar, kein Deal.
+  Score: 0
+  Hinweis: Kollab kennt Onur sehr gut. Denkbar, kein Deal. Score 0 bis Deadline gesetzt.
