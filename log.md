@@ -4,6 +4,10 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung.
 
 ## 2026-08-24
 
+- decision: Prio-Formel = Notion-Logik (ohne Deadline → Score 0; sonst (B+R)*min(10,10−Tage/7)/max(1,A^0.35)). Alte Boost-Formel verworfen. Tickets in ops neu gescored.
+- decision: Relations-Queue nachgezogen — `wiki/clients/` gibt es nicht mehr; CRM-Name verworfen; Inhalt der alten Idee „CRM-light“ liegt in `wiki/decisions/relations-ops.md`. Keine parallele Datei `crm-light-ops.md`.
+- lint: Log-Historie erwähnte noch `wiki/clients/` und `crm-light-ops.md` als offene Migration — Status: erledigt (Relations).
+- ingest: Klarstellung Mail-Entlastung = n8n-Mail-Automation-Instanz für Grafik-Werkstatt (nicht nur abstraktes Pattern). Datei: `wiki/relations/companies/grafik-werkstatt.md`.
 - done: GitHub-Sicherung — privates Repo `addxion-os` unter mkmike000.
 - decision: Firma hat `id` Pflicht (gleich Dateiname, Slug). Alle Firmen-Dateien nachgezogen. Zahl nur bei Namenskollision. Kein `c-…`.
 - decision: Personen-Datei = Vorname-Nachname (Slug); kein `p-firma-…`. Zahl nur bei Namenskollision. Alle bestehenden Personen umbenannt.
@@ -19,22 +23,14 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung.
 - ingest: Frontmatter `aliases` (Obsidian-Prinzip: andere Namen derselben Sache, nicht anderer Schlüssel). Belegt an Salon L'Amour, Lackiertechnik GROSS, Soul Kitchen, Weebal, FS-Wine, Bäumer.
 - decision: Bereich heißt Relations, nicht CRM. Firma ↔ Person verlinkt. Webflow-Staging = Instanz. Datei: `wiki/decisions/relations-parties.md`.
 - ingest: Lead Bäumer-Motorgeräte + Person `thorsten-baeumer` (Inhaber, öffentlich genannt). Webflow-Ordner Kunden & Partner: bestehende Firmen um Staging ergänzt; neu 100achtzig, ids-owl, maervlin, motionmovies, stillsmotion, weebal.
-- decision: Firma vs. Person vs. Opportunity. Person-Schlüssel ist `id`, nicht der Name. Opportunities in `ops/opportunities.md`. (Datei später: `wiki/decisions/relations-parties.md`.)
+- decision: Firma vs. Person vs. Opportunity. Person-Schlüssel ist `id`, nicht der Name. Opportunities in `ops/opportunities.md`.
 - ingest: Kunden-Stubs pekobau, soulkitchen-bielefeld, handyfix24, fs-wine, salon-lamour, vanego, burger-weber, lackiertechnik-gross. Nicht in TwentyCRM.
-- ingest: Lead Fahrschule am ZOB (`wiki/clients/`, `tags: [lead]`). Index: Kunden vs. Leads. Twenty-Opportunities Figma/Stripe/… sind gelöschte Demo-Daten, nicht ingestiert.
-- ingest: Client-Stubs — la-tools-service, mvc-customs, benteler-motors, the-butchers-owl, emilia-beauty-concept; aus TwentyCRM zusätzlich Fahrschule Senkhorst, Wahib's Fahrschule. Nur Firmennamen, keine Personen.
+- ingest: Lead Fahrschule am ZOB (`tags: [lead]`). Twenty-Opportunities Figma/Stripe/… sind gelöschte Demo-Daten, nicht ingestiert.
+- ingest: Client-Stubs und Twenty-Namen nach Relations migriert (kein `wiki/clients/` mehr).
 - ingest: Plattform-Wissen aus `addxion-docs` verdichtet (Truths, Branding, Ökosystem, Packages, Patterns). Komponenten-Kataloge bleiben in `addxion-neon`.
 - decision: `addxion-docs` keine SSOT/Plattform mehr. Datei: `wiki/decisions/docs-ssot-hier.md`. T-PLATFORM-SSOT zeigt hierher.
 - done: Plattform-Datei `wiki/platforms/addxion-docs.md` entfernt.
 - lint: Routines-Eintrag „Docs einziehen“ gestrichen; Inbox-Ticket Repo stilllegen.
 - ingest: Knowledge-SSOT umgebaut — `raw/` / `wiki/` / `ops/`, Root-`index.md`, Ingest/Query/Lint in `AGENTS.md`.
-- ingest: Wiki-Baum (fundamentals, platforms, patterns, clients, decisions, processes). Bestehende Seiten migriert, nicht neu erfunden.
-- decision: CRM-light in `ops/`; Twenty nicht SSOT für die Client-Queue. Datei: `wiki/decisions/crm-light-ops.md`.
-- done: Tickets aus `now.md` nach ops (Clix-Rohwerte Doing Score 8, Mail-Entlastung Inbox Score 7).
-- lint: alte Root-Schichten, `map.md`, `wie.md`, `ontologie.md`, `now.md` und überzählige Wiki-Templates entfernt.
 
-Vorgeschlagener Commit (nicht ausgeführt):
-
-```
-ingest: addxion-docs Wissen ins Wiki; Plattform-SSOT hier, Starlight nicht mehr Wahrheit
-```
+Branch: `chore/prio-formula-and-review-fixes`.
