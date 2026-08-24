@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung.
 
 ## 2026-08-24
 
+- decision: Dieses Repo ist Knowledge-SSOT, nicht SSOT für Instanzen (n8n, Webflow, Kunden-Repos). README und `eine-ssot` an Realität.
 - done: GitHub-Sicherung — privates Repo `addxion-os` unter mkmike000.
 - decision: Firma hat `id` Pflicht (gleich Dateiname, Slug). Alle Firmen-Dateien nachgezogen. Zahl nur bei Namenskollision. Kein `c-…`.
 - decision: Personen-Datei = Vorname-Nachname (Slug); kein `p-firma-…`. Zahl nur bei Namenskollision. Alle bestehenden Personen umbenannt.
