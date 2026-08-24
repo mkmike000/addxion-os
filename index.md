@@ -4,7 +4,7 @@ okf_version: "0.2"
 
 # ADDXION Knowledge
 
-Git-SSOT für kollektives Wissen. Workspace-Ordner heißt `addxion-os` — das ist ein Name, kein Kernel.
+Git-SSOT für **kollektives Wissen**. Nicht SSOT für Instanzen: n8n-Workflows, Webflow, Kunden- und Produkt-Repos halten ihre eigenen Quellen. Workspace-Ordner heißt `addxion-os` — ein Name, kein Kernel.
 
 Wissen dient **Handlung**. Eine Aussage = ein Ort. Menschen und Agenten: [AGENTS.md](AGENTS.md).
 
@@ -14,7 +14,7 @@ Wissen dient **Handlung**. Eine Aussage = ein Ort. Menschen und Agenten: [AGENTS
 | Wahrheit | [wiki/](wiki/) | was gilt |
 | Bewegung | [ops/](ops/) | Queue, kein zweites Wissen |
 
-Code-Repos (Kunden, Produkte) sind Instanzen. Sie spiegeln diese SSOT nicht. XI speichert kein Collective. addxion-ai schreibt keine Parallel-Wahrheit. RAG ist kein Content-Ordner (später Index über diesem Repo, Output nur `.rag/`).
+Code-Repos, n8n und Webflow sind **Instanzen**. Sie speichern die konkrete Quelle (Workflow, Site, Code). Dieses Wiki kopiert das nicht — höchstens einen Pointer. XI speichert kein Collective. addxion-ai schreibt keine Parallel-Wahrheit. RAG ist kein Content-Ordner (später Index über diesem Repo, Output nur `.rag/`).
 
 # Drei Operationen
 
