@@ -26,6 +26,7 @@ Code-Repos, n8n und Webflow sind **Instanzen**. Sie speichern die konkrete Quell
 
 * [Fundamentals](wiki/fundamentals/) — Leitprinzipien, [Truths](wiki/fundamentals/truths.md)
 * [Branding](wiki/branding.md) — Markenstrategie
+* [Ziele](wiki/goals/) — Firmen-Outcomes, Prio 1–10
 * [Platforms](wiki/platforms/) — eine Datei pro Plattform
 * [Patterns](wiki/patterns/) — wiederverwendbar
 * [Relations](wiki/relations/) — Firmen und Personen; Opportunities in ops

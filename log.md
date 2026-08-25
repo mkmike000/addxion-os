@@ -2,6 +2,16 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung.
 
+## 2026-08-25
+
+- decision: Ziele-Ingest lean — Outcomes → wiki/goals; Routinen → ops/routines; Kunden-»→« → ops; Privat draußen; Erledigt nur als Lesson wenn Lerneffekt. Datei: `wiki/decisions/ziele-ingest.md`.
+- ingest: Ziele Holding-Struktur + Deals abgeschlossen (O+KR). Aktive Objectives = 3 (Prototyp, Holding, Deals).
+- ingest: QX als Routine in `ops/routines.md`.
+- ingest: `wiki/goals/lessons.md` — Erkenntnisse aus vermischter Notion-Ziele-DB (eine Liste, leere Titel, Privat, Annulliert ohne Namen).
+- ingest: Ziel `addxion.ai → Prototyp entwickelt` nach `wiki/goals/addxion-ai-prototyp.md` (Notion-Seite + Prio B10/R8/A10/D 2026-05-01, Score 80,4).
+- decision: Ziele-SSOT in `wiki/goals/`. Prio-Formel wie Notion; Skala Ziele 1–10, ops-Tickets weiter 1–5. Datei: `wiki/decisions/ziele-prio.md`.
+- lint: Notion-DB »Ziele« nicht 1:1 übernommen (Mischung Outcomes/Tickets; lean Ingest).
+
 ## 2026-08-24
 
 - decision: Prio-Formel = Notion-Logik (ohne Deadline → Score 0; sonst (B+R)*min(10,10−Tage/7)/max(1,A^0.35)). Alte Boost-Formel verworfen. Tickets in ops neu gescored.
