@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung.
 
+## 2026-08-26
+
+- done: Inbox — Firecrawl für Fahrschulen installieren, Wahib’s Angebot fertigstellen, Notion-Daten zum OS übertragen.
+
 ## 2026-08-24
 
 - decision: Prio-Formel = Notion-Logik (ohne Deadline → Score 0; sonst (B+R)*min(10,10−Tage/7)/max(1,A^0.35)). Alte Boost-Formel verworfen. Tickets in ops neu gescored.
