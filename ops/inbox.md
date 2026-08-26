@@ -4,6 +4,12 @@ Neu, Score absteigend. Noch nicht in Doing.
 
 Formel: ohne Deadline → 0. Sonst Notion-Formel in AGENTS.md.
 
+- [ ] Angebot Michael Marth Band klären
+  Link: [ops/opportunities.md](opportunities.md) · [wiki/relations/companies/michael-marth-band.md](../wiki/relations/companies/michael-marth-band.md)
+  B: 2  R: 2  D: —  A: 2
+  Score: 0
+  Hinweis: 3,5k abgelehnt, BAFA im Gespräch, Ziel Anfragen „Hochzeitsband buchen“. Welches Angebot gilt, ist offen. Score 0 bis Deadline gesetzt.
+
 - [ ] Notion-Daten zum OS übertragen
   Link: [AGENTS.md](../AGENTS.md) · [wiki/processes/wissen-sync.md](../wiki/processes/wissen-sync.md)
   B: 4  R: 2  D: —  A: 3

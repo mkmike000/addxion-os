@@ -2,10 +2,10 @@
 type: person
 id: mario-funke
 title: Mario Funke
-description: Kontakt The Butchers OWL. Website von der Kollab.
+description: Kontakt The Butchers OWL, Geschäftsführer. Website von der Kollab.
 status: draft
 owner: shared
-updated: 2026-08-24
+updated: 2026-08-26
 tags: [person]
 ---
 

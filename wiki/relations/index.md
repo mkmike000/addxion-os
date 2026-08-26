@@ -15,7 +15,7 @@ Webflow-Staging = Instanz. Geburtstage nicht speichern.
 * [Burger Weber](companies/burger-weber.md) — Webflow
 * [Cleany Service](companies/cleany-service.md)
 * [Emilia Beauty Concept](companies/emilia-beauty-concept.md) — Webflow
-* [Fahrschule Senkhorst](companies/fahrschule-senkhorst.md) — Twenty
+* [Fahrschule Senkhorst](companies/fahrschule-senkhorst.md) — Twenty, Martin Senkhorst
 * [Felgenimperium](companies/felgenimperium.md) — Stub
 * [FlashSites](companies/flashsites.md)
 * [FS Wine](companies/fs-wine.md) — Webflow
@@ -50,6 +50,7 @@ Webflow-Staging = Instanz. Geburtstage nicht speichern.
 
 * [Bäumer-Motorgeräte](companies/baeumer-motorgeraete.md) — Lead, Site
 * [Fahrschule am ZOB](companies/fahrschule-am-zob.md) — Stub, Lead
+* [Michael Marth Band](companies/michael-marth-band.md) — Lead, WordPress, Site
 
 # Firmen — Webflow (Kunde/Partner ungetrennt)
 
@@ -79,7 +80,9 @@ Vorlage Firma: [companies/_template.md](companies/_template.md). Datei = Name, `
 * [Lukas Sunderkötter](people/lukas-sunderkoetter.md)
 * [Mario Funke](people/mario-funke.md)
 * [Marlon Pollmüller](people/marlon-pollmueller.md)
+* [Martin Senkhorst](people/martin-senkhorst.md)
 * [Marvin Panhorst](people/marvin-panhorst.md)
+* [Michael Marth](people/michael-marth.md)
 * [Mike Kaufmann](people/mike-kaufmann.md)
 * [Naramsin Simon](people/naramsin-simon.md)
 * [Ninos Simon](people/ninos-simon.md)

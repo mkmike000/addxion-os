@@ -4,6 +4,10 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-08-26
 
+- done: Zweit-Clone `/Users/adx01/addxion-os` nach `Documents/GitHub/addxion-os` gemergt und gelöscht. Twenty-Ingest übernommen; Design-Commits und Marth blieben.
+- done: Twenty-Instanz gekillt — Neon-Projekt TwentyCRM gelöscht, DNS/Tunnel `crm.addxion.com` entfernt, lokaler Clone und LaunchAgent weg. GitHub `twenty-addxion` noch da (Token ohne `delete_repo`).
+- ingest: TwentyCRM Neon vollständig gelesen. Echt: Wahib's Fahrschule, Fahrschule Senkhorst, The Butchers OWL; Personen Wahib Yousef, Martin Senkhorst (neu), Mario Funke (GF); Deal Website & Bilder, Videos 7.000 EUR. Demo Figma/Stripe/… nicht verdichtet. Roh: `raw/twenty-crm-neon-inventory.md`. Instanz Twenty darf nach diesem Stand gekillt werden.
+- ingest: Lead Michael Marth Band + Person `michael-marth` (Frontmann). Site WordPress michael-marth-band.de. Wunsch AEO/GEO bzw. Anfragen „Hochzeitsband buchen“; 3,5k abgelehnt; BAFA erwähnt. Opportunity + Inbox Angebot klären.
 - done: addxion-docs stillgelegt — GitHub archiviert, CF Pages-Projekt gelöscht, CNAME `docs.addxion.com` entfernt. Keine Redirects.
 - decision: Untitled UI ist kein Ziel. addxion.ai → Neon + React Aria; UUI nur Altbestand, bei Touch ersetzen.
 - decision: Design-System = addxion-neon. Consumer bleiben com/ai/shopify. Starlight-Styles nicht ins System.

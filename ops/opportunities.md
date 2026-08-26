@@ -24,7 +24,15 @@ Person nur mit bestehender Datei. Leistungen ggf. aus addxion-com ableiten (z. B
   Leistungen: Website, Bilder, Videos (so in Twenty genannt; Umfang ungeprüft)
   B: 2  R: 2  D: 2026-09-01  A: 3
   Score: 24.3
-  Hinweis: Start nach Rückkehr aus dem Urlaub am 2026-09-01. Wartet: [ops/waiting.md](waiting.md). Score-Referenz 2026-08-24.
+  Hinweis: Start nach Rückkehr aus dem Urlaub am 2026-09-01. Wartet: [ops/waiting.md](waiting.md). Score-Referenz 2026-08-24. In Twenty: 7.000 EUR, Stage NEW, kein Close-Date.
+
+- [ ] Website / Anfragen Hochzeitsband
+  Company: [Michael Marth Band](../wiki/relations/companies/michael-marth-band.md)
+  Person: [Michael Marth](../wiki/relations/people/michael-marth.md)
+  Leistungen: Website bzw. Auffindbarkeit (AEO/GEO, Ziel mehr Anfragen „Hochzeitsband buchen“). Kein gesetztes Paket.
+  B: 2  R: 2  D: —  A: 3
+  Score: 0
+  Hinweis: Site WordPress. 3,5k für eine Website abgelehnt. BAFA erwähnt. Angebot noch klären. Score 0 bis Deadline gesetzt.
 
 - [ ] Partnerschaft mit Onur
   Company: [Zalin Products GmbH](../wiki/relations/companies/zalin-products-gmbh.md)
