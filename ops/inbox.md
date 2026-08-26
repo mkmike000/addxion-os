@@ -4,11 +4,11 @@ Neu, Score absteigend. Noch nicht in Doing.
 
 Formel: ohne Deadline → 0. Sonst Notion-Formel in AGENTS.md.
 
-- [ ] addxion-docs Repo stilllegen
-  Link: [wiki/decisions/docs-ssot-hier.md](../wiki/decisions/docs-ssot-hier.md)
-  B: 4  R: 2  D: —  A: 3
+- [ ] addxion.ai Twitter/X-Account anlegen
+  Link: [wiki/platforms/addxion-ai.md](../wiki/platforms/addxion-ai.md)
+  B: 2  R: 1  D: —  A: 2
   Score: 0
-  Hinweis: Wahrheit ist hier. Hosting, Redirects, Starlight-Repo abschalten — nicht Wissen. Score 0 bis Deadline gesetzt.
+  Hinweis: Aufgabe Mike. Produkt-Account für addxion.ai, nicht addxion.com. Score 0 bis Deadline gesetzt.
 
 - [ ] Mail-Entlastung (n8n) prüfen
   Link: [wiki/relations/companies/grafik-werkstatt.md](../wiki/relations/companies/grafik-werkstatt.md)

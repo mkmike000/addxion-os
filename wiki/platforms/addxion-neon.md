@@ -1,10 +1,10 @@
 ---
 type: platform
 title: addxion-neon
-description: Zentrales Design System. Code in addxion-neon, Wissen hier.
+description: Design-System-Code. Grammatik im Wiki-Design. Katalog im Repo.
 status: active
 owner: shared
-updated: 2026-08-24
+updated: 2026-08-26
 tags: [platform]
 sources:
   - id: docs-neon
@@ -12,28 +12,22 @@ sources:
     title: Neon (Herkunft Starlight)
 ---
 
-Control + Speed + Consistency ohne Vendor-Lock-in. Code: `addxion-neon`. Public: `@addxion/neon`. Intern: `@addxion/core` (Engine).
+Control + Speed + Consistency. Skalierbare digitale Marken. Code: `addxion-neon`. Public: `@addxion/neon`. Intern: `@addxion/core`.
 
 # Zweck
 
-Tokens, Components, Manifest, dünne Plattform-Adapter (Astro, Shopify, …). 90 % zentral, 10 % Wrapper.
+Tokens, Components, Manifest, Adapter. 90 % zentral, 10 % Wrapper. Keine App-Logik, kein Auth, keine Chat-UI. Keine Kundenmarke in Neon Meta.
 
-# Grenzen
+Katalog: `*.meta.ts`, MCP. Nicht ins Wiki kopieren.
 
-Keine App-Logik, kein Auth, keine Chat-UI. Keine Kundenmarke in Neon Meta. Komponenten-APIs (Button-Varianten, Token-Tabellen) leben im Neon-Repo, nicht als zweite Katalog-SSOT hier.
+# Shell
 
-# Principles
+Package `@addxion/shell`. **Behalten.** PageHeader, ChatSurface, Command Palette, BottomNav, SiteFooter. Nutzen: addxion.ai, süper, addxion.com. Look aus Neon-Tokens. Nav-Daten bleiben im Consumer-`manifest.ts`.
 
-Lean-Agile: [Fundamental](../fundamentals/lean-agile.md). SSOT Tokens+Components im Neon-Repo. Versionierte Sections nicht in-place überschreiben. Multi-brand via `[data-brand]`, Werte beim Consumer. Performance und A11y zuerst.
+# Behavior
 
-# Signature (Grammatik)
-
-Pill, Panel, Band, Eyebrow. Sections u. a. `hero-v1`, `features-v1`. Wiederholung ist Absicht — [UI-SSOT](../patterns/ui-ssot.md).
-
-# Truths
-
-[T-PKG-NEON](../fundamentals/truths.md), [T-NEON-BRAND](../fundamentals/truths.md), [T-NEON-PLATFORM](../fundamentals/truths.md), [T-NEON-FONTS](../fundamentals/truths.md), [T-NEON-SECTIONS](../fundamentals/truths.md).
+Package `@addxion/behavior`. **Behalten.** Echte Hooks, keine Markdown-Sammlung: `useFollowStream` (Chat Follow-at-bottom), `useProxyWheelScroll` (Wheel auf Desktop-Rändern → Hauptspalte). Kein React-DOM, keine Tokens. Prinzip: Leser-Intent.
 
 # Agent-Regeln
 
-Öffentlicher Name `@addxion/neon`. Token-Änderungen zuerst im Neon-Repo. Query Tokens aus Code/`addxion.tokens.json`, nicht aus dem Gedächtnis.
+Token-Änderungen zuerst hier. Query Werte aus `addxion.tokens.json`, nicht aus dem Gedächtnis.

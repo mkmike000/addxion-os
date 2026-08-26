@@ -4,7 +4,7 @@ title: addxion-ai
 description: KI-App unter addxion.ai und Package @addxion/ai.
 status: active
 owner: shared
-updated: 2026-08-24
+updated: 2026-08-26
 tags: [platform]
 sources:
   - id: docs-ai
@@ -26,7 +26,7 @@ Schreibt keine Collective-Wahrheit. Kein paralleles Auth-Schema. Shell für Chat
 
 # Stack (App)
 
-TanStack Start, React Aria + Neon-Tokens, Better Auth + Drizzle, Effect, Cloudflare Workers. Auth-DB: D1 (`addxion-auth`). App-DB: Neon + Hyperdrive (in der Herkunft: geplant). LLM: OpenRouter. Bun.
+TanStack Start, React Aria + Neon-Tokens, Better Auth + Drizzle, Effect, Cloudflare Workers. Untitled UI ist Altbestand, nicht Ziel. Auth-DB: D1 (`addxion-auth`). App-DB: Neon + Hyperdrive (in der Herkunft: geplant). LLM: OpenRouter. Bun.
 
 # Truths
 
@@ -34,9 +34,4 @@ TanStack Start, React Aria + Neon-Tokens, Better Auth + Drizzle, Effect, Cloudfl
 
 # Agent-Regeln
 
-LLM-Client nur im Package. Neue Base-UI/Radix-Imports nicht. Query zuerst dieses Wiki.
-
-# Links
-
-- [Ökosystem](oekosystem.md)
-- MASTERPLAN im Produkt-Repo, nicht hier.
+LLM-Client nur im Package. Kein Base UI, Radix oder neues Untitled UI. Query zuerst dieses Wiki.

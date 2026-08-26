@@ -10,6 +10,6 @@ tags: [fundamental]
 
 Eine Aussage hat **einen** Ort. Kopie ist keine Sicherung.
 
-Dieser Git ist SSOT für **kollektives Wissen** (was gilt: Relations, Patterns, Plattform, Queue). Nicht SSOT für Instanzen: ein n8n-Workflow, eine Webflow-Site, ein Kunden-Repo bleiben die Quelle jener Sache. Hier nur Pointer, kein Abzug.
+Dieser Git ist SSOT für **kollektives Wissen**. Instanzen halten Ausführung: Code, Routen-Dateien, Workflows. Keine zweite Wissens-SSOT in `MASTERPLAN.md` oder `DESIGN.md`.
 
-Client-Repos und Produkt-MASTERPLANs spiegeln Knowledge nicht. Plattform-Wahrheit lag in `addxion-docs` — gilt nicht mehr. [Decision](../decisions/docs-ssot-hier.md). Inhaltstyp → Ort: [Repo-Grenzen](../patterns/repo-grenzen.md).
+Produkt-Repos: `AGENTS.md` zeigt hierher. Design nur [Design](../design.md). Plattform-Wahrheit lag in `addxion-docs` — gilt nicht mehr.

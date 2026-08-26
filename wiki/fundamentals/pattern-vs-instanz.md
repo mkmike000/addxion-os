@@ -8,4 +8,4 @@ updated: 2026-08-24
 tags: [fundamental]
 ---
 
-Pattern = abstrakt, wiederverwendbar. Client = Kontext einer Partei. Instance = konkrete Installation (n8n-Workflow, Webflow-Staging, Kunden-Repo). Die Instanz hält die echte Quelle; dieses Wiki beschreibt sie nicht nach. Nicht Pattern und Instanz in einer Datei vermischen.
+Pattern = abstrakt, wiederverwendbar. Instance = Code und Laufzeit (n8n, Webflow, Produkt-Repo). Die Instanz führt aus; was gilt, steht hier. Kein Wissen in Instanz-`MASTERPLAN.md` duplizieren.

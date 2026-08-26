@@ -1,27 +1,45 @@
 ---
 type: platform
 title: addxion-com
-description: Marketing und CMS. Folgt der Markenstrategie hier.
-status: draft
+description: Marketing und CMS. IA hier. Code in addxion-com.
+status: active
 owner: shared
-updated: 2026-08-24
+updated: 2026-08-26
 tags: [platform]
 sources:
-  - id: docs-com
-    resource: addxion-docs/src/content/docs/patterns/guidance/repo-boundaries.md
-    title: Repo Boundaries
+  - id: com-masterplan
+    resource: addxion-com/MASTERPLAN.md
+    title: Masterplan addxion.com (IA übernommen 2026-08-26)
 ---
 
-Repo `addxion-com`. Marketing-Seiten, `brand.css`, Payload-CMS unter `/cms`. Historisch: addxion-cms archiviert, Code in `addxion-com/cms/`.
+Repo `addxion-com`. Marketing-Seiten, `brand.css`, Payload-CMS unter `/cms`. Copy folgt Branding. Look folgt Design.
 
 # Grenzen
 
-Keine Design-System-Primitives. Keine Collective-Wahrheit. Copy folgt [Branding](../branding.md), formuliert die Strategie nicht neu.
+Keine Design-System-Primitives. Keine parallele Markenstrategie.
 
-# Truths
+# IA
 
-[T-BRAND-STRATEGY](../fundamentals/truths.md), [T-NEON-BRAND](../fundamentals/truths.md).
+```
+/                         Start: Hero, Vergangenheit, Gegenwart, Zukunft
+/inspiration/             Produkt Inspiration
+/inspiration/ergebnis/    Ergebnis (noindex)
+/empfehlung/              Empfehlung
+/automations/             Produkt Automationen
+/leistungen/content/
+/leistungen/werbung/
+/leistungen/websites/
+/leistungen/shops/
+/leistungen/shops/*       Einrichtung, Themes, Integrationen, Fehlerbehebung, Audit, Katalog
+/leistungen/apps/
+```
+
+Start und Leistungsseiten: zweispaltiges Rail. Rechte Start-Rail: Vergangenheit (Kundenstimmen), Gegenwart (Produkte, Leistungen, News), Zukunft (Mission).
+
+Zeitachse eine Achse, drei Stufen. News in der Gegenwart. Mission auf 2036.
+
+Daten im Repo: `src/lib/services.ts`, `src/lib/empfehlung.ts`, `src/lib/faqs.ts`. Seiten in `src/pages`.
 
 # Agent-Regeln
 
-Markenwerte in `brand.css`. Strategie nur im Wiki ändern.
+Deltas in `brand.css`. Wissen nur im Wiki. Repo = Ausführung.

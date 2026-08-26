@@ -1,6 +1,19 @@
 # Log
 
-Agenten-Digest. Neueste oben. Git bleibt die Versionierung.
+Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
+
+## 2026-08-26
+
+- done: addxion-docs stillgelegt — GitHub archiviert, CF Pages-Projekt gelöscht, CNAME `docs.addxion.com` entfernt. Keine Redirects.
+- decision: Untitled UI ist kein Ziel. addxion.ai → Neon + React Aria; UUI nur Altbestand, bei Touch ersetzen.
+- ingest: Offene Ökosystem-Punkte aus alter Docs-Roadmap nach `wiki/platforms/oekosystem.md` (Accent, Neon-Vollmigration, Shopify-UX, Payload deferred, XI Core). Erledigte Phasen nicht kopiert.
+
+- decision: Eine Design-SSOT `wiki/design.md`. com+ai ein Look. Shell und Behavior behalten (Code in neon). MASTERPLAN nur Ausführung. Docs ohne 301.
+- ingest: Vision/Mission/Werte als leere Abschnitte in Branding. com-IA nach `wiki/platforms/addxion-com.md`.
+- decision: Neon-Katalog nicht ins Wiki. Varianten/Props/Tokens bleiben Code + MCP in addxion-neon.
+- ingest: Empfehlung aus Branding nach `wiki/processes/vertrieb.md`.
+- done: Offener Punkt Fullstack vs Gateway geschlossen.
+- ingest: Design-Language, UI-SSOT (Consumer-Typen), Privacy by Design, Marketing-Sites, Auth-Routing, Consumer-AGENTS-Vorlage. Quellen addxion-docs / addxion-auth README. Branding-Kurzabsatz zeigt auf das Pattern. com-MASTERPLAN vs Wiki-Gateway als offener Punkt an der Platform-Datei, nicht überschrieben.
 
 ## 2026-08-24
 
@@ -33,3 +46,44 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung.
 - done: Plattform-Datei `wiki/platforms/addxion-docs.md` entfernt.
 - lint: Routines-Eintrag „Docs einziehen“ gestrichen; Inbox-Ticket Repo stilllegen.
 - ingest: Knowledge-SSOT umgebaut — `raw/` / `wiki/` / `ops/`, Root-`index.md`, Ingest/Query/Lint in `AGENTS.md`.
+
+## 2026-07-30
+
+- done: CardRoot und CardWrapper in `@addxion/components/react`. neonline auf CardRoot; Wrapper = Border-Gap, nicht full-bleed. Modes `full-bleed` | `fill`. GenUI: TanStack AI → AiUiTree → Wrapper + Cards. Lab `/lab/card-root`.
+
+## 2026-07-23
+
+- done: Bordered Grid als Utility in `@addxion/neon` (`.bordered-grid`, Export `bordered-grid.css`). com importiert das Slice statt lokaler Kopie.
+
+## 2026-07-22
+
+- decision: T-EVOLUTION-CORE. XI Core = portabler Evolutionskern; `xi/core` nur Port. Kein Chat-Ersatz, kein Merge der Mechanik ins TS-Package.
+
+## 2026-07-21
+
+- decision: T-UI-BORDERED. Trennung über 1px Background-Gap, nicht Schatten-Karten.
+
+## 2026-07-20
+
+- decision: T-BRAND-STRATEGY. Marke (Produkt, Zielgruppe, Story, Archetype) als SSOT; `brand.css` bleibt Instanz. Damals in addxion-docs; gilt seit 2026-08-24 in diesem Wiki.
+
+## 2026-07-14
+
+- done: Öffentliche Changelog-Seite in Starlight (Commit-Stil). Abgelöst durch dieses File.
+
+## 2026-06-15
+
+- done: addxion-docs auf Starlight plus Neon-Tokens (Sidebar, Bridge, Docs-Command-Palette).
+
+## 2026-06-01
+
+- decision: Plattform-Wahrheit nach addxion-docs (Migration von addxion-com). Truths-Registry und Docs-Sync. Gilt nicht mehr: 2026-08-24 dieses Wiki.
+
+## 2026-05-20
+
+- done: Packages `@addxion/shell`, `@addxion/behavior`, `@addxion/xi` (protocol, damals nav). `manifest.ts` statt hardcodierter Nav. Shell-Extraktion aus süper gestartet. `@addxion/xi/nav` später entfernt.
+
+## 2026-05-01
+
+- done: addxion-docs auf Cloudflare Pages. Öffentliche URL damals `addxion.com/docs`.
+

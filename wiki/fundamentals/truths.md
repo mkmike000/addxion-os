@@ -4,7 +4,7 @@ title: Truths
 description: Registry der Plattform-Wahrheiten. IDs referenzieren, nicht paraphrasieren.
 status: active
 owner: shared
-updated: 2026-08-24
+updated: 2026-08-26
 tags: [fundamental]
 sources:
   - id: docs-truths
@@ -32,7 +32,7 @@ Jedes Build-Repo hat ein `AGENTS.md` mit Verweis auf relevante Truths **in diese
 
 ### T-PLATFORM-SSOT
 
-Plattform-Wahrheit (Package-Grenzen, Architektur, Roadmap-Status, Markenstrategie) lebt in **diesem Repo**. Produkt-MASTERPLANs verlinken hierher. [Decision](../decisions/docs-ssot-hier.md).
+Plattform-Wahrheit lebt in **diesem Repo**. Instanzen verlinken hierher, speichern Wissen nicht erneut.
 
 # Ökosystem
 
@@ -118,7 +118,7 @@ Wiederkehrende Design-UI in `@addxion/components`. App-Chrome in `@addxion/shell
 
 ### T-UI-ARIA
 
-Interaktions-Primitives = React Aria. Kein Base UI und kein Radix als App-Standard. Neon `shadcn-bridge.css` ist CSS-Token-Mapping, kein Interaktions-Kit.
+Interaktions-Primitives = React Aria. Kein Base UI, kein Radix, **kein Untitled UI als Ziel**. UUI in addxion.ai ist Altbestand und wird entfernt. Neon `shadcn-bridge.css` ist CSS-Token-Mapping, kein Kit.
 
 # Daten und Brand
 
