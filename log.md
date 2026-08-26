@@ -6,14 +6,15 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 - done: addxion-docs stillgelegt — GitHub archiviert, CF Pages-Projekt gelöscht, CNAME `docs.addxion.com` entfernt. Keine Redirects.
 - decision: Untitled UI ist kein Ziel. addxion.ai → Neon + React Aria; UUI nur Altbestand, bei Touch ersetzen.
+- decision: Design-System = addxion-neon. Consumer bleiben com/ai/shopify. Starlight-Styles nicht ins System.
 - ingest: Offene Ökosystem-Punkte aus alter Docs-Roadmap nach `wiki/platforms/oekosystem.md` (Accent, Neon-Vollmigration, Shopify-UX, Payload deferred, XI Core). Erledigte Phasen nicht kopiert.
-
 - decision: Eine Design-SSOT `wiki/design.md`. com+ai ein Look. Shell und Behavior behalten (Code in neon). MASTERPLAN nur Ausführung. Docs ohne 301.
 - ingest: Vision/Mission/Werte als leere Abschnitte in Branding. com-IA nach `wiki/platforms/addxion-com.md`.
 - decision: Neon-Katalog nicht ins Wiki. Varianten/Props/Tokens bleiben Code + MCP in addxion-neon.
 - ingest: Empfehlung aus Branding nach `wiki/processes/vertrieb.md`.
 - done: Offener Punkt Fullstack vs Gateway geschlossen.
 - ingest: Design-Language, UI-SSOT (Consumer-Typen), Privacy by Design, Marketing-Sites, Auth-Routing, Consumer-AGENTS-Vorlage. Quellen addxion-docs / addxion-auth README. Branding-Kurzabsatz zeigt auf das Pattern. com-MASTERPLAN vs Wiki-Gateway als offener Punkt an der Platform-Datei, nicht überschrieben.
+- done: Inbox — Firecrawl für Fahrschulen installieren, Wahib’s Angebot fertigstellen, Notion-Daten zum OS übertragen.
 
 ## 2026-08-24
 
