@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-08-26
 
+- ingest: Ninos Fahrschule Gründung — Ordner `ninos-fahrschule/` (Businessplan, Fuhrpark, Finanzplan). Roh: `raw/ninos-fahrschule-briefing.md`. Firma und Person nachgezogen. Klassen B/BE/A, E-Automatik+AHK, BMW 218d Schalter, Anhänger 810 kg, Kräder A/A2/A1 plus 50-cm³-Roller. Planinvest 140.000 €.
 - done: Zweit-Clone `/Users/adx01/addxion-os` nach `Documents/GitHub/addxion-os` gemergt und gelöscht. Twenty-Ingest übernommen; Design-Commits und Marth blieben.
 - done: Twenty-Instanz gekillt — Neon-Projekt TwentyCRM gelöscht, DNS/Tunnel `crm.addxion.com` entfernt, lokaler Clone und LaunchAgent weg. GitHub `twenty-addxion` noch da (Token ohne `delete_repo`).
 - ingest: TwentyCRM Neon vollständig gelesen. Echt: Wahib's Fahrschule, Fahrschule Senkhorst, The Butchers OWL; Personen Wahib Yousef, Martin Senkhorst (neu), Mario Funke (GF); Deal Website & Bilder, Videos 7.000 EUR. Demo Figma/Stripe/… nicht verdichtet. Roh: `raw/twenty-crm-neon-inventory.md`. Instanz Twenty darf nach diesem Stand gekillt werden.
