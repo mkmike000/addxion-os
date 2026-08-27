@@ -30,7 +30,7 @@ Zuerst [index.md](index.md) und `wiki/`. Nicht in Kunden-Repos suchen, solange d
 
 ### Lint
 
-Tote Links, Widersprüche, doppelte Aussagen, veraltete Firmen-Seiten, Personen-Datei nicht `vorname-nachname`, Firma ohne `id` oder `id` ungleich Dateiname, zwei gleiche `id`, zwei gleiche Vor-Nachnamen ohne Zahlensuffix, Alias das eine andere Person oder Firma meint, Firma ohne `# Personen` oder Person ohne Firmen-Link, Tickets/Opportunities ohne Wiki-Link. Befund: Zeile `lint: …` in `log.md`.
+Tote Links, Widersprüche, doppelte Aussagen, veraltete Firmen-Seiten, Personen-Datei nicht `vorname-nachname`, Firma ohne `id` oder `id` ungleich Dateiname, zwei gleiche `id`, zwei gleiche Vor-Nachnamen ohne Zahlensuffix, Alias das eine andere Person oder Firma meint, Firma ohne `# Personen` oder Person ohne Firmen-Link, Tickets/Opportunities ohne Wiki-Link, Doing ohne Absicht oder Fertig-wenn. Befund: Zeile `lint: …` in `log.md`.
 
 **Lint-Priorität:** Zuerst aktive Firmen + Einträge in ops; leere Stubs nicht als Blocker behandeln.
 
@@ -85,22 +85,29 @@ tags: []
 | Spalte | Datei | Regel |
 | --- | --- | --- |
 | Inbox | `ops/inbox.md` | neu, Score absteigend |
-| Doing | `ops/doing.md` | WIP-Limit **max 3** |
+| Doing | `ops/doing.md` | WIP-Limit **max 3**; Absicht + Fertig-wenn Pflicht |
 | Waiting | `ops/waiting.md` | wartet auf externe Partei |
 | Opportunities | `ops/opportunities.md` | mögliche Leistung; kein WIP |
 | Done | — | Eintrag entfernen; optional Zeile in `log.md` |
 
 Board = diese Dateien (kein separates UI). Ziehen = Text in die Ziel-Datei verschieben und Score neu.
 
-Ticket:
+**Constraint:** genau eine Engstelle, Textfeld in [ops/index.md](ops/index.md). Agent setzt sie nicht. Prozess: [wiki/processes/ops-constraint.md](wiki/processes/ops-constraint.md). Decision: [wiki/decisions/ops-intent-constraint.md](wiki/decisions/ops-intent-constraint.md).
+
+Ticket (Inbox reicht Kurzform). Doing braucht die drei Zeilen Absicht / Fertig wenn / Nicht tun:
 
 ```markdown
 - [ ] Kurz-Titel
   Link: wiki/…
+  Absicht: warum das jetzt
+  Fertig wenn: beobachtbar
+  Nicht tun: optional eine Grenze
   B: 1-5  R: 1-5  D: YYYY-MM-DD oder —  A: 1-5
   Score: …
   Hinweis: optional eine Zeile
 ```
+
+Ohne `Fertig wenn` kein Zug nach Doing.
 
 ### Prio-Formel (Notion, verbindlich)
 
@@ -135,3 +142,4 @@ Später (nicht jetzt): GitHub Actions für Sync/Konflikt-Hinweise; Human-in-the-
 - Keine Secrets, Rechnungen, Verträge, personenbezogenen Kundendaten (keine E-Mail, Telefon, Anschrift, Geburtstag in Personen-Dateien). Das ist **Privacy** in diesem Bundle.
 - Commits nur auf ausdrückliche Bitte.
 - Agent widerspricht, wenn Behauptung und Beleg nicht zusammenpassen.
+- Constraint nicht erfinden. Doing ohne Fertig-wenn nicht anlegen.
