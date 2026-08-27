@@ -1,7 +1,7 @@
 ---
 type: process
 title: Constraint und Auftrag
-description: Eine Engstelle. Doing nur mit Absicht und Fertig-wenn.
+description: Eine Engstelle. Doing mit Absicht, Fertig-wenn und Tür.
 status: active
 owner: shared
 updated: 2026-08-27
@@ -28,6 +28,14 @@ Nach Doing nur mit:
 Absicht: warum das jetzt
 Fertig wenn: beobachtbar, ohne Nachsatz
 Nicht tun: eine Grenze, optional
+Tür: 2-way | 1-way
 ```
 
 Ohne `Fertig wenn` bleibt das Ticket in der Inbox. Agents schließen nur gegen dieses Kriterium.
+
+# Tür
+
+- **2-way** — rückgängig machbar ohne teuren Schaden (Rohwerte, Draft, Reihenfolge). Schnell ziehen.
+- **1-way** — teuer umzukehren (Auth, Repo-Grenze, Vertrag, Personen-`id`, Instanz killen). Braucht Decision in `wiki/decisions/`, bevor oder sobald es gilt.
+
+Agent stuft 1-way nicht still auf 2-way herab.
