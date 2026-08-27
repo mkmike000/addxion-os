@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-08-27
 
+- decision: Doing braucht Tür `2-way` | `1-way`. 1-way nur mit Decision. Clix = 2-way. `raw/story/` für Erzählung, nicht Wiki.
 - decision: Constraint und Auftrag in Ops — eine Engstelle in `ops/index.md` (jetzt `—`, Mensch setzt). Doing nur mit Absicht und Fertig-wenn. Dateien: `wiki/processes/ops-constraint.md`, `wiki/decisions/ops-intent-constraint.md`. Inbox nicht nachgezogen. Clix-Doing um Auftrag ergänzt.
 
 ## 2026-08-26
