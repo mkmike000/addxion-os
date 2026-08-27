@@ -4,7 +4,7 @@ title: Ökosystem
 description: North Star, Produkte, Package-Grenzen, Daten-Trennung.
 status: active
 owner: shared
-updated: 2026-08-26
+updated: 2026-08-27
 tags: [platform]
 sources:
   - id: docs-eco
@@ -26,7 +26,7 @@ Ein durchgängiges Erlebnis über süper, addxion.ai und addxion.com. Gleiche De
 | addxion.ai | `addxion-ai` | KI-App (Chat, Automatisierung, Wissen) |
 | addxion.com | `addxion-com` | Marketing, CMS |
 | Neon | `addxion-neon` | Design System intern (Tokens, Components, shell, behavior). Kein öffentliches Produkt auf com. |
-| XI Core | `addxion-xi` | Elixir-Evolutionskern |
+| XI Core | `addxion-xi` | Elixir-Evolutionskern. Wissen: [addxion-xi](addxion-xi.md) |
 
 `addxion-docs` ist **keine** Plattform mehr. [Decision](../decisions/docs-ssot-hier.md).
 
@@ -70,6 +70,6 @@ Erledigt (Docs-Phase 0–4, Shell, Behavior, Manifest-Nav, Foundations) nicht er
 | Neon-Vollmigration in addxion.ai (Untitled UI entfernen) | offen; Ziel Neon + Aria, kein UUI-Rest |
 | Shopify-Template: Foundations wired, UX-Harvest offen | offen |
 | Payload CMS nativ in Apps | deferred |
-| XI Core EC-0 → EC-1 → AT-1, dann härterer `@addxion/xi/core` | langfristig, Repo `addxion-xi` |
+| XI Core EC-0 → EC-1 → AT-1, dann härterer `@addxion/xi/core` | [Stand](addxion-xi.md); Code `addxion-xi` |
 | `federated-manifests.ts` automatisieren | niedrig |
 

@@ -3,7 +3,7 @@ type: decision
 title: Plattform-Wissen in dieser SSOT, addxion-docs nicht mehr Wahrheit
 status: decided
 owner: shared
-updated: 2026-08-26
+updated: 2026-08-27
 tags: [decision]
 ---
 
@@ -20,3 +20,5 @@ tags: [decision]
 **Erledigt 2026-08-26:** GitHub-Repo `addxion-docs` archiviert. Cloudflare Pages-Projekt gelöscht. CNAME `docs.addxion.com` entfernt.
 
 **Verworfen:** Parallel-SSOT in Starlight. Komplette Kopie jeder Komponenten-Seite hierher (APIs bleiben in `addxion-neon` / Produkt-Repos).
+
+**2026-08-27:** Kernel-Plan, Keil, Stand, Begriffe gelten in [addxion-xi](../platforms/addxion-xi.md). Repo `addxion-xi`: `AGENTS.md` (Vertrag), README (Setup). Kein `MASTERPLAN.md`. Gleiches für [addxion-com](../platforms/addxion-com.md): IA im Wiki, Ausführung in `AGENTS.md`.

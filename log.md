@@ -6,6 +6,15 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 - decision: Doing braucht Tür `2-way` | `1-way`. 1-way nur mit Decision. Clix = 2-way. `raw/story/` für Erzählung, nicht Wiki.
 - decision: Constraint und Auftrag in Ops — eine Engstelle in `ops/index.md` (jetzt `—`, Mensch setzt). Doing nur mit Absicht und Fertig-wenn. Dateien: `wiki/processes/ops-constraint.md`, `wiki/decisions/ops-intent-constraint.md`. Inbox nicht nachgezogen. Clix-Doing um Auftrag ergänzt.
+- done: AXI-Bindung — Prozess `wiki/processes/axi.md`, Abgrenzung in mcp.md. Host `gh-axi`. Kernel formt `xi runs`/`metrics`/`status`; Pi darf AXI-CLIs nur bei `allow_bash`.
+- decision: Parken = Ticket + Wiki-`# Offen` (Ziel, Ist, Lücke, Zu klären). Kein Essay in ops. Pickup-Beispiel: wissen-sync Git/CI.
+- done: Design-Sync-Hook (`addxion-os/.cursor/hooks/design-sync.mjs`). com+ai: Turn-Ende ohne Wiki oder Instanz-Notiz → Follow-up.
+- done: Wissen-Sync: com-Grammatik (Hairline, Rail, Zeitachse) im gleichen Chat wie der Code, sonst driftet der nächste Consumer.
+- done: `addxion-com/MASTERPLAN.md` entfernt. IA/Redirects/Zeitachse/FAQ nach `wiki/platforms/addxion-com.md` nachgezogen (beim ersten Ingest verdichtet verloren). Ausführung nur `AGENTS.md`.
+- ingest: Kumo Design-Skill (https://kumo-ui.com/skill/). Roh: `raw/kumo-design-skill.md`. Craft nach `wiki/design.md` verdichtet. Kumo bleibt Cloudflare-Kit, nicht unser System (kein Base UI, keine 14px-Pflicht, Headings 400). Skill installiert: `~/.agents/skills/kumo-design`.
+- done: OrbStack-Live: `orb run` (CLI-Fix), Linux-Node+pi unter `/work/.xi`, Provision/exec/`pi --version` im Käfig grün.
+- done: `addxion-xi/MASTERPLAN.md` entfernt. Hinweise nur `AGENTS.md`.
+- ingest: Kernel-Plan vollständig in `wiki/platforms/addxion-xi.md` (nicht verdichtet): API, CLI, Turso, Envelope, Evolutionsstufen, Cockpit, Prinzipien, Später-Backlog inkl. Agenten-Internet. STATUS_MAP / BRAIN_FACTORY / DOMAIN_INTELLIGENCE / TENANT / BRAIN_SCHEMA mitgezogen.
 - done: Gründungsordner `ninos-fahrschule/` aus der Knowledge-SSOT entfernt (Businessplan, Finanzplan, Fuhrpark). Wiki-Verdichtung und `raw/ninos-fahrschule-briefing.md` bleiben.
 
 ## 2026-08-26

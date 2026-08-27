@@ -4,7 +4,7 @@ title: Truths
 description: Registry der Plattform-Wahrheiten. IDs referenzieren, nicht paraphrasieren.
 status: active
 owner: shared
-updated: 2026-08-26
+updated: 2026-08-27
 tags: [fundamental]
 sources:
   - id: docs-truths
@@ -32,7 +32,7 @@ Jedes Build-Repo hat ein `AGENTS.md` mit Verweis auf relevante Truths **in diese
 
 ### T-PLATFORM-SSOT
 
-Plattform-Wahrheit lebt in **diesem Repo**. Instanzen verlinken hierher, speichern Wissen nicht erneut.
+Plattform-Wahrheit lebt in **diesem Repo**. Instanzen verlinken hierher, speichern Wissen nicht erneut. XI: [addxion-xi](../platforms/addxion-xi.md). Kernel-Hinweise: `addxion-xi/AGENTS.md`.
 
 # Ökosystem
 
@@ -50,7 +50,11 @@ Jedes Repo hat eine klare Verantwortung. [Repo-Grenzen](../patterns/repo-grenzen
 
 ### T-DOCS-SYNC
 
-Ökosystem-relevante Code-Änderung: Wiki in diesem Repo im gleichen Zyklus aktualisieren. Der alte Starlight-PR-Prozess gilt nicht mehr.
+Ökosystem-relevante Code-Änderung: Wiki in diesem Repo im gleichen Zyklus aktualisieren. Kernel-Keil/API: [addxion-xi](../platforms/addxion-xi.md). Der alte Starlight-PR-Prozess gilt nicht mehr.
+
+### T-KLARTEXT
+
+Das Wort nennt das Ding. Keine Extra-Abstraktion, kein Produktjargon über dem Gegenstand. Produkt/Code/Identifier: Englisch. Wiki: Deutsch. Ausarbeitung: [Klartext](klartext.md).
 
 # Packages
 

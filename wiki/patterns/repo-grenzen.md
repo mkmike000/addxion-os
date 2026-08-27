@@ -4,7 +4,7 @@ title: Repo-Grenzen
 description: SSOT pro Inhaltstyp. addxion-docs ist keine Docs-SSOT mehr.
 status: active
 owner: shared
-updated: 2026-08-26
+updated: 2026-08-27
 tags: [pattern]
 sources:
   - id: docs-boundaries
@@ -24,6 +24,8 @@ sources:
 | Cross-App-Protokoll | `@addxion/xi` |
 | LLM-Client | `@addxion/ai` |
 | Plattform-Wissen, Marke, Design-Grammatik | **dieses Repo** |
+| XI Kernel (Plan, Keil, Stand, Begriffe) | [addxion-xi](../platforms/addxion-xi.md) |
+| XI Kernel Code | Instanz `addxion-xi` |
 | Site-IA (addxion.com) | [addxion-com](../platforms/addxion-com.md) |
 | n8n-Workflows, Laufzeit-Quellen | die jeweilige n8n-Instanz |
 | Gebaute Site (Staging/Live) | Webflow bzw. das Site-Repo |

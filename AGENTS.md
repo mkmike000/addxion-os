@@ -99,17 +99,21 @@ Ticket (Inbox reicht Kurzform). Doing braucht Absicht / Fertig wenn / Nicht tun 
 
 ```markdown
 - [ ] Kurz-Titel
-  Link: wiki/…
+  Link: wiki/datei.md#anker
   Absicht: warum das jetzt
   Fertig wenn: beobachtbar
   Nicht tun: optional eine Grenze
   Tür: 2-way | 1-way
   B: 1-5  R: 1-5  D: YYYY-MM-DD oder —  A: 1-5
   Score: …
-  Hinweis: optional eine Zeile
+  Hinweis: eine Zeile plus Pickup-Anker
 ```
 
 Ohne `Fertig wenn` und `Tür` kein Zug nach Doing. 1-way braucht eine Decision (schon da oder im selben Zug).
+
+**Parken:** Ticket allein reicht nicht. Im Wiki an der verlinkten Stelle ein Abschnitt `# Offen` (oder bestehender Anker) mit **Ziel**, **Ist**, **Lücke**, **Zu klären**. Der Folgeschat und du sollen in einer Minute begreifen, ohne den alten Chat. Wissen bleibt im Wiki, nicht als Essay in `ops/`.
+
+Beispiel: Design-Sync → [wissen-sync.md → Offen (Git/CI)](wiki/processes/wissen-sync.md).
 
 ### Prio-Formel (Notion, verbindlich)
 
@@ -134,13 +138,14 @@ Kein Score im Wiki. Queue-SSOT ist ops. Firmen-Datei darf `## Offene Punkte` hab
 
 XI = Runtime (Brains, Recipes) in Repo `addxion-xi`. Kein Collective-Wiki. Ein Recipe wird Pattern nur, wenn ein Mensch es hebt. Plattform-Kurzfassung: [wiki/platforms/addxion-xi.md](wiki/platforms/addxion-xi.md).
 
-RAG kommt später als Index über diesem Repo. Output nur `.rag/` (gitignored). Kein Content-Ordner `rag/`. MCP ist Adapter, nicht SSOT: [wiki/processes/mcp.md](wiki/processes/mcp.md).
+RAG kommt später als Index über diesem Repo. Output nur `.rag/` (gitignored). Kein Content-Ordner `rag/`. MCP ist Adapter, nicht SSOT: [wiki/processes/mcp.md](wiki/processes/mcp.md). GitHub für Agents: `gh-axi`. Bindung: [wiki/processes/axi.md](wiki/processes/axi.md).
 
 Später (nicht jetzt): GitHub Actions für Sync/Konflikt-Hinweise; Human-in-the-Loop ggf. über n8n. Contradiction/Angleich-Logik als Prozess, nicht als zweite Wahrheit.
 
 ## Guardrails
 
 - Eine Aussage, ein Ort. Unklar → fragen.
+- [Klartext](wiki/fundamentals/klartext.md) ([T-KLARTEXT](wiki/fundamentals/truths.md)): das Wort für das Ding. Kein Extra-Substantiv. Produkt/Code englisch, dieses Wiki deutsch.
 - Keine Secrets, Rechnungen, Verträge, personenbezogenen Kundendaten (keine E-Mail, Telefon, Anschrift, Geburtstag in Personen-Dateien). Das ist **Privacy** in diesem Bundle.
 - Commits nur auf ausdrückliche Bitte.
 - Agent widerspricht, wenn Behauptung und Beleg nicht zusammenpassen.

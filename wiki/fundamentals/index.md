@@ -3,6 +3,7 @@
 Stabile Prinzipien. Nicht jede Woche anfassen.
 
 * [Eine SSOT](eine-ssot.md)
+* [Klartext](klartext.md) — das Wort für das Ding
 * [Truths](truths.md) — Registry `T-…`
 * [Drei Schichten](drei-schichten.md)
 * [Pattern vs. Instanz](pattern-vs-instanz.md)
