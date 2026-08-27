@@ -6,3 +6,4 @@ Nur generische Abläufe, nicht kundenspezifisch. Kundendinge: [Relations](../rel
 * [Consumer-AGENTS](consumer-agents.md) — Truths in Build-Repos nur referenzieren
 * [Vertrieb](vertrieb.md) — Empfehlungsmodell
 * [MCP](mcp.md) — Adapter, wann es sich lohnt
+* [Constraint und Auftrag](ops-constraint.md) — eine Engstelle; Doing mit Fertig-wenn
