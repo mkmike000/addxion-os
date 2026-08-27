@@ -9,6 +9,7 @@ Einstieg: [index.md](index.md).
 | Ort | Rolle | Agent |
 | --- | --- | --- |
 | `raw/` | Quelle, unverändert | lesen; nicht umschreiben (außer Datei nach expliziter Bitte verschieben) |
+| `raw/story/` | zusammenhängende Erzählung | lesen; nicht als Wiki behandeln |
 | `wiki/` | was gilt | verdichten, verlinken, nicht duplizieren |
 | `ops/` | Bewegung (Queue) | Tickets mit Link ins Wiki; kein Wissen hier lagern |
 | `log.md` | ein Chronik-File für die ganze SSOT | nach Ingest / Decision / Done / Lint eine Zeile |
@@ -19,18 +20,18 @@ Einstieg: [index.md](index.md).
 
 ### Ingest
 
-1. Quelle nach `raw/` legen (oder dort lassen).
+1. Quelle nach `raw/` legen (oder dort lassen). Zusammenhängende Erzählung nach `raw/story/`.
 2. In eigenen Worten nach `wiki/` verdichten. Pattern, Firma und Person getrennt.
 3. Links statt Kopie. `sources` setzen, wo Herkunft existiert.
 4. Zeile in `log.md` (neueste oben): `ingest: …`
 
 ### Query
 
-Zuerst [index.md](index.md) und `wiki/`. Nicht in Kunden-Repos suchen, solange die SSOT reicht.
+Zuerst [index.md](index.md) und `wiki/`. Nicht in Kunden-Repos suchen, solange die SSOT reicht. `raw/story/` ist Kontext, keine Gilt-Aussage.
 
 ### Lint
 
-Tote Links, Widersprüche, doppelte Aussagen, veraltete Firmen-Seiten, Personen-Datei nicht `vorname-nachname`, Firma ohne `id` oder `id` ungleich Dateiname, zwei gleiche `id`, zwei gleiche Vor-Nachnamen ohne Zahlensuffix, Alias das eine andere Person oder Firma meint, Firma ohne `# Personen` oder Person ohne Firmen-Link, Tickets/Opportunities ohne Wiki-Link, Doing ohne Absicht oder Fertig-wenn. Befund: Zeile `lint: …` in `log.md`.
+Tote Links, Widersprüche, doppelte Aussagen, veraltete Firmen-Seiten, Personen-Datei nicht `vorname-nachname`, Firma ohne `id` oder `id` ungleich Dateiname, zwei gleiche `id`, zwei gleiche Vor-Nachnamen ohne Zahlensuffix, Alias das eine andere Person oder Firma meint, Firma ohne `# Personen` oder Person ohne Firmen-Link, Tickets/Opportunities ohne Wiki-Link, Doing ohne Absicht, Fertig-wenn oder Tür. Befund: Zeile `lint: …` in `log.md`.
 
 **Lint-Priorität:** Zuerst aktive Firmen + Einträge in ops; leere Stubs nicht als Blocker behandeln.
 
@@ -85,7 +86,7 @@ tags: []
 | Spalte | Datei | Regel |
 | --- | --- | --- |
 | Inbox | `ops/inbox.md` | neu, Score absteigend |
-| Doing | `ops/doing.md` | WIP-Limit **max 3**; Absicht + Fertig-wenn Pflicht |
+| Doing | `ops/doing.md` | WIP-Limit **max 3**; Absicht + Fertig-wenn + Tür Pflicht |
 | Waiting | `ops/waiting.md` | wartet auf externe Partei |
 | Opportunities | `ops/opportunities.md` | mögliche Leistung; kein WIP |
 | Done | — | Eintrag entfernen; optional Zeile in `log.md` |
@@ -94,7 +95,7 @@ Board = diese Dateien (kein separates UI). Ziehen = Text in die Ziel-Datei versc
 
 **Constraint:** genau eine Engstelle, Textfeld in [ops/index.md](ops/index.md). Agent setzt sie nicht. Prozess: [wiki/processes/ops-constraint.md](wiki/processes/ops-constraint.md). Decision: [wiki/decisions/ops-intent-constraint.md](wiki/decisions/ops-intent-constraint.md).
 
-Ticket (Inbox reicht Kurzform). Doing braucht die drei Zeilen Absicht / Fertig wenn / Nicht tun:
+Ticket (Inbox reicht Kurzform). Doing braucht Absicht / Fertig wenn / Nicht tun / Tür:
 
 ```markdown
 - [ ] Kurz-Titel
@@ -102,12 +103,13 @@ Ticket (Inbox reicht Kurzform). Doing braucht die drei Zeilen Absicht / Fertig w
   Absicht: warum das jetzt
   Fertig wenn: beobachtbar
   Nicht tun: optional eine Grenze
+  Tür: 2-way | 1-way
   B: 1-5  R: 1-5  D: YYYY-MM-DD oder —  A: 1-5
   Score: …
   Hinweis: optional eine Zeile
 ```
 
-Ohne `Fertig wenn` kein Zug nach Doing.
+Ohne `Fertig wenn` und `Tür` kein Zug nach Doing. 1-way braucht eine Decision (schon da oder im selben Zug).
 
 ### Prio-Formel (Notion, verbindlich)
 
@@ -142,4 +144,4 @@ Später (nicht jetzt): GitHub Actions für Sync/Konflikt-Hinweise; Human-in-the-
 - Keine Secrets, Rechnungen, Verträge, personenbezogenen Kundendaten (keine E-Mail, Telefon, Anschrift, Geburtstag in Personen-Dateien). Das ist **Privacy** in diesem Bundle.
 - Commits nur auf ausdrückliche Bitte.
 - Agent widerspricht, wenn Behauptung und Beleg nicht zusammenpassen.
-- Constraint nicht erfinden. Doing ohne Fertig-wenn nicht anlegen.
+- Constraint nicht erfinden. Doing ohne Fertig-wenn oder Tür nicht anlegen. 1-way nicht zu 2-way machen.
