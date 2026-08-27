@@ -8,7 +8,7 @@ Leer lassen, bis ein Mensch sie setzt. Eine Engstelle, nicht drei.
 
 **Prio (Notion):** ohne Deadline → Score 0; sonst `(B + R) * min(10, 10 - TageBisD/7) / max(1, A^0.35)`.
 
-Doing: WIP-Limit **max 3**. Zug nur mit Absicht und Fertig-wenn. Board = die Dateien unten (kein separates UI).
+Doing: WIP-Limit **max 3**. Zug nur mit Absicht, Fertig-wenn und Tür (`2-way` | `1-way`). Board = die Dateien unten (kein separates UI).
 
 * [Inbox](inbox.md)
 * [Doing](doing.md)
