@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-08-27
+
+- decision: Constraint und Auftrag in Ops — eine Engstelle in `ops/index.md` (jetzt `—`, Mensch setzt). Doing nur mit Absicht und Fertig-wenn. Dateien: `wiki/processes/ops-constraint.md`, `wiki/decisions/ops-intent-constraint.md`. Inbox nicht nachgezogen. Clix-Doing um Auftrag ergänzt.
+
 ## 2026-08-26
 
 - ingest: Ninos Fahrschule Gründung — Ordner `ninos-fahrschule/` (Businessplan, Fuhrpark, Finanzplan). Roh: `raw/ninos-fahrschule-briefing.md`. Firma und Person nachgezogen. Klassen B/BE/A, E-Automatik+AHK, BMW 218d Schalter, Anhänger 810 kg, Kräder A/A2/A1 plus 50-cm³-Roller. Planinvest 140.000 €.
@@ -92,4 +96,3 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 ## 2026-05-01
 
 - done: addxion-docs auf Cloudflare Pages. Öffentliche URL damals `addxion.com/docs`.
-
