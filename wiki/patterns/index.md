@@ -11,3 +11,4 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [Privacy by Design](privacy-by-design.md)
 * [Marketing-Sites](marketing-sites.md)
 * [Mail-Translation](mail-translation.md) — Stub
+* [Gebietspaket-Lizenz](gebietspaket-lizenz.md) — Fahrschule, Prüfgebiet

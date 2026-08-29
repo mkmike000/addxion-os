@@ -26,6 +26,14 @@ Person nur mit bestehender Datei. Leistungen ggf. aus addxion-com ableiten (z. B
   Score: 24.3
   Hinweis: Start nach Rückkehr aus dem Urlaub am 2026-09-01. Wartet: [ops/waiting.md](waiting.md). Score-Referenz 2026-08-24. In Twenty: 7.000 EUR, Stage NEW, kein Close-Date.
 
+- [ ] Gebietspilot Gütersloh
+  Company: [Wahib's Fahrschule](../wiki/relations/companies/wahibs-fahrschule.md)
+  Person: [Wahib Yousef](../wiki/relations/people/wahib-yousef.md)
+  Leistungen: [Gebietspaket-Lizenz](../wiki/patterns/gebietspaket-lizenz.md) als 12-Wochen-Pilot (0 € gegen Messdaten)
+  B: 3  R: 2  D: —  A: 3
+  Score: 0
+  Hinweis: Phase 0. Nicht vor Website-Rückkehr 2026-09-01 drängen. Senkhorst/Ninos nur zweite Schule. Wissen: [Gebietspilot](../wiki/processes/gebietspilot.md). Score 0 bis Deadline gesetzt.
+
 - [ ] Website / Anfragen Hochzeitsband
   Company: [Michael Marth Band](../wiki/relations/companies/michael-marth-band.md)
   Person: [Michael Marth](../wiki/relations/people/michael-marth.md)

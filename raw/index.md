@@ -8,4 +8,6 @@ Die Starlight-Seiten in `addxion-docs` sind Herkunft des Plattform-Ingests vom 2
 
 * [Mail-Entlastung Rohwerte](mail-entlastung-rohwerte.md)
 * [TwentyCRM Neon Inventory](twenty-crm-neon-inventory.md)
+* [Ninos Fahrschule Briefing](ninos-fahrschule-briefing.md)
+* [Gebietspaket 2026-08-28](gebietspaket-2026-08-28.md)
 * [Story](story/) — Erzählung, keine Gilt-Aussage

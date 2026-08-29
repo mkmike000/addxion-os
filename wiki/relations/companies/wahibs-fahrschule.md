@@ -5,7 +5,7 @@ title: Wahib's Fahrschule
 description: Kontakt Wahib Yousef. In TwentyCRM als Firma geführt.
 status: draft
 owner: shared
-updated: 2026-08-26
+updated: 2026-08-29
 tags: [company]
 sources:
   - id: twenty-company
@@ -20,7 +20,7 @@ Firmenname in TwentyCRM. Code-Repo `wahibs-fahrschule` liegt nebenan. Kein Brief
 
 # Kontext
 
-Standort in Twenty: Gütersloh, Germany.
+Standort in Twenty: Gütersloh, Germany. Kandidat für [Gebietspilot](../../processes/gebietspilot.md) (nicht beschlossen).
 
 # Personen
 
@@ -32,4 +32,5 @@ Standort in Twenty: Gütersloh, Germany.
 
 # Offene Punkte
 
-—
+- Website / Bilder / Videos: [ops/opportunities.md](../../../ops/opportunities.md), Waiting bis 2026-09-01
+- Gebietspilot: Opportunity, Phase 0
