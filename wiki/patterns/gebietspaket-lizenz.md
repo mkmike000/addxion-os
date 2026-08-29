@@ -2,7 +2,7 @@
 type: pattern
 title: Gebietspaket-Lizenz
 aliases: [schwierige Stellen, Prüfgebiet-Videos]
-description: Standortbezogene Videos zu typischen Prüfungsstellen. Nutzungsrecht an die Fahrschule, nicht B2C-Zwang.
+description: Standortbezogene Videos zu typischen Prüfungsstellen. Nutzungsrecht an die Fahrschule.
 status: draft
 owner: mike
 updated: 2026-08-29
@@ -13,7 +13,7 @@ sources:
     title: Grok-Chat Gebietspaket
 ---
 
-# Gebietspaket-Lizenz
+Karte: [Gebietspaket](../gebietspaket.md). Pilot: [Gebietspilot](../processes/gebietspilot.md).
 
 ADDXION bleibt Rechteinhaber. Die Fahrschule darf das Paket nur an eigene Schüler und nur im lizenzierten Prüfgebiet ausspielen. Kein YouTube-Upload, keine „offizielle Prüfungsstrecke“.
 
@@ -29,12 +29,10 @@ Typische Fallen im Gebiet: Einordnung, abknickende Vorfahrt, enge Stellen, Blick
 2. Seat: Betrag an ADDXION pro Schüler mit abgeschlossenem Paket; Endpreis setzt die Schule.
 3. Pilot: 0 € gegen Messdaten, danach Seat.
 
-Pilotpreise und Messung: [Gebietspilot](../processes/gebietspilot.md).
-
 # Warum Lizenz
 
-Die Schule verdient am Lehrmaterial. Wer den Schüler direkt abgreift, wird blockiert. Wer der Schule Marge lässt, wird empfohlen.
+Die Schule verdient am Lehrmaterial. Marge bei der Schule, sonst kein Vertrieb über den Inhaber.
 
 # Grenze
 
-Nicht Theorie-App, nicht Simulator, nicht Staatsregister. Wirkung nur, wo Durchfallen an der Stelle hängt.
+Nicht Theorie-App, nicht Simulator. Wirkung nur, wo Durchfallen an der Stelle hängt.

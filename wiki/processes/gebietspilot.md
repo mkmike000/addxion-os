@@ -12,7 +12,7 @@ sources:
     title: Grok-Chat Gebietspaket
 ---
 
-Leistung: [Gebietspaket-Lizenz](../patterns/gebietspaket-lizenz.md). Festlegung: [kein Staatsauftrag](../decisions/gebietspaket-kein-staatsauftrag.md). Verbände: [Fahrlehrerverbände](fahrlehrerverbaende.md).
+Karte: [Gebietspaket](../gebietspaket.md). Leistung: [Lizenz](../patterns/gebietspaket-lizenz.md). Verbände: [Fahrlehrerverbände](fahrlehrerverbaende.md).
 
 # Phasen
 
@@ -26,8 +26,6 @@ Eine Sache pro Phase.
 | 3 | Westfalen / OWL-Türen mit n | Empfehlung, Listung oder ≥ 5 Inhaber-Leads |
 | 4 | Gebiet 2 als System (2–3 Wochen) | Gebiet 2 verkauft ohne Heldenvertrieb |
 | 5 | wiederkehrende Lizenzen, dann Bank | Verträge, nicht Folien |
-
-Nicht als Haupt-Hebel: BMV, BVF-Monopol, 99 € Zwang, Marke vor der ersten Quote.
 
 # Angebot Pilot (eine Seite)
 
@@ -54,21 +52,19 @@ n: unter 30 nicht nach außen. 30–80 mit Hinweis Stichprobe. ab ~80 belastbar 
 
 BF17 getrennt oder nur eine Gruppe. Wer das Paket nach dem Durchfallen kauft, zählt nicht in die Hauptzahl (Wiederholer extra).
 
-Satz nach außen nur mit n und Baseline. Nicht: Quote in ganz Deutschland.
+Satz nach außen nur mit n und Baseline.
 
 # Verband
 
-Westfalen erst nach der Zahl. Ein Ja = Empfehlung oder Listung, keine Pflicht der Mitglieder. Umsatz bleibt Schule für Schule.
+Westfalen erst nach der Zahl. Ein Ja = Empfehlung oder Listung. Umsatz bleibt Schule für Schule.
 
-# Förderung und OWL
+# Kapital
 
-Reihenfolge: Pilot → Quote → Türen (pro Wirtschaft GT, Founders Foundation, Hinterland) → Kredit/Bürgschaft gegen Verträge.
-
-EXIST-Gründerstipendium passt nicht auf die bestehende Firma. MID Digitalisierung max. 15 k / 50 %, Vorbeginnverbot; Zweitförderung prüfen. Stärker: die Schule digitalisiert sich und legt BAFA/MID auf *ihre* Rechnung.
+Reihenfolge: Pilot → Quote → Türen (pro Wirtschaft GT, Founders Foundation, Hinterland) → Kredit/Bürgschaft gegen Verträge. MID/BAFA eher auf der Rechnung der Schule.
 
 # Offen
 
 - Ziel: eine unterschriebene Pilotschule im Gebiet Gütersloh/Bielefeld.
-- Ist: Pattern und Prozess gelten. Keine Unterschrift.
+- Ist: Karte gilt. Keine Unterschrift.
 - Lücke: Baseline fehlt. Paket nicht gedreht.
 - Zu klären: welche Schule zuerst (Kandidat [Wahib's](../relations/companies/wahibs-fahrschule.md)); ob Ninos oder Senkhorst mitziehen.

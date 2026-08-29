@@ -6,6 +6,8 @@ Kuratierte Wahrheit. Regeln: [AGENTS.md](../AGENTS.md).
 
 * [Fundamentals](fundamentals/) — Leitprinzipien, [Truths](fundamentals/truths.md)
 * [Branding](branding.md) — Markenstrategie
+* [Design](design.md) — eine Grammatik, App und Marketing
+* [Gebietspaket](gebietspaket.md) — Vorhaben Fahrschule / Erstversuch
 * [Platforms](platforms/) — eine Datei pro Plattform
 * [Patterns](patterns/) — wiederverwendbar
 * [Relations](relations/) — Firmen und Personen; Opportunities in ops

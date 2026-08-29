@@ -2,16 +2,6 @@
 
 Grok-Chat. Idee und Klärung, nicht Wahrheit.
 
-Ausgang: Mini-Kurs zu schwierigen Stellen im Prüfgebiet, 99 € pro Schüler, Wunsch nach Exklusivität über das Verkehrsministerium / addxion.ai.
+Vorhaben: Gebietspaket zu schwierigen Stellen. Eigenes Geschäft. Ziel Erstversuch Praxis, Quote Richtung 0 an den Stellen, die das Paket abdeckt.
 
-Geklärt im Chat:
-
-- BMV vergibt kein privates Monopol auf optionale Lernvideos.
-- Fahrschulen setzen Entgelte selbst (§ 32 FahrlG).
-- Modell: Lizenz an die Fahrschule, nicht Zwangskauf für jeden Schüler in DE.
-- Messung: Erstversuch Praxis B/BF17 vorher/nachher bei Partnern.
-- Verband (Westfalen zuerst) erst nach Quote, nicht mit Vision.
-- Förderung über Startup-Kanäle und Kundenseite, nicht als Staatsauftrag.
-- Phasen: eine Schule → Pilot messen → gleiche Region → Verband → nächstes Gebiet.
-
-Verdichtet in wiki/: Decision, Pattern, Prozesse Gebietspilot und Fahrlehrerverbände.
+Im Chat geklärt und nach wiki/ verdichtet: Lizenz an die Fahrschule, Pilot mit Messung, Phasen, Verbände, Kapital nach Quote. Karte: `wiki/gebietspaket.md`.

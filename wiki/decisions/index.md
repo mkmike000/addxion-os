@@ -6,4 +6,3 @@ Bewusste Festlegungen.
 * [Firma, Person, Opportunity](relations-parties.md)
 * [addxion-docs ist keine SSOT](docs-ssot-hier.md)
 * [Constraint und Auftrag in Ops](ops-intent-constraint.md)
-* [Gebietspaket ohne Staatsauftrag](gebietspaket-kein-staatsauftrag.md)
