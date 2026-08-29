@@ -2,6 +2,12 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-08-29
+
+- ingest: Gebietspaket (schwierige Stellen im Prüfgebiet). Roh: `raw/gebietspaket-2026-08-28.md`.
+- decision: Kein Staatsauftrag / kein BMV-Monopol. Datei: `wiki/decisions/gebietspaket-kein-staatsauftrag.md`.
+- done: Pattern Lizenz, Prozess Pilot+Messung+Phasen, Prozess Fahrlehrerverbände. Opportunity Pilot Wahib's. Nicht in Doing.
+
 ## 2026-08-27
 
 - decision: Doing braucht Tür `2-way` | `1-way`. 1-way nur mit Decision. Clix = 2-way. `raw/story/` für Erzählung, nicht Wiki.
