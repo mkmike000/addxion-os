@@ -17,7 +17,7 @@ sources:
     resource: wiki/decisions/zwei-kanaele.md
 ---
 
-Siehe Entscheidung: [Zwei Kanäle](../decisions/zwei-kanaele.md). Marke: [Branding](../branding.md).
+Siehe Entscheidung: [Zwei Kanäle](../decisions/zwei-kanaele.md). Marke: [Branding](../branding.md). Aufmerksamkeit: [Distribution](../fundamentals/distribution.md).
 
 # Ein Satz
 
@@ -103,4 +103,4 @@ Messung, nicht Gefühl: Saves, Profilklicks, DMs mit Branche im Satz, Termine. V
 
 - CMS-Glossar auf addxion.com: ja, aber nach den ersten Schnitten.
 - Ideensammlung X.com: nur Rohstoff, kein zweiter Kanal-Zwang in Woche 1.
-- Kurse auf addxion.ai: Produktseite, nicht Content-Serie, bis ein Fahrschul-Schnitt Nachfrage zeigt.
+- Kurse: nicht Content-Serie. Nachfrage zuerst. [Kurs-Waitlist](kurs-waitlist.md), Decision [Kurs nach Nachfrage](../decisions/kurs-nach-nachfrage.md).

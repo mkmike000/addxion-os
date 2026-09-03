@@ -12,3 +12,4 @@ Stabile Prinzipien. Nicht jede Woche anfassen.
 * [XI ist Runtime](xi-ist-runtime.md)
 * [Lean-Agile](lean-agile.md)
 * [Identität](identitaet.md)
+* [Distribution](distribution.md) — Aufmerksamkeit einem Schritt zuordnen

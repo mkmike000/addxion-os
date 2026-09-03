@@ -12,3 +12,4 @@ Nur generische Abläufe, nicht kundenspezifisch. Kundendinge: [Relations](../rel
 * [Fahrlehrerverbände](fahrlehrerverbaende.md)
 * [Content Zwei Kanäle](content-zwei-kanaele.md) — this.type und addxion.ai
 * [Unterweisung und Clip](unterweisung-clip.md) — ein Master, Paket und Feed
+* [Kurs-Waitlist](kurs-waitlist.md) — Nachfrage pro Stadt, Konto in addxion.ai

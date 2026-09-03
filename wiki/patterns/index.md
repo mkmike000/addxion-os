@@ -12,3 +12,4 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [Marketing-Sites](marketing-sites.md)
 * [Mail-Translation](mail-translation.md) — Stub
 * [Gebietspaket-Lizenz](gebietspaket-lizenz.md) — Fahrschule, Prüfgebiet
+* [Nachfrage-Test](nachfrage-test.md) — Kontakt, Ort, Zahlungsabsicht
