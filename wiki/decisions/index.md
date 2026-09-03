@@ -6,3 +6,4 @@ Bewusste Festlegungen.
 * [Firma, Person, Opportunity](relations-parties.md)
 * [addxion-docs ist keine SSOT](docs-ssot-hier.md)
 * [Constraint und Auftrag in Ops](ops-intent-constraint.md)
+* [Zwei Kanäle](zwei-kanaele.md) — this.type und addxion.ai

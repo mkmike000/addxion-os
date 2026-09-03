@@ -6,7 +6,8 @@ Nur generische Abläufe, nicht kundenspezifisch. Kundendinge: [Relations](../rel
 * [Consumer-AGENTS](consumer-agents.md) — Truths in Build-Repos nur referenzieren
 * [Vertrieb](vertrieb.md) — Empfehlungsmodell
 * [MCP](mcp.md) — Adapter, wann es sich lohnt
-* [Constraint und Auftrag](ops-constraint.md) — eine Engstelle; Doing mit Fertig-wenn
+* [Constraint und Auftrag](ops-constraint.md) — eine Engstelle; Doing mit Absicht und Fertig-wenn
 * [AXI](axi.md)
 * [Gebietspilot](gebietspilot.md) — Messung und Phasen
 * [Fahrlehrerverbände](fahrlehrerverbaende.md)
+* [Content Zwei Kanäle](content-zwei-kanaele.md) — this.type und addxion.ai

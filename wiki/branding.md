@@ -4,7 +4,7 @@ title: Branding
 description: Markenstrategie ADDXION. Eine Datei. Herkunft MASTERPLAN addxion-com 2026-08-24.
 status: active
 owner: shared
-updated: 2026-08-26
+updated: 2026-09-03
 tags: [branding]
 sources:
   - id: com-masterplan
@@ -13,6 +13,9 @@ sources:
   - id: docs-branding
     resource: addxion-docs/src/content/docs/branding/
     title: Branding (ältere Starlight-Fassung; Story/Archetype)
+  - id: zwei-kanaele
+    resource: wiki/decisions/zwei-kanaele.md
+    title: Öffentliche Kanäle this.type und addxion.ai
 ---
 
 # Ein Satz
@@ -31,6 +34,10 @@ Zwei Verkaufsschienen, klar getrennt:
 | Dienstleistung | Umsetzung durch uns: Content, Werbung, Websites, Shops, Apps | Startseite und Leistungsseiten |
 
 Die Startseite ist der Einstieg für Website, Fotos und Videos, Shop, App oder Kampagnenflächen, und hält den Weg in die eigenen Produkte offen.
+
+# Öffentliche Stimmen
+
+Firma spricht auf addxion.ai (Labor, Muster, Branchen). Person spricht auf this.type (Ort, Urteil, Auftrag). Regel: [Zwei Kanäle](decisions/zwei-kanaele.md), Ablauf: [Content Zwei Kanäle](processes/content-zwei-kanaele.md).
 
 # Zielgruppe
 
@@ -54,7 +61,7 @@ Inhalt folgt.
 
 # Mission
 
-Inhalt folgt.
+Inhalt folgt. Kandidat intern (Notizbuch 2026-09-03): Menschen durch KI-Systeme in Selbständigkeit leiten. Öffentlich nicht verwenden, bis gesetzt.
 
 # Werte
 
