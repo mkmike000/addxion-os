@@ -38,10 +38,11 @@ Webflow-Staging = Instanz. Geburtstage nicht speichern.
 * [Salon Lamour](companies/salon-lamour.md) — Webflow
 * [smptgroup](companies/smptgroup.md) — Simon Partners
 * [Soulkitchen Bielefeld](companies/soulkitchen-bielefeld.md) — Webflow
+* [Stadichair](companies/stadichair.md) — Jonas Braamt
 * [The Butchers OWL](companies/the-butchers-owl.md) — Twenty, Webflow, Site
 * [Vanego](companies/vanego.md) — Webflow
 * [Visiondesign](companies/visiondesign.md)
-* [Wahib's Fahrschule](companies/wahibs-fahrschule.md) — Twenty
+* [Wahib's Fahrschule](companies/wahibs-fahrschule.md) — Twenty; Fenster Februar
 * [Weebal](companies/weebal.md) — Webflow
 * [Zaungigant](companies/zaungigant.md) — Site zaungigant.de
 * [Zalin Products GmbH](companies/zalin-products-gmbh.md)
@@ -75,6 +76,7 @@ Vorlage Firma: [companies/_template.md](companies/_template.md). Datei = Name, `
 * [Emilia Polakowska](people/emilia-polakowska.md)
 * [Hakan Fragapane](people/hakan-fragapane.md)
 * [Ilham Mulaomerovic](people/ilham-mulaomerovic.md)
+* [Jonas Braamt](people/jonas-braamt.md)
 * [Konstantin Richter](people/konstantin-richter.md)
 * [Levent Cakici](people/levent-cakici.md)
 * [Lukas Sunderkötter](people/lukas-sunderkoetter.md)

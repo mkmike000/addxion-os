@@ -14,6 +14,7 @@ Kontakte in Relations. Dateiname = Vor- und Nachname. Zwei gleiche Namen: Zahlen
 * [Emilia Polakowska](emilia-polakowska.md)
 * [Hakan Fragapane](hakan-fragapane.md)
 * [Ilham Mulaomerovic](ilham-mulaomerovic.md)
+* [Jonas Braamt](jonas-braamt.md)
 * [Konstantin Richter](konstantin-richter.md)
 * [Levent Cakici](levent-cakici.md)
 * [Lukas Sunderkötter](lukas-sunderkoetter.md)
