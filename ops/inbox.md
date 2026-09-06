@@ -26,7 +26,7 @@ Formel: ohne Deadline → 0. Sonst Notion-Formel in AGENTS.md.
   Link: [ops/opportunities.md](opportunities.md) · [wiki/relations/companies/wahibs-fahrschule.md](../wiki/relations/companies/wahibs-fahrschule.md) · [ops/waiting.md](waiting.md)
   B: 3  R: 2  D: —  A: 2
   Score: 0
-  Hinweis: „Vielleicht ist das schon“ – Angebot finalisieren (Website/Bilder/Videos). Aktuell noch in Waiting bis 2026-09-01.
+  Hinweis: Angebot Website/Bilder/Videos. Waiting bis Fenster Anfang Februar. Score 0 bis Deadline gesetzt.
 
 - [ ] addxion.ai Twitter/X-Account anlegen
   Link: [wiki/platforms/addxion-ai.md](../wiki/platforms/addxion-ai.md)

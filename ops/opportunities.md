@@ -18,13 +18,37 @@ Person nur mit bestehender Datei. Leistungen ggf. aus addxion-com ableiten (z. B
 
 # Offen
 
+- [ ] Bewertung-Scan Stadichair
+  Company: [Stadichair](../wiki/relations/companies/stadichair.md)
+  Person: [Jonas Braamt](../wiki/relations/people/jonas-braamt.md)
+  Leistungen: [Bewertung-Scan](../wiki/patterns/bewertung-scan.md)
+  B: 3  R: 2  D: —  A: 3
+  Score: 0
+  Hinweis: Jonas relevant. Blocker Google-API / Rechtsweg. Waiting: [ops/waiting.md](waiting.md). Score 0 bis Deadline gesetzt.
+
+- [ ] Weitere Automation Stadichair
+  Company: [Stadichair](../wiki/relations/companies/stadichair.md)
+  Person: [Jonas Braamt](../wiki/relations/people/jonas-braamt.md)
+  Leistungen: weitere Automation, Paket offen
+  B: 2  R: 2  D: —  A: 3
+  Score: 0
+  Hinweis: Erst Bedarf fragen, nicht paketieren. Score 0 bis Deadline gesetzt.
+
+- [ ] Automation The Butchers OWL
+  Company: [The Butchers OWL](../wiki/relations/companies/the-butchers-owl.md)
+  Person: [Mario Funke](../wiki/relations/people/mario-funke.md)
+  Leistungen: Automation ohne Review-Löschen
+  B: 2  R: 2  D: —  A: 3
+  Score: 0
+  Hinweis: Review-Löschen abgelehnt. Erst Bedarf. Score 0 bis Deadline gesetzt.
+
 - [ ] Website & Bilder, Videos
   Company: [Wahib's Fahrschule](../wiki/relations/companies/wahibs-fahrschule.md)
   Person: [Wahib Yousef](../wiki/relations/people/wahib-yousef.md)
   Leistungen: Website, Bilder, Videos (so in Twenty genannt; Umfang ungeprüft)
-  B: 2  R: 2  D: 2026-09-01  A: 3
-  Score: 24.3
-  Hinweis: Start nach Rückkehr aus dem Urlaub am 2026-09-01. Wartet: [ops/waiting.md](waiting.md). Score-Referenz 2026-08-24. In Twenty: 7.000 EUR, Stage NEW, kein Close-Date.
+  B: 2  R: 2  D: —  A: 3
+  Score: 0
+  Hinweis: Fenster Anfang Februar. November weg. Wartet: [ops/waiting.md](waiting.md). In Twenty: 7.000 EUR, Stage NEW. Score 0 bis Deadline gesetzt.
 
 - [ ] Gebietspilot Gütersloh
   Company: [Wahib's Fahrschule](../wiki/relations/companies/wahibs-fahrschule.md)
@@ -32,7 +56,7 @@ Person nur mit bestehender Datei. Leistungen ggf. aus addxion-com ableiten (z. B
   Leistungen: [Gebietspaket-Lizenz](../wiki/patterns/gebietspaket-lizenz.md) als 12-Wochen-Pilot (0 € gegen Messdaten)
   B: 3  R: 2  D: —  A: 3
   Score: 0
-  Hinweis: Phase 0. Nicht vor Website-Rückkehr 2026-09-01 drängen. Senkhorst/Ninos nur zweite Schule. Wissen: [Gebietspilot](../wiki/processes/gebietspilot.md). Score 0 bis Deadline gesetzt.
+  Hinweis: Phase 0. Nicht vor Februar drängen. Senkhorst/Ninos nur zweite Schule. Wissen: [Gebietspilot](../wiki/processes/gebietspilot.md). Score 0 bis Deadline gesetzt.
 
 - [ ] Website / Anfragen Hochzeitsband
   Company: [Michael Marth Band](../wiki/relations/companies/michael-marth-band.md)

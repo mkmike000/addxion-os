@@ -13,3 +13,4 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [Mail-Translation](mail-translation.md) — Stub
 * [Gebietspaket-Lizenz](gebietspaket-lizenz.md) — Fahrschule, Prüfgebiet
 * [Nachfrage-Test](nachfrage-test.md) — Kontakt, Ort, Zahlungsabsicht
+* [Bewertung-Scan](bewertung-scan.md) — Profil beschreiben, Antragspfad offen

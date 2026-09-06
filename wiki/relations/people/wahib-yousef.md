@@ -5,9 +5,9 @@ title: Wahib Yousef
 aliases:
   - Wahib
 description: Kontakt Wahib's Fahrschule.
-status: draft
-owner: shared
-updated: 2026-08-24
+status: active
+owner: mike
+updated: 2026-09-06
 tags: [person]
 ---
 
@@ -19,4 +19,6 @@ tags: [person]
 
 —
 
-Keine E-Mail, kein Telefon, keine Anschrift hier. Urlaub/Termine: `ops/`, nicht diese Datei.
+Termine und Urlaub: `ops/`, nicht diese Datei. Stand 2026-09-06: zurück aus Urlaub; nächstes Fenster Anfang Februar.
+
+Keine E-Mail, kein Telefon, keine Anschrift hier.
