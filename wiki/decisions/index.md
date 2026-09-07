@@ -8,3 +8,4 @@ Bewusste Festlegungen.
 * [Constraint und Auftrag in Ops](ops-intent-constraint.md)
 * [Zwei Kanäle](zwei-kanaele.md) — this.type und addxion.ai
 * [Kurs nach Nachfrage](kurs-nach-nachfrage.md) — Waitlist vor Produktion
+* [Rechnung vs Checkout](rechnung-vs-checkout.md) — Verkauf vor dem Geld

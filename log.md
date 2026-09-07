@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-09-07
 
+- decision: `wiki/decisions/rechnung-vs-checkout.md` — Rechnung solange unsicher/Erstauftrag/Custom; Checkout-Link nach Ja bzw. bei Standardprodukt klein.
 - done: Wissen-Sync AI-1 / Lite / Env — `wiki/platforms/addxion-xi.md` (World dünn Ist, Lite vs Full, Normandy), `addxion-ai.md` (Agentic Trading), `oekosystem.md` (`@addxion/xi/core` live). Env-Name bleibt `XI_KERNEL_URL`.
 
 ## 2026-09-06
