@@ -4,7 +4,7 @@ title: CardRoot
 description: App-Card-Grammatik. GenUI füllt dieselben Slots. API im Neon-Repo.
 status: active
 owner: shared
-updated: 2026-08-26
+updated: 2026-08-28
 tags: [pattern]
 sources:
   - id: docs-card-root
@@ -35,10 +35,14 @@ CardWrapper          äußerer Frame + Padding
     Header / Toolbar / Hero / Body / Footer
 ```
 
+# Fläche
+
+Canvas hinter dem Panel: `--color-background`. Panel (Hero/Body): `--color-card`. Nicht `--color-primary` — das ist die filled CTA, in Dark fast weiß. Nicht Untitled-UI `secondary_subtle`.
+
 # GenUI
 
 ```
 Prompt / Agent → TanStack AI → AiUiTree → CardWrapper → CardRoot[]
 ```
 
-Menschen und Modelle füllen dasselbe Slot-Inventar. Slot-API, Lab `/lab/card-root`, Zod: Instanz in neon/ai, nicht hier.
+Menschen und Modelle füllen dasselbe Slot-Inventar. Slot-API und Zod: Neon. Live-Lab: com `/neon/` (Zelle CardRoot). Auth-Lab: ai `/lab/card-root`. MDX-Tags später dieselbe Registry (`*.meta.ts`).

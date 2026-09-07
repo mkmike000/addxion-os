@@ -4,7 +4,7 @@ title: Truths
 description: Registry der Plattform-Wahrheiten. IDs referenzieren, nicht paraphrasieren.
 status: active
 owner: shared
-updated: 2026-08-27
+updated: 2026-09-06
 tags: [fundamental]
 sources:
   - id: docs-truths
@@ -38,7 +38,7 @@ Plattform-Wahrheit lebt in **diesem Repo**. Instanzen verlinken hierher, speiche
 
 ### T-NORTH-STAR
 
-Durchgängiges Nutzererlebnis über süper, addxion.ai und addxion.com. Gleiche Design-Sprache, gemeinsame Auth, **getrennte App-Daten** pro Produkt.
+Durchgängiges Nutzererlebnis über addxion.ai und addxion.com. Gleiche Design-Sprache, gemeinsame Auth, **getrennte App-Daten** pro Fläche (Chat/CRM vs. Fahrschule).
 
 ### T-MAINTAIN
 
@@ -64,7 +64,7 @@ Das Wort nennt das Ding. Keine Extra-Abstraktion, kein Produktjargon über dem G
 
 ### T-PKG-SHELL
 
-`@addxion/shell` = Nutzer-Schnittstellen-Schicht (Layout, Chat, Command). Nicht bash/zsh. Chat ist Shell-Komponente, keine Feature-Seite. Gates: `@addxion/auth/gates`.
+**Deprecated.** `@addxion/shell` gibt es nicht. App-Chrome (PageHeader, ChatBox, ChatSurface, CommandPalette, MenuBar, QuickNav) ist `@addxion/components`. Gates: `@addxion/auth/gates`.
 
 ### T-PKG-XI
 
@@ -98,7 +98,7 @@ App-Navigation: `manifest.ts` pro App + app-lokale Resolver. Kein `@addxion/xi/n
 
 ### T-NAV-THREE
 
-Drei Schichten: App-Manifest, Content-Nav (früher Starlight), Shell-Rendering. Nicht vermischen.
+Drei Schichten: App-Manifest, Content-Nav (früher Starlight), Chrome-Rendering in `@addxion/components`. Nicht vermischen.
 
 ### T-NAV-DOCS
 
@@ -106,11 +106,11 @@ War: Starlight-Sidebar = Content-Nav. **Deprecated** mit addxion-docs.
 
 ### T-SHELL-PAGEHEADER
 
-`PageHeader`-Struktur in `@addxion/shell`. Titel pro App aus `manifest.ts` via `resolveSection`. Keine lokalen Forks.
+`PageHeader` in `@addxion/components`. Titel pro App aus `manifest.ts` via `resolveSection`. Keine lokalen Forks.
 
 ### T-SHELL-ICONS
 
-App-UI-Icons: `lucide-react`. Mapping in der Consumer-Shell, nicht in `manifest.ts`.
+App-UI-Icons: `@phosphor-icons/react`, Weight `duotone`. Mapping im Consumer, nicht in `manifest.ts`. App-Root: `IconProvider`.
 
 ### T-UI-BORDERED
 
@@ -118,7 +118,7 @@ Bereiche trennen über eine geteilte 1px-Linie, nicht über Schatten oder floati
 
 ### T-UI-SSOT
 
-Wiederkehrende Design-UI in `@addxion/components`. App-Chrome in `@addxion/shell`. XI ist Glue, kein UI. Dieselbe Pill/Card/Band/Eyebrow — komponieren. Phase: dark monochrome. Token-Rollen statt Hardcode-Hex. Ausarbeitung: [UI-SSOT](../patterns/ui-ssot.md).
+Wiederkehrende Design-UI und App-Chrome in `@addxion/components`. XI ist Glue, kein UI. Dieselbe Pill/Card/Band/Eyebrow — komponieren. Grammatik nur [Design](../design.md), keine Skill-Pakete. Phase: dark monochrome. Token-Rollen statt Hardcode-Hex. Ausarbeitung: [UI-SSOT](../patterns/ui-ssot.md).
 
 ### T-UI-ARIA
 
@@ -152,4 +152,4 @@ Keine Google Fonts. Self-hosted Inter aus `@addxion/neon/fonts/inter.css`. Syste
 
 ### T-NEON-SECTIONS
 
-Versionierte Sections (`hero-v1`, `features-v1`) nicht in-place überschreiben — neue Version anlegen.
+Versionierte Sections nicht in-place überschreiben — neue Version anlegen.

@@ -49,7 +49,7 @@ Webflow-Staging = Instanz. Geburtstage nicht speichern.
 
 # Firmen — Leads
 
-* [Bäumer-Motorgeräte](companies/baeumer-motorgeraete.md) — Lead, Site
+* [Bäumer-Motorgeräte](companies/baeumer-motorgeraete.md) — Lead erledigt, Verkauf
 * [Fahrschule am ZOB](companies/fahrschule-am-zob.md) — Stub, Lead
 * [Michael Marth Band](companies/michael-marth-band.md) — Lead, WordPress, Site
 

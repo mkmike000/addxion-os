@@ -1,27 +1,27 @@
 ---
 type: platform
 title: süper
-description: Fahrschul-Lern-App. Neon-Consumer.
+description: Fahrschul-Fläche. Ziel White-Label auf addxion.ai.
 status: draft
 owner: shared
-updated: 2026-08-24
+updated: 2026-09-06
 tags: [platform]
-sources:
-  - id: docs-super
-    resource: addxion-docs/src/content/docs/ecosystem/index.mdx
-    title: Ökosystem Produkte
 ---
 
-Repo `süper`. Zielgruppe in der Herkunft: Fahrschul-Lernende, Fahrlehrer. Auth aus `@addxion/auth`, nicht lokal. Manifest: `src/manifest.ts`.
+Keine eigene App mehr. Fahrschul-Domäne lebt in [addxion-ai](addxion-ai.md).
 
-# Grenzen
+# Ziel
 
-Kein Auth-Schema. Keine Plattform-Wahrheit. Domänenlogik (Fahrstunden, Theorie) bleibt im Produkt-Repo.
+`süper.app` später als **White-Label** derselben addxion.ai-App für eine Fahrschul-Organisation: eigene Domain, gleiches Produkt, Pack `fahrschule`.
+
+# Jetzt
+
+Routen in addxion.ai: `/fragen`, `/fortschrittskarte`, `/schueler`, `/analysen`, `/termine`, `/kurse`, `/onboarding`. Schule = Organisation. Lehrer steuert Karten der Schüler. Redirects von `xn--sper-0ra.app` nach addxion.ai, sobald die Domain zeigt.
+
+# Später
+
+Lehrer-CRUD Termine und Fahrstunden. White-Label-Domain pro Schule.
 
 # Truths
 
-[T-DATA-APP-ISOLATED](../fundamentals/truths.md), [T-NAV-MANIFEST](../fundamentals/truths.md).
-
-# Agent-Regeln
-
-Features im süper-MASTERPLAN. Query zuerst [Ökosystem](oekosystem.md).
+[T-DATA-APP-ISOLATED](../fundamentals/truths.md), [T-NAV-MANIFEST](../fundamentals/truths.md), [T-PKG-AUTH](../fundamentals/truths.md).

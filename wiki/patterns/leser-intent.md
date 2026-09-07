@@ -15,7 +15,7 @@ sources:
     title: Streaming Chat Scroll (Ursprung)
 ---
 
-Code: `@addxion/behavior` in `addxion-neon`. Shell bindet Hooks an DOM.
+Code: `@addxion/behavior` in `addxion-neon`. Chrome bindet Hooks an DOM.
 
 [T-PKG-BEHAVIOR](../fundamentals/truths.md).
 
@@ -43,4 +43,4 @@ Nie gegen die Absicht des Lesers scrollen. Auto-Scroll ist nie der Default.
 
 # Hooks (Instanz)
 
-`useFollowStream`, `useProxyWheelScroll`, `useScrollIntent` (geplant), Jump-to-latest über Follow. API im Package, nicht hier. `useProxyWheelScroll`: Desktop-Ränder der zentrierten Shell-Spalte → `.app-content`.
+`useFollowStream`, `useProxyWheelScroll`, `useScrollIntent` (geplant), Jump-to-latest über Follow. API im Package, nicht hier. `useProxyWheelScroll`: Desktop-Ränder der zentrierten Chrome-Spalte → `.app-content`.

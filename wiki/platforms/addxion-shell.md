@@ -1,11 +1,11 @@
 ---
 type: platform
 title: addxion-shell
-description: App-Chrome. Behalten. Heimat neon.
-status: active
+description: Aufgelöst. Chrome in @addxion/components.
+status: deprecated
 owner: shared
-updated: 2026-08-26
+updated: 2026-08-31
 tags: [platform]
 ---
 
-Package `@addxion/shell` in `addxion-neon`. Behalten. Siehe Neon.
+`@addxion/shell` gibt es nicht mehr. PageHeader, Chat, Command, MenuBar, QuickNav: `@addxion/components`. Siehe [Neon](addxion-neon.md).

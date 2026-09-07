@@ -30,7 +30,7 @@ Marketing-Layout lädt `site.css`, nicht global `neon.css` neben unpräfixiertem
 addxion.css → brand.css (nur Deltas) → semantic / Bridges
 ```
 
-Foundations einmal in Neon ändern, alle Platform-Consumer ziehen nach. Strukturlinien: 1px Background-Gap (`bordered-grid`), nicht Schatten-Karten.
+Foundations einmal in Neon ändern, alle Platform-Consumer ziehen nach. Strukturlinien: 1px Background-Gap (`bordered-grid`) und `.hairline` (gleiche `--border`-Farbe), nicht Schatten-Karten.
 
 # Prefix
 

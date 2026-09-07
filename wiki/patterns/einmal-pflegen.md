@@ -19,7 +19,7 @@ Bevor etwas in einem Consumer landet: kommt dasselbe schon woanders vor? Dann Sh
 | Bedarf | Ziel |
 | --- | --- |
 | Button, Card, Sections | `@addxion/components` |
-| Layout, Chat, PageHeader | `@addxion/shell` |
+| Layout, Chat, PageHeader | `@addxion/components` |
 | Protokoll-Typen | `@addxion/xi/protocol` |
 | Scroll, Haptics | `@addxion/behavior` |
 | Tokens, Foundations | `@addxion/neon` |

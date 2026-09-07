@@ -5,7 +5,7 @@ aliases: [XI Kernel, XI Core]
 description: Elixir-Evolutionskern. Wissen hier; Code in Repo addxion-xi.
 status: active
 owner: shared
-updated: 2026-08-27
+updated: 2026-09-07
 tags: [platform]
 sources:
   - id: xi-masterplan
@@ -29,8 +29,8 @@ Runtime. Isolate · Remember · Message · Select · Constrain. Collective bleib
 
 [T-PKG-XI](../fundamentals/truths.md), [T-EVOLUTION-CORE](../fundamentals/truths.md), [T-KLARTEXT](../fundamentals/klartext.md), [XI ist Runtime](../fundamentals/xi-ist-runtime.md).
 
-**Stand:** Aug 2026 · Fundament (EC-0/1, AT-1 Paper, Factory Runs, CLI, Pipeline Phases 3–11) gelegt.  
-**Fokus jetzt:** Keil schließen (domain-agnostisch) → World dünn (Runs/Metrics) → weitere Agentic-*-Envs.
+**Stand:** Sep 2026 · Fundament (EC-0/1, AT-1 Paper, Factory Runs, CLI, Pipeline) + World dünn (Normandy) gelegt.  
+**Fokus jetzt:** World vertiefen (score_v1 Diagnostics, Recipe-Liste) → Live-Envs (Ads/Websites Adapter) → Isolate Cloud live.
 
 **Leitsatz:** Schlechte Brains sterben, gute Recipes bleiben — messbar, unter Budget, über Domänen.
 
@@ -317,6 +317,19 @@ Code: `lib/xi/score.ex`, `lib/xi/recipe_bundle.ex`, `lib/xi/env.ex`, `lib/xi/env
 
 Kein Pinecone/Weaviate im MVP. Meta heute teils noch Postgres — Übergang.
 
+## Lite vs Full
+
+Dev-Default und Docker-Standard: **Lite** — kein Postgres/Oban nötig. Swarm, Evolution, Paper, Factory Runs, Brains laufen. Full nur wenn Implementation-Pipeline / Ingest / Oban gebraucht wird.
+
+| | Lite | Full |
+|---|------|------|
+| Auslöser | kein `DATABASE_URL` oder `XI_ENABLE_POSTGRES=0` | `DATABASE_URL` + `XI_ENABLE_POSTGRES=1` |
+| Swarm / Evolution / Paper / Factory | ja | ja |
+| Pipeline-Runs, Oban, `/api/v1/ingest` | nein (HTTP oft 503) | ja |
+| Status-Feld | `mode: "lite"` | `mode: "full"` |
+
+Setup: Kernel-README (`addxion-xi/README.md`).
+
 Datei (local): `priv/brains/<tenant>/<agent_id>.db`.
 
 | Tabelle | Inhalt |
@@ -389,15 +402,15 @@ Nicht als nächstes: eigene DSL, LSP, Wasm-Plugins, `xi run marketing`.
 
 # Stand
 
-Fokus: Keil zu (Paper-Pfad **Ja**) → World dünn (Runs/Metrics in addxion.ai) → Live-Envs.
+Fokus: World dünn **Ist** (lean) → World vertiefen + Live-Envs. Keil Paper-Pfad bleibt grün.
 
 | Stufe | Ziel | Status |
 |-------|------|--------|
 | EC-0 | Agent + Brain + Swarm | weitgehend **Ist** |
 | EC-1 | Behavioral Loop Commit/Rollback | **Ist**, Factory-Kopplung offen |
 | AT-1 | Paper Trading Ports + Score | **Ist** (Harness) |
-| Keil | Score→Factory · Effect Log · limits · Recipe-Ledger | **Ja** (Paper-Pfad); Cloud/World/tool-call limits offen |
-| World dünn | Runs/Metrics live | **Fokus** |
+| Keil | Score→Factory · Effect Log · limits · Recipe-Ledger | **Ja** (Paper-Pfad); Cloud/tool-call limits offen |
+| World dünn (AI-1) | Normandy + Factory Runs + Swarm-Chat | **Ist** (Feature `agentic.trading`) |
 | EC-2 | Agentic Websites | **Harness Ist** · Live-Adapter danach |
 | EC-3 | Agentic Ads (AdCP-Adapter) | **Harness Ist** · AdCP-Live danach |
 | Marketing Bundle | Portfolio-Score + `marketing_bundle` Recipe | **Ist** (lean) |
@@ -429,16 +442,26 @@ Workspace + Pi: **Ja** — Dev-Default `:orbstack` + `backend: :pi`. Test/CI: `:
 
 # addxion.ai
 
-Kernel = Fabrik. App = Cockpit für **Runs & Selektion**. Flotte **Normandy** — Panel Factory Runs + Metrics (`XI_KERNEL_URL`).
+Kernel = Fabrik. App = Cockpit für **Runs & Selektion**. Env der App: **`XI_KERNEL_URL`** (lokal `http://127.0.0.1:4000`, Prod `https://xi.addxion.com`). TS-Port: `@addxion/xi/core`.
+
+## World dünn (AI-1) — Ist
+
+| Stück | Ort | Gate |
+|-------|-----|------|
+| Flotte **Normandy** (`id: normandy`, purpose Agentic Trading) | `/operators/fleets/normandy` | Feature `agentic.trading` |
+| Legacy-Redirect | `/operators/trading` → Normandy | — |
+| Tab Status & Läufe | `FactoryRunsPanel` → `GET /api/v1/runs`, `/factory/metrics`, Status | Feature |
+| Tab Chat | Swarm-Chat (Gespräche-Shell) · Keywords Run/Evolve/Status · Paper via Kernel | Feature |
+| Server-FNs | `src/lib/agentic/trading.functions.ts` · Tenant `agentic-trading-<userId>` | Auth + Feature |
 
 | Zeigen | Nicht zeigen |
 |--------|----------------|
 | Factory Runs-Tabelle + Metrics | Setup-Wizard, Brain-Pfade, Secrets |
-| Run-Detail (Score, Recipe, limits) | Terminal-REPL / Chat 1:1 spiegeln |
-| Fleet-Kontext (z. B. Normandy) | Evolve-/Meta-Internals als Dashboard-First |
-| Agent-Liste read-only (id, role, status) | Markdown-CLI, Debug-Schritt |
+| Offline-Banner wenn Kernel weg | Terminal-REPL 1:1 spiegeln |
+| Fleet-Kontext Normandy | Evolve-/Meta-Internals als Dashboard-First |
+| Agent-Liste read-only (id, role, status) | Markdown-CLI, Debug-Bash |
 
-Status World: Factory Runs + Metrics = Panel-Branch, Wiring offen. Run-Detail / Recipe-Liste später. CLI-Spiegel / Brain-Pfade **Nein**.
+Status World: Normandy + Factory Runs + Swarm-Chat = **Ist** (lean). Run-Detail / Recipe-Liste / `score_v1`-Diagnostics-Cockpit später. CLI-Spiegel / Brain-Pfade **Nein**.
 
 Nächste World-Slices: Cockpit zeigt `score_v1` / Envelope-Diagnostics (read-only) → Marketing Bundle UX/API (zwei Env-Runs → `Xi.Marketing.score` → `marketing_bundle` commit) → ein Live-Adapter (Ads AdCP *oder* Websites Shadow; Harness bleibt Golden Run) → Recipe Diff / Shadow → Perf erst profilieren.
 

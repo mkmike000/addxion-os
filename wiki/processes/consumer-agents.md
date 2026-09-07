@@ -28,6 +28,6 @@ Plattform-Wahrheiten: [addxion-os/wiki/fundamentals/truths.md](../addxion-os/wik
 | T-MAINTAIN | Shared Packages statt Duplikate |
 | T-TRUTHS-SSOT | Truths nur in der Registry referenzieren |
 | T-NAV-MANIFEST | Nav über manifest.ts + app-lokale Helper |
-| T-PKG-SHELL | UI-Schicht aus @addxion/shell |
+| T-PKG-SHELL | Deprecated. Chrome aus @addxion/components |
 | T-PKG-NEON | Design über @addxion/neon |
 ```

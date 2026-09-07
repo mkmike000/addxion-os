@@ -23,6 +23,8 @@ Das Wort nennt, was da ist. Kein Layer-Namen, kein Produktjargon, keine Metapher
 | --- | --- |
 | Dieses Wiki | Deutsch (Klartext) |
 | Produkt, Code, Identifier, UI-Namen | Englisch, dasselbe Wort |
+| addxion.com, sichtbarer Nutztext | Deutsch |
+| Lab `/neon/` | Zell-Label und Varianten = Identifier Englisch. Bänder und Demo-Sätze Deutsch |
 
 # Do
 

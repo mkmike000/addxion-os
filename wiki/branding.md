@@ -43,7 +43,7 @@ Firma spricht auf addxion.ai (Labor, Muster, Branchen). Person spricht auf this.
 
 **Primär:** ambitionierte KMU ohne eigene Tech-Abteilung, die keine generischen No-Code-Lösungen wollen.
 
-**Sekundär:** Gründer/GF (Fahrschulen, Handwerk, E-Commerce); Agenturen, kein White-Label in v1; Teams, die Tempo und Kontrolle wollen.
+**Sekundär:** Gründer/GF ([Fahrschulen](patterns/fahrschulen.md), Handwerk, E-Commerce); Agenturen, kein White-Label in v1; Teams, die Tempo und Kontrolle wollen.
 
 **Ton:** konkret. Keine KI-Floskeln, keine Gedankenstriche in Fließtext. HTML-Title: Nutzen, kein Produktname, kein ADDXION.
 
@@ -69,14 +69,15 @@ Inhalt folgt.
 
 # Leistungen
 
-Reihenfolge in der Übersicht: Content, Werbung, Websites, Shops, Apps, Automationen.
+Reihenfolge in der Übersicht: Content, Werbung, Bewertungen, Websites, Shops, Apps, Automationen.
 
 1. **Content:** Fotos und Videos für Site, Shop und Kanäle. Social ist Format (Feed, Story, Reel), nicht Kanalbetrieb. Companion zu Websites, Shops und Werbung, kein Unterpunkt.
 2. **Werbung:** Landingpages, Tracking, Conversion, Kampagnen auf der eigenen Fläche. Motiv kommt aus Content. Kein eigenes Design, sondern Passung. Kein reines Media-Buying als Kernangebot.
-3. **Websites:** individuelle Sites, Marke und Performance.
-4. **Shops:** Shopify von Null oder Relaunch. Unterkategorien: Einrichtung oder Umgestaltung, Theme, App-Integrationen, Fehlerbehebung, Audit, Produkte und Kollektionen. Shopify Partner ist Vertrauensanker, keine eigene Produktlinie.
-5. **Apps:** Web-Apps, Portale, APIs, wenn Theme und Plugin nicht reichen.
-6. **Automationen:** Produkt für laufende Workflows. Shop-Integrationen und Custom-Apps sind Dienstleistung, wenn Standard-Apps nicht reichen.
+3. **Bewertungen:** Negative Google-Bewertungen löschen lassen. Kundennutzen: das Profil steht nach außen besser da. 29 €, Selbstbuchen. Nicht mit „prüfen“ oder Sternenkauf verkaufen.
+4. **Websites:** individuelle Sites, Marke und Performance.
+5. **Shops:** Shopify von Null oder Relaunch. Unterkategorien: Einrichtung oder Umgestaltung, Theme, App-Integrationen, Fehlerbehebung, Audit, Produkte und Kollektionen. Shopify Partner ist Vertrauensanker, keine eigene Produktlinie.
+6. **Apps:** Web-Apps, Portale, APIs, wenn Theme und Plugin nicht reichen.
+7. **Automationen:** Produkt für laufende Workflows. Shop-Integrationen und Custom-Apps sind Dienstleistung, wenn Standard-Apps nicht reichen.
 
 **Inspiration** (Produkt): in Minuten sehen, wie Content, Werbung, Website, Shop und App zusammengehören. Strategie über alle Bausteine; jede Leistung eine Taktik darunter. Kein Marken-Lookbook, kein Website-Scan. Optionaler Companion zu allen Leistungen. Formular `/inspiration/`.
 
@@ -90,3 +91,4 @@ Internes Design-System, Code `addxion-neon`. Kein öffentliches Produkt auf addx
 - Keine Plattform-Docs auf addxion.com.
 - Kein dritter Einstieg „Social Media“. Kein Community-Management als Kernangebot.
 - Content nicht unter Websites oder Shops hängen.
+- Kein Sternenkauf. Keine Garantie auf jede Google-Bewertung. Intern nur Richtlinienverstöße; nach außen nicht als Verkaufssatz.

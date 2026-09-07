@@ -18,7 +18,7 @@ Gilt für öffentliche Surfaces (addxion.com, Guest/Login). Stack, Ports, `site.
 
 # Chrome
 
-Marketing-Header (`@addxion/components`, öffentliches Layout) ≠ App-`PageHeader` (`@addxion/shell`, geschützte Routen). Inhalt und Marke im Consumer-Wrapper; keine Brand-Tokens im Package.
+Marketing-Header (`@addxion/components`, öffentliches Layout) ≠ App-`PageHeader` (`@addxion/components`, geschützte Routen). Inhalt und Marke im Consumer-Wrapper; keine Brand-Tokens im Package.
 
 # HTML-Title
 

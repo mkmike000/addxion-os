@@ -4,7 +4,7 @@ title: UI-SSOT
 description: Was sich über Apps synct. Komponieren, nicht pro Seite erfinden.
 status: active
 owner: shared
-updated: 2026-08-26
+updated: 2026-09-06
 tags: [pattern]
 sources:
   - id: docs-ui-ssot
@@ -19,7 +19,7 @@ sources:
 | Platform Tokens (`addxion.tokens.json`) | ja (`render:brand` → Consumer-`@import`) |
 | Product-Deltas in `brand.css` | nein |
 | Komponente nur im Consumer | nein, bis Extraktion |
-| `@addxion/components` / `@addxion/shell` | ja |
+| `@addxion/components` | ja |
 
 Phase: dark monochrome. Hex nicht erfinden. Taucht Chrome zweimal auf → Components.
 
@@ -32,7 +32,7 @@ Phase: dark monochrome. Hex nicht erfinden. Taucht Chrome zweimal auf → Compon
 /* danach nur Deltas */
 ```
 
-Wired: addxion-com, addxion.ai, süper, mike-kaufmann-com. addxion-docs tot (Repo archiviert). addxion-cms deferred. addxion.ai: neues UI = Neon + Aria; Untitled UI nicht neu, bei Touch ersetzen.
+Wired: addxion-com, addxion.ai, süper, mike-kaufmann-com, addxion-cms (Payload-Admin über CSS-Variablen, kein Aria-Rewrite). addxion-docs tot (Repo archiviert). addxion.ai: neues UI = Neon + Aria; Untitled UI nicht neu, bei Touch ersetzen.
 
 **Neon Meta Consumer** (Token-Engine ohne ADDXION-Brand zu erzwingen):
 
@@ -56,13 +56,15 @@ Shopify-Neon-Template startet mit Platform; Kundenmarke überschreibt Tokens. Li
 | Nur Look / Tokens | `addxion.tokens.json` oder Consumer-Delta |
 | React-Control (Dialog, Select, …) | React Aria; kein Base UI / Radix als Standard |
 | Wiederkehrender Design-Baustein | `@addxion/components` |
-| App-Chrome (PageHeader, Chat, Gates) | `@addxion/shell` |
+| App-Chrome (PageHeader, Chat, MenuBar, QuickNav, Sidebar, Breadcrumb) | `@addxion/components` |
 | Nav-Daten, Protocol | `@addxion/xi` (kein UI) |
 | Scroll ohne Markup | `@addxion/behavior` |
 | Einmalig produktspezifisch | Consumer lokal; zweite App → Extraktion |
 
-süper bleibt vorerst beUI (eigenes Produkt); kein Big-Bang. Neon-Bridge `shadcn-bridge.css` ist CSS-Mapping, kein Kit.
+Fahrschule in addxion.ai nutzt Neon + Aria. Neon-Bridge `shadcn-bridge.css` ist CSS-Mapping, kein Kit.
 
 # Agent-Regeln
 
 App = Marketing-Basis; Specials nur wenn ausschließlich Marketing. React-Controls: Aria. Platform vs. Meta vor dem ersten Import klären.
+
+Org: **Hybrid / Balanced** — Neon-Core (Tokens, Aria-Primitives, Grammatik) zentral; Consumer (com, ai) nur Deltas und lokale Specials. Kein Base UI, kein zweites Kit, keine Skill-Pakete im Repo. Wissen in [Design](../design.md).

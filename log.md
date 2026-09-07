@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-09-07
+
+- done: Wissen-Sync AI-1 / Lite / Env — `wiki/platforms/addxion-xi.md` (World dünn Ist, Lite vs Full, Normandy), `addxion-ai.md` (Agentic Trading), `oekosystem.md` (`@addxion/xi/core` live). Env-Name bleibt `XI_KERNEL_URL`.
+
 ## 2026-09-06
 
 - ingest: Relations-Stand Butcher / Wahib / Stadichair. Roh: `raw/relations-stand-2026-09-06.md`.
@@ -19,10 +23,20 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 - process: `wiki/processes/content-zwei-kanaele.md` — Raster Branche × Funktion, Avatar zuerst, Gesicht nur bei Resonanz oder Ort.
 - done: Branding um öffentliche Stimmen und Missions-Kandidat ergänzt. Mission öffentlich weiter ungesetzt.
 
+## 2026-09-01
+
+- ingest: Bäumer-Motorgeräte — Lead erstmal erledigt. Verkauf, weil der Vater nicht mehr kann und der Sohn nicht übernimmt. Sohn-Name nicht gesetzt.
+
 ## 2026-08-29
 
 - ingest: Gebietspaket. Roh: `raw/gebietspaket-2026-08-28.md`.
 - done: Karte `wiki/gebietspaket.md`. Decision Staatsauftrag entfernt. Pattern Lizenz, Pilot, Verbände. Opportunity Wahib's.
+
+## 2026-08-28
+
+- ingest: Fahrschulen-Wiederkehr gilt: neuer Fuhrpark → neuer Content; Saison-Anzeigen; Team-Nachzug. `wiki/patterns/fahrschulen.md`.
+- ingest: Fahrschulen-Zielgruppe als Pattern `wiki/patterns/fahrschulen.md`. Überblick DE = n8n-Instanz, nicht Wiki, nicht Inbox. Firecrawl-Ticket aus Inbox entfernt. Branding und Repo-Grenzen verlinken.
+
 
 ## 2026-08-27
 
