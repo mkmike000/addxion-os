@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-09-08
 
+- ingest: Markus Esen / ME Wohnungsbau. Roh: `raw/me-wohnungsbau-2026-09-08.md`. Personen Esen + Jakub Bulun. Lead bis Unterschrift. Opportunity Website. Inbox Vertrag 2026-09-09.
 - ingest: Marco Wiede / MW Complete. Roh: `raw/marco-wiede-2026-09-08.md`. Person, Firma, Pattern `72-stunden-regel`, Decision-Entwurf Scope drei Monate. Opportunity VorsorgeIQ Trigger. Inbox Scope-Termin 2026-09-09 11:00.
 
 ## 2026-09-07
