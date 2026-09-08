@@ -52,6 +52,7 @@ Webflow-Staging = Instanz. Geburtstage nicht speichern.
 * [Bäumer-Motorgeräte](companies/baeumer-motorgeraete.md) — Lead erledigt, Verkauf
 * [Fahrschule am ZOB](companies/fahrschule-am-zob.md) — Stub, Lead
 * [Michael Marth Band](companies/michael-marth-band.md) — Lead, WordPress, Site
+* [MW Complete](companies/mw-complete.md) — Marco Wiede, Tausch Sales / Bau, drei Monate
 
 # Firmen — Webflow (Kunde/Partner ungetrennt)
 
@@ -80,6 +81,7 @@ Vorlage Firma: [companies/_template.md](companies/_template.md). Datei = Name, `
 * [Konstantin Richter](people/konstantin-richter.md)
 * [Levent Cakici](people/levent-cakici.md)
 * [Lukas Sunderkötter](people/lukas-sunderkoetter.md)
+* [Marco Wiede](people/marco-wiede.md)
 * [Mario Funke](people/mario-funke.md)
 * [Marlon Pollmüller](people/marlon-pollmueller.md)
 * [Martin Senkhorst](people/martin-senkhorst.md)

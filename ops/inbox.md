@@ -4,6 +4,12 @@ Neu, Score absteigend. Noch nicht in Doing.
 
 Formel: ohne Deadline → 0. Sonst Notion-Formel in AGENTS.md.
 
+- [ ] Scope Marco Wiede festziehen
+  Link: [wiki/decisions/scope-marco-wiede.md](../wiki/decisions/scope-marco-wiede.md) · [wiki/relations/people/marco-wiede.md](../wiki/relations/people/marco-wiede.md)
+  B: 4  R: 3  D: 2026-09-09  A: 2
+  Score: 54
+  Hinweis: Termin 11:00. Vier Stücke vs. Social-Media-Erweiterung. Drei Monate datieren. Skript mitnehmen-lassen, nicht zusagen über den Tausch hinaus.
+
 - [ ] Angebot Michael Marth Band klären
   Link: [ops/opportunities.md](opportunities.md) · [wiki/relations/companies/michael-marth-band.md](../wiki/relations/companies/michael-marth-band.md)
   B: 2  R: 2  D: —  A: 2

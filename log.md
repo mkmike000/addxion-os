@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-09-08
+
+- ingest: Marco Wiede / MW Complete. Roh: `raw/marco-wiede-2026-09-08.md`. Person, Firma, Pattern `72-stunden-regel`, Decision-Entwurf Scope drei Monate. Opportunity VorsorgeIQ Trigger. Inbox Scope-Termin 2026-09-09 11:00.
+
 ## 2026-09-07
 
 - ingest: LA Tools Service — Webflow-Site von ADDXION; Andreas will Marketing automatisieren, Bild offen. Roh: `raw/la-tools-service-2026-09-07.md`. Firma nachgezogen. Opportunity erster Schnitt Anfrage + Follow-up.

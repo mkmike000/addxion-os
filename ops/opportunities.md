@@ -18,6 +18,14 @@ Person nur mit bestehender Datei. Leistungen ggf. aus addxion-com ableiten (z. B
 
 # Offen
 
+- [ ] VorsorgeIQ Trigger und Nachrichten
+  Company: [MW Complete](../wiki/relations/companies/mw-complete.md)
+  Person: [Marco Wiede](../wiki/relations/people/marco-wiede.md)
+  Leistungen: Trigger + programmatische Nummer + Antworten/Nachrichten am bestehenden Workflow. Name statt VorsorgeIQ offen. Kein Social-Media-Aufräumen in dieser Zeile.
+  B: 3  R: 3  D: —  A: 3
+  Score: 0
+  Hinweis: Seite und Workflow schon angefangen. Scope morgen klären. Score 0 bis Deadline gesetzt.
+
 - [ ] Marketing-Automation LA Tools — erster Schnitt Anfrage + Follow-up
   Company: [LA Tools Service](../wiki/relations/companies/la-tools-service.md)
   Person: [Andreas Lorenz](../wiki/relations/people/andreas-lorenz.md)

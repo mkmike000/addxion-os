@@ -4,7 +4,7 @@ title: Fahrschulen
 description: Zielgruppe Fahrschulen in Deutschland. Angebot, Überblick, Instanz. Kein CRM-Dump.
 status: draft
 owner: shared
-updated: 2026-08-28
+updated: 2026-09-08
 tags: [pattern]
 ---
 
@@ -89,9 +89,9 @@ Host, Workflow-Name und Tabellen-Ort sind offen. Nicht dieselbe Instanz wie [Gra
 
 **Ziel:** Überblick Deutschland plus wiederholbares Erstangebot, ohne die Nische in Inbox oder Relations zu kippen.
 
-**Ist:** Öffentliche Landing `/page/fahrschule/` auf addxion.com. Vier Firmen in Relations. Wahib-Opportunity 7.000 EUR. Firecrawl war Inbox-Idee, verworfen als Census. Ninos-Gründungsordner ist aus dieser SSOT entfernt; Roh bleibt `raw/ninos-fahrschule-briefing.md`.
+**Ist:** Öffentliche Landing `/page/fahrschule/` auf addxion.com. Vier Firmen in Relations. Wahib-Opportunity 7.000 EUR. Firecrawl war Inbox-Idee, verworfen als Census. Ninos-Gründungsordner ist aus dieser SSOT entfernt; Roh bleibt `raw/ninos-fahrschule-briefing.md`. Vor-Ort-Gang Bielefeld ist Absicht (reingehen, präsentieren, Bedarf fragen, Nein als Training). Sales-Skript von [Marco Wiede](../relations/people/marco-wiede.md) noch nicht da.
 
-**Lücke:** Keine n8n-Instanz für die Liste. Kein Businessplan dieser Akquise in `raw/` oder Wiki. Discovery-Quelle nicht gesetzt.
+**Lücke:** Keine n8n-Instanz für die Liste. Kein Businessplan dieser Akquise in `raw/` oder Wiki. Discovery-Quelle nicht gesetzt. Kein schriftliches 12-Phasen-Skript.
 
 **Zu klären:**
 
@@ -99,3 +99,4 @@ Host, Workflow-Name und Tabellen-Ort sind offen. Nicht dieselbe Instanz wie [Gra
 - Erste Quelle für die DE-Liste (Verband, Branchenverzeichnis, Places-API).
 - Wo n8n läuft und wie die Tabelle heißt.
 - Ob 7.000 EUR das Anker-Angebot bleibt oder nur Wahibs Umfang war.
+- Ob der erste Bielefeld-Gang vor oder nach dem Skript stattfindet.
