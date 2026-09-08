@@ -43,13 +43,15 @@ Webflow-Staging = Instanz. Geburtstage nicht speichern.
 * [Vanego](companies/vanego.md) — Webflow
 * [Visiondesign](companies/visiondesign.md)
 * [Wahib's Fahrschule](companies/wahibs-fahrschule.md) — Twenty; Fenster Februar
-* [Weebal](companies/weebal.md) — Webflow
+* [Weebal](companies/weebal.md) — Webflow; Lukas
 * [Zaungigant](companies/zaungigant.md) — Site zaungigant.de
 * [Zalin Products GmbH](companies/zalin-products-gmbh.md)
 
 # Firmen — Leads
 
 * [Bäumer-Motorgeräte](companies/baeumer-motorgeraete.md) — Lead erledigt, Verkauf
+* [CHSOPTIMA](companies/chsoptima.md) — Lukas-Kunde, PV/Wärmepumpe, Konzept 2026-09-10
+* [comsolution](companies/com-solution.md) — Lukas-Kunde, WordPress, Landings/Preise 2026-09-09
 * [Fahrschule am ZOB](companies/fahrschule-am-zob.md) — Stub, Lead
 * [ME Wohnungsbau](companies/me-wohnungsbau.md) — Markus Esen, Website vor Unterschrift, BAFA offen
 * [Michael Marth Band](companies/michael-marth-band.md) — Lead, WordPress, Site

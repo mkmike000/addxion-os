@@ -18,6 +18,22 @@ Person nur mit bestehender Datei. Leistungen ggf. aus addxion-com ableiten (z. B
 
 # Offen
 
+- [ ] Landings / Website comsolution
+  Company: [comsolution](../wiki/relations/companies/com-solution.md)
+  Person: [Lukas Sunderkötter](../wiki/relations/people/lukas-sunderkoetter.md)
+  Leistungen: Landing Pages für Kampagne; optional Relaunch statt WordPress. Szenarien Selbst-Content vs. Creator inkl. Anfahrt.
+  B: 4  R: 3  D: 2026-09-09  A: 3
+  Score: 47
+  Hinweis: Zahlen für Lukas, nicht direkt an den Endkunden. Spätestens 2026-09-10 morgens.
+
+- [ ] Konzept Site CHSOPTIMA
+  Company: [CHSOPTIMA](../wiki/relations/companies/chsoptima.md)
+  Person: [Lukas Sunderkötter](../wiki/relations/people/lukas-sunderkoetter.md)
+  Leistungen: Strategie-Angebot / Konzept, was man sagen könnte. Site neu denkbar.
+  B: 3  R: 2  D: 2026-09-10  A: 3
+  Score: 33
+  Hinweis: Nachrangig zu comsolution.
+
 - [ ] Website ME Wohnungsbau
   Company: [ME Wohnungsbau](../wiki/relations/companies/me-wohnungsbau.md)
   Person: [Markus Esen](../wiki/relations/people/markus-esen.md)
