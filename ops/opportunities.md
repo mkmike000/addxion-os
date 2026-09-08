@@ -18,6 +18,14 @@ Person nur mit bestehender Datei. Leistungen ggf. aus addxion-com ableiten (z. B
 
 # Offen
 
+- [ ] Website ME Wohnungsbau
+  Company: [ME Wohnungsbau](../wiki/relations/companies/me-wohnungsbau.md)
+  Person: [Markus Esen](../wiki/relations/people/markus-esen.md)
+  Leistungen: Website. BAFA gewollt, Pfad offen. Vertrag 2026-09-09.
+  B: 4  R: 4  D: 2026-09-09  A: 2
+  Score: 62
+  Hinweis: Vermittlung Jakub Bulun. Angebot lag, Abschluss fehlte. Inbox: Vertrag mitbringen.
+
 - [ ] VorsorgeIQ Trigger und Nachrichten
   Company: [MW Complete](../wiki/relations/companies/mw-complete.md)
   Person: [Marco Wiede](../wiki/relations/people/marco-wiede.md)
