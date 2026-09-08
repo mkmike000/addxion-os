@@ -18,6 +18,14 @@ Person nur mit bestehender Datei. Leistungen ggf. aus addxion-com ableiten (z. B
 
 # Offen
 
+- [ ] Marketing-Automation LA Tools — erster Schnitt Anfrage + Follow-up
+  Company: [LA Tools Service](../wiki/relations/companies/la-tools-service.md)
+  Person: [Andreas Lorenz](../wiki/relations/people/andreas-lorenz.md)
+  Leistungen: Automation (Anfrage-Triage aus Webflow-Formular/Mail + Nachfassen). Danach Content-Verteilung. Kein Full-Funnel.
+  B: 4  R: 2  D: —  A: 2
+  Score: 0
+  Hinweis: Er will Marketing automatisieren, Bild offen. Erst beweisen, dann Rest. Score 0 bis Deadline gesetzt.
+
 - [ ] Bewertung-Scan Stadichair
   Company: [Stadichair](../wiki/relations/companies/stadichair.md)
   Person: [Jonas Braamt](../wiki/relations/people/jonas-braamt.md)

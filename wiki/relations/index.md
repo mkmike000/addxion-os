@@ -26,7 +26,7 @@ Webflow-Staging = Instanz. Geburtstage nicht speichern.
 * [IDS-OWL](companies/ids-owl.md) — Webflow; Website damals Kollab
 * [Improdent](companies/improdent.md)
 * [Lackiertechnik Gross](companies/lackiertechnik-gross.md) — Webflow
-* [LA Tools Service](companies/la-tools-service.md)
+* [LA Tools Service](companies/la-tools-service.md) — Webflow von ADDXION; Marketing-Automation offen
 * [Maervlin](companies/maervlin.md) — Webflow + Site
 * [MotionMovies](companies/motionmovies.md) — Webflow
 * [MVC Customs](companies/mvc-customs.md) — Webflow
