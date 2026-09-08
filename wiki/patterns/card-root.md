@@ -4,7 +4,7 @@ title: CardRoot
 description: App-Card-Grammatik. GenUI füllt dieselben Slots. API im Neon-Repo.
 status: active
 owner: shared
-updated: 2026-08-28
+updated: 2026-09-07
 tags: [pattern]
 sources:
   - id: docs-card-root
@@ -34,6 +34,8 @@ CardWrapper          äußerer Frame + Padding
 └── CardRoot         neonline + mode + Slots
     Header / Toolbar / Hero / Body / Footer
 ```
+
+Header-Titel: `text-sm font-medium` (Chrome, kein Display-Heading). Hero-Media sitzt in der Scoop (`rounded-xl`). `mode="full-bleed"`: idle kein Abstand links/rechts/unten, Abrundung oben zum Titel (`rounded-t-xl`) und unten durch Root (`overflow-hidden rounded-xl`). Hover und Focus-within: Scoop per `--card-scoop` (`@property`, 200ms, nicht Margin — Masonry-Höhe bleibt). `0.25rem` L/R/unten. Kein Footer-Chrome.
 
 # Fläche
 

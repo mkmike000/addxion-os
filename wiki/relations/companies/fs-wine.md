@@ -19,10 +19,11 @@ So genannt (`fs-wine`). Kein Briefing, kein Status in diesem Bundle. Nicht in Tw
 
 # Personen
 
-—
+Kieran Farrer und Jannick Schlewing (Gesellschafter). Auf der Site nur Vornamen: Kieran & Jannick.
 
 # Instanzen
 
+- Site: https://fs.wine/
 - Webflow (Staging, Ordner Kunden & Partner): https://fs-wine.webflow.io
 
 # Offene Punkte

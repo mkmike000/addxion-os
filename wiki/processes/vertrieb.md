@@ -4,7 +4,7 @@ title: Vertrieb
 description: Empfehlungsmodell. Kein Reseller, kein White-Label in v1.
 status: active
 owner: shared
-updated: 2026-08-26
+updated: 2026-09-07
 tags: [process]
 sources:
   - id: com-masterplan
@@ -16,9 +16,11 @@ Marke und Leistungen: [Branding](../branding.md). Seite: `/empfehlung/`.
 
 # Empfehlung
 
-Komplementär. Kein Reseller, kein White-Label in v1. Die Leute sind keine Partner.
+Komplementär. Kein Reseller, kein White-Label in v1. Öffentlich heißt das Empfehlung, nicht Partnerprogramm.
 
-Zielgruppe: Fotografen, Videografen, Marketing-Agenturen, Steuerberater, andere Shopify-Partner mit Lücken.
+Zielgruppe: Fotografen, Videografen, Marketing-Agenturen, Steuerberater, andere Shopify-Partner mit Lücken. Typ: ein Fotograf (z. B. Garten/Objekt) schickt den Website- oder Automationsbedarf, rechnet Foto selbst mit dem Kunden ab.
+
+Zwei Rechnungen, ein Kunde. Der Fotograf stellt Foto. ADDXION stellt Site, Shop, Automation. Kein gemeinsamer Vertrag, kein White-Label, niemand arbeitet unter dem anderen. Provision nur auf die ADDXION-Rechnung.
 
 | Was | Satz |
 | --- | --- |
@@ -28,6 +30,16 @@ Zielgruppe: Fotografen, Videografen, Marketing-Agenturen, Steuerberater, andere 
 | Inspiration | 0 €, startet die Zuordnung |
 
 Provision nach Zahlungseingang, monatliche Auszahlung. Zählt nur, wenn die Empfehlung vor dem Erstkontakt sichtbar ist (Ref-Link oder namentliche Nennung). Bestandskunden zählen nicht. Kein Lifetime-Modell.
+
+# Kooperation ist etwas anderes
+
+Zwei Dinge, nicht eine Seite.
+
+**Empfehlung** (`/empfehlung/`): Komplementäre Gewerke schicken den Teil, den sie nicht machen. Jeder rechnet sein Fach selbst. Provision nur auf die ADDXION-Rechnung. Öffentlich nicht „Partnerprogramm“.
+
+**Subunternehmer / fremder Auftrag:** ADDXION arbeitet unter fremdem Namen (ImProDent über AgeTwo). Kein öffentliches Angebot. Keine Seite `/kooperation/` oder „Kooperationspartner“.
+
+Wer Kunden bringt, damit sie bei ADDXION landen: Empfehlung. ADDXION wird nicht als Nachunternehmer verkauft.
 
 # Agent-Regeln
 

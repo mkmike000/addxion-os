@@ -5,7 +5,7 @@ aliases: [Design Language, DESIGN.md]
 description: Eine Design-SSOT. Grammatik für App und Marketing. Tokens in Neon.
 status: active
 owner: shared
-updated: 2026-09-06
+updated: 2026-09-08
 tags: [design]
 sources:
   - id: docs-design-language
@@ -59,18 +59,18 @@ Performant = wenig DOM, Token-Motion, keine Extra-CSS-Libraries. Minimal = ein E
 | --- | --- |
 | Text | `--adx-fg` → `--adx-fg-2` → `--adx-muted` → `--adx-meta` |
 | Fläche | Canvas near-black (nie reines `#000`), Panel, Wash |
-| CTA | Outline default; **eine** filled Primary pro Viewport; Secondary = Wash (`bg-foreground/10`), wie „Über Uns“. Ghost = idle `muted`, keine Fläche; Hover = dieselbe Wash-Pill plus `fg`. Link = unterstrichener Text, kein Pill (`variant="link"`). Toast = dieselbe Wash-Pill, kein Card-Rahmen, `backdrop-blur-md` auf der Pill (kein Viewport-Overlay). Schließen = Quadrat-Ghost mit Phosphor `X` (duotone), kein Text-× |
+| CTA | Outline default; **eine** filled Primary pro Viewport; Secondary = Card-Fläche (`bg-card`), dieselbe Fläche wie CardRoot-Header, wie „Über Uns“. Ghost = idle `muted`, keine Fläche; Hover = Wash (`bg-foreground/10`) plus `fg`. Link = unterstrichener Text, kein Pill (`variant="link"`). Toast = Wash-Pill, kein Card-Rahmen, `backdrop-blur-md` auf der Pill (kein Viewport-Overlay). Schließen = Quadrat-Ghost mit Phosphor `X` (duotone), kein Text-× |
 | Elevation | Hairline; Shadow nur Floating UI. Glass-Nav (Hairline + inset highlight, kein Drop-Shadow) ist Chrome (MenuBar / QuickNav), kein CTA |
 | Chat | Eine Fläche: Nachrichten und Composer teilen die MetricsChart04-Schale (Wash + Panel). Lab-GenUI: PageHeader-Titel ist Heading und Input in einem (`page-title`, dasselbe Feld wie die Palette-Suche), autofocus. Offene Nav listet Board und Vorlagen, kein zweites Header-Feld. Placeholder = Hover / Auswahl / Zelle in der Zeile. Keine iMessage-Bubbles, keine zweite ChatBox-Zelle |
 | Tabelle | Hairline-Zeilen, Luft in der Zelle (`px-3 py-3`). Zeile Ghost: idle keine Fläche, Hover Wash. Selected bleibt Wash. Kein Schatten, kein tablecn-Kit. Checkbox, dann Name, dann Text |
 | Chart | Lab: EvilCharts-ECharts-Katalog (Area, Line, Bar, Composed, Radar, Pie, Radial, Sankey), größer, monochrom über Tokens. Engine `echarts`, kein shadcn-Dump, keine Accents. Neon-`Chart` bleibt die kleine SVG-Primitive |
 | Icons | Phosphor Duotone (`@phosphor-icons/react`, `weight="duotone"`), zentriert im Slot. App-Root: `IconProvider` aus `@addxion/components/react`. `FeaturedIcon` = Phosphor in Secondary-Well, Lab als Hitbox 44×44. File-Typen = Kürzel in Secondary-Well, nicht `@untitledui/file-icons`. Payment = `PaymentMark`, Social = `SocialButton` — beide in `@addxion/components`, Marken-Silhouette, `currentColor`, monochrome. Social = Secondary-Pill. Payment = Secondary-Well. Kein Dot-Primitive (Status-Pip am Avatar). Lab in com importiert |
-| Authority | Größe + Weight 400, nicht Bold-700 Display. Marketing-Hero und Rail-Claim: Light 300 (`font-light`), wie die Start-H1 |
+| Authority | Größe + Weight 400, nicht Bold-700 Display. Marketing-Hero und Rail-Claim: Light 300 (`font-light`), wie die Start-H1. Rail-Claim volle Breite mobil, `md:w-2/3` Desktop (com: `.rail-claim`) |
 | Hover | Ghost für idle Interaktion in Listen und Chrome: keine Fläche, Wash (`bg-foreground/10`) plus `fg` erst unter `@media (hover: hover)`. Dieselbe Klasse: `ghostHover` in `@addxion/components`. Selected/Active und Status-Badges behalten Wash. Nicht Ghost: Primary/Outline, Card/Panel, Inputs, Text-Links. Text-Links: Unterstrich, Hover dimmt. Farbwechsel sofort — kein `transition` auf color/background/border |
 
-Sans/Display/Body: System → Inter, Weight 400. Display nur für Marketing-Heroes. Rail-Claim und Start-H1: `font-light`. Mono nur für Eyebrow, IDs, Code. InputGroup-Prefix (`https://`) ist Sans, gleiche Größe und Farbe wie der Placeholder. Lab-Title: Variable `wght` am Pointer, nicht als Default-Heading.
+Sans/Display/Body: System → Inter, Weight 400. Display nur für Marketing-Heroes. Rail-Claim und Start-H1: `font-light`. CardRoot-Header: `text-sm font-medium` (Chrome, nicht Heading). Mono nur für Eyebrow, IDs, Code. InputGroup-Prefix (`https://`) ist Sans, gleiche Größe und Farbe wie der Placeholder. Lab-Title: Variable `wght` am Pointer, nicht als Default-Heading.
 
-Shapes: Interactive = Pill; Cards/Panels = ~8px; Full-bleed = 0. Input und InputGroup = Pill, wie Combobox.
+Shapes: Interactive = Pill; Cards/Panels = ~8px; Full-bleed = 0 idle, Hover/Focus Scoop `--card-scoop` 200ms (`0.25rem` L/R/unten, keine Layout-Höhe). Input und InputGroup = Pill, wie Combobox.
 
 # Herkunft
 
@@ -113,7 +113,7 @@ Das Design-System ist **addxion-neon** (Tokens, Primitives, Signature, Sections,
 3. Monochrome, kein Accent?
 4. Text über die Leiter, Hover dimmt — ohne Color-Transition? Ghost-Hover = Wash, nicht neue Fläche?
 5. Shadow nur Floating?
-6. Headings Weight 400 (`font-normal`), nicht bold/semibold? Rail-Claim und Start-H1: `font-light`?
+6. Headings Weight 400 (`font-normal`), nicht bold/semibold? Rail-Claim und Start-H1: `font-light`, `.rail-claim` (`w-full md:w-2/3`)?
 7. Sichtbares Label (`htmlFor` / Aria); Placeholder ist kein Label?
 8. Fehler am Feld, nicht als Toast der ersten Wahl?
 9. Disabled ohne Tooltip; Icon-only mit `aria-label`; Tooltip ohne interaktiven Inhalt?

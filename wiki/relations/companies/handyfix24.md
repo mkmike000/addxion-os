@@ -21,6 +21,7 @@ So genannt (`handyfix24`). Kein Briefing, kein Status in diesem Bundle. Nicht in
 
 # Instanzen
 
+- Site: https://handyfix24.de/
 - Webflow (Staging, Ordner Kunden & Partner): https://handyfix24.webflow.io
 
 # Offene Punkte

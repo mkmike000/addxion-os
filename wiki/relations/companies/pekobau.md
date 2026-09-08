@@ -15,12 +15,13 @@ So genannt (`pekobau` / PekoBau). Bekannt über [Stanislaw Lewicki](../people/st
 
 # Personen
 
-—
+Robert Kovacs (Geschäftsführer). Auf der Site nur Vorname: Robert.
 
 # Instanzen
 
+- Site: https://pekobau.at/
 - Webflow (Staging, Ordner Kunden & Partner): https://pekobau.webflow.io
 
 # Offene Punkte
 
-- [ ] Ansprechpartner-Name nachtragen
+—

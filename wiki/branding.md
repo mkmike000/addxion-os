@@ -4,7 +4,7 @@ title: Branding
 description: Markenstrategie ADDXION. Eine Datei. Herkunft MASTERPLAN addxion-com 2026-08-24.
 status: active
 owner: shared
-updated: 2026-09-03
+updated: 2026-09-08
 tags: [branding]
 sources:
   - id: com-masterplan
@@ -30,8 +30,8 @@ Zwei Verkaufsschienen, klar getrennt:
 
 | Art | Was | Wo |
 | --- | --- | --- |
-| Produkt | Software, die Kundinnen selbst nutzen: AI, Automationen, Inspiration | App unter addxion.ai; Produktseiten auf addxion.com |
-| Dienstleistung | Umsetzung durch uns: Content, Werbung, Websites, Shops, Apps | Startseite und Leistungsseiten |
+| Produkt | Software, die Kundinnen selbst nutzen: AI, Automationen, Inspiration, Aufklärer, GenUI, Neon | App unter addxion.ai; Produktseiten auf addxion.com |
+| Dienstleistung | Umsetzung durch uns: Content erstellen, Werbung aufsetzen, Bewertungen löschen, Websites bauen, Shops einrichten, Apps bauen | Startseite und Leistungsseiten |
 
 Die Startseite ist der Einstieg für Website, Fotos und Videos, Shop, App oder Kampagnenflächen, und hält den Weg in die eigenen Produkte offen.
 
@@ -69,21 +69,21 @@ Inhalt folgt.
 
 # Leistungen
 
-Reihenfolge in der Übersicht: Content, Werbung, Bewertungen, Websites, Shops, Apps, Automationen.
+Katalogname = Leistung + Infinitiv. Das Verb nennt den Auftrag, nicht den Kanal. Hub `/leistungen/`: sechs Karten, 2×3. Reihenfolge: Content erstellen, Werbung aufsetzen, Bewertungen löschen, Websites bauen, Shops einrichten, Apps bauen.
 
-1. **Content:** Fotos und Videos für Site, Shop und Kanäle. Social ist Format (Feed, Story, Reel), nicht Kanalbetrieb. Companion zu Websites, Shops und Werbung, kein Unterpunkt.
-2. **Werbung:** Landingpages, Tracking, Conversion, Kampagnen auf der eigenen Fläche. Motiv kommt aus Content. Kein eigenes Design, sondern Passung. Kein reines Media-Buying als Kernangebot.
-3. **Bewertungen:** Negative Google-Bewertungen löschen lassen. Kundennutzen: das Profil steht nach außen besser da. 29 €, Selbstbuchen. Nicht mit „prüfen“ oder Sternenkauf verkaufen.
-4. **Websites:** individuelle Sites, Marke und Performance.
-5. **Shops:** Shopify von Null oder Relaunch. Unterkategorien: Einrichtung oder Umgestaltung, Theme, App-Integrationen, Fehlerbehebung, Audit, Produkte und Kollektionen. Shopify Partner ist Vertrauensanker, keine eigene Produktlinie.
-6. **Apps:** Web-Apps, Portale, APIs, wenn Theme und Plugin nicht reichen.
-7. **Automationen:** Produkt für laufende Workflows. Shop-Integrationen und Custom-Apps sind Dienstleistung, wenn Standard-Apps nicht reichen.
+1. **Content erstellen:** Fotos und Videos für Site, Shop und Kanäle. Social ist Format (Feed, Story, Reel), nicht Kanalbetrieb. Companion zu Websites, Shops und Werbung, kein Unterpunkt.
+2. **Werbung aufsetzen:** Landingpages, Tracking, Conversion, Kampagnen auf der eigenen Fläche. Motiv kommt aus Content. Kein eigenes Design, sondern Passung. Nicht „Werbung schalten“: kein reines Media-Buying als Kernangebot.
+3. **Bewertungen löschen:** Negative Google-Bewertungen löschen lassen. Kundennutzen: das Profil steht nach außen besser da. 29 €, Selbstbuchen. Nicht mit „prüfen“ oder Sternenkauf verkaufen.
+4. **Websites bauen:** individuelle Sites, Marke und Performance.
+5. **Shops einrichten:** Shopify von Null oder Relaunch. Unterkategorien: Einrichtung oder Umgestaltung, Theme, App-Integrationen, Fehlerbehebung, Audit, Produkte und Kollektionen. Shopify Partner ist Vertrauensanker, keine eigene Produktlinie.
+6. **Apps bauen:** Web-Apps, Portale, APIs, wenn Theme und Plugin nicht reichen.
+7. **Automationen:** Produkt für laufende Workflows, Karte auf `/produkte/`, nicht auf `/leistungen/`. Shop-Integrationen und Custom-Apps sind Dienstleistung, wenn Standard-Apps nicht reichen.
 
 **Inspiration** (Produkt): in Minuten sehen, wie Content, Werbung, Website, Shop und App zusammengehören. Strategie über alle Bausteine; jede Leistung eine Taktik darunter. Kein Marken-Lookbook, kein Website-Scan. Optionaler Companion zu allen Leistungen. Formular `/inspiration/`.
 
 # Neon
 
-Internes Design-System, Code `addxion-neon`. Kein öffentliches Produkt auf addxion.com (`/neon/` 301 auf Start). Partner-Badges nur an Dienstleistungen.
+Internes Design-System, Code `addxion-neon`. Öffentliche Karte auf `/produkte/`, Lab unter `/neon/` (noindex). Partner-Badges nur an Dienstleistungen.
 
 # Was wir nicht tun
 

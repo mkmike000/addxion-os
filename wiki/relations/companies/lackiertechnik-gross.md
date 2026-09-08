@@ -24,6 +24,7 @@ So genannt (`lackiertechnik-gross`). Kein Briefing, kein Status in diesem Bundle
 
 # Instanzen
 
+- Site: https://lackiertechnik-gross.de/
 - Webflow (Staging, Ordner Kunden & Partner): https://lackiertechnik-gross.webflow.io
 
 # Offene Punkte

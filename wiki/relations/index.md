@@ -32,7 +32,7 @@ Webflow-Staging = Instanz. Geburtstage nicht speichern.
 * [MVC Customs](companies/mvc-customs.md) — Webflow
 * [MVC Holding GmbH](companies/mvc-holding-gmbh.md)
 * [Ninos Fahrschule](companies/ninos-fahrschule.md)
-* [Pekobau](companies/pekobau.md) — Webflow; Ansprechpartner-Name offen
+* [Pekobau](companies/pekobau.md) — Webflow; Robert Kovacs
 * [Project111](companies/project111.md)
 * [Real Service GmbH](companies/real-service-gmbh.md) — gewesen
 * [Salon Lamour](companies/salon-lamour.md) — Webflow
