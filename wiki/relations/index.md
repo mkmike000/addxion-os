@@ -51,6 +51,7 @@ Webflow-Staging = Instanz. Geburtstage nicht speichern.
 
 * [Bäumer-Motorgeräte](companies/baeumer-motorgeraete.md) — Lead erledigt, Verkauf
 * [Fahrschule am ZOB](companies/fahrschule-am-zob.md) — Stub, Lead
+* [ME Wohnungsbau](companies/me-wohnungsbau.md) — Markus Esen, Website vor Unterschrift, BAFA offen
 * [Michael Marth Band](companies/michael-marth-band.md) — Lead, WordPress, Site
 * [MW Complete](companies/mw-complete.md) — Marco Wiede, Tausch Sales / Bau, drei Monate
 
@@ -77,12 +78,14 @@ Vorlage Firma: [companies/_template.md](companies/_template.md). Datei = Name, `
 * [Emilia Polakowska](people/emilia-polakowska.md)
 * [Hakan Fragapane](people/hakan-fragapane.md)
 * [Ilham Mulaomerovic](people/ilham-mulaomerovic.md)
+* [Jakub Bulun](people/jakub-bulun.md)
 * [Jonas Braamt](people/jonas-braamt.md)
 * [Konstantin Richter](people/konstantin-richter.md)
 * [Levent Cakici](people/levent-cakici.md)
 * [Lukas Sunderkötter](people/lukas-sunderkoetter.md)
 * [Marco Wiede](people/marco-wiede.md)
 * [Mario Funke](people/mario-funke.md)
+* [Markus Esen](people/markus-esen.md)
 * [Marlon Pollmüller](people/marlon-pollmueller.md)
 * [Martin Senkhorst](people/martin-senkhorst.md)
 * [Marvin Panhorst](people/marvin-panhorst.md)
