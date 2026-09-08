@@ -18,6 +18,7 @@ Kontakte in Relations. Dateiname = Vor- und Nachname. Zwei gleiche Namen: Zahlen
 * [Konstantin Richter](konstantin-richter.md)
 * [Levent Cakici](levent-cakici.md)
 * [Lukas Sunderkötter](lukas-sunderkoetter.md)
+* [Marco Wiede](marco-wiede.md)
 * [Mario Funke](mario-funke.md)
 * [Marlon Pollmüller](marlon-pollmueller.md)
 * [Martin Senkhorst](martin-senkhorst.md)

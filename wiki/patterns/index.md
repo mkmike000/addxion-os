@@ -15,3 +15,4 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [Nachfrage-Test](nachfrage-test.md) — Kontakt, Ort, Zahlungsabsicht
 * [Bewertung-Scan](bewertung-scan.md) — Profil beschreiben, Antragspfad offen
 * [Fahrschulen](fahrschulen.md) — Zielgruppe DE, Liste in n8n
+* [72-Stunden-Regel](72-stunden-regel.md) — ansprechen oder fallenlassen
