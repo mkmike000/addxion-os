@@ -4,6 +4,12 @@ Neu, Score absteigend. Noch nicht in Doing.
 
 Formel: ohne Deadline → 0. Sonst Notion-Formel in AGENTS.md.
 
+- [ ] Vertrag ME Wohnungsbau mitbringen
+  Link: [wiki/relations/companies/me-wohnungsbau.md](../wiki/relations/companies/me-wohnungsbau.md) · [wiki/relations/people/markus-esen.md](../wiki/relations/people/markus-esen.md)
+  B: 4  R: 4  D: 2026-09-09  A: 2
+  Score: 62
+  Hinweis: E-Mail-Vertrag Website. Altes Angebot gilt oder nicht? BAFA nicht in den Vertrag schreiben, bevor der Pfad steht. Verhandlung nicht neu aufmachen.
+
 - [ ] Scope Marco Wiede festziehen
   Link: [wiki/decisions/scope-marco-wiede.md](../wiki/decisions/scope-marco-wiede.md) · [wiki/relations/people/marco-wiede.md](../wiki/relations/people/marco-wiede.md)
   B: 4  R: 3  D: 2026-09-09  A: 2
