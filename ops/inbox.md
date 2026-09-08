@@ -16,6 +16,18 @@ Formel: ohne Deadline → 0. Sonst Notion-Formel in AGENTS.md.
   Score: 54
   Hinweis: Termin 11:00. Vier Stücke vs. Social-Media-Erweiterung. Drei Monate datieren. Skript mitnehmen-lassen, nicht zusagen über den Tausch hinaus.
 
+- [ ] Preise und Szenarien comsolution an Lukas
+  Link: [wiki/relations/companies/com-solution.md](../wiki/relations/companies/com-solution.md) · [wiki/relations/people/lukas-sunderkoetter.md](../wiki/relations/people/lukas-sunderkoetter.md)
+  B: 4  R: 3  D: 2026-09-09  A: 3
+  Score: 47
+  Hinweis: Kampagne braucht Landings. Szenario Selbst-Content vs. Kollege Köln (Pre/Prod/Post + Anfahrt). Spätestens 2026-09-10 morgens. Keine Preise erfinden, Satz des Creators erst holen.
+
+- [ ] Konzept CHSOPTIMA für Lukas
+  Link: [wiki/relations/companies/chsoptima.md](../wiki/relations/companies/chsoptima.md) · [wiki/relations/people/lukas-sunderkoetter.md](../wiki/relations/people/lukas-sunderkoetter.md)
+  B: 3  R: 2  D: 2026-09-10  A: 3
+  Score: 33
+  Hinweis: Strategie-Angebot, was man dem Kunden sagen könnte. Nachrangig zu comsolution. Site neu denkbar, nicht gesetzt.
+
 - [ ] Angebot Michael Marth Band klären
   Link: [ops/opportunities.md](opportunities.md) · [wiki/relations/companies/michael-marth-band.md](../wiki/relations/companies/michael-marth-band.md)
   B: 2  R: 2  D: —  A: 2
