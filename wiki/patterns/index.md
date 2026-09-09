@@ -16,3 +16,7 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [Bewertung-Scan](bewertung-scan.md) — Profil beschreiben, Antragspfad offen
 * [Fahrschulen](fahrschulen.md) — Zielgruppe DE, Liste in n8n
 * [72-Stunden-Regel](72-stunden-regel.md) — ansprechen oder fallenlassen
+* [Elusive Obvious](elusive-obvious.md) — unausgesprochene Wahrheit zuerst
+* [Bedarfsermittlung](bedarfsermittlung.md) — was, Priorität, dann warum
+* [Problem erklären](problem-erklaeren.md) — Wert ohne Drumherum
+* [Kleiner erster Kauf](kleiner-erster-kauf.md) — Risiko vor Vertrauensvorschuss

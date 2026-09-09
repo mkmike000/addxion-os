@@ -48,7 +48,7 @@ Person nur mit bestehender Datei. Leistungen ggf. aus addxion-com ableiten (z. B
   Leistungen: Trigger + programmatische Nummer + Antworten/Nachrichten am bestehenden Workflow. Name statt VorsorgeIQ offen. Kein Social-Media-Aufräumen in dieser Zeile.
   B: 3  R: 3  D: —  A: 3
   Score: 0
-  Hinweis: Seite und Workflow schon angefangen. Scope morgen klären. Score 0 bis Deadline gesetzt.
+  Hinweis: Seite und Workflow stehen. Wartet auf Partnermail und Seiten-Feedback. Scope: [Decision](../wiki/decisions/scope-marco-wiede.md). Score 0 bis Deadline gesetzt.
 
 - [ ] Marketing-Automation LA Tools — erster Schnitt Anfrage + Follow-up
   Company: [LA Tools Service](../wiki/relations/companies/la-tools-service.md)

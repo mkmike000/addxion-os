@@ -3,10 +3,10 @@ type: company
 id: mw-complete
 title: MW Complete
 aliases: []
-description: Firma Marco Wiede. Finanzdienstleister. Lead / Austausch, kein Kunde.
+description: Firma Marco Wiede. Lead / Austausch. Kern ist Verkaufsprozess, Seite ist Infozettel.
 status: draft
 owner: mike
-updated: 2026-09-08
+updated: 2026-09-09
 tags:
   - company
   - lead
@@ -14,6 +14,9 @@ sources:
   - id: chat-2026-09-08
     resource: raw/marco-wiede-2026-09-08.md
     title: Marco Wiede 2026-09-08
+  - id: chat-2026-09-09
+    resource: raw/marco-wiede-2026-09-09.md
+    title: Marco Wiede 2026-09-09
 ---
 
 So genannt. Keine öffentliche Site in der Aufnahme.
@@ -24,18 +27,25 @@ So genannt. Keine öffentliche Site in der Aufnahme.
 
 # Instanzen
 
-- Arbeitstitel VorsorgeIQ: Seite angefangen, Workflow gebaut. Trigger und Outbound (programmatische Nummer, Antworten, Nachrichten) fehlen. Name offen, Richtung Rente genannt.
+- Arbeitstitel VorsorgeIQ: Unterseite steht, Workflow steht. Marco soll die Seite lesen. Trigger/Outbound weiter offen. Name offen.
+- Meta-Account: Partnerzugriff zugesagt, nicht angekommen.
+
+# Rolle der Stücke
+
+Einigung 2026-09-09: Website = Infozettel. Wichtig ist der Verkaufsprozess. Social Media und Marcos eigene Site sind andere Projekte.
+
+Vision genannt: automatisierte Anfragen (2–3 am Tag), menschlicher Abschluss, Prozessoptimierung im Hintergrund.
 
 # Offen
 
-Ziel: nach dem Termin 2026-09-09 wissen, ob ADDXION baut (Trigger/Ende) und was der Tausch kostet.
+Ziel: Kampagne nur so weit, wie Schrift und Partnerzugriff da sind.
 
-Ist: mündlich drei Monate. Social-Media-Aufräumen vorgeschlagen, nicht zugesagt.
+Ist: Demo erklärt, gut aufgenommen. Mail fehlt.
 
-Lücke: Produktname, Trigger-Kanal, wer sendet, wer haftet bei Finanzwerbung.
+Lücke: Produktname, Kanal, Haftung Finanzwerbung, Partnerrolle Meta.
 
 Zu klären:
 
 - Endgültiger Name statt VorsorgeIQ
-- Welcher Kanal die Nummer trägt
-- Ob Social Media ein eigener Auftrag ist
+- Inhalt der Partner-Mail
+- Feedback zur Unterseite

@@ -10,12 +10,6 @@ Formel: ohne Deadline → 0. Sonst Notion-Formel in AGENTS.md.
   Score: 62
   Hinweis: E-Mail-Vertrag Website. Altes Angebot gilt oder nicht? BAFA nicht in den Vertrag schreiben, bevor der Pfad steht. Verhandlung nicht neu aufmachen.
 
-- [ ] Scope Marco Wiede festziehen
-  Link: [wiki/decisions/scope-marco-wiede.md](../wiki/decisions/scope-marco-wiede.md) · [wiki/relations/people/marco-wiede.md](../wiki/relations/people/marco-wiede.md)
-  B: 4  R: 3  D: 2026-09-09  A: 2
-  Score: 54
-  Hinweis: Termin 11:00. Vier Stücke vs. Social-Media-Erweiterung. Drei Monate datieren. Skript mitnehmen-lassen, nicht zusagen über den Tausch hinaus.
-
 - [ ] Preise und Szenarien comsolution an Lukas
   Link: [wiki/relations/companies/com-solution.md](../wiki/relations/companies/com-solution.md) · [wiki/relations/people/lukas-sunderkoetter.md](../wiki/relations/people/lukas-sunderkoetter.md)
   B: 4  R: 3  D: 2026-09-09  A: 3

@@ -9,5 +9,5 @@ Bewusste Festlegungen.
 * [Zwei Kanäle](zwei-kanaele.md) — this.type und addxion.ai
 * [Kurs nach Nachfrage](kurs-nach-nachfrage.md) — Waitlist vor Produktion
 * [Rechnung vs Checkout](rechnung-vs-checkout.md) — Verkauf vor dem Geld
-* [Scope Marco Wiede drei Monate](scope-marco-wiede.md) — Entwurf, Termin 2026-09-09
+* [Scope Marco Wiede drei Monate](scope-marco-wiede.md) — Entwurf, nach Termin 2026-09-09
 * [Swipe-Stack](swipe-stack.md) — Motion plus Embla; Three.js später

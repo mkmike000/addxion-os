@@ -4,15 +4,18 @@ id: marco-wiede
 title: Marco Wiede
 aliases:
   - Markus Wiede
-description: MW Complete. Finanzdienstleister. Mündlicher Tausch Sales gegen Mitbau, drei Monate.
+description: MW Complete. Verkaufstraining Block 1 begonnen. Tausch Schritt für Schritt, Schrift per Mail offen.
 status: draft
 owner: mike
-updated: 2026-09-08
+updated: 2026-09-09
 tags: [person]
 sources:
   - id: chat-2026-09-08
     resource: raw/marco-wiede-2026-09-08.md
     title: Marco Wiede 2026-09-08
+  - id: chat-2026-09-09
+    resource: raw/marco-wiede-2026-09-09.md
+    title: Marco Wiede 2026-09-09
 ---
 
 # Firma
@@ -23,23 +26,31 @@ sources:
 
 Im Gespräch einmal Markus genannt; gilt als dieselbe Person, bis ein zweiter Name belegt ist.
 
-Sieht sich als praktischen Menschen, der auch Theorie gelernt hat. Älter als Mike. Genaues Tätigkeitsbild 2026-09-09.
+# Stand 2026-09-09
 
-Mündlich (Tage vor 2026-09-08): Sales-Skript und Verkaufsfragen gegen Mitwirkung an seinen Sachen. Begrenzt auf drei Monate. Vier genannte Stücke: Verkaufsscript, Anpassung aufs Projekt, Arbeit mit dem Inneren Kind, Erkennen von Glaubenssätzen.
+Gespräch ca. eine Stunde. Verkaufstraining Block 1 (Bedarfsermittlung) bis Seite 1. Arbeitsblatt übergeben.
 
-Regel, die er nennt: [72-Stunden-Regel](../../patterns/72-stunden-regel.md).
+Sätze, die er nutzt:
+
+- [72-Stunden-Regel](../../patterns/72-stunden-regel.md)
+- [Elusive Obvious](../../patterns/elusive-obvious.md)
+- [Bedarfsermittlung](../../patterns/bedarfsermittlung.md)
+- [Problem erklären](../../patterns/problem-erklaeren.md)
+
+Vision genannt: Workflows, 2–3 Anfragen pro Tag, Verkäufer vorne, Mike am Prozess.
+
+Zugesagt: Partnerzugriff Meta plus Erklärung per E-Mail. Unterseite anschauen und Feedback schicken.
 
 # Offen
 
-Ziel: Scope fest, ohne Gratis-Erweiterung.
+Ziel: Schrift zum Scope, Training weiter, Kampagne nur im vereinbarten Rahmen.
 
-Ist: mündlicher Tausch, Treffen 2026-09-09 11:00. Social-Media-Übernahme von ihm vorgeschlagen.
+Ist: mündliche Einigung Schritt für Schritt. Training begonnen. Partnermail fehlt.
 
-Lücke: kein schriftlicher Scope. Skript noch nicht da. Gegenleistung nicht einzeln bepreist.
+Lücke: keine Mail, kein datierter Tauschvertrag, Block 1 nicht durchgearbeitet.
 
 Zu klären:
 
-- Welche der vier Stücke wirklich geliefert werden
-- Ob Social Media zu den „eigenen Sachen“ zählt oder neu ist
-- Was „individuell aufs Projekt“ heißt (Fahrschulen vs. VorsorgeIQ)
-- Startdatum der drei Monate schriftlich
+- Ob die Mail den Scope so festhält wie [Decision](../../decisions/scope-marco-wiede.md)
+- Nächster Trainingsblock
+- Ob Meta-Partnerzugriff ankommt
