@@ -5,7 +5,7 @@ aliases: [Design Language, DESIGN.md]
 description: Eine Design-SSOT. Grammatik für App und Marketing. Tokens in Neon.
 status: active
 owner: shared
-updated: 2026-09-08
+updated: 2026-09-09
 tags: [design]
 sources:
   - id: docs-design-language
@@ -126,6 +126,8 @@ Das Design-System ist **addxion-neon** (Tokens, Primitives, Signature, Sections,
 # Motion
 
 Tokens: `--duration-fast` 150ms, `--duration-normal` 200ms, `--duration-slow` 300ms. Overlay fade/scale von ~0.95, nicht von 0. Backdrop solid, kein Viewport-Blur. Color/background/border ohne Transition. `prefers-reduced-motion: reduce` schaltet Bewegung ab.
+
+Gesten und Slider: [Swipe-Stack](decisions/swipe-stack.md) — Motion + Embla. Three.js nur später, nicht auf Service-Cards.
 
 # A11y
 
