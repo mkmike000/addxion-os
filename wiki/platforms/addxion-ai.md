@@ -4,7 +4,7 @@ title: addxion-ai
 description: KI-App unter addxion.ai und Package @addxion/ai.
 status: active
 owner: shared
-updated: 2026-09-07
+updated: 2026-09-09
 tags: [platform]
 sources:
   - id: docs-ai
@@ -37,6 +37,8 @@ Schreibt keine Collective-Wahrheit. Kein paralleles Auth-Schema. Chat-UI (`ChatS
 # Stack (App)
 
 TanStack Start, React Aria + Neon-Tokens, Better Auth + Drizzle, Effect, Cloudflare Workers. Untitled UI ist Altbestand, nicht Ziel. Katalog: `addxion.com/neon`. `src/components/ui` ist Aria-Fassade auf Neon-Grammatik (Pill-Button/Input/Badge, Select/Combobox-Trigger, SocialButton aus `@addxion/components`). Auth-DB: D1 (`addxion-auth`). App-DB: Neon + Hyperdrive (in der Herkunft: geplant). LLM: OpenRouter. Bun.
+
+Gesten: Motion + Embla + vaul. Three.js später. [Swipe-Stack](../decisions/swipe-stack.md).
 
 # XI Kernel / Agentic Trading (AI-1)
 
