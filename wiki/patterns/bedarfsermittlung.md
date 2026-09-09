@@ -3,7 +3,7 @@ type: pattern
 title: Bedarfsermittlung
 aliases:
   - Verkaufstraining Block 1
-description: Erst sammeln was wichtig ist, dann Priorität, dann warum nur beim wichtigsten Punkt. Keine Lösung vorher.
+description: Erst sammeln was wichtig ist, dann Priorität, dann warum nur beim wichtigsten Punkt. Keine Lösung vorher. Nicht jedes Mini-Ticket.
 status: draft
 owner: mike
 updated: 2026-09-09
@@ -30,6 +30,10 @@ Allgemein → „Was genau bedeutet das für Sie?“  Weiß nicht → „Was hat
 # Warum nicht zuerst
 
 Warum zu früh geht zu tief und blockiert den Fluss. Ziel ist leichter zum Kauf, nicht schwerer. Angebot erst bauen, wenn die Liste und die Priorität in seinen Worten stehen.
+
+# Wann nicht
+
+Marco wendet das Skript nicht überall an. Mini-Tickets (genannt: negative Bewertung löschen) brauchen den vollen Ablauf nicht. Dort reicht der kleine, direkte Abschluss. Siehe [kleiner erster Kauf](kleiner-erster-kauf.md).
 
 # Nicht
 

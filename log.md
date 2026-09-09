@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-09-09
 
+- ingest: Nachzug Marco: Bestandschließen nicht im Tausch; Skript nicht bei Mini-Tickets; Zusammenfassung geht an ihn zum Lücken füllen.
 - ingest: Marco Wiede Gespräch ~1 h + Block 1. Roh: `raw/marco-wiede-2026-09-09.md`. Patterns Elusive Obvious, Bedarfsermittlung, Problem erklären, kleiner erster Kauf. Scope-Decision und Relations nachgezogen. Inbox-Ticket Scope → Waiting auf Mail/Partnerzugriff.
 - decision: `wiki/decisions/swipe-stack.md` — Motion + Embla für com/ai; vaul Sheets; Three.js später, keine 3D-Service-Cards. Pointer in Design und Platform-Dateien.
 

@@ -1,7 +1,7 @@
 ---
 type: decision
 title: Scope Marco Wiede drei Monate
-description: Schritt für Schritt. Training plus VorsorgeIQ-Kampagne zuerst. Website ist Infozettel. Social Media extra.
+description: Schritt für Schritt. Training plus VorsorgeIQ-Kampagne zuerst. Bestandschließen nicht im Tausch. Social Media extra.
 status: draft
 owner: mike
 updated: 2026-09-09
@@ -15,7 +15,7 @@ sources:
     title: Termin Scope und Reihenfolge
 ---
 
-Noch nicht decided. Mündlich am 2026-09-09 bekräftigt, Schrift kommt per E-Mail.
+Noch nicht decided. Mündlich am 2026-09-09 bekräftigt, Schrift kommt per E-Mail. Mike schickt Gesprächszusammenfassung, Marco füllt Lücken.
 
 # Festlegung (Entwurf)
 
@@ -24,6 +24,8 @@ Reihenfolge: erst Verkaufstraining, nebenbei VorsorgeIQ / Kampagne. Kein Paket �
 Website für VorsorgeIQ ist Infozettel. Der Verkaufsprozess (Workflow) ist der Kern.
 
 Social Media, Marcos Website oder ähnliches ist ein neues Projekt und wird neu bewertet. So gesagt, so verstanden.
+
+Bestandskunden von Mike zu closen gehört nicht in diesen Rahmen. Neuakquise-Skript und Training ja, Closing bestehender ADDXION-Kunden nein.
 
 Tausch-Stücke aus dem Vortag bleiben die vier genannten, solange nichts Schriftliches sie ersetzt. Laufzeit drei Monate, Review am Ende. Kein automatisches Verlängern.
 
