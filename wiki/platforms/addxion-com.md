@@ -4,7 +4,7 @@ title: addxion-com
 description: Marketing und CMS. IA hier. Code in addxion-com.
 status: active
 owner: shared
-updated: 2026-09-08
+updated: 2026-09-12
 tags: [platform]
 sources:
   - id: com-masterplan
@@ -26,18 +26,22 @@ Keine Design-System-Primitives. Keine parallele Markenstrategie.
 /zielgruppen/             Zielgruppen. Masonry, zuerst Fahrschulen. Nicht in der Palette als Einzel-Seiten
 /inspiration/             Produkt Inspiration. Formular hier, Karte auf Start und /produkte/, nicht in der Nav
 /inspiration/ergebnis/    Ergebnis (noindex)
-/projekte/                Projektübersicht. Masonry 1/3, Höhe folgt dem Screenshot
-/kundenstimmen/           301 auf /projekte/
-/leistungen/              Hub: 2×3. Content erstellen, Werbung aufsetzen, Bewertungen löschen, Websites bauen, Shops einrichten, Apps bauen. Automationen nur /produkte/
+/kundenprojekte/          Kundenprojekte. Erste Zelle Claim plus Termin. Dann Zeilen 1/3, links nach rechts
+/projekte/                301 auf /kundenprojekte/
+/kundenstimmen/           301 auf /kundenprojekte/
+/leistungen/              Hub: Masonry, Zelle folgt dem Bild. Content erstellen, Landingpages bauen, Werbung aufsetzen, Bewertungen löschen, Websites bauen, Shops einrichten, Apps bauen, Kontinuierliche Betreuung. Automationen nur /produkte/
 /news/                    News. Masonry 1/3 wie die anderen Hubs
+/news/<slug>/             Artikel. Rail wie Leistungen. Serie Agentic
 /empfehlung/              Empfehlung
 /automations/             Produkt Automationen
 /leistungen/content/
 /leistungen/werbung/
 /leistungen/bewertungen/  Negative Google-Bewertungen löschen lassen
-/leistungen/websites/     Rail wie die anderen. Raster liegt auf /projekte/
+/leistungen/websites/     Rail wie die anderen. Raster liegt auf /kundenprojekte/
 /leistungen/shops/        Eine Seite: Einrichtung, Theme, Katalog, Integrationen, Fehler, Audit
 /leistungen/apps/
+/leistungen/landingpages/ Erste Seite 1.000 €, weitere Unterseite 500 €
+/leistungen/betreuung/    Kontinuierliche Betreuung, 24 Monate nach Go-Live
 /page/fahrschule/         Vertikal Fahrschule. Karte auf /zielgruppen/, nicht in der Palette
 /page/aufklaerer/         Vertikal Aufklärer (EuroIQ). Karte auf /produkte/, nicht in der Palette
 /aufklaerer/              301 auf /page/aufklaerer/
@@ -48,23 +52,29 @@ Keine Design-System-Primitives. Keine parallele Markenstrategie.
 /system/                  301 auf /neon/
 ```
 
-Leistungsseiten: zweispaltiges Rail. Start: einspaltig, kein Hero-Rail, kein Pin. Rail-Claim `font-light`, wie die Start-H1, Klasse `.rail-claim` in `site.css`: `w-full` mobil, `md:w-2/3` der linken Box (Leistungen). Leistungs-Claims: Umbruch über Breite, nicht erzwungen. Start-H1: volle Breite, Umbruch nach „in“ (`Deine Digitalagentur in` / `Gütersloh & Bielefeld`), kein Punkt am Ende. Darunter ein Satz Lede (`Marke, Web, Shop und Software aus einer Hand.`), dann Primary „Projekte ansehen“. Header eine Spalte: ADDXION® als Link zur Startseite plus Nav, Hover dimmt, kein zweites Feld, kein Sektions-Titel auf Home. Start: erster Screen Claim plus Neon-Primary „Projekte ansehen“ (`/projekte/`), **100dvh zusammen mit PageHeader** (Hero zieht unter den Header). H1, Lede und Primary zentriert im ersten Screen (horizontal und vertikal). Kein Termin auf der Startseite, solange Inspiration fehlt. Keine Leistungs-, Projekt- oder Produkt-Karten auf der Startseite. Darunter Nav-Kacheln, je eine Zelle mit Outline-Button und Phosphor-Icon: Leistungen, Produkte, Zielgruppen, News, Empfehlung, Richtlinien. Projekte nur im Hero-Primary, nicht nochmal als Kachel. Dann Mission als normale Sektion, nicht 100svh. Keine Pfeil-Navigation. Kein Chart, keine Zeitachse auf der Startseite. Nav und Command Palette: Home, Projekte, Leistungen (`/leistungen/`), Produkte (`/produkte/`), Zielgruppen (`/zielgruppen/`), News (`/news/`), Empfehlung, Richtlinien. Aufklärer und Fahrschule nicht in der Palette. Keine einzelnen Leistungs-Items in der Nav. Projektübersicht nur unter `/projekte/`. Inspiration: Karte unter `/produkte/`, Formular unter `/inspiration/`. Nicht auf der Startseite. Keine Seite `/kooperation/`. Wer Kunden bringt, landet auf `/empfehlung/`. Subunternehmer-Auftritt ist kein öffentliches Angebot.
+Leistungsseiten: zweispaltiges Rail. Start: einspaltig, kein Hero-Rail, kein Pin. Rail-Claim `font-light`, wie die Start-H1, Klasse `.rail-claim` in `site.css`: `w-full` mobil, `md:w-2/3` der linken Box (Leistungen). Leistungs-Claims: Umbruch über Breite, nicht erzwungen. Start-H1: volle Breite, Umbruch nach „in“ (`Deine Digitalagentur in` / `Gütersloh & Bielefeld`), kein Punkt am Ende. Darunter ein Satz Lede (`Design, Website, Shop und App aus einer Hand.`), dann Primary „Kundenprojekte ansehen“. Header eine Spalte: ADDXION® als Link zur Startseite plus Nav, Hover dimmt, kein zweites Feld, kein Sektions-Titel auf Home. Start: erster Screen Claim plus Neon-Primary „Kundenprojekte ansehen“ (`/kundenprojekte/`), **100dvh zusammen mit PageHeader** (Hero zieht unter den Header). H1, Lede und Primary zentriert im ersten Screen (horizontal und vertikal). Kein Termin auf der Startseite, solange Inspiration fehlt. Keine Leistungs-, Projekt- oder Produkt-Karten auf der Startseite. Darunter Nav-Kacheln, je eine Zelle mit Outline-Button und Phosphor-Icon: Leistungen, Produkte, Zielgruppen, News, Empfehlung, Richtlinien. Kundenprojekte nur im Hero-Primary, nicht nochmal als Kachel. Dann Mission als normale Sektion, nicht 100svh. Keine Pfeil-Navigation. Kein Chart, keine Zeitachse auf der Startseite. Nav und Command Palette: Home, Kundenprojekte, Leistungen (`/leistungen/`), Produkte (`/produkte/`), Zielgruppen (`/zielgruppen/`), News (`/news/`), Empfehlung, Richtlinien. Aufklärer und Fahrschule nicht in der Palette. Keine einzelnen Leistungs-Items in der Nav. Kundenprojekte nur unter `/kundenprojekte/`. Inspiration: Karte unter `/produkte/`, Formular unter `/inspiration/`. Nicht auf der Startseite. Keine Seite `/kooperation/`. Wer Kunden bringt, landet auf `/empfehlung/`. Subunternehmer-Auftritt ist kein öffentliches Angebot.
 
 `/produkte/`: Hub wie Leistungen (Hairline-Raster, Zeilen 1/3, kein Featured). Karten aus `src/lib/produkt-hub.ts`: Inspiration, Automationen, AI (`addxion.ai`), Aufklärer (`/page/aufklaerer/`), GenUI (`/neon/genui/`), Neon (`/neon/`). Nicht die Leistungs-Karten. Indexiert, in der Nav und Command Palette. Kein Rail.
 
 `/zielgruppen/`: Hub wie Leistungen. Karten aus `src/lib/zielgruppe-hub.ts`. Als Erstes Fahrschulen (`/page/fahrschule/`). Indexiert, in der Nav und Command Palette. Kein Rail. Einzel-Vertikalen nicht in der Palette.
 
-`/projekte/`: Hairline-Raster wie Neon (Gap-Trick: Parent `--border`, Zellen `--background`). Alle Karten 1/3, kein Featured. Pro Zelle Neon-CardRoot: Header-Titel, Hero-Screenshot `mode="full-bleed"` (idle kein Abstand links/rechts/unten; Hover/Focus Scoop per `clip-path`, Höhe bleibt), kein Footer (`src/lib/projects.ts`). Höhe folgt dem Screenshot. Passt eine Kundenstimme (Join über id bzw. `projectId`), sitzen Portrait und Screenshot nebeneinander in einem CardWrapper (`mode="grid"`, zwei CardRoots `embedded`). Ein Header über beide: Vorname plus Firma in Abstufung (`muted`), Firma nicht nochmal auf dem Screenshot. Header = Card-Fläche (`bg-card`), nicht Canvas. Portrait links, Screenshot rechts, gleiche Höhe, `object-cover`, 4px Abstand dazwischen (`gap-x-1`), kein Hairline-Strich, kein Außenrahmen am Wrapper. Screenshot verlinkt die Live-Website, Portrait die Kunden-Site. Indexiert, in der Nav und Command Palette. Kein Rail.
+`/kundenprojekte/`: Hairline-Raster wie Neon (Gap-Trick: Parent `--border`, Zellen `--background`). Erste Zelle: H1 `Du hast ein Projekt im Kopf?` mit Liquid-Button `Termin buchen` in der Zeile nach dem „?“ (`inline-block`, `vertical-align: middle`, `margin-left` 0.4em, Cal `mike-kaufmann/15min`). H1 Zeilenabstand `1.05` (`.project-lead-claim`). Danach alle Projekt-Karten 1/3, kein Featured, **links nach rechts** über drei unabhängige Spalten (`hug` / `project-masonry--ltr`): Item 0/3/6 links, 1/4/7 Mitte, 2/5/8 rechts. Keine gemeinsame Zeilenhöhe — die nächste Karte sitzt direkt unter der vorherigen in derselben Spalte. Hairlines: volle Höhe zwischen den Spalten (`::before`/`::after` bei 1/3 und 2/3), unter Zellen `border-bottom`. Mobil eine Spalte in Originalreihenfolge. Reihenfolge in `WEBSITE_PROJECTS`: eigene zuerst, dann der Project111-Block, Burger Weber, Simon & Partners zuletzt. Pro Zelle Neon-CardRoot: Header-Titel, Hero-Screenshot `mode="full-bleed"` (idle kein Abstand links/rechts/unten; Hover/Focus Scoop per `clip-path`, Höhe bleibt), kein Footer (`src/lib/projects.ts`). Höhe folgt dem Screenshot. Passt eine Kundenstimme (Join über id bzw. `projectId`), sitzen Portrait und Screenshot nebeneinander in einem CardWrapper (`mode="grid"`, zwei CardRoots `embedded`). Ein Header über beide: Vorname, optional Partner (`AgeTwo`, `Adwork`, `Project111`), dann Firma, Abstufung (`muted`). Firma nicht nochmal auf dem Screenshot. Ohne Portrait derselbe Header auf der Screenshot-Karte. Header = Card-Fläche (`bg-card`), nicht Canvas. Portrait links, Screenshot rechts, gleiche Höhe, `object-cover`, 4px Abstand dazwischen (`gap-x-1`), kein Hairline-Strich, kein Außenrahmen am Wrapper. Screenshot verlinkt die Live-Website, Portrait die Kunden-Site. Indexiert, in der Nav und Command Palette. Kein Rail.
 
-`/kundenstimmen/`: 301 auf `/projekte/`. Kein eigener Hub. Portraits nur links in den Projektkarten (`src/lib/kundenstimmen.ts`).
+`/projekte/` und `/kundenstimmen/`: 301 auf `/kundenprojekte/`. Kein eigener Stimmen-Hub. Portraits nur links in den Projektkarten (`src/lib/kundenstimmen.ts`).
 
-`/leistungen/`: Hub wie `/projekte/` (Hairline-Raster, Gap-Trick): alle Karten 1/3, kein Featured. Pro Zelle Neon-CardRoot: Header-Titel, Hero-Bild `mode="full-bleed"` (idle Kante, Hover Scoop per `clip-path`), kein Footer (`src/lib/leistung-hub.ts`). Sechs Karten, 2×3, zeilenweise (nicht Spalten-Masonry). Katalogname Leistung + Infinitiv: Content erstellen, Werbung aufsetzen, Bewertungen löschen, Websites bauen, Shops einrichten, Apps bauen. Automationen sitzt auf `/produkte/`, nicht hier. Motive in `public/leistungen/`, nicht Projekt-Screenshots. Shop ist eine Seite (`/leistungen/shops/`), keine Kinder-URLs. Alte `/leistungen/shops/*` 301 dorthin. Karte verlinkt die Leistungsseite. Kein 301 auf Home.
+`/leistungen/`: Hub wie `/kundenprojekte/` ohne Lead-Zelle. Hairline-Raster, drei unabhängige Spalten, Items reihum (`hug` / `project-masonry--ltr` in `LeistungGrid`). Keine gemeinsame Zeilenhöhe — die Zelle folgt dem Bild. Acht Karten, links nach rechts. Pro Zelle Neon-CardRoot: Header-Titel, Hero-Bild `mode="full-bleed"` (idle Kante, Hover Scoop per `clip-path`), kein Footer (`src/lib/leistung-hub.ts`). Katalogname meist Leistung + Infinitiv; Ausnahme **Kontinuierliche Betreuung** (Nomen, nicht Infinitiv). Reihenfolge: Content erstellen, Landingpages bauen, Werbung aufsetzen, Bewertungen löschen, Websites bauen, Shops einrichten, Apps bauen, Kontinuierliche Betreuung. Automationen sitzt auf `/produkte/`, nicht hier. Motive in `public/leistungen/`, nicht Projekt-Screenshots. Shop ist eine Seite (`/leistungen/shops/`), keine Kinder-URLs. Alte `/leistungen/shops/*` 301 dorthin. Karte verlinkt die Leistungsseite. Kein 301 auf Home.
 
-`/news/`: Hub wie Leistungen (Hairline-Raster, alle Karten 1/3, kein Featured). Karten aus `src/lib/news.ts`. Aktuell nur „Neue Features in ADDXION AI“. In der Nav und Command Palette. Start zeigt News erst ab zwei echten Karten. Kein Rail auf der Seite.
+`/news/`: Hub wie Leistungen (Hairline-Raster, alle Karten 1/3, kein Featured). Karten aus `src/lib/news.ts` (`NEWS_POSTS`). In der Nav und Command Palette. Start zeigt News erst ab zwei echten Karten. Hub ohne Rail. Keine externe AI-Karte.
+
+`/news/<slug>/`: Artikel, Rail wie Leistungen (Claim links, Abschnitte rechts, Related, Serie, CTA). Daten in `NEWS_POSTS`. Serie Agentic: Marketing, Ads, Websites, Sales, Commerce, Content, Operations, Support, Visibility, Interfaces, Booking. Haltung, kein neues Produkt. Copy folgt Branding. HTML-Title = Nutzen, kein ADDXION.
 
 `/empfehlung/`: Rail wie Leistungen links (Claim, CTA „Eintragen“). Kein Caption unter dem Button (keine „Antwort in 24 Stunden“, keine Mail). Rechte Spalte stapelt: Provision, Für wen, Vorteile, Ablauf, Anfrage, Fragen — hintereinander, nicht je `100dvh`.
 
-`/leistungen/websites/`: gleiches Rail wie die anderen Leistungen (Vorgehen, Umfang, Related, CTA). Projekt-Screenshots unter `/projekte/`.
+`/leistungen/websites/`: gleiches Rail wie die anderen Leistungen (Vorgehen, Umfang, Related, CTA). Projekt-Screenshots unter `/kundenprojekte/`.
+
+`/leistungen/landingpages/`: gleiches Rail. Erste Seite 1.000 €, jede weitere Unterseite 500 €. Tracking bleibt Werbung.
+
+`/leistungen/betreuung/`: gleiches Rail. Katalogname **Kontinuierliche Betreuung**. 24 Monate nach Go-Live für Website, Shop, App, Landingpage oder Automation. Betrieb, nicht Neubau.
 
 `/leistungen/shops/`: gleiches Rail, eine Seite. Vorgehen deckt Einrichtung, Theme, Katalog, Integrationen, Fehlerbehebung und Audit. Keine Kinder-URLs.
 

@@ -41,7 +41,9 @@ Leistungen aus Branding, auf die Nische gelegt. Kein neues Paket erfinden, bis e
 | 1 | Content | Fotos Fuhrpark, Team, Theorieraum. Film für Site und Anzeigen. |
 | 2 | Websites | Klassen, Preise, Team, Anfrage. Impressum und Pflichttexte. |
 | 3 | Werbung | Anfragen in der Stadt, Landing aus der Site, nicht Media-Buying als Kern. |
-| 4 | Automationen | Anfragen, Erinnerung, Bewertungen. n8n beim Kunden oder intern. |
+| 4 | Landingpages | Eine Kampagnenseite, 1.000 €. Jede weitere Unterseite 500 €. |
+| 5 | Automationen | Anfragen, Erinnerung, Bewertungen. n8n beim Kunden oder intern. |
+| 6 | Kontinuierliche Betreuung | 24 Monate danach. Fuhrpark, Team, Preise nachziehen, ohne neuen Kickoff. |
 | später | Apps / süper | Lern-App, wenn die Schule das Produkt will. Nicht im Erstgespräch. |
 | selten | Shops | nur wenn es etwas zu verkaufen gibt. |
 
