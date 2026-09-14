@@ -4,7 +4,7 @@ title: Branding
 description: Markenstrategie ADDXION. Eine Datei. Herkunft MASTERPLAN addxion-com 2026-08-24.
 status: active
 owner: shared
-updated: 2026-09-12
+updated: 2026-09-14
 tags: [branding]
 sources:
   - id: com-masterplan
@@ -30,8 +30,8 @@ Zwei Verkaufsschienen, klar getrennt:
 
 | Art | Was | Wo |
 | --- | --- | --- |
-| Produkt | Software, die Kundinnen selbst nutzen: AI, Automationen, Inspiration, Aufklärer, GenUI, Neon | App unter addxion.ai; Produktseiten auf addxion.com |
-| Dienstleistung | Umsetzung durch uns: Content erstellen, Landingpages bauen, Werbung aufsetzen, Bewertungen löschen, Websites bauen, Shops einrichten, Apps bauen, Kontinuierliche Betreuung | Startseite und Leistungsseiten |
+| Produkt | Software, die Kundinnen selbst nutzen: Sprachagenten, Packs und Features von addxion.ai, Inspiration, Aufklärer, GenUI, Neon | App unter addxion.ai; Produktseiten auf addxion.com |
+| Dienstleistung | Umsetzung durch uns: Content erstellen, Landingpages bauen, Werbung aufsetzen, Performance Marketing, Bewertungen löschen, Websites bauen, SEO, AEO und GEO, Shops einrichten, Apps bauen, Automationen aufsetzen, Kontinuierliche Betreuung | Startseite und Leistungsseiten |
 
 Die Startseite ist der Einstieg für Website, Fotos und Videos, Shop, App oder Kampagnenflächen, und hält den Weg in die eigenen Produkte offen.
 
@@ -69,19 +69,23 @@ Inhalt folgt.
 
 # Leistungen
 
-Katalogname = Leistung + Infinitiv, außer **Kontinuierliche Betreuung** (Nomen). Das Verb nennt den Auftrag, nicht den Kanal. Hub `/leistungen/`: acht Karten, Masonry, Zelle folgt dem Bild. Reihenfolge: Content erstellen, Landingpages bauen, Werbung aufsetzen, Bewertungen löschen, Websites bauen, Shops einrichten, Apps bauen, Kontinuierliche Betreuung.
+Katalogname = Leistung + Infinitiv, außer **Kontinuierliche Betreuung**, **Performance Marketing** und **SEO, AEO und GEO** (Nomen). Das Verb nennt den Auftrag, nicht den Kanal. Hub `/leistungen/`: elf Karten, Masonry, Zelle folgt dem Bild. Reihenfolge: Content erstellen, Landingpages bauen, Werbung aufsetzen, Performance Marketing, Bewertungen löschen, Websites bauen, SEO, AEO und GEO, Shops einrichten, Apps bauen, Automationen aufsetzen, Kontinuierliche Betreuung.
 
 1. **Content erstellen:** Fotos und Videos für Site, Shop und Kanäle. Social ist Format (Feed, Story, Reel), nicht Kanalbetrieb. Companion zu Websites, Shops und Werbung, kein Unterpunkt.
 2. **Landingpages bauen:** Eine Seite, ein Ziel. Erste Seite 1.000 €, jede weitere Unterseite 500 €. Keine volle Website.
-3. **Werbung aufsetzen:** Tracking, Conversion, Kampagnen auf der eigenen Fläche. Die Seite hinter dem Klick liegt bei Landingpages. Motiv kommt aus Content. Nicht „Werbung schalten“: kein reines Media-Buying als Kernangebot.
-4. **Bewertungen löschen:** Negative Google-Bewertungen löschen lassen. Kundennutzen: das Profil steht nach außen besser da. 29 €, Selbstbuchen. Nicht mit „prüfen“ oder Sternenkauf verkaufen.
-5. **Websites bauen:** individuelle Sites, Marke und Performance.
-6. **Shops einrichten:** Shopify von Null oder Relaunch. Unterkategorien: Einrichtung oder Umgestaltung, Theme, App-Integrationen, Fehlerbehebung, Audit, Produkte und Kollektionen. Shopify Partner ist Vertrauensanker, keine eigene Produktlinie.
-7. **Apps bauen:** Web-Apps, Portale, APIs, wenn Theme und Plugin nicht reichen.
-8. **Kontinuierliche Betreuung:** 24 Monate nach dem Go-Live. Website, Shop, App, Landingpage oder Automation. Updates, Monitoring, kleine Änderungen. Betrieb, nicht Neubau. Nicht „Weiter betreuen“.
-9. **Automationen:** Produkt für laufende Workflows, Karte auf `/produkte/`, nicht auf `/leistungen/`. Shop-Integrationen und Custom-Apps sind Dienstleistung, wenn Standard-Apps nicht reichen. 24 Monate Laufzeit, dieselbe Idee wie Kontinuierliche Betreuung.
+3. **Werbung aufsetzen:** Tracking, Conversion, Kampagnen auf der eigenen Fläche. Die Seite hinter dem Klick liegt bei Landingpages. Die Anzeigen selbst liegen bei Performance Marketing. Motiv kommt aus Content. Nicht „Werbung schalten“: kein reines Media-Buying in dieser Karte.
+4. **Performance Marketing:** Google Ads und Meta. Budget, Gebote, Creatives, Reporting. Pixel und Strecke bleiben Werbung aufsetzen. Die Seite hinter dem Klick bleibt Landingpages.
+5. **Bewertungen löschen:** Negative Google-Bewertungen löschen lassen. Kundennutzen: das Profil steht nach außen besser da. 29 €, Selbstbuchen. Nicht mit „prüfen“ oder Sternenkauf verkaufen.
+6. **Websites bauen:** individuelle Sites, Marke und Performance.
+7. **SEO, AEO und GEO:** Google, Antwortmaschinen, generative Engines. Organisch gefunden und zitiert werden. Anzeigen bleiben Performance Marketing. Motiv: monochromes Stillleben (Laptop Suche, Telefon Antwort), wie die anderen Leistungskarten.
+8. **Shops einrichten:** Shopify von Null oder Relaunch. Unterkategorien: Einrichtung oder Umgestaltung, Theme, App-Integrationen, Fehlerbehebung, Audit, Produkte und Kollektionen. Shopify Partner ist Vertrauensanker, keine eigene Produktlinie.
+9. **Apps bauen:** Web-Apps, Portale, APIs, wenn Theme und Plugin nicht reichen.
+10. **Automationen aufsetzen:** Laufende Workflows über Tools hinweg. 249 € pro Monat, 24 Monate. Karte auf `/leistungen/`, nicht auf `/produkte/`. Kein Shop-App-Ersatz: Shop-Integrationen und Custom-Apps bleiben eigene Leistungen, wenn Standard-Apps nicht reichen. Dieselbe Laufzeit-Idee wie Kontinuierliche Betreuung.
+11. **Kontinuierliche Betreuung:** 24 Monate nach dem Go-Live. Website, Shop, App, Landingpage oder Automation. Updates, Monitoring, kleine Änderungen. Betrieb, nicht Neubau. Nicht „Weiter betreuen“.
 
-**Inspiration** (Produkt): in Minuten sehen, wie Content, Werbung, Website, Shop und App zusammengehören. Strategie über alle Bausteine; jede Leistung eine Taktik darunter. Kein Marken-Lookbook, kein Website-Scan. Optionaler Companion zu allen Leistungen. Formular `/inspiration/`.
+**Inspiration** (Produkt): in Minuten sehen, wie Content, Werbung, Website, Shop und App zusammengehören. Strategie über alle Bausteine; jede Leistung eine Taktik darunter. Kein Marken-Lookbook, kein Website-Scan. Optionaler Companion zu allen Leistungen. Formular `/inspiration/`. Ablauf: Daten, Richtung, danach. Empfehlung hängt denselben Scan an (`/inspiration/?ref=`).
+
+**Sprachagenten** (Produkt): öffentlicher Name für die Voice-Fläche auf addxion.ai. Karte auf `/produkte/`, Ziel `https://addxion.ai/voice`. Nicht „AI“. Packs (Analyse, Voll) und Features (Market Chart, Operatoren, Finanzen, Gespräche, Agentic Trading, CRM / Kontakte, Dokumentation) sitzen daneben als Full-Bleed-Karten, Labels aus der App-Registry.
 
 # Neon
 

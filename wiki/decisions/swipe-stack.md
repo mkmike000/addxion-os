@@ -4,7 +4,7 @@ title: Swipe-Stack
 description: Motion plus Embla für Gesten und Slider in com und ai. Three.js später, nicht Default.
 status: decided
 owner: mike
-updated: 2026-09-09
+updated: 2026-09-14
 tags: [decision, design, frontend]
 ---
 
@@ -28,7 +28,8 @@ Import-Ziel: eine Motion-Linie. Neue Dateien `from "motion/react"` sobald der Pa
 | Use-Case | Ort | Stack |
 | --- | --- | --- |
 | Testimonials / Case-Carousel | com | Embla, Island hydriert |
-| Projekt-Masonry bleibt Raster | com `/projekte/` | kein Slider |
+| Hub-Zeilen 1/3 (`thirds`, nicht `hug`) | com | Embla-Loop mobil je voller 3er-Zeile (`ThirdsSwipeRow`). Desktop Raster. `hug` bleibt ohne Slider |
+| Projekt-Masonry bleibt Raster | com `/kundenprojekte/` | kein Slider |
 | Compare / Before-After | com `/neon/frames/` | Hairline-Split, kein Slider ([addxion-com](../platforms/addxion-com.md)) |
 | Hero-Claim bleibt statisch | com Start | kein Swipe, 100dvh |
 | Karte wegwischen, Stack | ai Onboarding / Lab | Motion `drag="x"` |
@@ -62,8 +63,8 @@ Regeln wenn es kommt:
 - 3D als Deko auf jeder Card.
 - Gesture-Lib statt React Aria für Form Controls.
 
-# Repos (Ist 2026-09-09)
+# Repos (Ist 2026-09-14)
 
-- addxion-com: Astro 7, React-Islands, `framer-motion` ^12.23.
+- addxion-com: Astro 7, React-Islands, `framer-motion` ^12.23, `embla-carousel-react` ^8.6 (Hub-`thirds` mobil).
 - addxion-ai: TanStack Start, `framer-motion` ^12.38, vaul.
-- Embla noch nicht in den package.json — nachziehen wenn der erste Slider gebaut wird.
+- Embla in addxion-com. Nicht als Default auf `hug`-Masonry (Leistungen, Produkte, Kundenprojekte).
