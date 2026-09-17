@@ -10,6 +10,7 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [Leser-Intent](leser-intent.md)
 * [Privacy by Design](privacy-by-design.md)
 * [Marketing-Sites](marketing-sites.md)
+* [Copy-Gerüste](copy-gerueste.md) — PAS, BAB, 4Ps, Auswahl
 * [Mail-Translation](mail-translation.md) — Stub
 * [Gebietspaket-Lizenz](gebietspaket-lizenz.md) — Fahrschule, Prüfgebiet
 * [Nachfrage-Test](nachfrage-test.md) — Kontakt, Ort, Zahlungsabsicht

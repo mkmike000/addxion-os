@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-09-17
+
+- ingest: Marketing-System. Roh: `raw/marketing-swipe-2026-09-17.md`. Hub `wiki/marketing.md`, Pattern `copy-gerueste`, Prozess `copy-stueck`. Bestehende Distribution, Kanäle, Branding, Nachfrage-Test und Verkaufsmuster verlinkt, nicht kopiert.
+
 ## 2026-09-09
 
 - ingest: Nachzug Marco: Bestandschließen nicht im Tausch; Skript nicht bei Mini-Tickets; Zusammenfassung geht an ihn zum Lücken füllen.
