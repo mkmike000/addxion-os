@@ -42,13 +42,13 @@ Person nur mit bestehender Datei. Leistungen ggf. aus addxion-com ableiten (z. B
   Score: 62
   Hinweis: Vermittlung Jakub Bulun. Angebot lag, Abschluss fehlte. Inbox: Vertrag mitbringen.
 
-- [ ] VorsorgeIQ Trigger und Nachrichten
+- [ ] Kampagne und Landing MW Complete
   Company: [MW Complete](../wiki/relations/companies/mw-complete.md)
   Person: [Marco Wiede](../wiki/relations/people/marco-wiede.md)
-  Leistungen: Trigger + programmatische Nummer + Antworten/Nachrichten am bestehenden Workflow. Name statt VorsorgeIQ offen. Kein Social-Media-Aufräumen in dieser Zeile.
+  Leistungen: Landing unter MW Complete optimieren; FB/IG-Plan in den Workflow; eine Kampagne online. Referenzen aus VorsorgeIQ-Kampagnen. WhatsApp Meta EPI. Kein Social-Feed-Betrieb in dieser Zeile.
   B: 3  R: 3  D: —  A: 3
   Score: 0
-  Hinweis: Seite und Workflow stehen. Wartet auf Partnermail und Seiten-Feedback. Scope: [Decision](../wiki/decisions/scope-marco-wiede.md). Score 0 bis Deadline gesetzt.
+  Hinweis: Partnerzugriff Meta da. Name statt VorsorgeIQ: MW Complete. Scope: [Decision](../wiki/decisions/scope-marco-wiede.md). Score 0 bis Deadline gesetzt.
 
 - [ ] Marketing-Automation LA Tools — erster Schnitt Anfrage + Follow-up
   Company: [LA Tools Service](../wiki/relations/companies/la-tools-service.md)

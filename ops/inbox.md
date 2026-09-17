@@ -22,6 +22,18 @@ Formel: ohne Deadline → 0. Sonst Notion-Formel in AGENTS.md.
   Score: 33
   Hinweis: Strategie-Angebot, was man dem Kunden sagen könnte. Nachrangig zu comsolution. Site neu denkbar, nicht gesetzt.
 
+- [ ] VorsorgeIQ-Kampagnenliste sichten
+  Link: [wiki/relations/companies/mw-complete.md](../wiki/relations/companies/mw-complete.md) · [wiki/decisions/scope-marco-wiede.md](../wiki/decisions/scope-marco-wiede.md)
+  B: 3  R: 2  D: 2026-09-17  A: 2
+  Score: 40
+  Hinweis: Referenzen für die erste MW-Complete-Kampagne. Das Beste übernehmen, nichts erfinden. Fenster heute genannt.
+
+- [ ] Meta EPI WhatsApp MW Complete
+  Link: [wiki/relations/companies/mw-complete.md](../wiki/relations/companies/mw-complete.md) · [wiki/relations/people/marco-wiede.md](../wiki/relations/people/marco-wiede.md)
+  B: 3  R: 3  D: —  A: 2
+  Score: 0
+  Hinweis: Von Marco so besprochen. Partnerzugriff Meta ist da. Score 0 bis Deadline gesetzt.
+
 - [ ] Angebot Michael Marth Band klären
   Link: [ops/opportunities.md](opportunities.md) · [wiki/relations/companies/michael-marth-band.md](../wiki/relations/companies/michael-marth-band.md)
   B: 2  R: 2  D: —  A: 2

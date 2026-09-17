@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-09-17
 
+- ingest: Marco Wiede Partnerzugriff Meta gegeben. Name öffentlich MW Complete statt VorsorgeIQ. Reihenfolge: WhatsApp EPI, FB/IG-Plan in den Workflow, eine Kampagne, eigene Landing. Roh: `raw/marco-wiede-2026-09-17.md`. Waiting nur noch Schrift. Inbox: Kampagnenliste heute, EPI ohne Deadline.
 - ingest: Marketing-System. Roh: `raw/marketing-swipe-2026-09-17.md`. Hub `wiki/marketing.md`, Pattern `copy-gerueste`, Prozess `copy-stueck`. Bestehende Distribution, Kanäle, Branding, Nachfrage-Test und Verkaufsmuster verlinkt, nicht kopiert.
 
 ## 2026-09-09

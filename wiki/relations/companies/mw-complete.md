@@ -2,11 +2,12 @@
 type: company
 id: mw-complete
 title: MW Complete
-aliases: []
-description: Firma Marco Wiede. Lead / Austausch. Kern ist Verkaufsprozess, Seite ist Infozettel.
+aliases:
+  - VorsorgeIQ
+description: Firma Marco Wiede. Öffentlicher Name statt VorsorgeIQ. Kern bleibt Verkaufsprozess. Landing und erste Kampagne als nächstes Stück.
 status: draft
 owner: mike
-updated: 2026-09-09
+updated: 2026-09-17
 tags:
   - company
   - lead
@@ -17,9 +18,12 @@ sources:
   - id: chat-2026-09-09
     resource: raw/marco-wiede-2026-09-09.md
     title: Marco Wiede 2026-09-09
+  - id: chat-2026-09-17
+    resource: raw/marco-wiede-2026-09-17.md
+    title: Partnerzugriff und Name MW Complete
 ---
 
-So genannt. Keine öffentliche Site in der Aufnahme.
+So genannt. VorsorgeIQ war Arbeitstitel der Unterseite und des Workflows. Einigung 2026-09-17: der öffentliche Name ist MW Complete. Eigene Landingpage, noch zu optimieren.
 
 # Personen
 
@@ -27,25 +31,29 @@ So genannt. Keine öffentliche Site in der Aufnahme.
 
 # Instanzen
 
-- Arbeitstitel VorsorgeIQ: Unterseite steht, Workflow steht. Marco soll die Seite lesen. Trigger/Outbound weiter offen. Name offen.
-- Meta-Account: Partnerzugriff zugesagt, nicht angekommen.
+- Workflow (Arbeitstitel VorsorgeIQ): Unterseite und Ablauf stehen. Trigger, programmatische Nummer, Antworten/Nachrichten weiter offen. Soll die Leitung aus dem Facebook-/Instagram-Plan aufnehmen.
+- Meta-Account: Partnerzugriff ist da (2026-09-17).
+- WhatsApp: Meta EPI soll Mike besorgen. Noch nicht da.
 
 # Rolle der Stücke
 
-Einigung 2026-09-09: Website = Infozettel. Wichtig ist der Verkaufsprozess. Social Media und Marcos eigene Site sind andere Projekte.
+Einigung 2026-09-09: Website = Infozettel. Wichtig ist der Verkaufsprozess.
+
+Einigung 2026-09-17: Facebook/Instagram nicht als Betrieb übernehmen. Zuerst Plan (Ist und Lücke), dann in den Workflow, dann eine Kampagne online. Referenzen aus bestehenden VorsorgeIQ-Kampagnen, das Beste übernehmen. Social-Feed aufräumen bleibt anderes Projekt, siehe [Scope](../../decisions/scope-marco-wiede.md).
 
 Vision genannt: automatisierte Anfragen (2–3 am Tag), menschlicher Abschluss, Prozessoptimierung im Hintergrund.
 
 # Offen
 
-Ziel: Kampagne nur so weit, wie Schrift und Partnerzugriff da sind.
+Ziel: eine Kampagne online unter dem Namen MW Complete, gespeist aus dem Workflow.
 
-Ist: Demo erklärt, gut aufgenommen. Mail fehlt.
+Ist: Partnerzugriff Meta da. Demo erklärt. Name mündlich auf MW Complete gezogen.
 
-Lücke: Produktname, Kanal, Haftung Finanzwerbung, Partnerrolle Meta.
+Lücke: WhatsApp EPI, FB/IG-Plan, Kampagnen-Referenzen ausgewertet, Landing unter MW Complete, Trigger/Outbound, Schrift zum Scope.
 
 Zu klären:
 
-- Endgültiger Name statt VorsorgeIQ
-- Inhalt der Partner-Mail
-- Feedback zur Unterseite
+- Inhalt und Qualität der VorsorgeIQ-Kampagnenliste
+- Was Meta EPI für WhatsApp hier genau freischaltet
+- Haftung Finanzwerbung bleibt offen
+- Ob Schrift den neuen Namen und die Kampagnen-Reihenfolge hält

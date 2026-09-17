@@ -4,10 +4,10 @@ id: marco-wiede
 title: Marco Wiede
 aliases:
   - Markus Wiede
-description: MW Complete. Verkaufstraining Block 1 begonnen. Tausch Schritt für Schritt, Schrift per Mail offen.
+description: MW Complete. Partnerzugriff Meta gegeben. Name öffentlich MW Complete statt VorsorgeIQ. Kampagne als nächstes Ziel.
 status: draft
 owner: mike
-updated: 2026-09-09
+updated: 2026-09-17
 tags: [person]
 sources:
   - id: chat-2026-09-08
@@ -16,6 +16,9 @@ sources:
   - id: chat-2026-09-09
     resource: raw/marco-wiede-2026-09-09.md
     title: Marco Wiede 2026-09-09
+  - id: chat-2026-09-17
+    resource: raw/marco-wiede-2026-09-17.md
+    title: Partnerzugriff und Name MW Complete
 ---
 
 # Firma
@@ -26,9 +29,19 @@ sources:
 
 Im Gespräch einmal Markus genannt; gilt als dieselbe Person, bis ein zweiter Name belegt ist.
 
-# Stand 2026-09-09
+# Stand 2026-09-17
 
-Gespräch ca. eine Stunde. Verkaufstraining Block 1 (Bedarfsermittlung) bis Seite 1. Arbeitsblatt übergeben.
+Partnerzugriff Meta gegeben.
+
+Besprochen, Reihenfolge:
+
+1. Mike besorgt Meta EPI für WhatsApp.
+2. Plan Facebook/Instagram: Ist seines Marketings, was besser geht.
+3. Plan in den Workflow (ehemals VorsorgeIQ) bauen.
+4. Eine Kampagne online. Referenzen aus der VorsorgeIQ-Kampagnenliste.
+5. Öffentlicher Name: MW Complete. Eigene Landing, noch zu optimieren.
+
+Vorher (2026-09-09): Verkaufstraining Block 1 bis Seite 1. Arbeitsblatt übergeben.
 
 Sätze, die er nutzt:
 
@@ -39,18 +52,15 @@ Sätze, die er nutzt:
 
 Vision genannt: Workflows, 2–3 Anfragen pro Tag, Verkäufer vorne, Mike am Prozess.
 
-Zugesagt: Partnerzugriff Meta plus Erklärung per E-Mail. Unterseite anschauen und Feedback schicken.
-
 # Offen
 
-Ziel: Schrift zum Scope, Training weiter, Kampagne nur im vereinbarten Rahmen.
+Ziel: Schrift zum Scope, Training weiter, erste Kampagne unter MW Complete.
 
-Ist: mündliche Einigung Schritt für Schritt. Training begonnen. Partnermail fehlt.
+Ist: mündliche Einigung Schritt für Schritt plus Name und Partnerzugriff.
 
-Lücke: keine Mail, kein datierter Tauschvertrag, Block 1 nicht durchgearbeitet.
+Lücke: keine Mail als Vertrag, Block 1 nicht durchgearbeitet, EPI und Kampagnenliste nicht ausgewertet.
 
 Zu klären:
 
 - Ob die Mail den Scope so festhält wie [Decision](../../decisions/scope-marco-wiede.md)
 - Nächster Trainingsblock
-- Ob Meta-Partnerzugriff ankommt
