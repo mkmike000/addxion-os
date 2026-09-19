@@ -13,6 +13,7 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [Copy-Gerüste](copy-gerueste.md) — PAS, BAB, 4Ps, Auswahl
 * [Mail-Translation](mail-translation.md) — Stub
 * [Gebietspaket-Lizenz](gebietspaket-lizenz.md) — Fahrschule, Prüfgebiet
+* [Partnerschaft](partnerschaft.md) — Entwurf, gilt nicht
 * [Nachfrage-Test](nachfrage-test.md) — Kontakt, Ort, Zahlungsabsicht
 * [Bewertung-Scan](bewertung-scan.md) — Profil beschreiben, Antragspfad offen
 * [Fahrschulen](fahrschulen.md) — Zielgruppe DE, Liste in n8n
