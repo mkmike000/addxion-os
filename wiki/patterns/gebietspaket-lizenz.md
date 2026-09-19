@@ -5,7 +5,7 @@ aliases: [schwierige Stellen, Prüfgebiet-Videos]
 description: Standortbezogene Videos zu typischen Prüfungsstellen. Nutzungsrecht an die Fahrschule.
 status: draft
 owner: mike
-updated: 2026-08-29
+updated: 2026-09-19
 tags: [pattern, fahrschule]
 sources:
   - id: chat-2026-08-28
@@ -17,7 +17,7 @@ Karte: [Gebietspaket](../gebietspaket.md). Pilot: [Gebietspilot](../processes/ge
 
 ADDXION bleibt Rechteinhaber. Die Fahrschule darf das Paket nur an eigene Schüler und nur im lizenzierten Prüfgebiet ausspielen. Kein YouTube-Upload, keine „offizielle Prüfungsstrecke“.
 
-White-Label hier = Name der Schule auf dem Paket. Das ist nicht das Empfehlungsmodell in [Vertrieb](../processes/vertrieb.md) (dort v1 ohne White-Label).
+White-Label hier = Name der Schule auf dem Paket. Das ist nicht das Empfehlungsmodell in [Vertrieb](../processes/vertrieb.md) (dort v1 ohne White-Label). Partner-Status gegenüber Kunde ist Entwurf und gilt nicht: [Partnerschaft](partnerschaft.md).
 
 # Inhalt
 
