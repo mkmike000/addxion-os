@@ -4,7 +4,7 @@ title: Ökosystem
 description: North Star, Produkte, Package-Grenzen, Daten-Trennung.
 status: active
 owner: shared
-updated: 2026-09-06
+updated: 2026-09-19
 tags: [platform]
 sources:
   - id: docs-eco
@@ -43,13 +43,13 @@ Consumer: addxion.ai · addxion.com
 | `@addxion/neon` | Tokens, Manifest, Adapter | App-Logik, Auth |
 | `@addxion/components` | Primitives, Chat, PageHeader, MenuBar, QuickNav, Command | Nav-Daten, LLM-Calls |
 | `@addxion/auth` | Schema, Permissions, Session, Gates | Produkt-Tabellen |
-| `@addxion/ai` | OpenRouter, Streaming, Message-Typen | Chrome, Scroll, Produkt-Prompts |
+| `@addxion/ai` | OpenRouter, Streaming, Message-Typen, System-One-Client | Chrome, Scroll, Produkt-Prompts |
 | `@addxion/behavior` | Scroll-Hooks, Haptics, Intent | React-DOM |
 | `@addxion/xi` | `protocol`, `core` | UI, Nav-Logik, Docs-Sidebar |
 
 Status: neon, components, auth, ai, behavior live; xi `protocol` + `core` live (HTTP-Port zum Kernel).
 
-Heimat UI und Behavior: `addxion-neon`. Identity: `addxion-auth`. LLM und TS-XI: `addxion-ai`. Kernel: `addxion-xi`.
+Heimat UI und Behavior: `addxion-neon`. Identity: `addxion-auth`. LLM und TS-XI: `addxion-ai`. Kernel: `addxion-xi`. System One: [Jev-Heimat](../decisions/jev-heimat.md).
 
 # Daten
 

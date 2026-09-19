@@ -11,3 +11,4 @@ Bewusste Festlegungen.
 * [Rechnung vs Checkout](rechnung-vs-checkout.md) — Verkauf vor dem Geld
 * [Scope Marco Wiede drei Monate](scope-marco-wiede.md) — Entwurf; Name MW Complete, Partnerzugriff da
 * [Swipe-Stack](swipe-stack.md) — Motion plus Embla; Three.js später
+* [Jev-Heimat](jev-heimat.md) — Client in `@addxion/ai`, XI nur Port

@@ -4,7 +4,7 @@ title: addxion-ai
 description: KI-App unter addxion.ai und Package @addxion/ai.
 status: active
 owner: shared
-updated: 2026-09-09
+updated: 2026-09-19
 tags: [platform]
 sources:
   - id: docs-ai
@@ -26,7 +26,7 @@ Demo-Logins auf `/login`, gruppiert nach Pack: Fahrschule (Ninos Lehrer, Mike Sc
 
 `/kurse` ist Compass-Vollbreite, nicht die 480px-Chat-Shell. Kurs-Rail rechts. PageHeader `wide` mit Glass-Nav (kein Drop-Shadow).
 
-Package `@addxion/ai`: Stream-Chunks und Message-Format. System-Prompts und Produkt-DB bleiben im Consumer.
+Package `@addxion/ai`: Stream-Chunks und Message-Format. System-Prompts und Produkt-DB bleiben im Consumer. System-One-Client (Jev) derselbe Package-Ort, nicht Chat-Stream — [Jev-Heimat](../decisions/jev-heimat.md), Muster [System One](../patterns/system-one.md).
 
 Package `@addxion/xi`: `protocol` + `core` (HTTP-Client zum Elixir-Kernel). Evolutionslogik bleibt in `addxion-xi`.
 

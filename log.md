@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-09-19
 
+- ingest: Jev / System One. Roh: `raw/jev-system-one-2026-09-19.md`. Pattern `wiki/patterns/system-one.md`. Decision `wiki/decisions/jev-heimat.md` — Client in `@addxion/ai`, XI nur Port. Pointer Repo-Grenzen, addxion-ai, Ökosystem.
 - ingest: Partnerschaft als Idee, gilt nicht. Roh: `raw/partnerschaft-ideen-2026-09-19.md`. Pattern `wiki/patterns/partnerschaft.md` (draft). Keine Decision.
 
 ## 2026-09-17

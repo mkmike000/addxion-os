@@ -4,6 +4,7 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 
 * [Einmal pflegen](einmal-pflegen.md)
 * [Repo-Grenzen](repo-grenzen.md)
+* [System One](system-one.md) — typisierte Entscheidung neben dem LLM
 * [UI-SSOT](ui-ssot.md)
 * [CSS-Schichten](css-schichten.md)
 * [CardRoot](card-root.md) — App-Surfaces, GenUI

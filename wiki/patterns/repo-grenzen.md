@@ -4,7 +4,7 @@ title: Repo-Grenzen
 description: SSOT pro Inhaltstyp. addxion-docs ist keine Docs-SSOT mehr.
 status: active
 owner: shared
-updated: 2026-09-06
+updated: 2026-09-19
 tags: [pattern]
 sources:
   - id: docs-boundaries
@@ -21,7 +21,8 @@ sources:
 | Auth-Schema | `addxion-auth` / `@addxion/auth` |
 | Scroll / Intent | `@addxion/behavior` in `addxion-neon` (behalten) |
 | Cross-App-Protokoll | `@addxion/xi` |
-| LLM-Client | `@addxion/ai` |
+| LLM-Client + System-One-Client | `@addxion/ai` — [Jev-Heimat](../decisions/jev-heimat.md) |
+| Env-Score | Kernel `evaluate_report`, nicht Jev |
 | Plattform-Wissen, Marke, Design-Grammatik | **dieses Repo** |
 | XI Kernel (Plan, Keil, Stand, Begriffe) | [addxion-xi](../platforms/addxion-xi.md) |
 | XI Kernel Code | Instanz `addxion-xi` |
