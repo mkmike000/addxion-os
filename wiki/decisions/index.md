@@ -3,6 +3,7 @@
 Bewusste Festlegungen.
 
 * [Relations-Queue in ops](relations-ops.md)
+* [Eigene Frameworks](eigene-frameworks.md) — besitzen, versionieren, über die Zeit erweitern
 * [Firma, Person, Opportunity](relations-parties.md)
 * [addxion-docs ist keine SSOT](docs-ssot-hier.md)
 * [Constraint und Auftrag in Ops](ops-intent-constraint.md)

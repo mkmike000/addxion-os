@@ -2,6 +2,7 @@
 
 Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 
+* [Framework](framework.md) — eigenes Vertragssystem, Version, Slots
 * [Einmal pflegen](einmal-pflegen.md)
 * [Repo-Grenzen](repo-grenzen.md)
 * [System One](system-one.md) — typisierte Entscheidung neben dem LLM

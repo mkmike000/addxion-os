@@ -3,6 +3,7 @@
 Nur generische Abläufe, nicht kundenspezifisch. Kundendinge: [Relations](../relations/). Ingest/Query/Lint: [AGENTS.md](../../AGENTS.md).
 
 * [Wissen-Sync](wissen-sync.md)
+* [Framework bauen](framework-bauen.md) — von Job bis Version
 * [Consumer-AGENTS](consumer-agents.md) — Truths in Build-Repos nur referenzieren
 * [Vertrieb](vertrieb.md) — Empfehlungsmodell
 * [Copy-Stück](copy-stueck.md) — ein öffentliches Stück schreiben

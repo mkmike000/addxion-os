@@ -31,6 +31,7 @@ Code-Repos, n8n und Webflow sind **Instanzen**. Sie speichern die konkrete Quell
 * [Gebietspaket](wiki/gebietspaket.md) — Vorhaben Fahrschule / Erstversuch
 * [Platforms](wiki/platforms/) — eine Datei pro Plattform
 * [Patterns](wiki/patterns/) — wiederverwendbar
+* [Frameworks](wiki/frameworks/) — eigene Vertragssysteme, versioniert
 * [Relations](wiki/relations/) — Firmen und Personen; Opportunities in ops
 * [Decisions](wiki/decisions/) — Festlegungen
 * [Processes](wiki/processes/) — generisch, nicht kundenspezifisch

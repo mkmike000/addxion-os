@@ -21,7 +21,7 @@ Einstieg: [index.md](index.md).
 ### Ingest
 
 1. Quelle nach `raw/` legen (oder dort lassen). Zusammenhängende Erzählung nach `raw/story/`.
-2. In eigenen Worten nach `wiki/` verdichten. Pattern, Firma und Person getrennt.
+2. In eigenen Worten nach `wiki/` verdichten. Pattern, Framework, Firma und Person getrennt.
 3. Links statt Kopie. `sources` setzen, wo Herkunft existiert.
 4. Zeile in `log.md` (neueste oben): `ingest: …`
 
@@ -31,7 +31,7 @@ Zuerst [index.md](index.md) und `wiki/`. Nicht in Kunden-Repos suchen, solange d
 
 ### Lint
 
-Tote Links, Widersprüche, doppelte Aussagen, veraltete Firmen-Seiten, Personen-Datei nicht `vorname-nachname`, Firma ohne `id` oder `id` ungleich Dateiname, zwei gleiche `id`, zwei gleiche Vor-Nachnamen ohne Zahlensuffix, Alias das eine andere Person oder Firma meint, Firma ohne `# Personen` oder Person ohne Firmen-Link, Tickets/Opportunities ohne Wiki-Link, Doing ohne Absicht, Fertig-wenn oder Tür. Befund: Zeile `lint: …` in `log.md`.
+Tote Links, Widersprüche, doppelte Aussagen, veraltete Firmen-Seiten, Personen-Datei nicht `vorname-nachname`, Firma ohne `id` oder `id` ungleich Dateiname, zwei gleiche `id`, zwei gleiche Vor-Nachnamen ohne Zahlensuffix, Alias das eine andere Person oder Firma meint, Firma ohne `# Personen` oder Person ohne Firmen-Link, Framework-Datei nicht in `wiki/frameworks/` oder ohne Version/Slot/`id`, Tickets/Opportunities ohne Wiki-Link, Doing ohne Absicht, Fertig-wenn oder Tür. Befund: Zeile `lint: …` in `log.md`.
 
 **Lint-Priorität:** Zuerst aktive Firmen + Einträge in ops; leere Stubs nicht als Blocker behandeln.
 
@@ -50,6 +50,7 @@ Ein File für die ganze SSOT. Neueste oben. Git bleibt Versionierung; das Log is
 ## Pattern vs. Instanz vs. Relations
 
 - **Pattern** (`wiki/patterns/`) — wiederverwendbar, abstrakt (z. B. Mail-Automation als Leistungsmuster).
+- **Framework** (`wiki/frameworks/<id>.md`) — eigenes, versioniertes Vertragssystem mit Slots. `id` Pflicht, gleich dem Dateinamen. Instanz pinnt eine Version. Wächst über die Zeit. Regel: [wiki/patterns/framework.md](wiki/patterns/framework.md). Bauen: [wiki/processes/framework-bauen.md](wiki/processes/framework-bauen.md).
 - **Firma** (`wiki/relations/companies/firmenname.md`) — eine Datei. Dateiname = Name (Slug). `id` Pflicht, gleich dem Dateinamen. Kunde oder Lead (`tags: [lead]`). Abschnitt `# Personen` mit Links auf die Personen-Dateien. Bei zwei gleichen Namen: Zahlensuffix (`…-2`). Ändert sich der reale Name, Datei und `id` nachziehen.
 - **Person** (`wiki/relations/people/vorname-nachname.md`) — eine natürliche Person. Dateiname = Vor- und Nachname (Slug). `id` Pflicht, gleich dem Dateinamen. Firma steht unter `# Firma`, nicht im Dateinamen. Kein `p-firma-…`. Bei zwei Personen mit gleichem Vor- und Nachnamen: Zahlensuffix (`…-2`) und `disambiguation` (Firma oder Rolle), keine Privatdaten. Nie mergen. Ändert sich der reale Name, Datei und `id` nachziehen. Keine E-Mail, Telefon, Adresse, Geburtstag.
 - **Instance** — konkrete Umsetzung (n8n, Repo, Webflow). Die Instanz ist die Quelle jener Sache. Hier Pointer, kein Abzug des Workflows oder der Kundendaten. Beispiel: Mail-Entlastung bei Grafik-Werkstatt = n8n-Mail-Automation-Instanz, nicht nur abstraktes Pattern.
@@ -65,8 +66,8 @@ Jede kuratierte Wiki-Datei außer kurzen Indexes:
 
 ```yaml
 ---
-type: pattern | company | person | decision | process | platform | fundamental
-id: …   # Pflicht bei company und person; gleich dem Dateinamen
+type: pattern | company | person | decision | process | platform | fundamental | framework
+id: …   # Pflicht bei company, person und framework; gleich dem Dateinamen
 title: …
 aliases: []
 description: …

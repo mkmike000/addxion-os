@@ -11,6 +11,7 @@ Kuratierte Wahrheit. Regeln: [AGENTS.md](../AGENTS.md).
 * [Gebietspaket](gebietspaket.md) — Vorhaben Fahrschule / Erstversuch
 * [Platforms](platforms/) — eine Datei pro Plattform
 * [Patterns](patterns/) — wiederverwendbar
+* [Frameworks](frameworks/) — eigene Vertragssysteme, versioniert
 * [Relations](relations/) — Firmen und Personen; Opportunities in ops
 * [Decisions](decisions/) — Festlegungen
 * [Processes](processes/) — generisch
