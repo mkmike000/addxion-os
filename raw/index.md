@@ -4,7 +4,7 @@ Hier liegen **Quellen**, nicht die Wahrheit. Agenten lesen, schreiben nicht um.
 
 Kuratiertes steht in [wiki/](../wiki/). Zusammenhängende Erzählung: [story/](story/).
 
-Die Starlight-Seiten in `addxion-docs` sind Herkunft des Plattform-Ingests vom 2026-08-24. Nicht hierher kopiert — Repo nebenan, bis es abgeschaltet wird.
+Die Starlight-Seiten in `addxion-docs` sind Herkunft des Plattform-Ingests vom 2026-08-24. Nicht hierher kopiert. Repo archiviert, keine live Site.
 
 * [Jev System One 2026-09-19](jev-system-one-2026-09-19.md)
 * [Partnerschaft Ideen 2026-09-19](partnerschaft-ideen-2026-09-19.md)

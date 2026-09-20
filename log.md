@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-09-20
+
+- decision: Wiki-Karte Ist/Ziel getrennt. Fahrschul-Routen Ist in `super.md`, Ziel-Pack in `addxion-ai.md`. `addxion-auth.md` kein Phantom-Repo: Package `addxion-ai/packages/auth`, Worker `addxion-ai`, D1 `addxion-auth`. `addxion-shell.md` bleibt deprecated plus Ist-Zeile. `addxion-docs` nicht live.
+
 ## 2026-09-19
 
 - ingest: Jev / System One. Roh: `raw/jev-system-one-2026-09-19.md`. Pattern `wiki/patterns/system-one.md`. Decision `wiki/decisions/jev-heimat.md` — Client in `@addxion/ai`, XI nur Port. Pointer Repo-Grenzen, addxion-ai, Ökosystem.
