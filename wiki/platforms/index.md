@@ -1,6 +1,6 @@
 # Platforms
 
-Eine Datei pro Plattform. Abschnitte, keine Mikro-Dateien. `addxion-docs` ist keine Plattform.
+Eine Datei pro Plattform. Abschnitte, keine Mikro-Dateien. `addxion-docs` ist keine Plattform: Repo archiviert, keine live Site.
 
 * [Ökosystem](oekosystem.md) — North Star, Packages, Daten
 * [addxion-ai](addxion-ai.md)

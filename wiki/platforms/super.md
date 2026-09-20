@@ -1,22 +1,28 @@
 ---
 type: platform
 title: süper
-description: Fahrschul-Fläche. Ziel White-Label auf addxion.ai.
-status: draft
+description: Lebende Fahrschul-App. Ziel White-Label auf addxion.ai.
+status: active
 owner: shared
-updated: 2026-09-06
+updated: 2026-09-20
 tags: [platform]
 ---
 
-Keine eigene App mehr. Fahrschul-Domäne lebt in [addxion-ai](addxion-ai.md).
+# Ist
+
+Eigene Next-App. Repo `super`. Host `süper.app` (`xn--sper-0ra.app`). App-D1 `super-app` (`FAHRSCHULE_DB`). Auth-D1 dieselbe wie ai: `addxion-auth`. Eigenes `/login`.
+
+Routen leben **hier**, nicht in [addxion-ai](addxion-ai.md): `/theorie-pruefung`, `/fortschrittskarte`, `/analysen`, `/kurse`, `/muster`, `/schueler`, plus `/onboarding`, `/profil`, `/diagrammkarte`, `/richtlinien`. Nav-SSOT: `src/manifest.ts`.
+
+Chrome-Ist: `@addxion/shell`. Siehe [addxion-shell](addxion-shell.md).
 
 # Ziel
 
-`süper.app` später als **White-Label** derselben addxion.ai-App für eine Fahrschul-Organisation: eigene Domain, gleiches Produkt, Pack `fahrschule`.
+Keine eigene App mehr. Fahrschul-Domäne als Pack `fahrschule` in [addxion-ai](addxion-ai.md). `süper.app` dann **White-Label** derselben App für eine Fahrschul-Organisation: eigene Domain, gleiches Produkt.
 
-# Jetzt
+Schule = Organisation. Lehrer steuert Karten der Schüler. Redirects von `xn--sper-0ra.app` nach addxion.ai, sobald die Domain auf der neuen Surface steht.
 
-Routen in addxion.ai: `/fragen`, `/fortschrittskarte`, `/schueler`, `/analysen`, `/termine`, `/kurse`, `/onboarding`. Schule = Organisation. Lehrer steuert Karten der Schüler. Redirects von `xn--sper-0ra.app` nach addxion.ai, sobald die Domain zeigt.
+Nicht jetzt: Routen nach ai kopieren. Erst Chrome, Schema-Vertrag, dann Route für Route.
 
 # Später
 

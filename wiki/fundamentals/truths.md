@@ -4,15 +4,15 @@ title: Truths
 description: Registry der Plattform-Wahrheiten. IDs referenzieren, nicht paraphrasieren.
 status: active
 owner: shared
-updated: 2026-09-06
+updated: 2026-09-20
 tags: [fundamental]
 sources:
   - id: docs-truths
     resource: addxion-docs/src/content/docs/ecosystem/truths.md
-    title: Truths — Plattform-Wahrheiten (Herkunft)
+    title: Truths — Plattform-Wahrheiten (Herkunft Starlight, archiviert)
 ---
 
-Herkunft: Starlight-Registry in `addxion-docs`. Volltext gilt **hier**. Überall sonst `T-…` nennen.
+Herkunft: Starlight-Registry in `addxion-docs` (archiviert, keine live Site). Volltext gilt **hier**. Überall sonst `T-…` nennen.
 
 Truth = was gilt. Handlung = `AGENTS.md` und Agent-Abschnitte auf den Wiki-Seiten.
 
@@ -64,7 +64,7 @@ Das Wort nennt das Ding. Keine Extra-Abstraktion, kein Produktjargon über dem G
 
 ### T-PKG-SHELL
 
-**Deprecated.** `@addxion/shell` gibt es nicht. App-Chrome (PageHeader, ChatBox, ChatSurface, CommandPalette, MenuBar, QuickNav) ist `@addxion/components`. Gates: `@addxion/auth/gates`.
+**Deprecated.** Soll: App-Chrome (PageHeader, ChatBox, ChatSurface, CommandPalette, MenuBar, QuickNav) in `@addxion/components`. Gates: `@addxion/auth/gates`. Ist: Package lebt noch; [addxion-shell](../platforms/addxion-shell.md).
 
 ### T-PKG-XI
 
