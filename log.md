@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-09-21
+
+- decision: Eigene Frameworks. Regel `wiki/patterns/framework.md`, Prozess `wiki/processes/framework-bauen.md`, Decision `wiki/decisions/eigene-frameworks.md`. Truth `T-FRAMEWORK`. Ordner `wiki/frameworks/` für die Dateien. Erweitern über Versionen und Slots, nicht in-place brechen.
+
 ## 2026-09-19
 
 - ingest: Jev / System One. Roh: `raw/jev-system-one-2026-09-19.md`. Pattern `wiki/patterns/system-one.md`. Decision `wiki/decisions/jev-heimat.md` — Client in `@addxion/ai`, XI nur Port. Pointer Repo-Grenzen, addxion-ai, Ökosystem.

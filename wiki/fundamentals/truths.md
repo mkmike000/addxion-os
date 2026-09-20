@@ -4,7 +4,7 @@ title: Truths
 description: Registry der Plattform-Wahrheiten. IDs referenzieren, nicht paraphrasieren.
 status: active
 owner: shared
-updated: 2026-09-06
+updated: 2026-09-21
 tags: [fundamental]
 sources:
   - id: docs-truths
@@ -55,6 +55,10 @@ Jedes Repo hat eine klare Verantwortung. [Repo-Grenzen](../patterns/repo-grenzen
 ### T-KLARTEXT
 
 Das Wort nennt das Ding. Keine Extra-Abstraktion, kein Produktjargon über dem Gegenstand. Produkt/Code/Identifier: Englisch. Wiki: Deutsch. Ausarbeitung: [Klartext](klartext.md).
+
+### T-FRAMEWORK
+
+ADDXION baut eigene Frameworks. Vertrag, Version, Slots. Erweitern und verbessern über die Zeit. Breaking Change = neue Version. Fremdes ist Quelle, nicht SSOT. Ausarbeitung: [Framework](../patterns/framework.md).
 
 # Packages
 
