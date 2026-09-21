@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-09-21
+
+- ingest: comsolution Landing-CTA. Roh: `raw/com-solution-cta-2026-09-21.md`. Firma `wiki/relations/companies/com-solution.md` (Abschnitt Landing CTA, Mitsoulis). Person `wiki/relations/people/lukas-mitsoulis.md`. Pattern `wiki/patterns/cta-mauer.md` draft. Keine Decision, keine Button-Copy.
+
 ## 2026-09-19
 
 - ingest: Jev / System One. Roh: `raw/jev-system-one-2026-09-19.md`. Pattern `wiki/patterns/system-one.md`. Decision `wiki/decisions/jev-heimat.md` — Client in `@addxion/ai`, XI nur Port. Pointer Repo-Grenzen, addxion-ai, Ökosystem.

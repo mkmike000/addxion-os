@@ -12,6 +12,7 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [Privacy by Design](privacy-by-design.md)
 * [Marketing-Sites](marketing-sites.md)
 * [Copy-Gerüste](copy-gerueste.md) — PAS, BAB, 4Ps, Auswahl
+* [CTA-Mauer](cta-mauer.md) — B2B-Landing, Aktion zum Commitment
 * [Mail-Translation](mail-translation.md) — Stub
 * [Gebietspaket-Lizenz](gebietspaket-lizenz.md) — Fahrschule, Prüfgebiet
 * [Partnerschaft](partnerschaft.md) — Entwurf, gilt nicht
