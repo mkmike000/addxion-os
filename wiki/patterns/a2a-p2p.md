@@ -16,7 +16,7 @@ sources:
     title: Rohaufnahme Run-Marge
 ---
 
-Heimat: [addxion-xi → Später](../platforms/addxion-xi.md#später). Dort gilt: A2A = externer Interop-Adapter, nicht Kernel-Kern. `Message` im Keil ≠ A2A-Protokoll. Factory-Formel (Marge/Run, Wert/Recipe) steht in derselben Plattform-Datei, Abschnitt Factory.
+Heimat: [addxion-xi → Später](../platforms/addxion-xi.md#später). Dort gilt: A2A = externer Interop-Adapter, nicht Kernel-Kern. `Message` im Keil ≠ A2A-Protokoll. Factory-Formel (Marge/Run, Wert/Recipe) steht in derselben Plattform-Datei, Abschnitt Factory. Loop- und Kernel-Effekte: [Factory-Effekte](factory-effekte.md).
 
 Kein Collective-Merge. Exploration, nicht nächster Slice.
 

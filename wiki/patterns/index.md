@@ -6,6 +6,7 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [Repo-Grenzen](repo-grenzen.md)
 * [System One](system-one.md) — typisierte Entscheidung neben dem LLM
 * [A2A und P2P](a2a-p2p.md) — Entwurf; Ports um XI; Wirkung auf Run-Marge
+* [Factory-Effekte](factory-effekte.md) — Entwurf; Loop, Kernel, noch zu erzeugen
 * [UI-SSOT](ui-ssot.md)
 * [CSS-Schichten](css-schichten.md)
 * [CardRoot](card-root.md) — App-Surfaces, GenUI

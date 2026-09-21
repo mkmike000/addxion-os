@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-09-22
 
+- ingest: Factory-Effekte (Loop, Kernel, noch interessant). Roh: `raw/factory-effekte-2026-09-22.md`. Pattern draft `wiki/patterns/factory-effekte.md`. Pointer in `a2a-p2p`. Keine Decision. Nicht Pi-Doku.
 - ingest: A2A-Ports vs Run-Marge. Roh: `raw/a2a-p2p-marge-2026-09-22.md`. Abschnitt Wirtschaftlichkeit in `wiki/patterns/a2a-p2p.md`. Formel bleibt Factory in addxion-xi, nicht kopiert. Keine Decision.
 - lint: A2A-Heimat korrigiert. Pointer von `addxion-ai` nach `addxion-xi` (#Später). Pattern `a2a-p2p` zeigt auf den Kernel-Plan, nicht auf die App.
 
