@@ -6,6 +6,7 @@ Kuratiertes steht in [wiki/](../wiki/). Zusammenhängende Erzählung: [story/](s
 
 Die Starlight-Seiten in `addxion-docs` sind Herkunft des Plattform-Ingests vom 2026-08-24. Nicht hierher kopiert — Repo nebenan, bis es abgeschaltet wird.
 
+* [A2A P2P Crypto 2026-08-08](a2a-p2p-crypto-2026-08-08.md)
 * [Jev System One 2026-09-19](jev-system-one-2026-09-19.md)
 * [Partnerschaft Ideen 2026-09-19](partnerschaft-ideen-2026-09-19.md)
 * [Marco Wiede 2026-09-17](marco-wiede-2026-09-17.md)

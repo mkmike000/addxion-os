@@ -4,7 +4,7 @@ title: addxion-ai
 description: KI-App unter addxion.ai und Package @addxion/ai.
 status: active
 owner: shared
-updated: 2026-09-19
+updated: 2026-09-21
 tags: [platform]
 sources:
   - id: docs-ai
@@ -54,6 +54,10 @@ World-dünn-Oberfläche für den Kernel. Plan und Keil: [addxion-xi](addxion-xi.
 | Server | `src/lib/agentic/trading.functions.ts` über `@addxion/xi/core` |
 
 Offline-Banner wenn Kernel nicht erreichbar. Paper/Evolve/Status-Keywords im Chat. Kernel Lite reicht für Swarm/Paper/Factory.
+
+# Offen
+
+A2A / P2P / Crypto als ein Mesh: [A2A und P2P](../patterns/a2a-p2p.md). Roh: [raw/a2a-p2p-crypto-2026-08-08.md](../../raw/a2a-p2p-crypto-2026-08-08.md). Kein Beschluss, den Runtime darauf umzustellen.
 
 # Truths
 

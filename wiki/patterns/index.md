@@ -5,6 +5,7 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [Einmal pflegen](einmal-pflegen.md)
 * [Repo-Grenzen](repo-grenzen.md)
 * [System One](system-one.md) — typisierte Entscheidung neben dem LLM
+* [A2A und P2P](a2a-p2p.md) — Entwurf, Agent-Mesh plus Settlement
 * [UI-SSOT](ui-ssot.md)
 * [CSS-Schichten](css-schichten.md)
 * [CardRoot](card-root.md) — App-Surfaces, GenUI

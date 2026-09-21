@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-09-21
 
+- ingest: A2A / P2P / Crypto Exploration (Chat 2026-08-06–08). Roh: `raw/a2a-p2p-crypto-2026-08-08.md`. Pattern draft `wiki/patterns/a2a-p2p.md`. Pointer in `wiki/platforms/addxion-ai.md` unter Offen. Keine Decision.
 - ingest: comsolution Infobogen (Inhalt, nicht das docx). Roh: `raw/com-solution-infobogen-2026-09-21.md`. Firma nachgezogen: ICP, Partner, CTA D1/D5, Kritik, Offen. Pattern `cta-mauer` um Sieben-Felder ergänzt. Ali/Lydia/Nic ohne Nachname, keine Personen-Dateien. Keine Decision.
 - ingest: comsolution Landing-CTA. Roh: `raw/com-solution-cta-2026-09-21.md`. Firma `wiki/relations/companies/com-solution.md` (Abschnitt Landing CTA, Mitsoulis). Person `wiki/relations/people/lukas-mitsoulis.md`. Pattern `wiki/patterns/cta-mauer.md` draft. Keine Decision, keine Button-Copy.
 
