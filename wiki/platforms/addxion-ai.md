@@ -4,7 +4,7 @@ title: addxion-ai
 description: KI-App unter addxion.ai und Package @addxion/ai.
 status: active
 owner: shared
-updated: 2026-09-21
+updated: 2026-09-22
 tags: [platform]
 sources:
   - id: docs-ai
@@ -34,6 +34,8 @@ Package `@addxion/xi`: `protocol` + `core` (HTTP-Client zum Elixir-Kernel). Evol
 
 Schreibt keine Collective-Wahrheit. Kein paralleles Auth-Schema. Chat-UI (`ChatSurface`, `ChatBox`) und Chrome aus `@addxion/components`, Scroll aus `@addxion/behavior`. Mentions, Voice, LLM bleiben App. Keine Kernel-Interna nachbauen.
 
+A2A / P2P / Crypto gehört nicht hierher. Heimat: [addxion-xi → Später](addxion-xi.md#später), Kurzfassung [A2A und P2P](../patterns/a2a-p2p.md).
+
 # Stack (App)
 
 TanStack Start, React Aria + Neon-Tokens, Better Auth + Drizzle, Effect, Cloudflare Workers. Untitled UI ist Altbestand, nicht Ziel. Katalog: `addxion.com/neon`. `src/components/ui` ist Aria-Fassade auf Neon-Grammatik (Pill-Button/Input/Badge, Select/Combobox-Trigger, SocialButton aus `@addxion/components`). Auth-DB: D1 (`addxion-auth`). App-DB: Neon + Hyperdrive (in der Herkunft: geplant). LLM: OpenRouter. Bun.
@@ -54,10 +56,6 @@ World-dünn-Oberfläche für den Kernel. Plan und Keil: [addxion-xi](addxion-xi.
 | Server | `src/lib/agentic/trading.functions.ts` über `@addxion/xi/core` |
 
 Offline-Banner wenn Kernel nicht erreichbar. Paper/Evolve/Status-Keywords im Chat. Kernel Lite reicht für Swarm/Paper/Factory.
-
-# Offen
-
-A2A / P2P / Crypto als ein Mesh: [A2A und P2P](../patterns/a2a-p2p.md). Roh: [raw/a2a-p2p-crypto-2026-08-08.md](../../raw/a2a-p2p-crypto-2026-08-08.md). Kein Beschluss, den Runtime darauf umzustellen.
 
 # Truths
 
