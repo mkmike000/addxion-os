@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-09-22
 
+- ingest: A2A-Ports vs Run-Marge. Roh: `raw/a2a-p2p-marge-2026-09-22.md`. Abschnitt Wirtschaftlichkeit in `wiki/patterns/a2a-p2p.md`. Formel bleibt Factory in addxion-xi, nicht kopiert. Keine Decision.
 - lint: A2A-Heimat korrigiert. Pointer von `addxion-ai` nach `addxion-xi` (#Später). Pattern `a2a-p2p` zeigt auf den Kernel-Plan, nicht auf die App.
 
 ## 2026-09-21
