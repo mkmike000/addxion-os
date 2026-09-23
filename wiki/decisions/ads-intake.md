@@ -27,6 +27,7 @@ Eine Subdomain, zwei Pfade. Nicht `c.` plus `t.`.
 - Intake: `ads.addxion.com` — `/c`, `/v1/events`, später `/ads.js`
 - Ansicht: Routen in addxion.ai lesen denselben Store per API. Collector bleibt auf `.com`.
 - Code: Instanz-Repo `addxion-ads` (Cloudflare Worker). Nicht in `addxion-ai` oder XI.
+- Embedded App (Ansicht, `orders/paid`, Theme-Embed): `addxion-ai/apps/shopify`. Sie ruft den Worker, sie ist nicht der Store.
 
 `addxion.com` und `addxion.ai` sind zwei Sites. Ein Cookie überquert die Grenze nicht.
 

@@ -35,5 +35,6 @@ sources:
 | Fahrschul-Domäne | `addxion-ai` (D1 `super-app`) |
 | Ads-Netzwerk Wissen | [Ads-Netzwerk](../platforms/ads-netzwerk.md) |
 | Ads-Netzwerk Code | Instanz `addxion-ads` |
+| Shopify-Ads-App | `addxion-ai/apps/shopify` (Ansicht + `orders/paid`, nicht der Collector) |
 
 Neon-Änderungen zuerst im Neon-Repo, dann Consumer.

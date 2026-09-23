@@ -61,7 +61,8 @@ Zuerst Shopify `orders/paid`. ai und `/ads.js` danach.
 
 | Stück | Ort | Sinn |
 | --- | --- | --- |
-| Shopify `orders/paid` | Shop → Worker | `purchase` + `xid` aus Note/Cart-Attribut |
+| Shopify `orders/paid` | `addxion-ai/apps/shopify` → Worker | `purchase` + `xid` aus Note/Cart-Attribut |
+| Theme-Embed `xid` | dieselbe App, `extensions/ads-xid` | Query `xid` → Cart-Attribut |
 | `/ads.js` | ads.addxion.com | später |
 | ai-Server | addxion-ai | später |
 | Custom Pixel | Customer Events | nach Webhook |
@@ -70,6 +71,6 @@ Zuerst Shopify `orders/paid`. ai und `/ads.js` danach.
 # Offen
 
 **Ist:** Phase 1 lokal. Collector unverändert lassen.
-**Jetzt:** Shopify-Webhook + Cart-Attribut `xid`. Journey `/c` → Shop → gleiche `xid` in `clicks` und `events`.
+**Jetzt:** Embedded App `addxion-ai/apps/shopify` (Webhook `orders/paid` + Theme-Embed `xid`). Journey `/c` → Shop → gleiche `xid` in `clicks` und `events`. App-Record in der Partner-Org noch linken.
 **Dann:** `wrangler d1 create`, Secret, Route `ads.addxion.com`.
 **Nicht:** ai-Kurs, Meta, Visualizer-Pixel, Shop-CR in D1.
