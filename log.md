@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-09-23
 
+- decision: Prinzip Nachhaltig. `wiki/fundamentals/nachhaltig.md`. Fertig = Ursache behoben, Vertrag bleibt wahr. Pointer Fundamentals-Index.
 - ingest: Eigenes Ads-Netzwerk. Roh: `raw/ads-netzwerk-2026-09-23.md`. Platform draft `wiki/platforms/ads-netzwerk.md`. Decision `wiki/decisions/ads-intake.md` — API Kern, Pixel Client. Pointer Repo-Grenzen, Platforms-Index, Inbox Phase-1-Vertrag. Nächster Schritt im Wiki-Offen: POST /v1/events plus JS.
 - decision: `wiki/decisions/ads-intake.md` — eine Pipeline, zwei Türen.
 
