@@ -63,3 +63,9 @@ Formel: ohne Deadline → 0. Sonst Notion-Formel in AGENTS.md.
   B: 3  R: 2  D: —  A: 3
   Score: 0
   Hinweis: Instanz = n8n Mail-Automation für Grafik-Werkstatt. Offene Punkte (16 h, 7.000 €, Zuordnung) prüfen. Score 0 bis Deadline gesetzt.
+
+- [ ] Ads-Netzwerk Phase-1-Vertrag
+  Link: [wiki/platforms/ads-netzwerk.md](../wiki/platforms/ads-netzwerk.md)#offen · [wiki/decisions/ads-intake.md](../wiki/decisions/ads-intake.md)
+  B: 3  R: 2  D: —  A: 2
+  Score: 0
+  Hinweis: Nächster Chat: POST /v1/events plus schmales JS. Nicht Doing. Score 0 bis Deadline gesetzt.
