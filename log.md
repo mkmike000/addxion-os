@@ -4,7 +4,8 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-09-23
 
-- ingest: Eigenes Ads-Netzwerk. Roh: `raw/ads-netzwerk-2026-09-23.md`. Platform draft `wiki/platforms/ads-netzwerk.md`. Decision `wiki/decisions/ads-intake.md` — API Kern, Pixel Client. Pointer Repo-Grenzen, Platforms-Index, Inbox Phase-1-Vertrag. Nächster Schritt im Wiki-Offen: POST /v1/events plus JS.
+- decision: Ads-Host `ads.addxion.com` (eine Subdomain, Pfade `/c` `/v1/events`). Query `xid` Pflicht, Host-Cookie nur auf ads.addxion.com. Kein Parent-Cookie `.addxion.com` in Phase 1. Collector nicht auf `.ai`. Code-Repo `addxion-ads`. Nachzug `ads-intake`, `ads-netzwerk`, Repo-Grenzen.
+- ingest: Eigenes Ads-Netzwerk. Roh: `raw/ads-netzwerk-2026-09-23.md`. Platform draft `wiki/platforms/ads-netzwerk.md`. Decision `wiki/decisions/ads-intake.md` — API Kern, Pixel Client. Pointer Repo-Grenzen, Platforms-Index, Inbox Phase-1-Vertrag.
 - decision: `wiki/decisions/ads-intake.md` — eine Pipeline, zwei Türen.
 
 ## 2026-09-22

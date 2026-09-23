@@ -34,6 +34,6 @@ sources:
 | Headless CMS | `addxion-com` (`/cms`) |
 | Fahrschul-Domäne | `addxion-ai` (D1 `super-app`) |
 | Ads-Netzwerk Wissen | [Ads-Netzwerk](../platforms/ads-netzwerk.md) |
-| Ads-Netzwerk Code | noch kein Repo |
+| Ads-Netzwerk Code | Instanz `addxion-ads` |
 
 Neon-Änderungen zuerst im Neon-Repo, dann Consumer.

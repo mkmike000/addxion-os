@@ -13,64 +13,56 @@ sources:
     title: Roh Chat Ads-Netzwerk
 ---
 
-Kein Produktcode hier. Instanz-Repo gibt es noch nicht.
+Produktcode: Instanz `addxion-ads`. Wissen bleibt hier.
 
 # Zweck
 
 ADDXION misst Auslieferung und Outcome auf eigenem Inventar und eigenen Funnels. Wahrheit liegt bei uns, nicht bei Meta. Fremde Netze bleiben optionale Fan-out-Ziele.
 
-Gilt nicht als laufendes Produkt. Gilt als Richtung nach Chat 2026-09-23.
+Gilt als Richtung. Phase 1 ist der Collector, kein DSP.
 
 # Entscheidung
 
-[Ads-Intake](../decisions/ads-intake.md): eine Pipeline, zwei Türen (API und Pixel). API führt.
+[Ads-Intake](../decisions/ads-intake.md): eine Pipeline, zwei Türen. Host `ads.addxion.com`. Query `xid` plus Host-Cookie.
 
 # Wohin im bestehenden System
 
 | System jetzt | Rolle fürs Netzwerk | Warum |
 | --- | --- | --- |
-| [addxion.ai](addxion-ai.md) Kurse, Fahrschule, Org | Conversion-Quelle (`lead`, `purchase`, Theorie, Termin) | Der Server kennt den Abschluss |
-| [addxion.com](addxion-com.md) Landings | Click-Ziel, First-Party-JS | Traffic landet hier |
-| Shopify Customer Events / Webhooks | Shop-Purchase ohne Theme-Pixel | Checkout ist serverseitig wahr |
-| Cloudflare Worker | Collector `POST /v1/events`, Click-Redirect | Rand, First-Party-Host |
-| [addxion-xi](addxion-xi.md) | Später Fan-out, Qualität, nicht Tag-1-Ad-Server | Kernel ist Evolution, kein DSP |
-| [addxion-auth](addxion-auth.md) | `external_id` nur wo schon Session | Identity nicht mit Ads-Events vermischen |
-| n8n | Kein Intake-Kern | Adapter höchstens |
-| Meta/Google Pixel | Fremdes Netz | Nur Fan-out, nicht unser Dataset |
+| [addxion.ai](addxion-ai.md) Kurse, Fahrschule, Org | Conversion-Quelle; später Reports-UI | Server kennt Abschluss; UI ist Client |
+| [addxion.com](addxion-com.md) Landings | Click-Ziel, `xid` in Links | Traffic landet hier |
+| Shopify Customer Events / Webhooks | Shop-Purchase | Checkout serverseitig wahr |
+| `addxion-ads` Worker | `/c`, `/v1/events`, Store | eigener Dienst |
+| [addxion-xi](addxion-xi.md) | nicht Tag 1 | kein Ad-Server |
+| [addxion-auth](addxion-auth.md) | `external_id` nur bei Session | nicht vermischen |
+| n8n | kein Intake-Kern | Adapter höchstens |
+| Meta/Google Pixel | fremdes Netz | nur Fan-out |
 
-App-Daten bleiben isoliert. Ads-Events sind ein eigenes Store, nicht `FAHRSCHULE_DB` und nicht Chat. [Privacy](../patterns/privacy-by-design.md).
+Ads-Events: eigener Store (D1 am Worker). Nicht `FAHRSCHULE_DB`, nicht Chat. [Privacy](../patterns/privacy-by-design.md).
 
-# Wie der Fluss läuft
+# Fluss Phase 1
 
 ```
-Click-Redirect (click_id setzen)
-    → Landing com / ai / Shop
-Pixel (optional) → dieselben Events
-Server (ai, Shopify, Formular) → POST /v1/events
-    → Dedup event_id
-    → Store
-    → später Fan-out Meta CAPI / Google / Warehouse
+Anzeige → ads.addxion.com/c?dest=…
+  → 302 + ?xid= + Set-Cookie Host ads.addxion.com
+Landing com behält xid in CTA
+Abschluss ai oder Shop
+  → POST ads.addxion.com/v1/events { event_id, click_id=xid }
+  → Dedup → D1
 ```
 
 # Phasen
 
 | Phase | Bauen | Nicht bauen |
 | --- | --- | --- |
-| 1 | Click-Redirect, `click_id`, API `lead`/`purchase` | Auktion, Meta-Kompatibilität |
-| 2 | First-Party-JS, Shopify-Adapter | Zweites Wahrheitssystem |
-| 3 | Impression, Frequency, Basic Fraud | Volles DSP |
+| 1 | Worker, `/c`, `/v1/events`, D1, ein Produzent | Auktion, Parent-Cookie, Meta, ai-UI |
+| 2 | `/ads.js`, Shopify-Adapter | zweites Event-Modell |
+| 3 | Impression, Frequency, Basic Fraud | volles DSP |
 | 4 | Bid auf eigene Events | Cross-Device-Graph |
-
-# Grenzen
-
-- Kein Meta-Pixel als Kern unseres Netzes.
-- Kein Tracking ohne Consent im EWR.
-- Produktcode nicht in diesem Repo. [Repo-Grenzen](../patterns/repo-grenzen.md).
-- Clicky / fremde Ad-Plattform von Partnern ist nicht dieses Produkt, solange nicht entschieden.
 
 # Offen
 
-**Ziel:** Phase-1-Vertrag schriftlich und implementierbar.
-**Ist:** Richtung gilt. Kein Repo, kein Endpoint live.
-**Lücke:** Payload und Pixel-Client fehlen als Artefakt.
-**Zu klären / nächster Schritt:** `POST /v1/events` Felder plus schmales JS (Consent, `click_id` aus Query, Beacon). Danach Host-Name und welches Repo den Collector trägt.
+**Ziel:** Phase-1-Collector live, ein Produktions-Event mit `xid` in D1.
+**Ist:** Host und Cookie-Rang entschieden. Repo `addxion-ads` existiert. Endpoint nicht dokumentiert als live.
+**Lücke:** Implementierung im Ads-Repo.
+**Zu klären:** Welcher erste Produzent (Kurs ai vs Shopify) beim ersten Merge.
