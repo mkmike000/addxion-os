@@ -17,52 +17,76 @@ Produktcode: Instanz `addxion-ads`. Wissen bleibt hier.
 
 # Zweck
 
-ADDXION misst Auslieferung und Outcome auf eigenem Inventar und eigenen Funnels. Wahrheit liegt bei uns, nicht bei Meta. Fremde Netze bleiben optionale Fan-out-Ziele.
+ADDXION misst Auslieferung und Outcome auf eigenem Inventar und eigenen Funnels. Wahrheit liegt bei uns, nicht bei Meta. Fremde Netze sind Fan-in (Events zu uns) und Fan-out (unsere Events zu ihnen).
 
-Gilt als Richtung. Phase 1 ist der Collector, kein DSP.
+Phase 1 ist der Collector. Phasen 2–4 sind geplant, nicht gebaut.
 
 # Entscheidung
 
 [Ads-Intake](../decisions/ads-intake.md): eine Pipeline, zwei Türen. Host `ads.addxion.com`. Query `xid` plus Host-Cookie.
 
+Wirkung eines Features: [Vorher Nachher](../patterns/vorher-nachher.md). Shop-Berichte bleiben in Shopify. Feature-Events und der Bestellhaken laufen über diese Pipeline.
+
 # Wohin im bestehenden System
 
-| System jetzt | Rolle fürs Netzwerk | Warum |
+| System jetzt | Rolle | Phase |
 | --- | --- | --- |
-| [addxion.ai](addxion-ai.md) Kurse, Fahrschule, Org | Conversion-Quelle; später Reports-UI | Server kennt Abschluss; UI ist Client |
-| [addxion.com](addxion-com.md) Landings | Click-Ziel, `xid` in Links | Traffic landet hier |
-| Shopify Customer Events / Webhooks | Shop-Purchase | Checkout serverseitig wahr |
-| `addxion-ads` Worker | `/c`, `/v1/events`, Store | eigener Dienst |
-| [addxion-xi](addxion-xi.md) | nicht Tag 1 | kein Ad-Server |
-| [addxion-auth](addxion-auth.md) | `external_id` nur bei Session | nicht vermischen |
-| n8n | kein Intake-Kern | Adapter höchstens |
-| Meta/Google Pixel | fremdes Netz | nur Fan-out |
-
-Ads-Events: eigener Store (D1 am Worker). Nicht `FAHRSCHULE_DB`, nicht Chat. [Privacy](../patterns/privacy-by-design.md).
+| `addxion-ads` Worker | `/c`, `/v1/events`, D1 | 1 |
+| [addxion.com](addxion-com.md) | Landing, `xid` in Links, später `/ads.js` | 1–2 |
+| [addxion.ai](addxion-ai.md) | Produzent Kauf/Lead; später Reports-UI | 2, UI 3 |
+| Shopify Webhook + Custom Pixel | `purchase`, ATC, Feature-Events (`viz_*`) | 2 |
+| Shopify Analytics | Baseline-CR, AOV, Funnel | nicht im Worker |
+| Meta / Google / TikTok | Fan-out CAPI; optional Insights-Pull | 3 |
+| [addxion-xi](addxion-xi.md) | optional Consumer (Score, Fan-out-Job) | 4, nie Intake |
+| [addxion-auth](addxion-auth.md) | `external_id` nur bei Session | 2+ |
 
 # Fluss Phase 1
 
 ```
 Anzeige → ads.addxion.com/c?dest=…
-  → 302 + ?xid= + Set-Cookie Host ads.addxion.com
-Landing com behält xid in CTA
-Abschluss ai oder Shop
-  → POST ads.addxion.com/v1/events { event_id, click_id=xid }
-  → Dedup → D1
+  → 302 + ?xid= + Host-Cookie
+Landing behält xid
+POST /v1/events → Dedup → D1
 ```
 
 # Phasen
 
-| Phase | Bauen | Nicht bauen |
+## 1 Collector (jetzt, Repo `addxion-ads`)
+
+Worker, `/c`, `/v1/events`, D1, Token, Allowlist, `xid` + Host-Cookie. Kein Pixel, kein Shopify, kein Meta, kein XI, kein Deploy-Zwang in dem Plan.
+
+## 2 Produzenten und Pixel
+
+| Stück | Ort | Sinn |
 | --- | --- | --- |
-| 1 | Worker, `/c`, `/v1/events`, D1, ein Produzent | Auktion, Parent-Cookie, Meta, ai-UI |
-| 2 | `/ads.js`, Shopify-Adapter | zweites Event-Modell |
-| 3 | Impression, Frequency, Basic Fraud | volles DSP |
-| 4 | Bid auf eigene Events | Cross-Device-Graph |
+| `/ads.js` | ads.addxion.com | Beacon-Client derselben API |
+| ai-Server nach Lead/Kauf | addxion-ai | erster eigener Produzent |
+| Shopify `orders/paid` | Shop → Worker | `purchase` + `xid` aus Note/Cart-Attribut |
+| Shopify Custom Pixel | Customer Events | `page_view`, ATC, `viz_open` … |
+| Bestellhaken | Shopify Metafield/Note | Feature genutzt ja/nein |
+
+Ein Event-Modell. `source`: `api` \| `pixel` \| `shopify` \| `ai`. Custom Names erlaubt (`viz_success`). PII weiter verboten bis eigene Decision.
+
+Nicht in 2: Meta-CAPI, Parent-Cookie, ai-Dashboard, Shop-Analytics nachbauen.
+
+## 3 Spiegel und Qualität
+
+| Stück | Richtung |
+| --- | --- |
+| Fan-out Meta CAPI / Google / TikTok | wir → die | nur `consent_marketing = 1`, gleiche `event_id` |
+| Insights-Pull (Spend, Campaign) | die → wir | eigener Store `platform_stats`, nicht `events` |
+| Impression `/i` | Publisher → wir | Phase-3-Messung, nicht Billing-Theater |
+| Reports in addxion.ai | lesen D1 | UI ist Client |
+| Basic Fraud | Worker oder Job | Bot, Doppelklick |
+
+Shopify-CR und AOV bleiben Shopify-Export oder Admin-API. Nicht den Collector mit Analytics-Scraping füllen.
+
+## 4 Optimierung
+
+Bid auf eigene Events. XI nur als asynchroner Consumer, Collector läuft ohne Kernel. Kein Cross-Device-Graph als Ziel.
 
 # Offen
 
-**Ziel:** Phase-1-Collector live, ein Produktions-Event mit `xid` in D1.
-**Ist:** Host und Cookie-Rang entschieden. Repo `addxion-ads` existiert. Endpoint nicht dokumentiert als live.
-**Lücke:** Implementierung im Ads-Repo.
-**Zu klären:** Welcher erste Produzent (Kurs ai vs Shopify) beim ersten Merge.
+**Ziel Phase 1:** Event mit `xid` in lokaler D1, Curl-Liste grün.
+**Danach:** ein Produzent (ai oder Shopify), dann `/ads.js`.
+**Nicht vermischen:** Feature-Launch und neue Ads in derselben Baseline-Woche. [Vorher Nachher](../patterns/vorher-nachher.md).
