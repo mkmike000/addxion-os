@@ -19,7 +19,7 @@ Produktcode: Instanz `addxion-ads`. Wissen bleibt hier.
 
 ADDXION misst Auslieferung und Outcome auf eigenem Inventar und eigenen Funnels. Wahrheit liegt bei uns, nicht bei Meta. Fremde Netze sind Fan-in (Events zu uns) und Fan-out (unsere Events zu ihnen).
 
-Phase 1 ist der Collector. Phasen 2–4 sind geplant, nicht gebaut.
+Phase 1 Collector ist lokal fertig. Nächster Diff: Shopify `orders/paid`. addxion.ai in diesem Rutsch nicht (Kursseite fehlt).
 
 # Entscheidung
 
@@ -31,13 +31,13 @@ Wirkung eines Features: [Vorher Nachher](../patterns/vorher-nachher.md). Shop-Be
 
 | System jetzt | Rolle | Phase |
 | --- | --- | --- |
-| `addxion-ads` Worker | `/c`, `/v1/events`, D1 | 1 |
+| `addxion-ads` Worker | `/c`, `/v1/events`, D1 | 1 lokal |
 | [addxion.com](addxion-com.md) | Landing, `xid` in Links, später `/ads.js` | 1–2 |
-| [addxion.ai](addxion-ai.md) | Produzent Kauf/Lead; später Reports-UI | 2, UI 3 |
-| Shopify Webhook + Custom Pixel | `purchase`, ATC, Feature-Events (`viz_*`) | 2 |
+| [addxion.ai](addxion-ai.md) | später Produzent + Reports-UI | nach Shop |
+| Shopify Webhook + Custom Pixel | erster Produzent `purchase` | 2 jetzt |
 | Shopify Analytics | Baseline-CR, AOV, Funnel | nicht im Worker |
 | Meta / Google / TikTok | Fan-out CAPI; optional Insights-Pull | 3 |
-| [addxion-xi](addxion-xi.md) | optional Consumer (Score, Fan-out-Job) | 4, nie Intake |
+| [addxion-xi](addxion-xi.md) | optional Consumer | 4, nie Intake |
 | [addxion-auth](addxion-auth.md) | `external_id` nur bei Session | 2+ |
 
 # Fluss Phase 1
@@ -51,42 +51,25 @@ POST /v1/events → Dedup → D1
 
 # Phasen
 
-## 1 Collector (jetzt, Repo `addxion-ads`)
+## 1 Collector (Repo `addxion-ads`, lokal grün)
 
-Worker, `/c`, `/v1/events`, D1, Token, Allowlist, `xid` + Host-Cookie. Kein Pixel, kein Shopify, kein Meta, kein XI, kein Deploy-Zwang in dem Plan.
+Worker, `/c`, `/v1/events`, D1, Token, Allowlist. Kein Deploy mit Platzhalter-`database_id`.
 
 ## 2 Produzenten und Pixel
 
+Zuerst Shopify `orders/paid`. ai und `/ads.js` danach.
+
 | Stück | Ort | Sinn |
 | --- | --- | --- |
-| `/ads.js` | ads.addxion.com | Beacon-Client derselben API |
-| ai-Server nach Lead/Kauf | addxion-ai | erster eigener Produzent |
 | Shopify `orders/paid` | Shop → Worker | `purchase` + `xid` aus Note/Cart-Attribut |
-| Shopify Custom Pixel | Customer Events | `page_view`, ATC, `viz_open` … |
-| Bestellhaken | Shopify Metafield/Note | Feature genutzt ja/nein |
-
-Ein Event-Modell. `source`: `api` \| `pixel` \| `shopify` \| `ai`. Custom Names erlaubt (`viz_success`). PII weiter verboten bis eigene Decision.
-
-Nicht in 2: Meta-CAPI, Parent-Cookie, ai-Dashboard, Shop-Analytics nachbauen.
-
-## 3 Spiegel und Qualität
-
-| Stück | Richtung |
-| --- | --- |
-| Fan-out Meta CAPI / Google / TikTok | wir → die | nur `consent_marketing = 1`, gleiche `event_id` |
-| Insights-Pull (Spend, Campaign) | die → wir | eigener Store `platform_stats`, nicht `events` |
-| Impression `/i` | Publisher → wir | Phase-3-Messung, nicht Billing-Theater |
-| Reports in addxion.ai | lesen D1 | UI ist Client |
-| Basic Fraud | Worker oder Job | Bot, Doppelklick |
-
-Shopify-CR und AOV bleiben Shopify-Export oder Admin-API. Nicht den Collector mit Analytics-Scraping füllen.
-
-## 4 Optimierung
-
-Bid auf eigene Events. XI nur als asynchroner Consumer, Collector läuft ohne Kernel. Kein Cross-Device-Graph als Ziel.
+| `/ads.js` | ads.addxion.com | später |
+| ai-Server | addxion-ai | später |
+| Custom Pixel | Customer Events | nach Webhook |
+| Bestellhaken | Shopify Metafield/Note | Feature ja/nein |
 
 # Offen
 
-**Ziel Phase 1:** Event mit `xid` in lokaler D1, Curl-Liste grün.
-**Danach:** ein Produzent (ai oder Shopify), dann `/ads.js`.
-**Nicht vermischen:** Feature-Launch und neue Ads in derselben Baseline-Woche. [Vorher Nachher](../patterns/vorher-nachher.md).
+**Ist:** Phase 1 lokal. Collector unverändert lassen.
+**Jetzt:** Shopify-Webhook + Cart-Attribut `xid`. Journey `/c` → Shop → gleiche `xid` in `clicks` und `events`.
+**Dann:** `wrangler d1 create`, Secret, Route `ads.addxion.com`.
+**Nicht:** ai-Kurs, Meta, Visualizer-Pixel, Shop-CR in D1.
