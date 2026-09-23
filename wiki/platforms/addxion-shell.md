@@ -1,15 +1,11 @@
 ---
 type: platform
 title: addxion-shell
-description: Aufgelöst. Chrome-Soll in @addxion/components.
+description: Aufgelöst. Chrome in @addxion/components.
 status: deprecated
 owner: shared
-updated: 2026-09-20
+updated: 2026-09-23
 tags: [platform]
 ---
 
-`@addxion/shell` gilt als aufgelöst. PageHeader, Chat, Command, MenuBar, QuickNav: Soll `@addxion/components`. Siehe [Neon](addxion-neon.md). [T-PKG-SHELL](../fundamentals/truths.md).
-
-# Ist
-
-Package lebt noch (`addxion-neon/packages/shell`). Consumer: addxion-ai, super, com-Lab (`/neon/`).
+`@addxion/shell` gibt es nicht. Package wird gelöscht, kein Compat-Re-Export. PageHeader, Chat, Command, MenuBar, QuickNav: nur `@addxion/components`. Siehe [Neon](addxion-neon.md). [T-PKG-SHELL](../fundamentals/truths.md).

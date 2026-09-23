@@ -4,7 +4,7 @@ title: süper
 description: Lebende Fahrschul-App. Ziel White-Label auf addxion.ai.
 status: active
 owner: shared
-updated: 2026-09-20
+updated: 2026-09-23
 tags: [platform]
 ---
 
@@ -14,7 +14,7 @@ Eigene Next-App. Repo `super`. Host `süper.app` (`xn--sper-0ra.app`). App-D1 `s
 
 Routen leben **hier**, nicht in [addxion-ai](addxion-ai.md): `/theorie-pruefung`, `/fortschrittskarte`, `/analysen`, `/kurse`, `/muster`, `/schueler`, plus `/onboarding`, `/profil`, `/diagrammkarte`, `/richtlinien`. Nav-SSOT: `src/manifest.ts`.
 
-Chrome-Ist: `@addxion/shell`. Siehe [addxion-shell](addxion-shell.md).
+Chrome: `@addxion/components`. [addxion-shell](addxion-shell.md) ist aufgelöst.
 
 # Ziel
 

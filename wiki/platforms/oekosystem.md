@@ -4,7 +4,7 @@ title: Ökosystem
 description: North Star, Produkte, Package-Grenzen, Daten-Trennung.
 status: active
 owner: shared
-updated: 2026-09-20
+updated: 2026-09-23
 tags: [platform]
 sources:
   - id: docs-eco
@@ -36,8 +36,8 @@ Ein durchgängiges Erlebnis über addxion.ai und addxion.com. Gleiche Design-Spr
 
 ```
 Consumer: addxion.ai · addxion.com · süper
-    components · behavior · shell  ← addxion-neon/packages/
-    auth · ai · xi                 ← addxion-ai/packages/
+    components · behavior  ← addxion-neon/packages/
+    auth · ai · xi         ← addxion-ai/packages/
          neon
 ```
 
@@ -50,7 +50,7 @@ Consumer: addxion.ai · addxion.com · süper
 | `@addxion/behavior` | Scroll-Hooks, Haptics, Intent | React-DOM |
 | `@addxion/xi` | `protocol`, `core` | UI, Nav-Logik, Docs-Sidebar |
 
-Status: neon, components, auth, ai, behavior live; shell lebt noch (Soll components); xi `protocol` + `core` live (HTTP-Port zum Kernel).
+Status: neon, components, auth, ai, behavior live; xi `protocol` + `core` live (HTTP-Port zum Kernel). `@addxion/shell` gibt es nicht.
 
 Heimat UI und Behavior: `addxion-neon`. Identity: Package `addxion-ai/packages/auth`, Worker `addxion-ai`, D1-Name `addxion-auth`. Kein Repo `addxion-auth`. LLM und TS-XI: `addxion-ai`. Kernel: `addxion-xi`. System One: [Jev-Heimat](../decisions/jev-heimat.md).
 
@@ -64,7 +64,7 @@ App-Nav: `manifest.ts` + app-lokale Helper. Chrome rendert, definiert keine List
 
 # Offen
 
-Erledigt (Docs-SSOT hier, Behavior, Manifest-Nav, Foundations) nicht erneut listen. Shell-Merge ist Soll, nicht Ist. Was noch gilt:
+Erledigt (Docs-SSOT hier, Shell, Behavior, Manifest-Nav, Foundations) nicht erneut listen. Was noch gilt:
 
 | Was | Status |
 | --- | --- |

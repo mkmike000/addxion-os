@@ -4,7 +4,7 @@ title: addxion-ai
 description: KI-App unter addxion.ai und Package @addxion/ai.
 status: active
 owner: shared
-updated: 2026-09-20
+updated: 2026-09-23
 tags: [platform]
 sources:
   - id: docs-ai
@@ -42,7 +42,7 @@ Fahrschule als Pack `fahrschule` auf dieser App. Jede Schule = Better-Auth-**Org
 
 # Grenzen
 
-Schreibt keine Collective-Wahrheit. Kein paralleles Auth-Schema. Chat-UI (`ChatSurface`, `ChatBox`) und Chrome-Soll: `@addxion/components`. Ist-Chrome: [addxion-shell](addxion-shell.md). Scroll aus `@addxion/behavior`. Mentions, Voice, LLM bleiben App. Keine Kernel-Interna nachbauen.
+Schreibt keine Collective-Wahrheit. Kein paralleles Auth-Schema. Chat-UI (`ChatSurface`, `ChatBox`) und Chrome nur aus `@addxion/components`. [addxion-shell](addxion-shell.md) gibt es nicht. Scroll aus `@addxion/behavior`. Mentions, Voice, LLM bleiben App. Keine Kernel-Interna nachbauen.
 
 # Stack (App)
 
