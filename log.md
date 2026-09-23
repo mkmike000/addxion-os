@@ -2,6 +2,11 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-09-23
+
+- ingest: Eigenes Ads-Netzwerk. Roh: `raw/ads-netzwerk-2026-09-23.md`. Platform draft `wiki/platforms/ads-netzwerk.md`. Decision `wiki/decisions/ads-intake.md` — API Kern, Pixel Client. Pointer Repo-Grenzen, Platforms-Index, Inbox Phase-1-Vertrag. Nächster Schritt im Wiki-Offen: POST /v1/events plus JS.
+- decision: `wiki/decisions/ads-intake.md` — eine Pipeline, zwei Türen.
+
 ## 2026-09-22
 
 - ingest: Factory-Effekte (Loop, Kernel, noch interessant). Roh: `raw/factory-effekte-2026-09-22.md`. Pattern draft `wiki/patterns/factory-effekte.md`. Pointer in `a2a-p2p`. Keine Decision. Nicht Pi-Doku.
