@@ -11,5 +11,6 @@ Stabile Prinzipien. Nicht jede Woche anfassen.
 * [AGENTS.md teilen](agents-teilen.md)
 * [XI ist Runtime](xi-ist-runtime.md)
 * [Lean-Agile](lean-agile.md)
+* [Nachhaltig](nachhaltig.md) — Ursache behoben, Vertrag bleibt wahr
 * [Identität](identitaet.md)
 * [Distribution](distribution.md) — Aufmerksamkeit einem Schritt zuordnen
