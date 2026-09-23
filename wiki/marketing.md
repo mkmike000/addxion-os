@@ -5,7 +5,7 @@ aliases: [Marketing-System, Copy-System]
 description: Karte, was bei ADDXION Marketing gilt. Theorie und Praxis an einem Ort, Aussagen bleiben in den verlinkten Dateien.
 status: draft
 owner: mike
-updated: 2026-09-17
+updated: 2026-09-23
 tags: [marketing, process]
 sources:
   - id: swipe-2026-09-17
@@ -34,6 +34,8 @@ Marketing bei ADDXION ist Leitung: eine Branche, eine Behauptung, ein nächster 
 7. Fläche: [Marketing-Sites](patterns/marketing-sites.md)
 
 Gespräch danach ist Vertrieb, nicht Feed: [Elusive Obvious](patterns/elusive-obvious.md), [Bedarfsermittlung](patterns/bedarfsermittlung.md), [Problem erklären](patterns/problem-erklaeren.md), [Kleiner erster Kauf](patterns/kleiner-erster-kauf.md), [Vertrieb](processes/vertrieb.md).
+
+Eigenes Inventar und Conversion-Messung: [Ads-Netzwerk](platforms/ads-netzwerk.md). Copy bleibt hier.
 
 # Zwei Schienen, zwei Texte
 
