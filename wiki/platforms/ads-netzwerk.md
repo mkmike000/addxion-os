@@ -5,7 +5,7 @@ aliases: [ADDXION Ads, Conversion-API]
 description: Eigenes Ads-Netzwerk. Intake ist eine Event-Pipeline. API ist Kern, Pixel ist Client.
 status: draft
 owner: mike
-updated: 2026-09-23
+updated: 2026-09-24
 tags: [platform, ads, draft]
 sources:
   - id: chat-2026-09-23
@@ -13,63 +13,54 @@ sources:
     title: Roh Chat Ads-Netzwerk
 ---
 
-Produktcode: Instanz `addxion-ads`. Wissen bleibt hier.
+Produktcode Collector: `addxion-ads`. Shopify-Adapter: bestehende ADDXION Shopify-App (nicht App Store). Wissen hier.
 
 # Zweck
 
-ADDXION misst Auslieferung und Outcome auf eigenem Inventar und eigenen Funnels. Wahrheit liegt bei uns, nicht bei Meta. Fremde Netze sind Fan-in (Events zu uns) und Fan-out (unsere Events zu ihnen).
-
-Phase 1 Collector ist lokal fertig. Nächster Diff: Shopify `orders/paid`. addxion.ai in diesem Rutsch nicht (Kursseite fehlt).
+ADDXION misst Auslieferung und Outcome auf eigenem Inventar und eigenen Funnels. Meta CAPI ist Fan-out, kein Intake.
 
 # Entscheidung
 
-[Ads-Intake](../decisions/ads-intake.md): eine Pipeline, zwei Türen. Host `ads.addxion.com`. Query `xid` plus Host-Cookie.
+[Ads-Intake](../decisions/ads-intake.md). Host `ads.addxion.com`. Query `xid` plus Host-Cookie.
 
-Wirkung eines Features: [Vorher Nachher](../patterns/vorher-nachher.md). Shop-Berichte bleiben in Shopify. Feature-Events und der Bestellhaken laufen über diese Pipeline.
+Erste Conversion: Shopify `orders/paid` über die App. addxion.ai in diesem Rutsch nicht.
 
-# Wohin im bestehenden System
+Wirkung von Features: [Vorher Nachher](../patterns/vorher-nachher.md). Shop-CR bleibt in Shopify Analytics.
 
-| System jetzt | Rolle | Phase |
-| --- | --- | --- |
-| `addxion-ads` Worker | `/c`, `/v1/events`, D1 | 1 lokal |
-| [addxion.com](addxion-com.md) | Landing, `xid` in Links, später `/ads.js` | 1–2 |
-| [addxion.ai](addxion-ai.md) | später Produzent + Reports-UI | nach Shop |
-| Shopify Webhook + Custom Pixel | erster Produzent `purchase` | 2 jetzt |
-| Shopify Analytics | Baseline-CR, AOV, Funnel | nicht im Worker |
-| Meta / Google / TikTok | Fan-out CAPI; optional Insights-Pull | 3 |
-| [addxion-xi](addxion-xi.md) | optional Consumer | 4, nie Intake |
-| [addxion-auth](addxion-auth.md) | `external_id` nur bei Session | 2+ |
+# Adapter
 
-# Fluss Phase 1
+Die Shopify-App ist der einzige Shop-Adapter.
 
-```
-Anzeige → ads.addxion.com/c?dest=…
-  → 302 + ?xid= + Host-Cookie
-Landing behält xid
-POST /v1/events → Dedup → D1
-```
+| App | Collector |
+| --- | --- |
+| HMAC prüfen | kennt Shopify nicht |
+| `xid` URL → Cart-Attribut | speichert Klick `/c` |
+| `orders/paid` → `POST /v1/events` | Dedup, D1 |
+| später App-Pixel `source=pixel` | gleiches Modell |
 
-# Phasen
+Nicht: n8n als Kern, Theme als Wahrheit, Events in Fahrschul-DB.
 
-## 1 Collector (Repo `addxion-ads`, lokal grün)
+# Go-Live-Reihenfolge
 
-Worker, `/c`, `/v1/events`, D1, Token, Allowlist. Kein Deploy mit Platzhalter-`database_id`.
+1. Collector lokal curl-grün (`/c`, `/v1/events`).
+2. App sendet denselben POST (HMAC, `source=shopify`).
+3. Echter Webhook: Worker auf `*.workers.dev` **oder** Tunnel, eine Testorder, gleiche `xid` in `clicks` und `events`.
+4. Dann Prod: `wrangler d1 create`, Secret, DNS `ads.addxion.com`, App-Env + Webhook-URL umstellen.
 
-## 2 Produzenten und Pixel
+Kein Custom-Domain-Deploy vor Schritt 3.
 
-Zuerst Shopify `orders/paid`. ai und `/ads.js` danach.
+# Phasen (kurz)
 
-| Stück | Ort | Sinn |
-| --- | --- | --- |
-| Shopify `orders/paid` | Shop → Worker | `purchase` + `xid` aus Note/Cart-Attribut |
-| `/ads.js` | ads.addxion.com | später |
-| ai-Server | addxion-ai | später |
-| Custom Pixel | Customer Events | nach Webhook |
-| Bestellhaken | Shopify Metafield/Note | Feature ja/nein |
+| Phase | Bau |
+| --- | --- |
+| 1 | Collector lokal — steht |
+| 2a | App + `orders/paid` + `xid` im Cart |
+| 2b | App-Pixel / Customer Events, `source=pixel` |
+| 3 | Fan-out Meta CAPI (`consent_marketing=1`); Charts in addxion.ai; optional `platform_stats` |
+| 4 | Optimierung; XI nur Consumer |
 
 # Offen
 
-**Ist:** Phase 1 lokal. Collector unverändert lassen.
-**Jetzt:** Shopify-Webhook + Cart-Attribut `xid`. Journey `/c` → Shop → gleiche `xid` in `clicks` und `events`.
-**Dann:** `wrangler d1 create`, Secret, Route `ads.addxion.com`.
-**Nicht:** ai-Kurs, Meta, Visualizer-Pixel, Shop-CR in D1.
+**Jetzt:** Schritt 2–3. Echter Webhook, nicht nur curl.
+**Ziel:** `ads.addxion.com` nach einer klebenden Testorder.
+**Nicht:** CAPI, ai-UI, zehn Webhooks, Shop-KPIs in D1.

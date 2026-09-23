@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-09-24
+
+- decision: Shopify-App ist Ads-Adapter (`orders/paid`, HMAC, Cart `xid`). Echter Webhook über workers.dev oder Tunnel vor `ads.addxion.com`. Meta CAPI nur Fan-out. Nachzug `ads-netzwerk`, `ads-intake`.
+
 ## 2026-09-23
 
 - ingest: Ads Phasen 2–4 (Produzenten, Fan-in Shopify/Pixel, Fan-out Meta, Insights separat). Pattern `wiki/patterns/vorher-nachher.md` (Baseline 4 Wochen). Nachzug `ads-netzwerk`.
