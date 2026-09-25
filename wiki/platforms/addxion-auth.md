@@ -4,7 +4,7 @@ title: addxion-auth
 description: Identity-SSOT. Package @addxion/auth.
 status: active
 owner: shared
-updated: 2026-08-26
+updated: 2026-09-25
 tags: [platform]
 sources:
   - id: docs-auth
@@ -19,7 +19,9 @@ Schema, Permissions, Session, Orgs, Grants, React-Gates (`./gates`). Eine Auth-D
 
 # Routing
 
-Login-UI kommt aus `addxion-ai`, ausgeliefert unter `auth.addxion.ai` (und `auth.addxion.com`). API: Worker `addxion-auth` (`/api/auth/*`, D1). `addxion.ai/login` → 302 → `auth.addxion.ai/login`. How-to bleibt im Auth-README.
+Login-UI kommt aus der einen Frontend-App (`addxion-ai`), ausgeliefert unter `auth.addxion.ai`. API: Worker `addxion-auth` (`/api/auth/*`, D1). `addxion.ai/login` → 302 → `auth.addxion.ai/login`. How-to bleibt im Auth-README.
+
+Ziel-Host nur `.ai`. [Heimat addxion.ai](../decisions/heimat-ai.md).
 
 # Grenzen
 

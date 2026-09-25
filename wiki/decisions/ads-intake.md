@@ -4,7 +4,7 @@ title: Ads-Intake
 description: Eigenes Ads-Netzwerk. Conversion-API ist Kern. Pixel ist Client derselben Events.
 status: decided
 owner: mike
-updated: 2026-09-24
+updated: 2026-09-25
 tags: [decision, ads]
 sources:
   - id: chat-2026-09-23
@@ -22,21 +22,23 @@ Meta CAPI ist optionaler Fan-out, nicht Voraussetzung für das eigene Netz.
 
 # Host
 
-Intake: `ads.addxion.com` — `/c`, `/v1/events`, später `/ads.js`.
+Intake: `ads.addxion.ai` — `/c`, `/v1/events`, später `/ads.js`.
 Ansicht: addxion.ai liest den Store.
 Code Collector: `addxion-ads`.
 Go-Live: lokal curl → App-POST → `workers.dev` oder Tunnel + Testorder → Custom Domain.
 
+Host-Ziel folgt [Heimat addxion.ai](heimat-ai.md). `ads.addxion.com` ist nicht mehr Ziel.
+
 # Click-ID
 
 `xid` = Klick, nicht Order-ID, nicht Meta-Cookie, nicht Login.
-Query `xid` ist die Brücke. Host-Cookie nur auf `ads.addxion.com`.
+Query `xid` ist die Brücke. Host-Cookie nur auf `ads.addxion.ai`.
 
 # Nicht
 
 - Meta-Pixel als Wahrheit.
 - Zwei Event-Modelle.
-- Collector auf `ads.addxion.ai`.
+- Collector in der Frontend-App mergen.
 - Ads-Events in Fahrschul- oder Auth-DB.
 
 # Folge

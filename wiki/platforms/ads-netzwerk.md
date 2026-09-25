@@ -5,7 +5,7 @@ aliases: [ADDXION Ads, Conversion-API]
 description: Eigenes Ads-Netzwerk. Intake ist eine Event-Pipeline. API ist Kern, Pixel ist Client.
 status: draft
 owner: mike
-updated: 2026-09-24
+updated: 2026-09-25
 tags: [platform, ads, draft]
 sources:
   - id: chat-2026-09-23
@@ -21,7 +21,7 @@ ADDXION misst Auslieferung und Outcome auf eigenem Inventar und eigenen Funnels.
 
 # Entscheidung
 
-[Ads-Intake](../decisions/ads-intake.md). Host `ads.addxion.com`. Query `xid` plus Host-Cookie.
+[Ads-Intake](../decisions/ads-intake.md). Host `ads.addxion.ai`. Query `xid` plus Host-Cookie. Heimat der Oberfläche: [Heimat addxion.ai](../decisions/heimat-ai.md).
 
 Erste Conversion: Shopify `orders/paid` über die App. addxion.ai in diesem Rutsch nicht.
 
@@ -45,7 +45,7 @@ Nicht: n8n als Kern, Theme als Wahrheit, Events in Fahrschul-DB.
 1. Collector lokal curl-grün (`/c`, `/v1/events`).
 2. App sendet denselben POST (HMAC, `source=shopify`).
 3. Echter Webhook: Worker auf `*.workers.dev` **oder** Tunnel, eine Testorder, gleiche `xid` in `clicks` und `events`.
-4. Dann Prod: `wrangler d1 create`, Secret, DNS `ads.addxion.com`, App-Env + Webhook-URL umstellen.
+4. Dann Prod: `wrangler d1 create`, Secret, DNS `ads.addxion.ai`, App-Env + Webhook-URL umstellen.
 
 Kein Custom-Domain-Deploy vor Schritt 3.
 
@@ -62,5 +62,5 @@ Kein Custom-Domain-Deploy vor Schritt 3.
 # Offen
 
 **Jetzt:** Schritt 2–3. Echter Webhook, nicht nur curl.
-**Ziel:** `ads.addxion.com` nach einer klebenden Testorder.
+**Ziel:** `ads.addxion.ai` nach einer klebenden Testorder.
 **Nicht:** CAPI, ai-UI, zehn Webhooks, Shop-KPIs in D1.
