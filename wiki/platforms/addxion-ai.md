@@ -1,10 +1,10 @@
 ---
 type: platform
 title: addxion-ai
-description: KI-App unter addxion.ai und Package @addxion/ai.
+description: Eine Frontend-App unter addxion.ai (Verkauf + Dashboard) und Package @addxion/ai.
 status: active
 owner: shared
-updated: 2026-09-22
+updated: 2026-09-25
 tags: [platform]
 sources:
   - id: docs-ai
@@ -14,9 +14,11 @@ sources:
 
 Zwei Dinge, eine Datei: die **App** und das **LLM-Package**.
 
+Heimat und Hosts: [Heimat addxion.ai](../decisions/heimat-ai.md). Design-Quelle ist addxion-com, Ziel Neon + Aria. USP: technisch überlegen wirken.
+
 # Zweck
 
-App: Chat-Assistenten, Automatisierung, Wissensmanagement, Kurse (`/kurse`), Fahrschule, Operatoren/Flotten. URL addxion.ai. Repo `addxion-ai`.
+App: öffentliche Seiten (früher com) plus Chat-Assistenten, Automatisierung, Wissensmanagement, Kurse (`/kurse`), Fahrschule, Operatoren/Flotten. URL addxion.ai. Repo `addxion-ai` (eine TanStack-Start-App).
 
 Fahrschule lebt hier. Jede Schule ist eine Better-Auth-**Organisation** (Pack `fahrschule`). Lehrer = Org-`owner`/`admin`, Schüler = `member`. Lehrer steuern Fortschrittskarten unter `/fortschrittskarte?student=`. Schülerliste `/schueler`. Fragekatalog `/fragen` + `/fragen/$id`. Analysen `/analysen`, Termine `/termine`, Kurse `/kurse`, Onboarding `/onboarding`. Kartendaten und Theorie: D1 `super-app` (`FAHRSCHULE_DB`).
 
@@ -38,7 +40,7 @@ A2A / P2P / Crypto gehört nicht hierher. Heimat: [addxion-xi → Später](addxi
 
 # Stack (App)
 
-TanStack Start, React Aria + Neon-Tokens, Better Auth + Drizzle, Effect, Cloudflare Workers. Untitled UI ist Altbestand, nicht Ziel. Katalog: `addxion.com/neon`. `src/components/ui` ist Aria-Fassade auf Neon-Grammatik (Pill-Button/Input/Badge, Select/Combobox-Trigger, SocialButton aus `@addxion/components`). Auth-DB: D1 (`addxion-auth`). App-DB: Neon + Hyperdrive (in der Herkunft: geplant). LLM: OpenRouter. Bun.
+TanStack Start, React Aria + Neon-Tokens, Better Auth + Drizzle, Effect, Cloudflare Workers. Untitled UI ist Altbestand, nicht Ziel. Katalog: `/neon` auf addxion.ai. `src/components/ui` ist Aria-Fassade auf Neon-Grammatik (Pill-Button/Input/Badge, Select/Combobox-Trigger, SocialButton aus `@addxion/components`). Auth-DB: D1 (`addxion-auth`). App-DB: Neon + Hyperdrive (in der Herkunft: geplant). LLM: OpenRouter. Bun.
 
 Gesten: Motion + Embla + vaul. Three.js später. [Swipe-Stack](../decisions/swipe-stack.md).
 
@@ -49,7 +51,7 @@ World-dünn-Oberfläche für den Kernel. Plan und Keil: [addxion-xi](addxion-xi.
 | | |
 |--|--|
 | Feature-Grant | `agentic.trading` |
-| Env | `XI_KERNEL_URL` (Default lokal `http://127.0.0.1:4000`, Prod `https://xi.addxion.com`) |
+| Env | `XI_KERNEL_URL` (Default lokal `http://127.0.0.1:4000`, Prod `https://xi.addxion.ai`) |
 | Flotte | **Normandy** — `/operators/fleets/normandy` |
 | Legacy | `/operators/trading` redirect → Normandy |
 | UI | Tabs Status & Läufe (`FactoryRunsPanel`) + Swarm-Chat |
