@@ -2,6 +2,7 @@
 
 Bewusste Festlegungen.
 
+* [i18n de und en](i18n-de-en.md) — Sprache, Markt, Inhalt getrennt. Default `de`, zweite Sprache `en`
 * [Heimat addxion.ai](heimat-ai.md) — Produkt auf `.ai`, `.com` nur 301, eine Frontend-App
 * [Relations-Queue in ops](relations-ops.md)
 * [Firma, Person, Opportunity](relations-parties.md)

@@ -5,7 +5,7 @@ aliases: [Name the thing, literal naming, plain language]
 description: Das Wort für das Ding. Keine Extra-Abstraktion.
 status: active
 owner: shared
-updated: 2026-08-27
+updated: 2026-09-26
 tags: [fundamental]
 ---
 
@@ -23,8 +23,9 @@ Das Wort nennt, was da ist. Kein Layer-Namen, kein Produktjargon, keine Metapher
 | --- | --- |
 | Dieses Wiki | Deutsch (Klartext) |
 | Produkt, Code, Identifier, UI-Namen | Englisch, dasselbe Wort |
-| addxion.com, sichtbarer Nutztext | Deutsch |
-| Lab `/neon/` | Zell-Label und Varianten = Identifier Englisch. Bänder und Demo-Sätze Deutsch |
+| Öffentlicher Nutztext | Deutsch default, ohne Präfix. Englisch unter `/en/`. Zweite Fassung, keine Rohübersetzung. [i18n de und en](../decisions/i18n-de-en.md) |
+| App-Chrome (Session) | `de` oder `en` aus Preference. Kein Locale in der URL |
+| Lab `/neon/` | Zell-Label und Varianten = Identifier Englisch. Bänder und Demo-Sätze folgen der Seiten-Locale |
 
 # Do
 
