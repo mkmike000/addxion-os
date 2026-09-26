@@ -4,7 +4,7 @@ title: Truths
 description: Registry der Plattform-Wahrheiten. IDs referenzieren, nicht paraphrasieren.
 status: active
 owner: shared
-updated: 2026-09-06
+updated: 2026-09-26
 tags: [fundamental]
 sources:
   - id: docs-truths
@@ -54,7 +54,7 @@ Jedes Repo hat eine klare Verantwortung. [Repo-Grenzen](../patterns/repo-grenzen
 
 ### T-KLARTEXT
 
-Das Wort nennt das Ding. Keine Extra-Abstraktion, kein Produktjargon über dem Gegenstand. Produkt/Code/Identifier: Englisch. Wiki: Deutsch. Ausarbeitung: [Klartext](klartext.md).
+Das Wort nennt das Ding. Keine Extra-Abstraktion, kein Produktjargon über dem Gegenstand. Produkt/Code/Identifier: Englisch. Wiki: Deutsch. Sichtbarer Nutztext: [i18n de und en](../decisions/i18n-de-en.md). Ausarbeitung: [Klartext](klartext.md).
 
 # Packages
 
@@ -133,6 +133,10 @@ Identity (User, Session, Org, Grants) ist ökosystem-weit geteilt (`addxion-auth
 ### T-DATA-APP-ISOLATED
 
 Produkt-Daten sind pro App isoliert. Kein Cross-Product-Leak.
+
+### T-I18N
+
+Sprache, Markt und Inhalt sind drei Dinge. Öffentlich: Locale in der URL (`de` ohne Präfix, `en` unter `/en/`). Werkbank: User-Preference, kein Locale-Pfad. Default `de`. Zweite Sprache `en`. Ausarbeitung: [i18n de und en](../decisions/i18n-de-en.md), [i18n](../patterns/i18n.md).
 
 ### T-BRAND-STRATEGY
 

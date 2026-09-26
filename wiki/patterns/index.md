@@ -14,6 +14,7 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [Privacy by Design](privacy-by-design.md)
 * [Vorher Nachher](vorher-nachher.md) — Baseline vier Wochen, eine Änderung
 * [Marketing-Sites](marketing-sites.md)
+* [i18n](i18n.md) — Catalogs, Locale-Signal, Formate; Entscheidung de/en
 * [Copy-Gerüste](copy-gerueste.md) — PAS, BAB, 4Ps, Auswahl
 * [CTA-Mauer](cta-mauer.md) — B2B-Landing, Aktion zum Commitment
 * [Mail-Translation](mail-translation.md) — Stub
