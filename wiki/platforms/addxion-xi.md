@@ -452,16 +452,18 @@ Kernel = Fabrik. App = Cockpit für **Runs & Selektion**. Env der App: **`XI_KER
 | Legacy-Redirect | `/operators/trading` → Normandy | — |
 | Tab Status & Läufe | `FactoryRunsPanel` → `GET /api/v1/runs`, `/factory/metrics`, Status | Feature |
 | Tab Chat | Swarm-Chat (Gespräche-Shell) · Keywords Run/Evolve/Status · Paper via Kernel | Feature |
-| Server-FNs | `src/lib/agentic/trading.functions.ts` · Tenant `agentic-trading-<userId>` | Auth + Feature |
+| Server-FNs | `src/lib/agentic/trading.functions.ts` · Tenant `{org-slug}-prod` | Auth + Feature |
+| XI Terminal | `/operators/terminal` · Live `you>` über `POST /api/v1/sessions/:id/line` | `operators` oder `agentic.trading` |
 
 | Zeigen | Nicht zeigen |
 |--------|----------------|
-| Factory Runs-Tabelle + Metrics | Setup-Wizard, Brain-Pfade, Secrets |
-| Offline-Banner wenn Kernel weg | Terminal-REPL 1:1 spiegeln |
-| Fleet-Kontext Normandy | Evolve-/Meta-Internals als Dashboard-First |
-| Agent-Liste read-only (id, role, status) | Markdown-CLI, Debug-Bash |
+| Factory Runs-Tabelle + Metrics (tenant-gefiltert) | Setup-Wizard, Brain-Pfade, Secrets |
+| Offline-Banner wenn Kernel weg | xterm / PTY / Host-Bash |
+| Live `you>` Session im Cockpit | Kernel-Interna als Dashboard-First |
+| Fleet-Kontext Normandy | Markdown-CLI-Export |
+| Agent-Liste read-only (id, role, status) | Debug-Bash |
 
-Status World: Normandy + Factory Runs + Swarm-Chat = **Ist** (lean). Run-Detail / Recipe-Liste / `score_v1`-Diagnostics-Cockpit später. CLI-Spiegel / Brain-Pfade **Nein**.
+Status World: Normandy + Factory Runs + Swarm-Chat + XI Terminal (`you>`) = **Ist**. App = Cockpit, Kernel = Fabrik. Run-Detail / Recipe-Liste / `score_v1`-Diagnostics später.
 
 Nächste World-Slices: Cockpit zeigt `score_v1` / Envelope-Diagnostics (read-only) → Marketing Bundle UX/API (zwei Env-Runs → `Xi.Marketing.score` → `marketing_bundle` commit) → ein Live-Adapter (Ads AdCP *oder* Websites Shadow; Harness bleibt Golden Run) → Recipe Diff / Shadow → Perf erst profilieren.
 
@@ -469,7 +471,7 @@ Nächste World-Slices: Cockpit zeigt `score_v1` / Envelope-Diagnostics (read-onl
 
 Kern: `xi run [trading|websites|ads]` · `xi runs [--limit] [--full]` · `xi metrics` · `xi status` · `xi brain` · `xi spawn` · `xi agents` · `xi message` · `xi stop` · `xi kill` · `xi help` / `mix xi install`.
 
-`xi run <env>` = Factory Run; Domain-Config in `priv/envs/`. Kein `--coder` an `xi run` — Factory ist nicht die Pipeline. Workspace + coder: `xi status`. Chat-Session = Dev/Debug, nicht UI-Ziel.
+`xi run <env>` = Factory Run; Domain-Config in `priv/envs/`. Kein `--coder` an `xi run` — Factory ist nicht die Pipeline. Workspace + coder: `xi status`. Chat-Session (`you>`) ist CLI **und** Cockpit-Port (`/api/v1/sessions`). Kein PTY.
 
 ```bash
 mix xi.spawn --tenant acme-dev --role trader --chat
@@ -488,7 +490,10 @@ Setup: Kernel-README, nicht hier.
 | POST | `/api/v1/evolve` | Evolution |
 | POST | `/api/v1/trading/paper` | AT-1 Run (Score→Factory auto, außer `teardown` gesetzt) |
 | GET | `/api/v1/factory/metrics` | Aggregate für Dashboard |
-| GET | `/api/v1/runs` | Factory Runs-Tabelle |
+| GET | `/api/v1/runs` | Factory Runs-Tabelle (`?tenant_id=`) |
+| POST | `/api/v1/sessions` | `you>` Agent find-or-spawn |
+| GET | `/api/v1/sessions/:id` | Session + Event-Feed |
+| POST | `/api/v1/sessions/:id/line` | Eine CLI-Zeile (`status` · `events` · `run` · `evolve` · chat) |
 | GET | `/api/v1/recipes` | Recipe-Ledger |
 | POST | `/api/v1/recipes/commit` | Recipe aus Run committen |
 | GET | `/api/v1/pipeline/runs` | Implementation-Pipeline |

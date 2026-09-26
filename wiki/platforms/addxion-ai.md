@@ -50,14 +50,16 @@ World-dünn-Oberfläche für den Kernel. Plan und Keil: [addxion-xi](addxion-xi.
 
 | | |
 |--|--|
-| Feature-Grant | `agentic.trading` |
+| Feature-Grant | `agentic.trading` (Trading) · `operators` (Terminal) |
 | Env | `XI_KERNEL_URL` (Default lokal `http://127.0.0.1:4000`, Prod `https://xi.addxion.ai`) |
 | Flotte | **Normandy** — `/operators/fleets/normandy` |
 | Legacy | `/operators/trading` redirect → Normandy |
-| UI | Tabs Status & Läufe (`FactoryRunsPanel`) + Swarm-Chat |
-| Server | `src/lib/agentic/trading.functions.ts` über `@addxion/xi/core` |
+| UI | Tabs Status & Läufe (`FactoryRunsPanel`) + Swarm-Chat + `/operators/terminal` (`you>`) |
+| Tenant | `{org-slug}-prod` — visuelles Trading und XI Session teilen den Käfig |
+| Server | `src/lib/agentic/trading.functions.ts` · `src/lib/xi/session.functions.ts` über `@addxion/xi/core` |
+| Voice | Mehr-Menü **XI** leitet getippte Zeilen in dieselbe Session |
 
-Offline-Banner wenn Kernel nicht erreichbar. Paper/Evolve/Status-Keywords im Chat. Kernel Lite reicht für Swarm/Paper/Factory.
+App = Cockpit. Kernel = Fabrik. Kein xterm/PTY. Offline-Banner wenn Kernel nicht erreichbar. Paper/Evolve/Status im Chat **und** als `you>`-Kommandos.
 
 # Truths
 
