@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-09-28
 
+- ingest: Sites-Renderer in `addxion-ai` (`eedbd2c`, Vertrag `e6780f2`). Host+Slug lokal grün. `sites.addxion.ai` in wrangler, nicht Dashboard. Werkbank leer ohne Org `com-solution`. WfP-Tutorial unberührt. Nachzug `workers-for-platforms`, zwei-Türen.
 - ingest: WfP auf Konto ADDXION. Namespace `staging`, User-Worker `customer-worker-1`, Dispatch `my-dispatcher`, Probe Hello World. `addxion-ai` unverändert. Platform `wiki/platforms/workers-for-platforms.md`.
 - decision: `wiki/decisions/sites-hosts.md` — Site statt Landing, Host+Slug, CNAME ohne Pfad, WfP gekauft, Collector getrennt. Pattern `sites-host-slug`. Roh `raw/sites-hosts-2026-09-28.md`. Nachzug Heimat, landing-public, landing-content, zwei-Türen.
 - decision: `wiki/decisions/landing-content.md` — Row nicht Datei, kein `/w/`-Präfix, XI nur Pointer. Pattern `landing-inhalt`. Kernel: `Xi.LandingPointer` in addxion-xi.
