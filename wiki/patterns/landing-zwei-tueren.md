@@ -34,5 +34,5 @@ Org besitzt Sites. Site besitzt Slug, Varianten, Body, Status, `hosts[]`.
 
 # Offen
 
-**Ziel:** Erste veröffentlichte Kunden-Site mit Custom Hostname (Workers for Platforms) und `xid`.
-**Ist:** WfP gekauft 2026-09-28. CNAME-Mail ohne Pfad. TXT aus CF-Dashboard.
+**Ziel:** `sites.addxion.ai` im Dashboard am Worker `addxion-ai`. Custom Hostname Comsolution. Org `com-solution` oder Seed an bestehende Org.
+**Ist:** Renderer + Werkbank-Vertrag in `addxion-ai` (`eedbd2c`, `e6780f2`). Host-Lookup lokal grün. Domain in wrangler, nicht im Dashboard. WfP-Tutorial unberührt.
