@@ -1,59 +1,51 @@
 ---
 type: decision
 title: Landing öffentlich
-description: Kunden-Landing ist Org-Datensatz. Werkbank hinter Session, öffentliche Projektion ohne Session. Nicht auf dem Ads-Host.
+description: Kunden-Site ist Org-Datensatz. Werkbank hinter Session, öffentliche Projektion ohne Session. Nicht auf dem Ads-Host. Wort jetzt Site.
 status: decided
 owner: mike
 updated: 2026-09-28
-tags: [decision, ads, landing]
+tags: [decision, ads, sites]
 sources:
   - id: chat-2026-09-28
     resource: raw/agentic-business-landings-2026-09-28.md
     title: Roh Chat Agentic Landings
 ---
 
+Wort und Host-Vertrag: [Sites Hosts](sites-hosts.md). Diese Datei bleibt die alte Tür (zwei Türen, eine Row).
+
 # Gilt
 
-Die Landing ist ein Datensatz der Better-Auth-Organisation. Account des Kunden ist Voraussetzung zum Bauen, nicht zum Sehen.
-
-Zwei Türen, eine Row:
+Die Site ist ein Datensatz der Better-Auth-Organisation. Account des Kunden ist Voraussetzung zum Bauen, nicht zum Sehen.
 
 | Tür | Wer | Pfad |
 | --- | --- | --- |
-| Werkbank | Org-Member, Session, active org | `addxion.ai/landings/{slug}` |
-| Öffentlich | niemand eingeloggt | `addxion.ai/l/{slug}` oder Host |
+| Werkbank | Org-Member, Session | `addxion.ai/sites/{slug}` |
+| Öffentlich | niemand eingeloggt | Kunden-Host `/{slug}` |
 
-Kein `/w/`-Präfix. Org kommt aus der Session, nicht aus der URL. Inhalt: [Landing-Inhalt](landing-content.md).
+Kein `/w/`-Präfix. Org kommt aus der Session.
 
-Nur `status: published` plus Snapshot auf der öffentlichen Route. Draft bleibt hinter Session.
+Nur `status: published` plus Snapshot auf der öffentlichen Route.
 
 # Host
 
-Inhalt lebt in der Frontend-App (`addxion-ai`). Default-Pfad `/l/{slug}`.
+Renderer in `addxion-ai`. CNAME-Ziel `sites.addxion.ai`. Kundendomain ist Ads-Dest.
 
-Alias `l.addxion.ai/{slug}` darf dieselbe Renderer-Funktion treffen. Kein zweites Repo.
-
-Kundendomain per CNAME auf denselben Renderer ist der Normalfall bei bezahltem Traffic. ADDXION-Subdomain ist Fallback.
-
-`ads.addxion.ai` bleibt Collector. Kein HTML, kein `/landings`, kein Kundenslug dort. [Ads-Intake](ads-intake.md), [Heimat addxion.ai](heimat-ai.md).
+`ads.addxion.ai` bleibt Collector. [Ads-Intake](ads-intake.md), [Heimat addxion.ai](heimat-ai.md).
 
 # Klick
 
-Anzeige → `ads.addxion.ai/c?dest=https://l.addxion.ai/{slug}` → 302 mit `xid` → Landing liest `xid` aus der URL → Formular und Pixel posten dieselbe `xid` an `POST /v1/events`.
+Anzeige → `ads.addxion.ai/c?dest=https://sites.kunde.de/{slug}` → 302 mit `xid` → Site liest `xid` → Formular und Pixel posten dieselbe `xid`.
 
-`advertiser_id` = Org-Slug. `xid` ist Klick, nicht Session des Kunden, nicht Order-ID.
-
-Variante ist Feld am Datensatz, kein Ordner, kein `index` in der URL.
+`advertiser_id` = Org-Slug.
 
 # Nicht
 
-- Landing auf `ads.addxion.ai`
+- Site auf `ads.addxion.ai`
 - App-Shell auf der öffentlichen Route
-- Events in Fahrschul- oder Auth-DB
-- zwei Event-Modelle
-- Collector in die Frontend-App mergen
-- `/w/$org` als kanonische Werkbank
+- CNAME-Ziel mit Pfad
+- globaler Slug auf `sites.addxion.ai`
 
 # Folge
 
-[Landing zwei Türen](../patterns/landing-zwei-tueren.md), [Landing-Inhalt](landing-content.md), [Ads-Netzwerk](../platforms/ads-netzwerk.md), [Agentic Loop](agentic-loop.md).
+[Sites Hosts](sites-hosts.md), [Landing zwei Türen](../patterns/landing-zwei-tueren.md), [Landing-Inhalt](landing-content.md).

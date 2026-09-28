@@ -24,16 +24,16 @@ Look-Quelle: das Design von `addxion-com` (Neon, Brand, Motion) wird auf die App
 
 | Host | Rolle |
 | --- | --- |
-| `addxion.ai` | eine Frontend-App: Verkauf + Dashboard + öffentliche Landings `/l/{slug}` |
+| `addxion.ai` | eine Frontend-App: Verkauf + Dashboard + Werkbank |
 | `addxion.com` | 301 → `addxion.ai` + Pfad |
+| `sites.addxion.ai` | CNAME-Ziel und Test-Fallback für Kunden-Sites. Kein Ads-Dest |
 | `ads.addxion.ai` | Ads-Collector (`/c`, `/v1/events`) |
 | `xi.addxion.ai` | XI-Kernel |
 | `auth.addxion.ai` | Auth-API und Login-Auslieferung |
-| `l.addxion.ai` | optionaler Alias auf denselben Landing-Renderer |
 
-Alte Hosts `ads.addxion.com`, `xi.addxion.com`, `auth.addxion.com` gelten nicht mehr als Ziel. Umstellung geplant, nicht stillschweigend parallel.
+`l.addxion.ai` gilt nicht mehr als Name. [Sites Hosts](sites-hosts.md).
 
-Kunden-Landings: [Landing öffentlich](landing-public.md).
+Alte Hosts `ads.addxion.com`, `xi.addxion.com`, `auth.addxion.com` gelten nicht mehr als Ziel.
 
 # Bleibt getrennt (kein Frontend)
 
@@ -47,16 +47,17 @@ Ads-Events nicht in Fahrschul- oder Auth-DB. Cookie Ads nur auf `ads.addxion.ai`
 # Redirect
 
 Pfadtreu: `/leistungen/websites/` auf `.com` → `https://addxion.ai/leistungen/websites/`.
-Subdomains `ads` / `xi` / `auth` nicht mit dem Apex-Redirect killen.
+Subdomains `ads` / `xi` / `auth` / `sites` nicht mit dem Apex-Redirect killen.
 
 # Nicht
 
 - `.com` als Frontend lassen
 - `.ai` als reines Backend
 - Ads oder XI in die Frontend-App mergen
-- Landings auf `ads.addxion.ai`
+- Sites auf `ads.addxion.ai`
 - zweites Theme neben Neon/com-Design
+- zweites Sites-Repo
 
 # Folge
 
-[addxion-ai](../platforms/addxion-ai.md), [addxion-com](../platforms/addxion-com.md), [Ads-Intake](ads-intake.md), [Ads-Netzwerk](../platforms/ads-netzwerk.md), [addxion-auth](../platforms/addxion-auth.md), [Ökosystem](../platforms/oekosystem.md).
+[Sites Hosts](sites-hosts.md), [addxion-ai](../platforms/addxion-ai.md), [addxion-com](../platforms/addxion-com.md), [Ads-Intake](ads-intake.md), [Ads-Netzwerk](../platforms/ads-netzwerk.md), [addxion-auth](../platforms/addxion-auth.md), [Ökosystem](../platforms/oekosystem.md).
