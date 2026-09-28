@@ -14,4 +14,5 @@ Heimat der Oberfläche: [Heimat addxion.ai](../decisions/heimat-ai.md).
 * [süper](super.md)
 * [addxion-com](addxion-com.md) — IA; Auslieferung wandert nach `.ai`
 * [Ads-Netzwerk](ads-netzwerk.md) — Entwurf; Host `ads.addxion.ai`
+* [Workers for Platforms](workers-for-platforms.md) — Staging Hello-World, noch nicht Sites-Renderer
 * [Clix](clix.md) — Arbeitstitel, Kollab-Vorhaben
