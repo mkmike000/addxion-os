@@ -4,7 +4,7 @@ title: Marketing-Sites
 description: Wiederverwendbare Regeln für öffentliche Surfaces. Instanz-How-to bleibt im Consumer-Repo.
 status: active
 owner: shared
-updated: 2026-08-26
+updated: 2026-09-28
 tags: [pattern]
 sources:
   - id: docs-marketing-sites
@@ -12,13 +12,15 @@ sources:
     title: Websites entwickeln
 ---
 
-Gilt für öffentliche Surfaces (addxion.com, Guest/Login). Stack, Ports, `site.ts`, Sitemap-Dateien: Consumer-`AGENTS.md`, vor allem `addxion-com`. Copy-Strategie: [Branding](../branding.md). Look: [Design](../design.md). Privacy: [Privacy by Design](privacy-by-design.md).
+Gilt für öffentliche Surfaces (addxion.com, Guest/Login, Kunden-Landings `/l/{slug}`). Stack, Ports, `site.ts`, Sitemap-Dateien: Consumer-`AGENTS.md`, vor allem `addxion-com` und `addxion-ai`. Copy-Strategie: [Branding](../branding.md). Look: [Design](../design.md). Privacy: [Privacy by Design](privacy-by-design.md). Kunden-Landings: [Landing zwei Türen](landing-zwei-tueren.md).
 
 [T-PKG-NEON](../fundamentals/truths.md), [T-NEON-FONTS](../fundamentals/truths.md), [T-UI-SSOT](../fundamentals/truths.md), [T-BRAND-STRATEGY](../fundamentals/truths.md).
 
 # Chrome
 
 Marketing-Header (`@addxion/components`, öffentliches Layout) ≠ App-`PageHeader` (`@addxion/components`, geschützte Routen). Inhalt und Marke im Consumer-Wrapper; keine Brand-Tokens im Package.
+
+Kunden-Landing öffentlich: kein App-Chrome, keine Login-Schale.
 
 # HTML-Title
 
@@ -43,4 +45,4 @@ Keine Gedankenstriche in Fließtext. Keine KI-Floskeln. Produktnamen **Neon**, *
 
 # DoD (Marketing-Seite)
 
-Unique Title + Description (Title-Regel). Eine H1. Primary-CTA hydratisiert und klickbar. Kontrast Desktop + Mobile. `noindex` bewusst. Build grün. Neue URL in Sitemap und `llms.txt` des **Marketing**-Repos, nicht in einer zweiten Docs-SSOT.
+Unique Title + Description (Title-Regel). Eine H1. Primary-CTA hydratisiert und klickbar. Kontrast Desktop + Mobile. `noindex` bewusst. Build grün. Neue URL in Sitemap und `llms.txt` des **Marketing**-Repos, nicht in einer zweiten Docs-SSOT. Kunden-Landing: `xid` aus der URL erhalten und an Events durchreichen.

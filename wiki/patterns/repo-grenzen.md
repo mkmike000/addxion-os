@@ -4,7 +4,7 @@ title: Repo-Grenzen
 description: SSOT pro Inhaltstyp. addxion-docs ist keine Docs-SSOT mehr.
 status: active
 owner: shared
-updated: 2026-09-23
+updated: 2026-09-28
 tags: [pattern]
 sources:
   - id: docs-boundaries
@@ -33,7 +33,9 @@ sources:
 | Marketing-Copy | `addxion-com` (folgt [Branding](../branding.md)) |
 | Headless CMS | `addxion-com` (`/cms`) |
 | Fahrschul-Domäne | `addxion-ai` (D1 `super-app`) |
+| Öffentliche Kunden-Landings | `addxion-ai` Route `/l/{slug}` |
 | Ads-Netzwerk Wissen | [Ads-Netzwerk](../platforms/ads-netzwerk.md) |
 | Ads-Netzwerk Code | Instanz `addxion-ads` |
+| Loop-Wissen | [Agentic Loop](../decisions/agentic-loop.md) |
 
 Neon-Änderungen zuerst im Neon-Repo, dann Consumer.

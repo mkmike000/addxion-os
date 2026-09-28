@@ -4,7 +4,7 @@ title: Heimat addxion.ai
 description: Produktmarke auf addxion.ai. addxion.com nur 301. Eine Frontend-App. Design von com gilt. USP technisch überlegen.
 status: decided
 owner: mike
-updated: 2026-09-25
+updated: 2026-09-28
 tags: [decision, domain, frontend, brand]
 ---
 
@@ -24,13 +24,16 @@ Look-Quelle: das Design von `addxion-com` (Neon, Brand, Motion) wird auf die App
 
 | Host | Rolle |
 | --- | --- |
-| `addxion.ai` | eine Frontend-App: Verkauf + Dashboard |
+| `addxion.ai` | eine Frontend-App: Verkauf + Dashboard + öffentliche Landings `/l/{slug}` |
 | `addxion.com` | 301 → `addxion.ai` + Pfad |
 | `ads.addxion.ai` | Ads-Collector (`/c`, `/v1/events`) |
 | `xi.addxion.ai` | XI-Kernel |
 | `auth.addxion.ai` | Auth-API und Login-Auslieferung |
+| `l.addxion.ai` | optionaler Alias auf denselben Landing-Renderer |
 
 Alte Hosts `ads.addxion.com`, `xi.addxion.com`, `auth.addxion.com` gelten nicht mehr als Ziel. Umstellung geplant, nicht stillschweigend parallel.
+
+Kunden-Landings: [Landing öffentlich](landing-public.md).
 
 # Bleibt getrennt (kein Frontend)
 
@@ -51,6 +54,7 @@ Subdomains `ads` / `xi` / `auth` nicht mit dem Apex-Redirect killen.
 - `.com` als Frontend lassen
 - `.ai` als reines Backend
 - Ads oder XI in die Frontend-App mergen
+- Landings auf `ads.addxion.ai`
 - zweites Theme neben Neon/com-Design
 
 # Folge

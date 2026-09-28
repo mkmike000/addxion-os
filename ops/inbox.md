@@ -28,6 +28,24 @@ Formel: ohne Deadline → 0. Sonst Notion-Formel in AGENTS.md.
   Score: 40
   Hinweis: Referenzen für die erste MW-Complete-Kampagne. Das Beste übernehmen, nichts erfinden. Fenster heute genannt.
 
+- [ ] Ads-Netzwerk Phase-1-Vertrag
+  Link: [wiki/platforms/ads-netzwerk.md](../wiki/platforms/ads-netzwerk.md)#offen · [wiki/decisions/ads-intake.md](../wiki/decisions/ads-intake.md)
+  B: 3  R: 2  D: —  A: 2
+  Score: 0
+  Hinweis: Nächster Chat: POST /v1/events plus schmales JS. Nicht Doing. Score 0 bis Deadline gesetzt.
+
+- [ ] Erste öffentliche Kunden-Landing `/l/{slug}`
+  Link: [wiki/decisions/landing-public.md](../wiki/decisions/landing-public.md) · [wiki/patterns/landing-zwei-tueren.md](../wiki/patterns/landing-zwei-tueren.md)#offen
+  B: 4  R: 3  D: —  A: 3
+  Score: 0
+  Hinweis: Nach klebender Testorder. Nicht auf ads.addxion.ai. Score 0 bis Deadline gesetzt.
+
+- [ ] Erste Ads-Loop an einem Kunden
+  Link: [wiki/decisions/agentic-loop.md](../wiki/decisions/agentic-loop.md) · [wiki/patterns/agentic-loop.md](../wiki/patterns/agentic-loop.md)#offen
+  B: 4  R: 3  D: —  A: 3
+  Score: 0
+  Hinweis: Owner Metrik Budget Tür Kill. XI erst danach. Score 0 bis Deadline gesetzt.
+
 - [ ] Meta EPI WhatsApp MW Complete
   Link: [wiki/relations/companies/mw-complete.md](../wiki/relations/companies/mw-complete.md) · [wiki/relations/people/marco-wiede.md](../wiki/relations/people/marco-wiede.md)
   B: 3  R: 3  D: —  A: 2
@@ -63,9 +81,3 @@ Formel: ohne Deadline → 0. Sonst Notion-Formel in AGENTS.md.
   B: 3  R: 2  D: —  A: 3
   Score: 0
   Hinweis: Instanz = n8n Mail-Automation für Grafik-Werkstatt. Offene Punkte (16 h, 7.000 €, Zuordnung) prüfen. Score 0 bis Deadline gesetzt.
-
-- [ ] Ads-Netzwerk Phase-1-Vertrag
-  Link: [wiki/platforms/ads-netzwerk.md](../wiki/platforms/ads-netzwerk.md)#offen · [wiki/decisions/ads-intake.md](../wiki/decisions/ads-intake.md)
-  B: 3  R: 2  D: —  A: 2
-  Score: 0
-  Hinweis: Nächster Chat: POST /v1/events plus schmales JS. Nicht Doing. Score 0 bis Deadline gesetzt.

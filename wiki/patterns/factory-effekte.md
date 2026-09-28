@@ -5,7 +5,7 @@ aliases: [XI-Effekte, Run-Effekte]
 description: Was der Factory-Loop erzeugt, was der Kernel erzeugt, was noch Nutzen hätte. Sortiert nach Hebel auf Marge/Run oder Wert/Recipe.
 status: draft
 owner: mike
-updated: 2026-09-22
+updated: 2026-09-28
 tags: [pattern, xi, factory]
 sources:
   - id: raw-effekte
@@ -13,7 +13,7 @@ sources:
     title: Rohaufnahme Factory-Effekte
 ---
 
-Heimat der Mechanik: [addxion-xi](../platforms/addxion-xi.md) (Factory, Keil, Später). Ports und Run-Marge: [A2A und P2P](a2a-p2p.md). Kein Collective-Merge. Kein nächster Slice.
+Heimat der Mechanik: [addxion-xi](../platforms/addxion-xi.md) (Factory, Keil, Später). Ports und Run-Marge: [A2A und P2P](a2a-p2p.md). Betrieb außerhalb Trading: [Agentic Loop](../decisions/agentic-loop.md). Kein Collective-Merge. Kein nächster Slice.
 
 Nutzen = Hebel auf Marge/Run oder Wert/Recipe. Oben = mehr Hebel.
 
@@ -28,7 +28,7 @@ Nutzen = Hebel auf Marge/Run oder Wert/Recipe. Oben = mehr Hebel.
 | mittel | Koordination ist sichtbar und kostet | Message, kein shared Memory |
 | mittel | Wiederverwendung statt jedes Mal neu suchen | Recipe-Ledger |
 | mittel | Versuch ist auditierbar | Effect Log, `run_id` |
-| niedrig | Swarm nur bei Rollenkonflikt | \(N\) in der Compute-Zeile |
+| niedrig | Swarm nur bei Rollenkonflikt | \\(N\\) in der Compute-Zeile |
 
 Ohne Score: parallele Chatbots. Mit Score: Optimierer.
 
@@ -50,9 +50,9 @@ Emergenz im Kernel: Isolate + Message + Select, unter Kosten.
 # Noch interessant
 
 | Nutzen | Effekt | Noch nicht | Bedingung |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | hoch | Mini-Erlös/Run ohne Rechnung | Settle hinter limits | Task hat einen Preis |
-| hoch | Fremde Arbeit kaufen/verkaufen, \(N\) sinkt | A2A-Bridge | fremde Peers nachgefragt |
+| hoch | Fremde Arbeit kaufen/verkaufen, \\(N\\) sinkt | A2A-Bridge | fremde Peers nachgefragt |
 | hoch | Neue Recipe nur beobachten, dann Commit | Shadow mode | Recipe-Versionierung |
 | hoch | Warum ein Run starb, steht im Ledger | Deliberate death | Score→Factory |
 | mittel | Trial bitgleich wiederholen | Deterministic replay | Effect Log first-class |

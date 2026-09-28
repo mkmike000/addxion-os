@@ -2,6 +2,13 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-09-28
+
+- ingest: Agentic Business und Kunden-Landings. Roh: `raw/agentic-business-landings-2026-09-28.md`.
+- decision: `wiki/decisions/landing-public.md` — Org-Row, `/l/{slug}` öffentlich, Werkbank hinter Session, nicht auf `ads.addxion.ai`.
+- decision: `wiki/decisions/agentic-loop.md` — Loop-Objekt, XI konsumiert, Mensch an 1-way.
+- ingest: Patterns `landing-zwei-tueren`, `agentic-loop`. Nachzug Heimat, Ads-Intake, Ads-Netzwerk, addxion-ai, Repo-Grenzen, Marketing-Sites, Factory-Effekte, Inbox.
+
 ## 2026-09-25
 
 - decision: Heimat `addxion.ai`. `addxion.com` nur 301. Eine Frontend-App (Verkauf + Dashboard). Hosts `ads.addxion.ai`, `xi.addxion.ai`, `auth.addxion.ai`. Design von com auf ai. USP technisch überlegen. Datei `wiki/decisions/heimat-ai.md`. Nachzug Ads-Intake, Ads-Netzwerk, Auth, Platforms-Index.

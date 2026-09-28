@@ -4,7 +4,7 @@ title: addxion-ai
 description: Eine Frontend-App unter addxion.ai (Verkauf + Dashboard) und Package @addxion/ai.
 status: active
 owner: shared
-updated: 2026-09-25
+updated: 2026-09-28
 tags: [platform]
 sources:
   - id: docs-ai
@@ -19,6 +19,8 @@ Heimat und Hosts: [Heimat addxion.ai](../decisions/heimat-ai.md). Design-Quelle 
 # Zweck
 
 App: öffentliche Seiten (früher com) plus Chat-Assistenten, Automatisierung, Wissensmanagement, Kurse (`/kurse`), Fahrschule, Operatoren/Flotten. URL addxion.ai. Repo `addxion-ai` (eine TanStack-Start-App).
+
+Öffentliche Kunden-Landings: `/l/{slug}` ohne Session. Werkbank: `/app/{org}/landings/{slug}`. Eine Row, Snapshot auf der öffentlichen Route. [Landing öffentlich](../decisions/landing-public.md). Charts lesen den Ads-Store, schreiben ihn nicht.
 
 Fahrschule lebt hier. Jede Schule ist eine Better-Auth-**Organisation** (Pack `fahrschule`). Lehrer = Org-`owner`/`admin`, Schüler = `member`. Lehrer steuern Fortschrittskarten unter `/fortschrittskarte?student=`. Schülerliste `/schueler`. Fragekatalog `/fragen` + `/fragen/$id`. Analysen `/analysen`, Termine `/termine`, Kurse `/kurse`, Onboarding `/onboarding`. Kartendaten und Theorie: D1 `super-app` (`FAHRSCHULE_DB`).
 
@@ -36,6 +38,8 @@ Package `@addxion/xi`: `protocol` + `core` (HTTP-Client zum Elixir-Kernel). Evol
 
 Schreibt keine Collective-Wahrheit. Kein paralleles Auth-Schema. Chat-UI (`ChatSurface`, `ChatBox`) und Chrome aus `@addxion/components`, Scroll aus `@addxion/behavior`. Mentions, Voice, LLM bleiben App. Keine Kernel-Interna nachbauen.
 
+Kein Collector. Kein HTML auf `ads.addxion.ai`. Ads-Events nicht in Fahrschul- oder Auth-DB.
+
 A2A / P2P / Crypto gehört nicht hierher. Heimat: [addxion-xi → Später](addxion-xi.md#später), Kurzfassung [A2A und P2P](../patterns/a2a-p2p.md).
 
 # Stack (App)
@@ -46,7 +50,7 @@ Gesten: Motion + Embla + vaul. Three.js später. [Swipe-Stack](../decisions/swip
 
 # XI Kernel / Agentic Trading (AI-1)
 
-World-dünn-Oberfläche für den Kernel. Plan und Keil: [addxion-xi](addxion-xi.md).
+World-dünn-Oberfläche für den Kernel. Plan und Keil: [addxion-xi](addxion-xi.md). Betrieb außerhalb Trading: [Agentic Loop](../decisions/agentic-loop.md).
 
 | | |
 |--|--|
@@ -67,4 +71,4 @@ App = Cockpit. Kernel = Fabrik. Kein xterm/PTY. Offline-Banner wenn Kernel nicht
 
 # Agent-Regeln
 
-LLM-Client nur im Package. Kein Base UI, Radix oder neues Untitled UI. Evolutionslogik nicht nach `@addxion/xi` kopieren. Query zuerst dieses Wiki.
+LLM-Client nur im Package. Kein Base UI, Radix oder neues Untitled UI. Evolutionslogik nicht nach `@addxion/xi` kopieren. Query zuerst dieses Wiki. Landings nicht auf den Ads-Host legen.

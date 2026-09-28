@@ -5,7 +5,7 @@ aliases: [ADDXION Ads, Conversion-API]
 description: Eigenes Ads-Netzwerk. Intake ist eine Event-Pipeline. API ist Kern, Pixel ist Client.
 status: draft
 owner: mike
-updated: 2026-09-25
+updated: 2026-09-28
 tags: [platform, ads, draft]
 sources:
   - id: chat-2026-09-23
@@ -21,7 +21,7 @@ ADDXION misst Auslieferung und Outcome auf eigenem Inventar und eigenen Funnels.
 
 # Entscheidung
 
-[Ads-Intake](../decisions/ads-intake.md). Host `ads.addxion.ai`. Query `xid` plus Host-Cookie. Heimat der Oberfläche: [Heimat addxion.ai](../decisions/heimat-ai.md).
+[Ads-Intake](../decisions/ads-intake.md). Host `ads.addxion.ai`. Query `xid` plus Host-Cookie. Heimat der Oberfläche: [Heimat addxion.ai](../decisions/heimat-ai.md). Landings: [Landing öffentlich](../decisions/landing-public.md).
 
 Erste Conversion: Shopify `orders/paid` über die App. addxion.ai in diesem Rutsch nicht.
 
@@ -38,7 +38,7 @@ Die Shopify-App ist der einzige Shop-Adapter.
 | `orders/paid` → `POST /v1/events` | Dedup, D1 |
 | später App-Pixel `source=pixel` | gleiches Modell |
 
-Nicht: n8n als Kern, Theme als Wahrheit, Events in Fahrschul-DB.
+Nicht: n8n als Kern, Theme als Wahrheit, Events in Fahrschul-DB, HTML auf diesem Host.
 
 # Go-Live-Reihenfolge
 
@@ -47,7 +47,7 @@ Nicht: n8n als Kern, Theme als Wahrheit, Events in Fahrschul-DB.
 3. Echter Webhook: Worker auf `*.workers.dev` **oder** Tunnel, eine Testorder, gleiche `xid` in `clicks` und `events`.
 4. Dann Prod: `wrangler d1 create`, Secret, DNS `ads.addxion.ai`, App-Env + Webhook-URL umstellen.
 
-Kein Custom-Domain-Deploy vor Schritt 3.
+Kein Custom-Domain-Deploy vor Schritt 3. Keine Landing-Fabrik vor Schritt 3.
 
 # Phasen (kurz)
 
@@ -57,10 +57,11 @@ Kein Custom-Domain-Deploy vor Schritt 3.
 | 2a | App + `orders/paid` + `xid` im Cart |
 | 2b | App-Pixel / Customer Events, `source=pixel` |
 | 3 | Fan-out Meta CAPI (`consent_marketing=1`); Charts in addxion.ai; optional `platform_stats` |
-| 4 | Optimierung; XI nur Consumer |
+| 4 | Öffentliche Landings `/l/{slug}`; Optimierung; XI nur Consumer einer [Loop](../decisions/agentic-loop.md) |
 
 # Offen
 
 **Jetzt:** Schritt 2–3. Echter Webhook, nicht nur curl.
 **Ziel:** `ads.addxion.ai` nach einer klebenden Testorder.
-**Nicht:** CAPI, ai-UI, zehn Webhooks, Shop-KPIs in D1.
+**Nicht:** CAPI, ai-UI, zehn Webhooks, Shop-KPIs in D1, HTML auf `ads.addxion.ai`.
+**Danach:** Landing-Row in addxion.ai, `advertiser_id` = Org-Slug.
