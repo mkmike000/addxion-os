@@ -3,6 +3,8 @@
 Bewusste Festlegungen.
 
 * [Heimat addxion.ai](heimat-ai.md) — Produkt auf `.ai`, `.com` nur 301, eine Frontend-App
+* [Landing öffentlich](landing-public.md) — Org-Datensatz, `/l/{slug}`, nicht auf dem Ads-Host
+* [Agentic Loop](agentic-loop.md) — Loop-Objekt, XI konsumiert, Mensch an 1-way
 * [Relations-Queue in ops](relations-ops.md)
 * [Firma, Person, Opportunity](relations-parties.md)
 * [addxion-docs ist keine SSOT](docs-ssot-hier.md)

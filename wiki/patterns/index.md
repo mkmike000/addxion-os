@@ -7,6 +7,8 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [System One](system-one.md) — typisierte Entscheidung neben dem LLM
 * [A2A und P2P](a2a-p2p.md) — Entwurf; Ports um XI; Wirkung auf Run-Marge
 * [Factory-Effekte](factory-effekte.md) — Entwurf; Loop, Kernel, noch zu erzeugen
+* [Agentic Loop](agentic-loop.md) — Arbeitseinheit Owner Metrik Budget Tür Kill
+* [Landing zwei Türen](landing-zwei-tueren.md) — Werkbank und öffentliche Projektion
 * [UI-SSOT](ui-ssot.md)
 * [CSS-Schichten](css-schichten.md)
 * [CardRoot](card-root.md) — App-Surfaces, GenUI
