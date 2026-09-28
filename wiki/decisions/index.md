@@ -3,7 +3,9 @@
 Bewusste Festlegungen.
 
 * [Heimat addxion.ai](heimat-ai.md) — Produkt auf `.ai`, `.com` nur 301, eine Frontend-App
-* [Landing öffentlich](landing-public.md) — Org-Datensatz, `/l/{slug}`, nicht auf dem Ads-Host
+* [Sites Hosts](sites-hosts.md) — Site = Row, Host+Slug, CNAME ohne Pfad, WfP, Collector getrennt
+* [Landing öffentlich](landing-public.md) — Org-Datensatz, öffentliche Projektion, nicht auf dem Ads-Host
+* [Landing-Inhalt](landing-content.md) — Row nicht Datei, kein `/w/`, XI nur Pointer
 * [Agentic Loop](agentic-loop.md) — Loop-Objekt, XI konsumiert, Mensch an 1-way
 * [Relations-Queue in ops](relations-ops.md)
 * [Firma, Person, Opportunity](relations-parties.md)

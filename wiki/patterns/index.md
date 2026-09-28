@@ -8,7 +8,9 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [A2A und P2P](a2a-p2p.md) — Entwurf; Ports um XI; Wirkung auf Run-Marge
 * [Factory-Effekte](factory-effekte.md) — Entwurf; Loop, Kernel, noch zu erzeugen
 * [Agentic Loop](agentic-loop.md) — Arbeitseinheit Owner Metrik Budget Tür Kill
+* [Sites Host plus Slug](sites-host-slug.md) — kein globaler Slug
 * [Landing zwei Türen](landing-zwei-tueren.md) — Werkbank und öffentliche Projektion
+* [Landing Inhalt](landing-inhalt.md) — Template Tokens Snapshot
 * [UI-SSOT](ui-ssot.md)
 * [CSS-Schichten](css-schichten.md)
 * [CardRoot](card-root.md) — App-Surfaces, GenUI
