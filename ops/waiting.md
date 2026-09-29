@@ -2,6 +2,12 @@
 
 Wartet auf eine externe Partei.
 
+- [ ] Rückruf Bruder Felgenimperium
+  Link: [wiki/relations/companies/felgenimperium.md](../wiki/relations/companies/felgenimperium.md)#offene-punkte
+  B: 5  R: 4  D: 2026-09-29  A: 1
+  Score: 90
+  Hinweis: Anruf für den Aufnahmetag angekündigt. Hängt an der offenen Forderung. Personendatei fehlt (kein Nachname).
+
 - [ ] Schrift Scope Marco Wiede
   Link: [wiki/decisions/scope-marco-wiede.md](../wiki/decisions/scope-marco-wiede.md) · [wiki/relations/people/marco-wiede.md](../wiki/relations/people/marco-wiede.md) · [MW Complete](../wiki/relations/companies/mw-complete.md)
   B: 4  R: 3  D: —  A: 2

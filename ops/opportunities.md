@@ -18,6 +18,22 @@ Person nur mit bestehender Datei. Leistungen ggf. aus addxion-com ableiten (z. B
 
 # Offen
 
+- [ ] KI-Agent Bild+Text Stadichair
+  Company: [Stadichair](../wiki/relations/companies/stadichair.md)
+  Person: [Jonas Braamt](../wiki/relations/people/jonas-braamt.md)
+  Leistungen: Shopify-Widget, Bild+Text zu Stuhl-Gerüst, Verarbeitung Cloudflare / addxion.ai, Eingang in Kunden-Ops
+  B: 4  R: 3  D: —  A: 4
+  Score: 0
+  Hinweis: Füttert die eigene App stärker als Felgen. Score 0 bis Deadline. Muster: [shopify-ki-support](../wiki/patterns/shopify-ki-support.md), [kunden-ops-inbox](../wiki/patterns/kunden-ops-inbox.md).
+
+- [ ] KI-Automation Felgenimperium
+  Company: [Felgenimperium](../wiki/relations/companies/felgenimperium.md)
+  Person: —
+  Leistungen: Shopify-KI-Automation, Fall noch unscharf; Marketing vierstellig genannt
+  B: 3  R: 3  D: —  A: 4
+  Score: 0
+  Hinweis: Erst nach offener Forderung. Dashboard-Kopplung unklar. Score 0 bis Deadline gesetzt.
+
 - [ ] Landings / Website comsolution
   Company: [comsolution](../wiki/relations/companies/com-solution.md)
   Person: [Lukas Sunderkötter](../wiki/relations/people/lukas-sunderkoetter.md)

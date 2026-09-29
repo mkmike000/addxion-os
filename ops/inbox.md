@@ -4,6 +4,12 @@ Neu, Score absteigend. Noch nicht in Doing.
 
 Formel: ohne Deadline → 0. Sonst Notion-Formel in AGENTS.md.
 
+- [ ] Offene Forderung Felgenimperium klären
+  Link: [wiki/relations/companies/felgenimperium.md](../wiki/relations/companies/felgenimperium.md)#offene-punkte
+  B: 5  R: 5  D: 2026-09-29  A: 2
+  Score: 79
+  Hinweis: Ca. 4500 EUR genannt. Aktuell höchstes. Zahlung vor neuem Scope. Belege nicht ins Wiki. Pickup: letzten Stand der Forderung und Weg zur Zahlung.
+
 - [ ] Vertrag ME Wohnungsbau mitbringen
   Link: [wiki/relations/companies/me-wohnungsbau.md](../wiki/relations/companies/me-wohnungsbau.md) · [wiki/relations/people/markus-esen.md](../wiki/relations/people/markus-esen.md)
   B: 4  R: 4  D: 2026-09-09  A: 2
@@ -16,17 +22,17 @@ Formel: ohne Deadline → 0. Sonst Notion-Formel in AGENTS.md.
   Score: 47
   Hinweis: Kampagne braucht Landings. Szenario Selbst-Content vs. Kollege Köln (Pre/Prod/Post + Anfahrt). Spätestens 2026-09-10 morgens. Keine Preise erfinden, Satz des Creators erst holen.
 
-- [ ] Konzept CHSOPTIMA für Lukas
-  Link: [wiki/relations/companies/chsoptima.md](../wiki/relations/companies/chsoptima.md) · [wiki/relations/people/lukas-sunderkoetter.md](../wiki/relations/people/lukas-sunderkoetter.md)
-  B: 3  R: 2  D: 2026-09-10  A: 3
-  Score: 33
-  Hinweis: Strategie-Angebot, was man dem Kunden sagen könnte. Nachrangig zu comsolution. Site neu denkbar, nicht gesetzt.
-
 - [ ] VorsorgeIQ-Kampagnenliste sichten
   Link: [wiki/relations/companies/mw-complete.md](../wiki/relations/companies/mw-complete.md) · [wiki/decisions/scope-marco-wiede.md](../wiki/decisions/scope-marco-wiede.md)
   B: 3  R: 2  D: 2026-09-17  A: 2
   Score: 40
   Hinweis: Referenzen für die erste MW-Complete-Kampagne. Das Beste übernehmen, nichts erfinden. Fenster heute genannt.
+
+- [ ] Konzept CHSOPTIMA für Lukas
+  Link: [wiki/relations/companies/chsoptima.md](../wiki/relations/companies/chsoptima.md) · [wiki/relations/people/lukas-sunderkoetter.md](../wiki/relations/people/lukas-sunderkoetter.md)
+  B: 3  R: 2  D: 2026-09-10  A: 3
+  Score: 33
+  Hinweis: Strategie-Angebot, was man dem Kunden sagen könnte. Nachrangig zu comsolution. Site neu denkbar, nicht gesetzt.
 
 - [ ] Ads-Netzwerk Phase-1-Vertrag
   Link: [wiki/platforms/ads-netzwerk.md](../wiki/platforms/ads-netzwerk.md)#offen · [wiki/decisions/ads-intake.md](../wiki/decisions/ads-intake.md)
