@@ -25,6 +25,8 @@ Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 * [Partnerschaft](partnerschaft.md) — Entwurf, gilt nicht
 * [Nachfrage-Test](nachfrage-test.md) — Kontakt, Ort, Zahlungsabsicht
 * [Bewertung-Scan](bewertung-scan.md) — Profil beschreiben, Antragspfad offen
+* [Shopify-KI-Support](shopify-ki-support.md) — Schicht auf Shopify, kein Zweitsystem
+* [Kunden-Ops-Inbox](kunden-ops-inbox.md) — Akte plus Score, nicht nur Ticket
 * [Fahrschulen](fahrschulen.md) — Zielgruppe DE, Liste in n8n
 * [72-Stunden-Regel](72-stunden-regel.md) — ansprechen oder fallenlassen
 * [Elusive Obvious](elusive-obvious.md) — unausgesprochene Wahrheit zuerst

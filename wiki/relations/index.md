@@ -16,7 +16,7 @@ Webflow-Staging = Instanz. Geburtstage nicht speichern.
 * [Cleany Service](companies/cleany-service.md)
 * [Emilia Beauty Concept](companies/emilia-beauty-concept.md) — Webflow
 * [Fahrschule Senkhorst](companies/fahrschule-senkhorst.md) — Twenty, Martin Senkhorst
-* [Felgenimperium](companies/felgenimperium.md) — Stub
+* [Felgenimperium](companies/felgenimperium.md) — Shopify, offene Forderung prior
 * [FlashSites](companies/flashsites.md)
 * [FS Wine](companies/fs-wine.md) — Webflow
 * [Go-User](companies/go-user.md) — Person offen
@@ -38,7 +38,7 @@ Webflow-Staging = Instanz. Geburtstage nicht speichern.
 * [Salon Lamour](companies/salon-lamour.md) — Webflow
 * [smptgroup](companies/smptgroup.md) — Simon Partners
 * [Soulkitchen Bielefeld](companies/soulkitchen-bielefeld.md) — Webflow
-* [Stadichair](companies/stadichair.md) — Jonas Braamt
+* [Stadichair](companies/stadichair.md) — Jonas Braamt, Shopify-KI-Agent
 * [The Butchers OWL](companies/the-butchers-owl.md) — Twenty, Webflow, Site
 * [Vanego](companies/vanego.md) — Webflow
 * [Visiondesign](companies/visiondesign.md)
