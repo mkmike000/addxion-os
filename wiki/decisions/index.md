@@ -20,3 +20,7 @@ Bewusste Festlegungen.
 * [Swipe-Stack](swipe-stack.md) — Motion plus Embla; Three.js später
 * [Jev-Heimat](jev-heimat.md) — Client in `@addxion/ai`, XI nur Port
 * [Ads-Intake](ads-intake.md) — API Kern, Pixel Client; Host `ads.addxion.ai`
+* [Effect v4 Server](effect-server.md) — Server-FNs/IO in addxion-ai mit Effect
+* [Public vs App](public-vs-app.md) — Schaufenster Info, Auftrag in der App
+* [Computer-Use](computer-use.md) — später: Hosted Browser first, Desktop später
+* [Agentic Finances vs Trading](agentic-trading-rails.md) — Billing · Venues · A2A-Value
