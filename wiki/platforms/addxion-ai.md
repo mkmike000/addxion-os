@@ -4,7 +4,7 @@ title: addxion-ai
 description: KI-App unter addxion.ai und Package @addxion/ai.
 status: active
 owner: shared
-updated: 2026-09-09
+updated: 2026-10-06
 tags: [platform]
 sources:
   - id: docs-ai
@@ -16,7 +16,9 @@ Zwei Dinge, eine Datei: die **App** und das **LLM-Package**.
 
 # Zweck
 
-App: Chat-Assistenten, Automatisierung, Wissensmanagement, Kurse (`/kurse`), Fahrschule, Operatoren/Flotten. URL addxion.ai. Repo `addxion-ai`.
+App: Chat-Assistenten, Automatisierung, Wissensmanagement, Kurse (`/kurse`), Fahrschule, Operatoren/Flotten. URL addxion.ai. Repo `addxion-ai`. Öffentlicher Name auf addxion.com: **Sprachagenten**, nicht „AI“. Packs (`Analyse`, `Voll`) und Features aus `src/lib/features/registry.ts` liegen als Full-Bleed-Karten auf `addxion.com/produkte/`. Unterseiten `/produkte/{slug}/`. CTA kommt guest-sicher über `/login?redirect=` mit `from=com` und `surface`. Nackte App-Pfade sind für Gäste 404.
+
+Schaufenster vs Werkbank: öffentliche Leistungsseiten nur Info. Auftrag und Bewertungs-Tabelle unter `/app/bewertungen`. [Public vs App](../decisions/public-vs-app.md).
 
 Fahrschule lebt hier. Jede Schule ist eine Better-Auth-**Organisation** (Pack `fahrschule`). Lehrer = Org-`owner`/`admin`, Schüler = `member`. Lehrer steuern Fortschrittskarten unter `/fortschrittskarte?student=`. Schülerliste `/schueler`. Fragekatalog `/fragen` + `/fragen/$id`. Analysen `/analysen`, Termine `/termine`, Kurse `/kurse`, Onboarding `/onboarding`. Kartendaten und Theorie: D1 `super-app` (`FAHRSCHULE_DB`).
 
@@ -40,9 +42,14 @@ TanStack Start, React Aria + Neon-Tokens, Better Auth + Drizzle, Effect, Cloudfl
 
 Gesten: Motion + Embla + vaul. Three.js später. [Swipe-Stack](../decisions/swipe-stack.md).
 
+
+# Agentic Finances
+
+Billing-Fläche unter `/finanzen`. Feature `agentic.finances` / Pack `agentic-finances`. Rechnungen und EUR-Zahlungen; Stripe-Konnektor. Crypto und Märkte gehören zu Agentic Trading — [drei Geld-Schienen](../decisions/agentic-trading-rails.md).
+
 # XI Kernel / Agentic Trading (AI-1)
 
-World-dünn-Oberfläche für den Kernel. Plan und Keil: [addxion-xi](addxion-xi.md).
+World-dünn-Oberfläche für den Kernel (Crypto/Märkte). Plan und Keil: [addxion-xi](addxion-xi.md). Geld-Schienen: [agentic-trading-rails](../decisions/agentic-trading-rails.md).
 
 | | |
 |--|--|
@@ -57,8 +64,10 @@ Offline-Banner wenn Kernel nicht erreichbar. Paper/Evolve/Status-Keywords im Cha
 
 # Truths
 
-[T-PKG-AI](../fundamentals/truths.md), [T-PKG-AUTH](../fundamentals/truths.md), [T-PKG-XI](../fundamentals/truths.md), [T-EVOLUTION-CORE](../fundamentals/truths.md), [T-UI-ARIA](../fundamentals/truths.md), [T-DATA-APP-ISOLATED](../fundamentals/truths.md).
+[T-PKG-AI](../fundamentals/truths.md), [T-PKG-AUTH](../fundamentals/truths.md), [T-PKG-XI](../fundamentals/truths.md), [T-EVOLUTION-CORE](../fundamentals/truths.md), [T-UI-ARIA](../fundamentals/truths.md), [T-PUBLIC-APP](../fundamentals/truths.md), [T-UI-LINT](../fundamentals/truths.md), [T-DATA-APP-ISOLATED](../fundamentals/truths.md), [T-TRADING-RAILS](../fundamentals/truths.md).
 
 # Agent-Regeln
 
 LLM-Client nur im Package. Kein Base UI, Radix oder neues Untitled UI. Evolutionslogik nicht nach `@addxion/xi` kopieren. Query zuerst dieses Wiki.
+
+UI: nach Änderungen `bun run lint:ui` (`@shadcn/lint`). Appearance in der Komponente, Caller nur Layout. UUI-Ordner (`base`, `application`, `shared-assets`, `foundations`, `marketing`) sind Altbestand — Override, nicht ausbauen. Token = Neon (`muted-foreground`, `destructive`, `success`), nicht `text-tertiary` / Palette. [shadcn Lint](../patterns/shadcn-lint.md).

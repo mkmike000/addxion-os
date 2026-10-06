@@ -4,7 +4,7 @@ title: Truths
 description: Registry der Plattform-Wahrheiten. IDs referenzieren, nicht paraphrasieren.
 status: active
 owner: shared
-updated: 2026-09-06
+updated: 2026-10-06
 tags: [fundamental]
 sources:
   - id: docs-truths
@@ -110,7 +110,7 @@ War: Starlight-Sidebar = Content-Nav. **Deprecated** mit addxion-docs.
 
 ### T-SHELL-ICONS
 
-App-UI-Icons: `@phosphor-icons/react`, Weight `duotone`. Mapping im Consumer, nicht in `manifest.ts`. App-Root: `IconProvider`.
+App-UI-Icons: `lucide-react`. Mapping im Consumer, nicht in `manifest.ts`. App-Root: `IconProvider`.
 
 ### T-UI-BORDERED
 
@@ -123,6 +123,14 @@ Wiederkehrende Design-UI und App-Chrome in `@addxion/components`. XI ist Glue, k
 ### T-UI-ARIA
 
 Interaktions-Primitives = React Aria. Kein Base UI, kein Radix, **kein Untitled UI als Ziel**. UUI in addxion.ai ist Altbestand und wird entfernt. Neon `shadcn-bridge.css` ist CSS-Token-Mapping, kein Kit.
+
+### T-PUBLIC-APP
+
+Schaufenster-Pfade (`/leistungen/*` und Co.) tragen nur öffentliche Information. Auftrag, Tabellen, Checkout und Google-Business-Profil leben hinter Session in der App. Bewertungen: öffentlich `/leistungen/bewertungen`, Werkbank `/app/bewertungen`. Entscheidung: [Public vs App](../decisions/public-vs-app.md).
+
+### T-UI-LINT
+
+Tailwind-v4-Projekte mit shadcn-Komponenten (`components.json` oder `components/ui`) führen `@shadcn/lint` (Oxlint oder ESLint). Neon und Marketing ohne shadcn-Kit nicht. addxion.ai nutzt denselben Guard, weil Rest-UI und `@addxion/components` Appearance besitzen. Ausarbeitung: [shadcn Lint](../patterns/shadcn-lint.md).
 
 # Daten und Brand
 
@@ -150,6 +158,16 @@ Platform Foundations in `@addxion/neon/brands/addxion.tokens.json` (+ generierte
 
 Keine Google Fonts. Self-hosted Inter aus `@addxion/neon/fonts/inter.css`. System-Schrift hat Vorrang.
 
+### T-INPUT-16
+
+Textfelder, Textareas und Selects mindestens `1rem` / 16px. Darunter zoomt Safari beim Fokus. Gilt für Neon und alle Apps.
+
 ### T-NEON-SECTIONS
 
 Versionierte Sections nicht in-place überschreiben — neue Version anlegen.
+
+# Agentic Geld
+
+### T-TRADING-RAILS
+
+Drei Schienen: **Billing** (Agentic Finances / Stripe), **Venues** (Agentic Trading / Broker·Exchange·Polymarket), **A2A-Value** (P2P Agent-Settlement, später). Nicht vermischen. Ausarbeitung: [agentic-trading-rails](../decisions/agentic-trading-rails.md).
