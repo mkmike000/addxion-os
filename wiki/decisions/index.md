@@ -22,5 +22,7 @@ Bewusste Festlegungen.
 * [Ads-Intake](ads-intake.md) — API Kern, Pixel Client; Host `ads.addxion.ai`
 * [Effect v4 Server](effect-server.md) — Server-FNs/IO in addxion-ai mit Effect
 * [Public vs App](public-vs-app.md) — Schaufenster Info, Auftrag in der App
+* [Cockpit ↔ XI](cockpit-xi.md) — TanStack AI, `xi_*`-Tools, A2A-SSE
 * [Computer-Use](computer-use.md) — später: Hosted Browser first, Desktop später
+* [Isolate Cloud](isolate-cloud.md) — Käfig-Fabrik für Skalierung (nicht OrbStack allein)
 * [Agentic Finances vs Trading](agentic-trading-rails.md) — Billing · Venues · A2A-Value
