@@ -15,4 +15,5 @@ Bewusste Festlegungen.
 * [Public vs App](public-vs-app.md) — Schaufenster Info, Auftrag in der App
 * [Agentic Loop](agentic-loop.md) — Cockpit ↔ XI (TanStack AI, Tools, A2A)
 * [Computer-Use](computer-use.md) — später: Hosted Browser first, Desktop später
+* [Isolate Cloud](isolate-cloud.md) — Käfig-Fabrik für Skalierung (nicht OrbStack allein)
 * [Agentic Finances vs Trading](agentic-trading-rails.md) — Billing · Venues · A2A-Value

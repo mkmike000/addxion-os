@@ -29,8 +29,9 @@ Runtime. Isolate · Remember · Message · Select · Constrain. Collective bleib
 
 [T-PKG-XI](../fundamentals/truths.md), [T-EVOLUTION-CORE](../fundamentals/truths.md), [T-KLARTEXT](../fundamentals/klartext.md), [XI ist Runtime](../fundamentals/xi-ist-runtime.md).
 
-**Stand:** Sep 2026 · Fundament (EC-0/1, AT-1 Paper, Factory Runs, CLI, Pipeline) + World dünn (Normandy) gelegt.  
-**Fokus jetzt:** World vertiefen (score_v1 Diagnostics, Recipe-Liste) → Live-Envs (Ads/Websites Adapter) → Isolate Cloud live.
+**Stand:** Oct 2026 · Fundament + World dünn + Cockpit-Agentic-Loop (TanStack AI Tools, A2A SSE, Pi/Recipes/HITL/Swarm-UI).  
+**Fokus jetzt:** Kernel-Deploy/Smoke End-to-End; World vertiefen.  
+**Später:** [Computer-Use](../decisions/computer-use.md) (Hosted Browser first), [Isolate Cloud](../decisions/isolate-cloud.md), Memory-UI.
 
 **Leitsatz:** Schlechte Brains sterben, gute Recipes bleiben — messbar, unter Budget, über Domänen.
 
