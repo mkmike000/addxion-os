@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-10-16
+
+- ingest: Inverse Pyramide für Agenten-Vertrauen (Poteto). Pattern `wiki/patterns/agent-vertrauen-pyramide.md`. Praktische Anwendung auf Coding-Agenten in der ADDXION AI App: Codebase-Verbesserungen, Static Analysis, minimale Prose, wenig Human Review.
+
 ## 2026-09-29
 
 - ingest: Fokus Premium + Jonas. Roh `raw/fokus-premium-jonas-2026-09-29.md`. Prozess `fokus-zwei`. Pattern `zero-touch-schicht`. Premium in Relations noch unklar.
