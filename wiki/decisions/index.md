@@ -2,6 +2,7 @@
 
 Bewusste Festlegungen.
 
+* [XI Clients](xi-clients.md) — Web + Native getrennt vom Elixir-Kernel
 * [Heimat addxion.ai](heimat-ai.md) — Produkt auf `.ai`, `.com` nur 301, eine Frontend-App
 * [Sites Hosts](sites-hosts.md) — Site = Row, Host+Slug, CNAME ohne Pfad, WfP, Collector getrennt
 * [Landing öffentlich](landing-public.md) — Org-Datensatz, öffentliche Projektion, nicht auf dem Ads-Host
