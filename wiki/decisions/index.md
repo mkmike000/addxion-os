@@ -2,6 +2,7 @@
 
 Bewusste Festlegungen.
 
+* [XI Server zentral, Client dezentral](xi-server-client.md) — Kernel zentral, Rust-Worker, TanStack bleibt
 * [XI Clients](xi-clients.md) — Web + Native getrennt vom Elixir-Kernel
 * [Heimat addxion.ai](heimat-ai.md) — Produkt auf `.ai`, `.com` nur 301, eine Frontend-App
 * [Sites Hosts](sites-hosts.md) — Site = Row, Host+Slug, CNAME ohne Pfad, WfP, Collector getrennt

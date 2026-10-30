@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-10-30
+
+- decision: `wiki/decisions/xi-server-client.md` — Kernel zentral, Clients dezentral. Rust-Worker für schwere Berechnung. Frontend bleibt TanStack, kein Next.js+Go. Roh `raw/xi-server-client-2026-10-30.md`.
+
 ## 2026-10-23
 
 - decision: `wiki/decisions/xi-clients.md` — Web-Client und nativer GPUI-Client getrennt vom Elixir-Kernel. Kein NIF, kein Kernel-Bundle, Kernel bleibt Server. Roh `raw/xi-clients-2026-10-23.md`.
