@@ -2,6 +2,7 @@
 
 Wiederverwendbare Konzepte. Eine Datei, eine Aussage.
 
+* [Bestimmungs-Kriterien](bestimmungs-kriterien.md) — Filter für das Problem, das ADDXION zentral und skalierbar löst
 * [Einmal pflegen](einmal-pflegen.md)
 * [Repo-Grenzen](repo-grenzen.md)
 * [System One](system-one.md) — typisierte Entscheidung neben dem LLM
