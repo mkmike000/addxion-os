@@ -6,6 +6,7 @@ Kuratiertes steht in [wiki/](../wiki/). Zusammenhängende Erzählung: [story/](s
 
 Die Starlight-Seiten in `addxion-docs` sind Herkunft des Plattform-Ingests vom 2026-08-24. Nicht hierher kopiert — Repo nebenan, bis es abgeschaltet wird.
 
+* [Abraham Bulun KFC 2026-11-03](abraham-bulun-kfc-2026-11-03.md)
 * [Factory-Effekte 2026-09-22](factory-effekte-2026-09-22.md)
 * [A2A P2P Marge 2026-09-22](a2a-p2p-marge-2026-09-22.md)
 * [A2A P2P Crypto 2026-08-08](a2a-p2p-crypto-2026-08-08.md)

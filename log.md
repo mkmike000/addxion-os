@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-11-03
+
+- ingest: Abraham Bulun KFC Gespräch. Roh `raw/abraham-bulun-kfc-2026-11-03.md`. Personen `abraham-bulun`, `ammar-bulun`. Jakub nachgezogen (Cousin). Opportunity eigene App Zürich / KI. Ultimatum Anfang Dezember.
+
 ## 2026-10-30
 
 - decision: `wiki/decisions/xi-server-client.md` — Kernel zentral, Clients dezentral. Rust-Worker für schwere Berechnung. Frontend bleibt TanStack, kein Next.js+Go. Roh `raw/xi-server-client-2026-10-30.md`.
