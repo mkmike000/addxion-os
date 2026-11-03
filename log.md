@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-11-03
 
+- ingest: Bestimmungs-Narrativ Mike. Roh `raw/story/bestimmung-2026-11-03.md`. Pattern `wiki/patterns/bestimmungs-kriterien.md` (draft). Kriterien: digital, wiederkehrend, zentral steuerbar, AI-fähig, skalierbar. Keine Fahrschul-Expertise. Offen: konkretes Problem.
 - ingest: Abraham Bulun Korrekturen von Jakub. Roh `raw/abraham-bulun-korrekturen-2026-11-03.md`. Sohn heißt Armun (nicht Ammar), vor kurzem geheiratet. Abraham Teilhaber einiger Stores (nicht alle 17 selbst). Jakub fährt zur nächsten Eröffnung als Fahrer. Person `armun-bulun` angelegt, `ammar-bulun` Alias.
 - ingest: Abraham Bulun AI-Pitch Explainer-Videos Idee. Roh `raw/abraham-bulun-ai-pitch-videos-2026-11-03.md`. Kurze 2-10 Min Videos zu AI-Business-Nutzen (Belege, Suche, RAG etc.) für YouTube/Instagram/TikTok um Wert besser zu vermitteln.
 - ingest: Abraham Bulun Office-Beobachtungen. Roh `raw/abraham-bulun-office-2026-11-03.md`. Ammar ca. gleiches Alter wie Mike, etwas technischer/modern. Zwei Mitarbeiterinnen für Office. Café Cavan morgens leer.
