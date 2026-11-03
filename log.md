@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-11-03
 
+- ingest: Abraham Bulun Zürich in-person Treffen. Roh `raw/abraham-bulun-zurich-2026-11-03.md`. Person nachgezogen (12 CH / 5 DE bestätigt, iPhone App, Hustler, Erinnerung Anfang Dezember). Eindruck an Stani gesendet.
 - ingest: Abraham Bulun KFC Gespräch. Roh `raw/abraham-bulun-kfc-2026-11-03.md`. Personen `abraham-bulun`, `ammar-bulun`. Jakub nachgezogen (Cousin). Opportunity eigene App Zürich / KI. Ultimatum Anfang Dezember.
 
 ## 2026-10-30
