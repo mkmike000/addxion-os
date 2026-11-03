@@ -4,6 +4,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 
 ## 2026-11-03
 
+- ingest: Abraham Bulun AI-Pitch Explainer-Videos Idee. Roh `raw/abraham-bulun-ai-pitch-videos-2026-11-03.md`. Kurze 2-10 Min Videos zu AI-Business-Nutzen (Belege, Suche, RAG etc.) für YouTube/Instagram/TikTok um Wert besser zu vermitteln.
 - ingest: Abraham Bulun Office-Beobachtungen. Roh `raw/abraham-bulun-office-2026-11-03.md`. Ammar ca. gleiches Alter wie Mike, etwas technischer/modern. Zwei Mitarbeiterinnen für Office. Café Cavan morgens leer.
 - ingest: Abraham Bulun Zürich in-person Treffen. Roh `raw/abraham-bulun-zurich-2026-11-03.md`. Person nachgezogen (12 CH / 5 DE bestätigt, iPhone App, Hustler, Erinnerung Anfang Dezember). Eindruck an Stani gesendet.
 - ingest: Abraham Bulun KFC Gespräch. Roh `raw/abraham-bulun-kfc-2026-11-03.md`. Personen `abraham-bulun`, `ammar-bulun`. Jakub nachgezogen (Cousin). Opportunity eigene App Zürich / KI. Ultimatum Anfang Dezember.
