@@ -18,6 +18,14 @@ Person nur mit bestehender Datei. Leistungen ggf. aus addxion-com ableiten (z. B
 
 # Offen
 
+- [ ] Eigene App / KI für KFC Zürich Abraham Bulun
+  Company: —
+  Person: [Abraham Bulun](../wiki/relations/people/abraham-bulun.md)
+  Leistungen: Eigene App für Zürich (Gutscheine/Coupons, Booking via App wie BK/McD), optional Marketing-Betreuung, AI-Agent für Backend/Belege/Emails. Kosten mittlerer fünfstelliger Bereich.
+  B: 5  R: 4  D: 2026-12-01  A: 4
+  Score: 45
+  Hinweis: Ultimatum Anfang Dezember an KFC. Vertrauensaufbau zuerst, AI noch nicht gepitcht. Cousin von Jakub Bulun. Roh: raw/abraham-bulun-kfc-2026-11-03.md
+
 - [ ] KI-Agent Bild+Text Stadichair
   Company: [Stadichair](../wiki/relations/companies/stadichair.md)
   Person: [Jonas Braamt](../wiki/relations/people/jonas-braamt.md)
