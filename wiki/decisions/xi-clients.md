@@ -5,7 +5,7 @@ aliases: [nativer Client, GPUI Client]
 description: Web-Client und nativer Client getrennt vom Elixir-Kernel. Kernel bleibt Server-Prozess.
 status: decided
 owner: mike
-updated: 2026-10-23
+updated: 2026-11-10
 tags: [decision, platform]
 sources:
   - id: chat-2026-10-23
@@ -36,8 +36,8 @@ Beide sprechen denselben Vertrag zum Kernel (heute HTTP/WS).
 
 Rust im Kernel nur bei gemessenem Hot-Path (Turso-Treiber, später ggf. Wire). Rust im Client ist die UI-Runtime. Zwei Schichten.
 
-# Nächster Schritt
+# Ort
 
-Cursor-Prompt für `apps/native` (oder `apps/xi-desktop`) in addxion-ai: minimaler GPUI-Client, der den Kernel anspricht. Web bleibt unverändert.
+Der native Client liegt im eigenen Repo `addxion-app` (Rust-Workspace: `xi-client`, `xi-desktop`). Er war zuerst `apps/xi-desktop` in addxion-ai und zog am 2026-11-10 aus, weil Rust-Toolchain und Desktop-Release nicht in die Web-Harness gehören. Der Vertrag bleibt `@addxion/xi/core` in addxion-ai.
 
 Pointer: [addxion-xi](../platforms/addxion-xi.md), [addxion-ai](../platforms/addxion-ai.md).
