@@ -64,7 +64,7 @@ XI-**A2A** = peer Task-Handoff (Auftrag, Grenze, Ergebnis).
 # Konsequenzen
 
 - Cockpit: Finanzen = Billing; Normandy = Märkte.
-- Neue Markt-Fähigkeit: Venue-Port zuerst (Kernel / `@addxion/xi/core`), dann Cockpit — analog [agentic-loop.md](agentic-loop.md).
+- Neue Markt-Fähigkeit: Venue-Port zuerst (Kernel / `@addxion/xi/core`), dann Cockpit — analog [cockpit-xi.md](cockpit-xi.md).
 - Instanz: `addxion-ai` Feature-Registry + Konnektoren-Katalog.
 
 # Ist (addxion-ai, 2026-11-09)
