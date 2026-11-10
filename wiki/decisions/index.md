@@ -2,6 +2,7 @@
 
 Bewusste Festlegungen.
 
+* [Design System Transfer](design-system-transfer.md) — Monochrome-Tokens von addxion-ai nach addxion-app
 * [XI Server zentral, Client dezentral](xi-server-client.md) — Kernel zentral, Rust-Worker, TanStack bleibt
 * [XI Clients](xi-clients.md) — Web + Native getrennt vom Elixir-Kernel
 * [i18n de und en](i18n-de-en.md) — Sprache, Markt, Inhalt getrennt. Default `de`, zweite Sprache `en`
