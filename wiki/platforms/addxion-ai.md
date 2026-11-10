@@ -14,7 +14,7 @@ sources:
 
 Zwei Dinge, eine Datei: die **App** und das **LLM-Package**.
 
-Heimat und Hosts: [Heimat addxion.ai](../decisions/heimat-ai.md). Design-Quelle ist addxion-com, Ziel Neon + Aria. USP: technisch überlegen wirken.
+Heimat und Hosts: [Heimat addxion.ai](../decisions/heimat-ai.md). Design-Quelle ist addxion-com, Ziel Neon + Aria. USP: technisch überlegen wirken. Sprache: [i18n de und en](../decisions/i18n-de-en.md) — öffentlich URL, Werkbank Preference, Default `de`.
 
 # Zweck
 
@@ -74,7 +74,7 @@ App = Cockpit. Kernel = Fabrik. Kein xterm/PTY. Offline-Banner wenn Kernel nicht
 
 # Truths
 
-[T-PKG-AI](../fundamentals/truths.md), [T-PKG-AUTH](../fundamentals/truths.md), [T-PKG-XI](../fundamentals/truths.md), [T-EVOLUTION-CORE](../fundamentals/truths.md), [T-UI-ARIA](../fundamentals/truths.md), [T-PUBLIC-APP](../fundamentals/truths.md), [T-UI-LINT](../fundamentals/truths.md), [T-DATA-APP-ISOLATED](../fundamentals/truths.md), [T-TRADING-RAILS](../fundamentals/truths.md).
+[T-PKG-AI](../fundamentals/truths.md), [T-PKG-AUTH](../fundamentals/truths.md), [T-PKG-XI](../fundamentals/truths.md), [T-EVOLUTION-CORE](../fundamentals/truths.md), [T-UI-ARIA](../fundamentals/truths.md), [T-PUBLIC-APP](../fundamentals/truths.md), [T-UI-LINT](../fundamentals/truths.md), [T-I18N](../fundamentals/truths.md), [T-DATA-APP-ISOLATED](../fundamentals/truths.md), [T-TRADING-RAILS](../fundamentals/truths.md).
 
 # Agent-Regeln
 

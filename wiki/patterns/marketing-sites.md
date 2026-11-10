@@ -4,7 +4,7 @@ title: Marketing-Sites
 description: Wiederverwendbare Regeln für öffentliche Surfaces. Instanz-How-to bleibt im Consumer-Repo.
 status: active
 owner: shared
-updated: 2026-09-28
+updated: 2026-11-10
 tags: [pattern]
 sources:
   - id: docs-marketing-sites
@@ -39,10 +39,14 @@ Keine Google Fonts. Inter self-hosted: `@addxion/neon/fonts/inter.css`. System-S
 
 Astro: `client:load` nur above-the-fold; `client:visible` below. Nicht alles hydratisieren.
 
+# Locale
+
+Öffentliche Seiten: Locale in der URL. Default `de` ohne Präfix. Englisch unter `/en/`. `hreflang` auf sich und die Schwester. Keine leere EN-Seite. [i18n de und en](../decisions/i18n-de-en.md).
+
 # Copy
 
-Keine Gedankenstriche in Fließtext. Keine KI-Floskeln. Produktnamen **Neon**, **AI** ohne „ADDXION®“-Präfix im Produktnamen.
+Keine Gedankenstriche in Fließtext. Keine KI-Floskeln. Produktnamen **Neon**, **AI** ohne „ADDXION®“-Präfix im Produktnamen. EN ist zweite Fassung, nicht maschinelle DE-Kopie.
 
 # DoD (Marketing-Seite)
 
-Unique Title + Description (Title-Regel). Eine H1. Primary-CTA hydratisiert und klickbar. Kontrast Desktop + Mobile. `noindex` bewusst. Build grün. Neue URL in Sitemap und `llms.txt` des **Marketing**-Repos, nicht in einer zweiten Docs-SSOT. Kunden-Landing: `xid` aus der URL erhalten und an Events durchreichen.
+Unique Title + Description (Title-Regel). Eine H1. Primary-CTA hydratisiert und klickbar. Kontrast Desktop + Mobile. `noindex` bewusst. Build grün. Neue URL in Sitemap und `llms.txt` des **Marketing**-Repos, nicht in einer zweiten Docs-SSOT. Kunden-Landing: `xid` aus der URL erhalten und an Events durchreichen. Locale-Schwester: `hreflang` plus Canonical auf die eigene Fassung.

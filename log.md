@@ -39,6 +39,10 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 - decision: `wiki/decisions/agentic-loop.md` — Loop-Objekt, XI konsumiert, Mensch an 1-way.
 - ingest: Patterns `landing-zwei-tueren`, `agentic-loop`. Nachzug Heimat, Ads-Intake, Ads-Netzwerk, addxion-ai, Repo-Grenzen, Marketing-Sites, Factory-Effekte, Inbox.
 
+## 2026-09-26
+
+- decision: i18n zuerst `de` und `en`. Sprache ≠ Markt ≠ Inhalt. Öffentlich Locale in der URL (`/en/`), Werkbank Preference. Kein Geo-IP, keine übersetzten App-Pfade, kein Machine-Translate als Stimme. Dateien `wiki/decisions/i18n-de-en.md`, `wiki/patterns/i18n.md`. Nachzug Klartext, `T-I18N`, Marketing-Sites, addxion-ai.
+
 ## 2026-09-25
 
 - decision: Heimat `addxion.ai`. `addxion.com` nur 301. Eine Frontend-App (Verkauf + Dashboard). Hosts `ads.addxion.ai`, `xi.addxion.ai`, `auth.addxion.ai`. Design von com auf ai. USP technisch überlegen. Datei `wiki/decisions/heimat-ai.md`. Nachzug Ads-Intake, Ads-Netzwerk, Auth, Platforms-Index.
