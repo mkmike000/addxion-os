@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-11-22
+
+- ingest: Platform `addxion-trading` angelegt. Foundations + Frameworks (Mental Models) im Repo vorbereitet. Darstellung in addxion-app. Persistenz Timescale via Neon. Roadmap in docs/roadmap.md.
+
 ## 2026-11-10
 
 - decision: `wiki/decisions/design-system-transfer.md` — Monochrome Design Language aus addxion-ai (Neon) wird schrittweise in addxion-app (GPUI) übertragen. Tokens in theme.rs, Surfaces folgen.
