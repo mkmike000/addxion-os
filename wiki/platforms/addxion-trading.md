@@ -17,8 +17,8 @@ sources:
 Python-Service für Markt-Execution (Crypto zuerst).  
 Architektur: Flotte → Signal-Unit / Operator-Unit / Data-Unit.
 
-Cockpit und Darstellung: **addxion-app** (GPUI).  
-Web-Ansicht (Roadmap, Übersicht) kann in addxion.ai liegen, wenn es konkreten Nutzen hat.
+Cockpit und Darstellung des laufenden Systems: **addxion-app** (GPUI).  
+Web-Übersicht / Roadmap: `/operators/roadmap` in addxion.ai.
 
 # Frameworks (Mental Models)
 
@@ -26,7 +26,7 @@ Persistente Lernresource im Repo: `docs/frameworks/`.
 
 - Signal: Catalog als Single Source of Truth
 - Strategy / Operator: Entscheidung vs. Ausführung
-- Execution: Orders + Reconciliation + Modi
+- Execution: Orders + Reconciliation + Modi (Skeleton mit konkreter Struktur)
 - Risk: Unit + Portfolio
 - Data: Timescale via Neon
 - Runtime: kontinuierlicher Loop
@@ -51,4 +51,4 @@ DEX-Adapter (Hyperliquid, Jupiter) später.
 # Related
 
 - Decision: [Agentic Trading Rails](../decisions/agentic-trading-rails.md)
-- Roadmap: `docs/roadmap.md` im Repo
+- Roadmap: `docs/roadmap.md` im Repo + Web-Ansicht unter `/operators/roadmap`

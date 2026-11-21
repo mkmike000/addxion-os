@@ -5,6 +5,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 ## 2026-11-22
 
 - ingest: Platform `addxion-trading` angelegt. Foundations + Frameworks (Mental Models) im Repo vorbereitet. Darstellung in addxion-app. Persistenz Timescale via Neon. Roadmap in docs/roadmap.md.
+- done: Roadmap-Seite unter `/operators/roadmap` in addxion.ai. Execution-Skeleton im Trading-Repo mit konkreter Struktur (Manager, Modi, Reconciliation) erweitert.
 
 ## 2026-11-10
 
