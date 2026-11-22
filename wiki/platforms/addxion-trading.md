@@ -35,6 +35,7 @@ Persistente Lernresource im Repo: `docs/frameworks/`.
 - Runtime: kontinuierlicher Loop
 - Observability: Book-Snapshot für die App
 - Position & Exit: Lifecycle einer Position
+- Venues & Asset Classes: Multi-Asset / Multi-Venue Struktur
 
 Details: [addxion-trading docs/frameworks](https://github.com/mkmike000/addxion-trading/tree/main/docs/frameworks).
 
@@ -50,7 +51,7 @@ Details: [addxion-trading docs/frameworks](https://github.com/mkmike000/addxion-
 
 Kein Billing (das ist Agentic Finances / Stripe).  
 Keine Collective-Wahrheit hier.  
-DEX-Adapter (Hyperliquid, Jupiter) später.
+DEX-Adapter (Hyperliquid, Jupiter) später — Skeleton vorhanden.
 
 # Konzept-Abgleich (PDF Sep 2026)
 
@@ -85,19 +86,29 @@ Diese Schicht ist nötig, sobald man von „Demo-Skript“ zu etwas kommt, das m
   Skeleton: `OperatorUnit.paused` (default `True`), `activate()`, `pause()`.
 - Strategie-Versionierung: bei Strategie-Änderung Statistik neu beginnen.  
   Skeleton: `strategy_version`, `bump_strategy_version()`.
+- Multi-Asset / Multi-Venue: AssetClass + Venue protocols + CcxtVenue.  
+  Skeleton: `venues/` (AssetClass, MarketDataSource, OrderVenue, CcxtVenue). Fleet hat `asset_class`.
 
-## Zu komplex / nicht jetzt
+## Zu komplex / nicht jetzt (Skeleton vorgemerkt)
 
-- Vollständiger Prüfkatalog vor jeder Catalog-Veröffentlichung (viele Regeln). Aktuell reicht: leere Daten → `is_restricted`.
-- Viewer-Logik innerhalb der Data-Unit. Anzeige gehört in die App, Data bleibt Speicher.
-- Automatische Strategie-Versionierungsmaschinerie.
-- Mehrere Flotten / Asset-Klassen-Adapter (Forex, Aktien). Architektur erlaubt es, aber nicht der nächste Schritt.
+- Vollständiger Prüfkatalog vor jeder Catalog-Veröffentlichung.  
+  Skeleton: `signal/validator.py` (`CatalogValidator`). Aktuell reicht: leere Daten → `is_restricted`.
+- Viewer-Logik innerhalb der Data-Unit. Anzeige gehört in die App, Data bleibt Speicher.  
+  Kein Code-Skeleton nötig — Absicht in DataUnit-Docstring festgehalten.
+- Automatische Strategie-Versionierungsmaschinerie.  
+  Skeleton: `operator/versioning.py` (`StrategyVersioning`). Einfaches `bump_strategy_version` existiert bereits.
 
 ## Namensgebung
 
-Kernbegriffe (Flotte, Unit, Bot, Catalog, Operator, Signal-Unit, Operator-Unit) bleiben. Sie sind klar und decken sich mit dem Konzept.
+Kernbegriffe (Flotte, Unit, Bot, Catalog, Operator, Signal-Unit, Operator-Unit) bleiben.
 
-Die neuen Begriffe (Execution, Reconciliation, Position, Runtime, Observability) sind präziser als das PDF und nötig. Keine Umbenennung empfohlen.
+**Flotte nicht in AssetClass umbenennen.**  
+Flotte = die komplette Handelsanlage (Systeminstanz).  
+AssetClass = was die Flotte handelt (Eigenschaft).  
+Venue = wo sie handelt (CCXT-CEX, Hyperliquid, Jupiter, …).  
+Mehrere Flotten können dieselbe Asset-Klasse handeln.
+
+Die neuen Begriffe (Execution, Reconciliation, Position, Runtime, Observability, Venue, AssetClass) sind präziser als das PDF und nötig.
 
 # Related
 

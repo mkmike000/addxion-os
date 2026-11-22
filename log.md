@@ -10,6 +10,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 - done: Verdrahtung: Operator nutzt Position + ExitMonitor + ExecutionManager. Fleet kennt RuntimeLoop und Health. Book arbeitet mit Position-Objekten. Dry-Run-Demo-Pfad bleibt funktionsfähig.
 - ingest: Konzept-Abgleich PDF „Algo-Trading-Plattform: Konzept und Aufbau“ (30.09.2026) gegen aktuelles System. Kernarchitektur passt. Execution-/Position-/Runtime-Schicht ist sinnvolle Erweiterung. Stats-Bot-Unabhängigkeit und Unit-Pause später. Prüfkatalog und Viewer-in-Data-Unit nicht jetzt. Namensgebung bleibt.
 - done: Skeleton für später hinterlegt: unabhängiger StatsBot (`operator/stats.py`), Unit-Pause (`paused` + `activate`), Strategie-Versionierung (`strategy_version` + `bump_strategy_version`). Roadmap Phase 4 erweitert.
+- done: Multi-Asset / Multi-Venue Skeleton: `venues/` (AssetClass, MarketDataSource, OrderVenue, CcxtVenue). Fleet hat `asset_class` (default crypto_spot). CatalogValidator und StrategyVersioning als vorgemerkte Skelette. Flotte bleibt Name; AssetClass und Venue sind Eigenschaften.
 
 ## 2026-11-10
 
