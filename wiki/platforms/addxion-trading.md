@@ -10,6 +10,9 @@ sources:
   - id: trading-repo
     resource: mkmike000/addxion-trading
     title: addxion-trading
+  - id: concept-pdf
+    resource: attachments/Algo-Trading-Plattform_ Konzept und Aufbau.pdf
+    title: Algo-Trading-Plattform Konzept und Aufbau (Sep 30, 2026)
 ---
 
 # Zweck
@@ -26,11 +29,12 @@ Persistente Lernresource im Repo: `docs/frameworks/`.
 
 - Signal: Catalog als Single Source of Truth
 - Strategy / Operator: Entscheidung vs. Ausführung
-- Execution: Orders + Reconciliation + Modi (Skeleton mit konkreter Struktur)
+- Execution: Orders + Reconciliation + Modi
 - Risk: Unit + Portfolio
 - Data: Timescale via Neon
 - Runtime: kontinuierlicher Loop
 - Observability: Book-Snapshot für die App
+- Position & Exit: Lifecycle einer Position
 
 Details: [addxion-trading docs/frameworks](https://github.com/mkmike000/addxion-trading/tree/main/docs/frameworks).
 
@@ -47,6 +51,50 @@ Details: [addxion-trading docs/frameworks](https://github.com/mkmike000/addxion-
 Kein Billing (das ist Agentic Finances / Stripe).  
 Keine Collective-Wahrheit hier.  
 DEX-Adapter (Hyperliquid, Jupiter) später.
+
+# Konzept-Abgleich (PDF Sep 2026)
+
+Quelle: „Algo-Trading-Plattform: Konzept und Aufbau“ (30.09.2026).
+
+## Passt gut (behalten)
+
+- Flotte → Unit → Bot bleibt die richtige Granularität.
+- Signal-Unit als einzige Rechenstelle → Catalog. Alle Operatoren sehen denselben Katalog.
+- Strategy = drei Fragen: Einsteigen, Stop-Loss, Take-Profit.
+- Catalog-Format: Richtung + Wert + Verlässlichkeit (bereits in `IndicatorValue`).
+- Max. eine Position pro Operator/Coin, Pause bei veralteten Daten, immer Stop-Loss.
+- Trennung: Wer handelt, bewertet sich nicht selbst (Stats-Bot). Wer überwacht, greift nicht ein (Watch-Bot).
+
+## Was wir sinnvoll erweitert haben
+
+Das PDF lässt Operatoren direkt Orders an die Börse schicken. Wir haben dazwischen gelegt:
+
+- `ExecutionManager` mit Modi (DRY_RUN / PAPER / LIVE)
+- `Position` als eigene Entität + `ExitMonitor`
+- Reconciliation als explizites Konzept (noch Skeleton)
+- Runtime + Health + Kill-Switch auf Fleet-Ebene
+- Book-Vertrag für die App (statt Viewer in der Data-Unit)
+
+Diese Schicht ist nötig, sobald man von „Demo-Skript“ zu etwas kommt, das man laufen lassen will.
+
+## Nützlich, aber später
+
+- Unabhängige Performance-Berechnung im Stats-Bot aus echten Fills (nicht aus Operator-Eigenmeldung).
+- Neue Operator-Units starten pausiert und werden bewusst scharf geschaltet.
+- Strategie-Versionierung: bei Strategie-Änderung Statistik neu beginnen.
+
+## Zu komplex / nicht jetzt
+
+- Vollständiger Prüfkatalog vor jeder Catalog-Veröffentlichung (viele Regeln). Aktuell reicht: leere Daten → `is_restricted`.
+- Viewer-Logik innerhalb der Data-Unit. Anzeige gehört in die App, Data bleibt Speicher.
+- Automatische Strategie-Versionierungsmaschinerie.
+- Mehrere Flotten / Asset-Klassen-Adapter (Forex, Aktien). Architektur erlaubt es, aber nicht der nächste Schritt.
+
+## Namensgebung
+
+Kernbegriffe (Flotte, Unit, Bot, Catalog, Operator, Signal-Unit, Operator-Unit) bleiben. Sie sind klar und decken sich mit dem Konzept.
+
+Die neuen Begriffe (Execution, Reconciliation, Position, Runtime, Observability) sind präziser als das PDF und nötig. Keine Umbenennung empfohlen.
 
 # Related
 
