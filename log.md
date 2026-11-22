@@ -7,6 +7,7 @@ Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 202
 - ingest: Platform `addxion-trading` angelegt. Foundations + Frameworks (Mental Models) im Repo vorbereitet. Darstellung in addxion-app. Persistenz Timescale via Neon. Roadmap in docs/roadmap.md.
 - done: Roadmap-Seite unter `/operators/roadmap` in addxion.ai. Execution-Skeleton im Trading-Repo mit konkreter Struktur (Manager, Modi, Reconciliation) erweitert.
 - done: Strukturrahmen komplett: Observability, Position/Exit, Data-Modelle, Health/Kill-Switch, Persistence-Skeleton. Phase 0 abgeschlossen.
+- done: Verdrahtung: Operator nutzt Position + ExitMonitor + ExecutionManager. Fleet kennt RuntimeLoop und Health. Book arbeitet mit Position-Objekten. Dry-Run-Demo-Pfad bleibt funktionsfähig.
 
 ## 2026-11-10
 
