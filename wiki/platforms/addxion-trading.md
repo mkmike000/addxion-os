@@ -77,11 +77,14 @@ Das PDF lässt Operatoren direkt Orders an die Börse schicken. Wir haben dazwis
 
 Diese Schicht ist nötig, sobald man von „Demo-Skript“ zu etwas kommt, das man laufen lassen will.
 
-## Nützlich, aber später
+## Nützlich, aber später (Skeleton vorhanden)
 
-- Unabhängige Performance-Berechnung im Stats-Bot aus echten Fills (nicht aus Operator-Eigenmeldung).
-- Neue Operator-Units starten pausiert und werden bewusst scharf geschaltet.
-- Strategie-Versionierung: bei Strategie-Änderung Statistik neu beginnen.
+- Unabhängige Performance-Berechnung im Stats-Bot aus echten Fills (nicht aus Operator-Eigenmeldung).  
+  Skeleton: `src/addxion_trading/operator/stats.py` (`ingest_fills`, `compute_performance`).
+- Neue Operator-Units starten pausiert und werden bewusst scharf geschaltet.  
+  Skeleton: `OperatorUnit.paused` (default `True`), `activate()`, `pause()`.
+- Strategie-Versionierung: bei Strategie-Änderung Statistik neu beginnen.  
+  Skeleton: `strategy_version`, `bump_strategy_version()`.
 
 ## Zu komplex / nicht jetzt
 
