@@ -4,7 +4,7 @@ title: addxion-trading
 description: Modulare Algotrading-Plattform (Python). Venues für Agentic Trading. Darstellung in addxion-app.
 status: active
 owner: mike
-updated: 2026-11-22
+updated: 2026-11-23
 tags: [platform, trading, agentic]
 sources:
   - id: trading-repo
@@ -18,7 +18,7 @@ sources:
 # Zweck
 
 Python-Service für Markt-Execution (Crypto zuerst).  
-Architektur: Flotte → Signal-Unit / Operator-Unit / Data-Unit.
+Architektur: Flotte → Signal-Unit / Operator-Unit / CatalogStore.
 
 Cockpit und Darstellung des laufenden Systems: **addxion-app** (GPUI).  
 Web-Übersicht / Roadmap: `/operators/roadmap` in addxion.ai.
@@ -29,11 +29,11 @@ Persistente Lernresource im Repo: `docs/frameworks/`.
 
 - Signal: Catalog als Single Source of Truth
 - Strategy / Operator: Entscheidung vs. Ausführung
-- Execution: Orders + Reconciliation + Modi
+- Execution: Orders + Reconciliation + Modi (ExecutionMode ist Quelle der Wahrheit)
 - Risk: Unit + Portfolio
-- Data: Timescale via Neon
+- Data: CatalogStore (In-Memory) + Persistence (Timescale via Neon)
 - Runtime: kontinuierlicher Loop
-- Observability: Book-Snapshot für die App
+- Observability: Portfolio-Snapshot + SystemState für die App
 - Position & Exit: Lifecycle einer Position
 - Venues & Asset Classes: Multi-Asset / Multi-Venue Struktur
 
@@ -46,6 +46,15 @@ Details: [addxion-trading docs/frameworks](https://github.com/mkmike000/addxion-
 - FastAPI (REST)
 - TimescaleDB via Neon (Persistenz, solange Compression nicht nötig)
 - Freqtrade (Backtesting-Bridge)
+
+# API für die App
+
+- `GET /portfolio` — PortfolioSnapshot: Positionen, Fills, Summary, Kontext (`context` mit dry_run, sandbox, exchange_id, execution_mode, health)
+- `GET /system-state` — SystemState: Flotte, Asset-Class, Venue, Health (Status + Notes + Kill-Switch + data_fresh + exchange_ok), Units + units_summary (total/running/paused)
+- `GET /overview`, `GET /units`, `POST /cycle` (liefert overview + portfolio + system_state)
+- `POST /connections`, `POST /connections/test`
+
+Feld in Position-/Fill-Rows: `operator_unit` (nicht mehr `agent`).
 
 # Grenzen
 
@@ -70,11 +79,11 @@ Quelle: „Algo-Trading-Plattform: Konzept und Aufbau“ (30.09.2026).
 
 Das PDF lässt Operatoren direkt Orders an die Börse schicken. Wir haben dazwischen gelegt:
 
-- `ExecutionManager` mit Modi (DRY_RUN / PAPER / LIVE)
+- `ExecutionManager` mit Modi (DRY_RUN / PAPER / LIVE). **ExecutionMode ist die einzige Quelle der Wahrheit**; `dry_run` am Exchange wird daraus abgeleitet.
 - `Position` als eigene Entität + `ExitMonitor`
 - Reconciliation als explizites Konzept (noch Skeleton)
 - Runtime + Health + Kill-Switch auf Fleet-Ebene
-- Book-Vertrag für die App (statt Viewer in der Data-Unit)
+- Portfolio-Snapshot + SystemState für die App (statt Viewer in der Data-Unit)
 
 Diese Schicht ist nötig, sobald man von „Demo-Skript“ zu etwas kommt, das man laufen lassen will.
 
@@ -94,7 +103,7 @@ Diese Schicht ist nötig, sobald man von „Demo-Skript“ zu etwas kommt, das m
 - Vollständiger Prüfkatalog vor jeder Catalog-Veröffentlichung.  
   Skeleton: `signal/validator.py` (`CatalogValidator`). Aktuell reicht: leere Daten → `is_restricted`.
 - Viewer-Logik innerhalb der Data-Unit. Anzeige gehört in die App, Data bleibt Speicher.  
-  Kein Code-Skeleton nötig — Absicht in DataUnit-Docstring festgehalten.
+  In-Memory-Teil heißt jetzt `CatalogStore`. Persistence bleibt die DB-Schicht.
 - Automatische Strategie-Versionierungsmaschinerie.  
   Skeleton: `operator/versioning.py` (`StrategyVersioning`). Einfaches `bump_strategy_version` existiert bereits.
 
@@ -108,7 +117,22 @@ AssetClass = was die Flotte handelt (Eigenschaft).
 Venue = wo sie handelt (CCXT-CEX, Hyperliquid, Jupiter, …).  
 Mehrere Flotten können dieselbe Asset-Klasse handeln.
 
-Die neuen Begriffe (Execution, Reconciliation, Position, Runtime, Observability, Venue, AssetClass) sind präziser als das PDF und nötig.
+**Portfolio, nicht Book / Orderbook.**  
+`/portfolio` liefert den Zustand der eigenen Anlage (Positionen, Fills, Summary).  
+Kein Orderbook (das wäre Bid/Ask der Börse).
+
+**SystemState**  
+Breiter als Portfolio: Flotte, Asset-Class, Venue, Health, Kill-Switch, Units.  
+Endpunkt: `/system-state`.
+
+**CatalogStore**  
+In-Memory-Cache der Catalogs für den laufenden Prozess.  
+Persistence (Timescale/Neon) bleibt die dauerhafte Ablage.
+
+**operator_unit**  
+Feld in Portfolio-Rows (vorher `agent`). Bezeichnet den Namen der Operator-Unit.
+
+Die neuen Begriffe (Execution, Reconciliation, Position, Runtime, Observability, Venue, AssetClass, Portfolio, SystemState, CatalogStore) sind präziser als das PDF und nötig.
 
 # Related
 

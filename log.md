@@ -2,6 +2,11 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-11-23
+
+- done: Trading-API umbenannt. `/book` → `/portfolio` (PortfolioSnapshot). Neuer Endpunkt `/system-state`. Feld `agent` → `operator_unit`. DataUnit → CatalogStore (In-Memory). ExecutionMode ist einzige Quelle der Wahrheit für dry_run.
+- done: Portfolio-Struktur verbessert (Kontext unter `context`). SystemState liefert Health-Detail (status, notes, kill_switch, data_fresh, exchange_ok) und units_summary (total/running/paused). Tests in `tests/test_system_state.py`.
+
 ## 2026-11-22
 
 - ingest: Platform `addxion-trading` angelegt. Foundations + Frameworks (Mental Models) im Repo vorbereitet. Darstellung in addxion-app. Persistenz Timescale via Neon. Roadmap in docs/roadmap.md.
