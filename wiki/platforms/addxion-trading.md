@@ -4,12 +4,15 @@ title: addxion-trading
 description: Modulare Algotrading-Plattform (Python). Venues für Agentic Trading. Darstellung in addxion-app.
 status: active
 owner: mike
-updated: 2026-11-23
+updated: 2026-11-24
 tags: [platform, trading, agentic]
 sources:
   - id: trading-repo
     resource: mkmike000/addxion-trading
     title: addxion-trading
+  - id: app-repo
+    resource: mkmike000/addxion-app
+    title: addxion-app (GPUI)
   - id: concept-pdf
     resource: attachments/Algo-Trading-Plattform_ Konzept und Aufbau.pdf
     title: Algo-Trading-Plattform Konzept und Aufbau (Sep 30, 2026)
@@ -20,7 +23,7 @@ sources:
 Python-Service für Markt-Execution (Crypto zuerst).  
 Architektur: Flotte → Signal-Unit / Operator-Unit / CatalogStore.
 
-Cockpit und Darstellung des laufenden Systems: **addxion-app** (GPUI).  
+Cockpit und Darstellung des laufenden Systems: **addxion-app** (GPUI), Tab „Trading“.  
 Web-Übersicht / Roadmap: `/operators/roadmap` in addxion.ai.
 
 # Frameworks (Mental Models)
@@ -55,6 +58,21 @@ Details: [addxion-trading docs/frameworks](https://github.com/mkmike000/addxion-
 - `POST /connections`, `POST /connections/test`
 
 Feld in Position-/Fill-Rows: `operator_unit` (nicht mehr `agent`).
+
+`strategy_version` kommt als String ("1"). Client nimmt String und Zahl.
+
+# App-Einbau (addxion-app)
+
+Tab „Trading“ in der GPUI-App (main ab `8ec10c1`).
+
+- Crate `xi-trading-client` (blockierend, eigener Fehler-Mapper: `trading_unreachable`, `trading_http_<status>:<detail>`, `trading_invalid_json:<status>`)
+- Bearer nur wenn `XI_TRADING_SECRET` gesetzt
+- Tab zeigt echten Unit-Status („pausiert“ / „läuft“), Kill-Switch als Warnsatz, Asset-Class, Venue, Health
+- `/cycle`-Antwort wird direkt verwendet (kein zweites Laden)
+- 10-s-Poll aktualisiert nur Daten, schreibt keine Protokollzeilen
+- `/connections` und `/connections/test` im Client, noch nicht in der UI verdrahtet
+
+Hinweis: Units starten pausiert. Ohne Aktivieren-Endpunkt bleibt der Zyklus wirkungslos. (Endpunkt nachgezogen.)
 
 # Grenzen
 
@@ -138,3 +156,4 @@ Die neuen Begriffe (Execution, Reconciliation, Position, Runtime, Observability,
 
 - Decision: [Agentic Trading Rails](../decisions/agentic-trading-rails.md)
 - Roadmap: `docs/roadmap.md` im Repo + Web-Ansicht unter `/operators/roadmap`
+- App: [addxion-app](https://github.com/mkmike000/addxion-app) — Tab Trading ab `8ec10c1`

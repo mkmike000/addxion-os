@@ -2,6 +2,10 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-11-24
+
+- done: Trading-Tab in addxion-app (main `8ec10c1`). Crate `xi-trading-client` gegen `/portfolio` und `/system-state`. Unit-Status, Kill-Switch, Asset-Class, Venue in der Kopfzeile. `/cycle`-Antwort direkt genutzt. Poll still. `/connections` im Client, nicht in der UI. Activate-Endpunkt im Service nachgezogen.
+
 ## 2026-11-23
 
 - done: Trading-API umbenannt. `/book` → `/portfolio` (PortfolioSnapshot). Neuer Endpunkt `/system-state`. Feld `agent` → `operator_unit`. DataUnit → CatalogStore (In-Memory). ExecutionMode ist einzige Quelle der Wahrheit für dry_run.
