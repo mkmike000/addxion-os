@@ -14,6 +14,7 @@ Die monochrome Design Language aus `addxion-ai` (Neon-Tokens, Hairline, keine Ac
 
 - Tokens leben in `addxion-app/crates/xi-desktop/src/theme.rs` (`addxion_dark()`).
 - Surfaces (Factory, Log, Buttons, Listen) nutzen die Semantic-Tokens.
+- Seit 2026-11-24 sind alle sieben Tabs auf den Tokens, inklusive Trading-Tab.
 - Komponenten (CardRoot, Pill, Band) und Motion folgen später.
 - Web-App bleibt dünn; dichte Operator-Flächen nur nativ.
 
@@ -26,3 +27,4 @@ Die monochrome Design Language aus `addxion-ai` (Neon-Tokens, Hairline, keine Ac
 
 - [[xi-clients]]
 - [[xi-server-client]]
+- [addxion-app](../platforms/addxion-app.md)

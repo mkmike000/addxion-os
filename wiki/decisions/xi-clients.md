@@ -38,6 +38,8 @@ Rust im Kernel nur bei gemessenem Hot-Path (Turso-Treiber, später ggf. Wire). R
 
 # Ort
 
-Der native Client liegt im eigenen Repo `addxion-app` (Rust-Workspace: `xi-client`, `xi-desktop`). Er war zuerst `apps/xi-desktop` in addxion-ai und zog am 2026-11-10 aus, weil Rust-Toolchain und Desktop-Release nicht in die Web-Harness gehören. Der Vertrag bleibt `@addxion/xi/core` in addxion-ai.
+Der native Client liegt im eigenen Repo `addxion-app` (Rust-Workspace: `xi-client`, `xi-trading-client`, `xi-desktop`). Er war zuerst `apps/xi-desktop` in addxion-ai und zog am 2026-11-10 aus, weil Rust-Toolchain und Desktop-Release nicht in die Web-Harness gehören. Der Vertrag zum Kernel bleibt `@addxion/xi/core` in addxion-ai.
+
+Plattformseite: [addxion-app](../platforms/addxion-app.md).
 
 Pointer: [addxion-xi](../platforms/addxion-xi.md), [addxion-ai](../platforms/addxion-ai.md).

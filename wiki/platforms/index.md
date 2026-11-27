@@ -16,4 +16,5 @@ Heimat der Oberfläche: [Heimat addxion.ai](../decisions/heimat-ai.md).
 * [Ads-Netzwerk](ads-netzwerk.md) — Entwurf; Host `ads.addxion.ai`
 * [Workers for Platforms](workers-for-platforms.md) — Staging Hello-World, noch nicht Sites-Renderer
 * [Clix](clix.md) — Arbeitstitel, Kollab-Vorhaben
+* [addxion-app](addxion-app.md) — native Operator-Konsole (GPUI), Kernel + Trading
 * [addxion-trading](addxion-trading.md) — Algotrading-Service, Darstellung in addxion-app

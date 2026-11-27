@@ -2,9 +2,25 @@
 
 Agenten-Digest. Neueste oben. Git bleibt die Versionierung. Eine Chronik: ab 2026-08 diese SSOT; davor die alte Docs-Chronik, verdichtet.
 
+## 2026-11-27
+
+- done: addxion-trading läuft als Container in OrbStack auf dem Operator-Host (Mac Mini), neben dem Kernel. Ports: Host 8000, Laptop im Tailnet `100.122.177.104:8000`, Kernel `trading:8000` im gemeinsamen Docker-Netz. Kein venv, weil der Host Python 3.9 hat und `pyproject` `>=3.11` verlangt.
+- decision: `ADDXION_TRADING_SECRET` ist im Compose Pflicht (`${VAR:?}`). Ohne Secret startet der Container nicht. `/health` bleibt offen für Tunnel-Probes.
+- done: Kernel ruft `GET /portfolio` statt `GET /book` (Service-Umbenennung vom 2026-11-23). Vorher lief die Live-Venue-Route ins 404, weil das Kernel-Image vom 11.10. den Endpunkt nicht kannte.
+- lint: **Platte des Minis war zu 100 % voll** (121 MB frei), OrbStack abgestürzt, Kernel und Trading offline. Bereinigt: 42 GB verwaiste Docker-Desktop-Daten (Docker.app nicht mehr installiert, OrbStack ersetzt es), 12 GB Notion-Partitions-Cache, 5,1 GB AnzeigenChef-Reste (App nicht installiert). Stand danach: 59 GB frei, 72 %.
+- done: Kernel-Rebuild braucht gedrosselte Erlang-Scheduler (`--build-arg ELIXIR_ERL_OPTIONS="+S 2"`). Ohne das killt der OOM das 16-GB-Mac-mini mitten im Build, Swap war zu 86 % voll.
+- lint: offen — DNS/Ingress für `trading.addxion.ai`. Tunnel ist remote verwaltet (Regeln im Cloudflare-Dashboard), `cert.pem` vom 23.06. abgelaufen, `cloudflared tunnel route dns` scheitert mit Authentication error. Bis dahin nur im Tailnet erreichbar.
+- done: `trading.addxion.ai` ist öffentlich erreichbar. `cert.pem` war defekt (282 Bytes, kein Zertifikat) und blockierte den Login; per `cloudflared tunnel login` ersetzt, das neue Cert trägt einen `apiToken` für die Konfigurations-API. DNS per `cloudflared tunnel route dns`, Ingress per API als Version 25 vor dem Catch-All. Nachgewiesen: `/health` 200, `/portfolio` ohne Token 401, falsches Token 403, richtiges 200.
+
 ## 2026-11-24
 
 - done: Trading-Tab in addxion-app (main `8ec10c1`). Crate `xi-trading-client` gegen `/portfolio` und `/system-state`. Unit-Status, Kill-Switch, Asset-Class, Venue in der Kopfzeile. `/cycle`-Antwort direkt genutzt. Poll still. `/connections` im Client, nicht in der UI. Activate-Endpunkt im Service nachgezogen.
+- done: Trading öffentlich unter `trading.addxion.ai`. Cloudflare Tunnel auf dem Operator-Host (Mac Mini zuhause), dahinter `127.0.0.1:8000`, kein offener Port. Deploy-Paket `deploy/trading.addxion.ai/` (launchd `com.addxion.trading`, `run-service.sh`, Tunnel-Skript, README). Wegen des öffentlichen Hosts ist `ADDXION_TRADING_SECRET` jetzt Pflicht — `run-service.sh` bricht sonst mit Exit 78 ab. CORS als Allowlist (`ADDXION_TRADING_CORS_ORIGINS`), `/health` bleibt offen. Tests `tests/test_public_host.py`. `addxion-app`: `DEFAULT_TRADING_URL` → `https://trading.addxion.ai`, lokal weiter über `XI_TRADING_URL`.
+- done: Unit-Steuerung im Trading-Service über HTTP. `POST /units/{name}/activate`, `POST /units/{name}/pause`, `POST /kill-switch`, `DELETE /kill-switch`. Vorher gab es nur `activate()` in Python, damit blieben alle Units dauerhaft pausiert. Kill-Switch lösen schaltet bewusst keine Unit scharf. Tests `tests/test_unit_state.py` (7 Fälle).
+- done: addxion-app nutzt die Unit-Endpunkte: Knopf je Unit im Trading-Tab (pausiert ↔ laufend), Not-Aus-Knopf. Client `xi-trading-client` um `activate_unit`, `pause_unit`, `activate_kill_switch`, `release_kill_switch` erweitert.
+- ingest: Platform `addxion-app` angelegt (war seit 2026-11-10 nur in Decisions erwähnt). Crates `xi-client`, `xi-trading-client`, `xi-desktop`; sieben Tabs; Konfiguration; Icon-Pipeline; Release nach R2.
+- done: Trading-API-Doku nachgezogen: `/book` → `/portfolio` in `agentic-trading-rails`, Direktverbindung `addxion-app → addxion-trading` als Ausnahme in `trading-harness-port` festgehalten (gilt nicht für den Web-Client).
+- done: Design System Transfer — alle sieben Tabs auf den Monochrome-Tokens.
 
 ## 2026-11-23
 

@@ -71,7 +71,7 @@ XI-**A2A** = peer Task-Handoff (Auftrag, Grenze, Ergebnis).
 
 - **Pack-Checkout:** `/kurse` → Stripe Subscription Checkout → Webhook `POST /api/stripe/packs/webhook` setzt Org-`featurePack`. Geld auf Platform-Stripe (Addxion).
 - **Org-Finanzen:** `/finanzen` liest Stripe Balance/Tx für Platform-Admin oder Org-Slug `addxion` / `addxion-ai` / `addxion-gmbh`. Konnektor Stripe verlinkt dorthin. Kunden-Connect später.
-- **Venue-Welt:** Python-Repo **`addxion-trading`** (CCXT, FastAPI `/book`, `/cycle`). ADR [trading-harness-port.md](trading-harness-port.md).
+- **Venue-Welt:** Python-Repo **`addxion-trading`** (CCXT, FastAPI `/portfolio`, `/system-state`, `/cycle`). ADR [trading-harness-port.md](trading-harness-port.md).
 - **Venue-Konnektoren:** `crypto-exchange` unter `/konnektoren/trading` (Neon `org_venue_connection`, verschlüsselte Keys). Buch in Normandy **nur** über XI `GET /api/v1/venues/book`.
 - **Live-Cycle:** Cockpit-Button → `POST /api/v1/trading/live` (Kernel → addxion-trading). Optional 24/7: `Xi.Venue.Scheduler` (`XI_VENUE_SCHEDULER=1`).
 - **Ledger:** Neon `trading_fill` (Sync beim Buch-Laden); getrennt von Finanzen/Stripe.

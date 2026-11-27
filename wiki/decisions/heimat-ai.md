@@ -30,6 +30,7 @@ Look-Quelle: das Design von `addxion-com` (Neon, Brand, Motion) wird auf die App
 | `ads.addxion.ai` | Ads-Collector (`/c`, `/v1/events`) |
 | `xi.addxion.ai` | XI-Kernel |
 | `auth.addxion.ai` | Auth-API und Login-Auslieferung |
+| `trading.addxion.ai` | Trading-Service (FastAPI), Cloudflare Tunnel auf den Operator-Host |
 
 `l.addxion.ai` gilt nicht mehr als Name. [Sites Hosts](sites-hosts.md).
 
